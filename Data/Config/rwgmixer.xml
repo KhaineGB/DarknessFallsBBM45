@@ -4,14 +4,13 @@
 	<rulesets>
 	<world ruleset="vanilla" />
 	
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2200" cell_offset="0" generation_distance="25000" terrain_generator="vanilla" biome_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1500" cell_offset="0" generation_distance="25000" terrain_generator="vanilla" biome_generator="vanilla">
 		
-			<cell_rule name="deadCell" prob="0.5"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
+			<cell_rule name="deadCell" prob="0.005"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
 			<cell_rule name="cityCell" prob="0.15"/>
 			<cell_rule name="townCell" prob="0.33"/>
 			<cell_rule name="ruralCell" prob="0.33"/>
 			<cell_rule name="customHubTest" position="0,1" prob="1"/>
-			<cell_rule name="rareCity" prob="0.05"/>
 			
 		</ruleset>
 	</rulesets>
@@ -79,48 +78,27 @@
 			<wilderness_rule name="wildernessWasteland"/>
 		</cell_rule>
 		
-		<cell_rule name="rareCity">
-			<cave_count value="1,3"/>
-			<path_material value="asphalt" /> 
-			<path_radius value="10" />
-			
-			<hub_rule name="cityHub" prob="1"/>
-			
-			<wilderness_rule name="wildernessCity"/>
-		</cell_rule>
-		
 	</cell_rules>
 
 	<hub_rules>
 	
 		<hub_rule name="asiatown">
 			<hub_type value="town"/>
-			<width value="630, 735" />
-			<height value="630, 735" />
-			<path_material value="asphalt" />
+			<width value="200, 250" />
+			<height value="200, 250" />
+			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
 			<prefab_rule name="asiatownPOIS"/>
 			
-			<street_gen level="20" length_multiplier="4">
+			<street_gen level="15" length_multiplier="4">
 				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
 
 				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
 				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-				<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/> <!-- 	Draws 2 rectngls side by side -->
-				<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/> <!-- Draws 2 boxes side by side -->
-				<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/> <!-- Draws cross street -->
-				<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/> <!-- draw T section LFT -->
-				<rule char="E" replace_with="F[F][FF*]+[FF*]"/> <!-- draw T section RT-->
-				<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/> <!-- draw T section -->
-				<rule char="H" replace_with="F[F]-[FF*]"/> <!-- LFT Turn-->
-				<rule char="Z" replace_with="F[F]+[FF*]"/> <!-- RT Turn-->
-				<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/> <!-- Center Spoked Box -->
-				<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/> <!-- Small Spoked box off center -->
-				<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/> <!-- Lrg Spoked box Off center -->
-				<alt_commands chars="T,I,N,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>	
 	
@@ -1482,7 +1460,7 @@
 		
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for townCells) -->
 		<prefab_rule name="wildernessGroupTown">
-			<prefab rule="traderGroup" min_count="2" max_count="4"/>
+			<prefab rule="traderGroup" min_count="1" max_count="4"/>
 			<prefab rule="waterPois" min_count="3" max_count="5" prob="0.9"/>
 			<prefab name="cabin_01" max_count="3" prob="0.5"/>
 			<prefab name="cabin_02_sm" max_count="3" prob="0.5"/>
@@ -1551,7 +1529,7 @@
 		
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for ruralCells) -->
 		<prefab_rule name="wildernessGroupRural">
-			<prefab rule="traderGroup" min_count="2" max_count="4"/>
+			<prefab rule="traderGroup" min_count="1" max_count="4"/>
 			<prefab rule="waterPois" min_count="5" max_count="7" prob="0.9"/>
 			<prefab name="cabin_01" max_count="3" prob="0.5"/>
 			<prefab name="cabin_02_sm" max_count="3" prob="0.5"/>
@@ -1663,16 +1641,17 @@
 		</prefab_rule>
 		
 		<prefab_rule name="traderGroup">
-			<prefab name="settlement_trader_01" max_count="2"/>
-			<prefab name="settlement_trader_02" max_count="2"/>
-			<prefab name="settlement_trader_03" max_count="2"/>
-			<prefab name="settlement_trader_04" max_count="2"/>
-			<prefab name="settlement_trader_05" max_count="2"/>
-			<prefab name="DFalls_DestroyedTrader_01" max_count="1" prob="0.5"/>
-			<prefab name="DFalls_DestroyedTrader_02" max_count="1" prob="0.5"/>
-			<prefab name="DFalls_DestroyedTrader_03" max_count="1" prob="0.5"/>
-			<prefab name="DFalls_DestroyedTrader_04" max_count="1" prob="0.5"/>
-			<prefab name="DFalls_DestroyedTrader_05" max_count="1" prob="0.5"/>
+			<prefab name="settlement_trader_01" max_count="1"/>
+			<prefab name="settlement_trader_02" max_count="1"/>
+			<prefab name="settlement_trader_03" max_count="1"/>
+			<prefab name="settlement_trader_04" max_count="1"/>
+			<prefab name="settlement_trader_05" max_count="1"/>
+			<prefab name="DFalls_settlement_trader" max_count="1" prob="0.75"/>
+			<prefab name="DFalls_DestroyedTrader_01" max_count="1" prob="0.05"/>
+			<prefab name="DFalls_DestroyedTrader_02" max_count="1" prob="0.05"/>
+			<prefab name="DFalls_DestroyedTrader_03" max_count="1" prob="0.05"/>
+			<prefab name="DFalls_DestroyedTrader_04" max_count="1" prob="0.05"/>
+			<prefab name="DFalls_DestroyedTrader_05" max_count="1" prob="0.05"/>
 		</prefab_rule>
 		
 		<prefab_rule name="waterPois">
@@ -1826,7 +1805,7 @@
 			
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
 				<property name="sourceModule" value="finalLand"/>
-				<property name="scale" value="260"/>
+				<property name="scale" value="250"/>
 			</module>
 
 			<output module="scaleBiasOutput"/>
@@ -1912,19 +1891,19 @@
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="desert">
-			<biome_generator range="0.2,0.3"/>
+			<biome_generator range="0.2,0.4"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.3,0.4"/>
+			<biome_generator range="0.4,0.5"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="forest">
-			<biome_generator range="0.4,0.7"/>
+			<biome_generator range="0.5,0.8"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="snow">
-			<biome_generator range="0.7,0.8"/>
+			<biome_generator range="0.8,0.9"/>
 			<terrain_generator range="176,255"/>
 		</biome_spawn_rule>
 
@@ -1933,7 +1912,7 @@
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="plains">
-			<biome_generator range="0.8,1"/>
+			<biome_generator range="0.9,1"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland_hub">

@@ -313,6 +313,9 @@
 		<entity name="animalWolf" prob="0.4" />
 		<entity name="animalBear" prob="0.05" />
 		<entity name="animalDireWolf" prob="0.05" />
+		<entity name="Worker Hornet" />
+		<entity name="Soldier Hornet" prob="0.4"/>
+		<entity name="Queen Hornet" prob="0.05"/>
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsForest">
@@ -605,14 +608,14 @@
 	
 	<entitygroup name="BanditGroupHub">
 		<entity name="invisibleBandit" prob="50"/>
-		<entity name="BanditRanged" prob="0.5"/>
-		<entity name="BanditRanged2" prob="0.5"/>
-		<entity name="BanditRanged3" prob="0.5"/>
-		<entity name="BanditRanged4" prob="0.5"/>
-		<entity name="BanditFemaleRanged" prob="0.5"/>
-		<entity name="BanditFemaleRanged2" prob="0.5"/>
-		<entity name="BanditFemaleRanged3" prob="0.5"/>
-		<entity name="BanditFemaleRanged4" prob="0.5"/>
+		<entity name="BanditRangedWasteland" prob="0.5"/>
+		<entity name="BanditRangedWasteland2" prob="0.5"/>
+		<entity name="BanditRangedWasteland3" prob="0.5"/>
+		<entity name="BanditRangedWasteland4" prob="0.5"/>
+		<entity name="BanditFemaleRangedWasteland" prob="0.5"/>
+		<entity name="BanditFemaleRangedWasteland2" prob="0.5"/>
+		<entity name="BanditFemaleRangedWasteland3" prob="0.5"/>
+		<entity name="BanditFemaleRangedWasteland4" prob="0.5"/>
 		<entity name="BanditLeader" prob="0.002"/>
 		<entity name="BanditLeader2" prob="0.002"/>
 		<entity name="BanditFemaleLeader" prob="0.002"/>
@@ -626,21 +629,21 @@
 		<entity name="SurvivorMaleMelee3"/>
 		<entity name="SurvivorMaleMelee4"/>
 		<entity name="SurvivorMaleMelee5"/>
-		<entity name="SurvivorMaleRanged1" prob="0.006"/>
-		<entity name="SurvivorMaleRanged2" prob="0.006"/>
-		<entity name="SurvivorMaleRanged3" prob="0.006"/>
-		<entity name="SurvivorMaleRanged4" prob="0.006"/>
-		<entity name="SurvivorMaleRanged5" prob="0.006"/>
+		<entity name="SurvivorMaleRanged1" prob="0.08"/>
+		<entity name="SurvivorMaleRanged2" prob="0.08"/>
+		<entity name="SurvivorMaleRanged3" prob="0.08"/>
+		<entity name="SurvivorMaleRanged4" prob="0.08"/>
+		<entity name="SurvivorMaleRanged5" prob="0.08"/>
 		<entity name="SurvivorFemaleMelee1"/>
 		<entity name="SurvivorFemaleMelee2"/>
 		<entity name="SurvivorFemaleMelee3"/>
 		<entity name="SurvivorFemaleMelee4"/>
 		<entity name="SurvivorFemaleMelee5"/>
-		<entity name="SurvivorFemaleRanged1" prob="0.006"/>
-		<entity name="SurvivorFemaleRanged2" prob="0.006"/>
-		<entity name="SurvivorFemaleRanged3" prob="0.006"/>
-		<entity name="SurvivorFemaleRanged4" prob="0.006"/>
-		<entity name="SurvivorFemaleRanged5" prob="0.006"/>
+		<entity name="SurvivorFemaleRanged1" prob="0.08"/>
+		<entity name="SurvivorFemaleRanged2" prob="0.08"/>
+		<entity name="SurvivorFemaleRanged3" prob="0.08"/>
+		<entity name="SurvivorFemaleRanged4" prob="0.08"/>
+		<entity name="SurvivorFemaleRanged5" prob="0.08"/>
 		<entity name="Kickz" prob="0.1"/>
 	</entitygroup>
 
@@ -655,7 +658,6 @@
 		<entity name="zombieCheerleaderFeral" />
 		<entity name="zombieDarleneFeral" />
 		<entity name="zombieFarmerFeral" />
-		<entity name="zombieFatCopFeral" />
 		<entity name="zombieFatHawaiianFeral" />
 		<entity name="zombieFemaleFatFeral" />
 		<entity name="zombieJoeFeral" />
@@ -708,7 +710,7 @@
 		<entity name="ZUMAJimmy" prob="0.1"/>
 		<entity name="ZUMAHugh" prob="0.1"/>
 		<entity name="ZUMARekt" prob="0.1"/>
-		<entity name="Crackpot" prob="0.1"/>
+		<entity name="Crackpot" prob="0.3"/>
 		<entity name="ZUMAGuardMale" />
 		<entity name="ZUMAGuardMale2" />
 		<entity name="ZUMAGuardMale3" />

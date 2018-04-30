@@ -467,3 +467,29 @@ challenge_biggamehunt_desc,,Quest Info,Reordered,"Big lady? Sounds like a behemo
 quest_civilianMastery,,Quest Info,KgNone,Civilian Class Mastery Book,,,,
 quest_civilianMastery_offer,,Quest Info,KeyCon KgNone,"This quest is a workaround to grant you +30 generic skill points as a reward for completing the civilian class. It will auto-complete on acceptance.",,,,
 quest_civilianMastery_subtitle,,Quest Info,Reordered,Gain Many Skill Points!,,,,
+
+quest_trader_supply1,,Quest Info,KgNone,Trader Supply (Easy),,,,
+quest_trader_supply1_offer,,Quest Info,KeyCon KgNone,"A settlement is not viable without basic food and water.\n\nGet out there fetch some!",,,,
+quest_trader_supply1_subtitle,,Quest Info,Reordered,Fetch Some Raw Meat And Canned Boiled Water,,,,.
+quest_trader_supply1_description,,Quest Info,Reordered,"Help keep everyone fed and hydrated. Fetch some raw meat and canned, boiled water.",,,,
+quest_trader_supply2,,Quest Info,KgNone,Trader Supply (Medium),,,,
+quest_trader_supply2_offer,,Quest Info,KeyCon KgNone,"A settlement is not viable without food and water.\n\nGet out there fetch some!",,,,
+quest_trader_supply2_subtitle,,Quest Info,Reordered,Fetch Some Grilled Meat And Bottled Boiled Water,,,,.
+quest_trader_supply2_description,,Quest Info,Reordered,"Help keep everyone fed and hydrated. Fetch some grilled meat and bottled, boiled water.",,,,
+quest_trader_supply3,,Quest Info,KgNone,Trader Supply (Hard),,,,
+quest_trader_supply3_offer,,Quest Info,KeyCon KgNone,"Everyone is fed up with the basic crap, they want better drinks and better food.\n\nGet out there fetch some!",,,,
+quest_trader_supply3_subtitle,,Quest Info,Reordered,Fetch Some Blueberry Pies And Goldenrod Tea.,,,,
+quest_trader_supply3_description,,Quest Info,Reordered,"Help keep everyone fed and hydrated. Fetch some blueberry pies and goldenrod tea.",,,,
+
+quest_trader_medical1,,Quest Info,KgNone,Trader Medical Supplies (Easy),,,,
+quest_trader_medical1_offer,,Quest Info,KeyCon KgNone,"A settlement is not viable without basic medical supplies.\n\nGet out there fetch some!",,,,
+quest_trader_medical1_subtitle,,Quest Info,Reordered,Fetch Some Splints And Sterile Bandages.,,,,.
+quest_trader_medical1_description,,Quest Info,Reordered,"Help keep everyone in good health. Fetch some splints and sterile bandages.",,,,
+quest_trader_medical2,,Quest Info,KgNone,Trader Medical Supplies (Medium),,,,
+quest_trader_medical2_offer,,Quest Info,KeyCon KgNone,"In the zombie apocalypse, more advanced medical items are needed.\n\nGet out there fetch some!",,,,
+quest_trader_medical2_subtitle,,Quest Info,Reordered,Fetch Some Honey And Painkillers,,,,.
+quest_trader_medical2_description,,Quest Info,Reordered,"Help keep everyone in good health. Fetch some honey and painkillers.",,,,
+quest_trader_medical3,,Quest Info,KgNone,Trader Medical Supplies (Hard),,,,
+quest_trader_medical3_offer,,Quest Info,KeyCon KgNone,"We need some good stocks of medical supplies for when the shit really hits the fan!\n\nGet out there fetch some!",,,,
+quest_trader_medical3_subtitle,,Quest Info,Reordered,Fetch Some Antibiotics And First Aid Bandages.,,,,
+quest_trader_medical3_description,,Quest Info,Reordered,"Help keep everyone in good health. Fetch some antibiotics and first aid bandages.",,,,

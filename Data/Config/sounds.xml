@@ -3367,7 +3367,7 @@
 
 
 
-	<SoundDataNode name="close_supply_crate"> <AudioSource name="Sounds/AudioSource_UseAction"/>
+<SoundDataNode name="close_supply_crate"> <AudioSource name="Sounds/AudioSource_UseAction"/>
 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/SupplyDrops/close_supply_crate"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
@@ -4765,6 +4765,183 @@
 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Electricity/Turret/Spinup"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="6"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+	
+<!-- Hornet Sounds -->
+
+<SoundDataNode name="hornetalert">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="2" range="7" volume="11" time="3" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="#Hornet?hornetalert1" />
+	<AudioClip ClipName="#Hornet?hornetalert2" />
+	<AudioClip ClipName="#Hornet?hornetalert3" />
+	<Channel name="Mouth" />
+	<Priority name="3" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+	
+<SoundDataNode name="hornetattack">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="1" range="4" volume="7" time="1.5" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="#Hornet?hornetattack1" />
+	<AudioClip ClipName="#Hornet?hornetattack2" />
+	<AudioClip ClipName="#Hornet?hornetattack3" />
+	<Channel name="Mouth" />
+	<Priority name="2" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+	
+<SoundDataNode name="hornetdeath">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="14" volume="16" time="2.5" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#Hornet?hornetdeath1" />
+	<AudioClip ClipName="#Hornet?hornetdeath2" />
+	<AudioClip ClipName="#Hornet?hornetdeath3" />
+	<Channel name="Mouth" />
+	<Priority name="0" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+	
+<SoundDataNode name="hornetgiveup">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="1" range="4" volume="7" time="3" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="#Hornet?hornetroam1" />
+	<Channel name="Mouth" />
+	<Priority name="5" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+	
+<SoundDataNode name="hornetpain">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="2" range="7" volume="11" time="1.5" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="#Hornet?hornetpain1" />
+	<AudioClip ClipName="#Hornet?hornetpain2" />
+	<AudioClip ClipName="#Hornet?hornetpain3" />
+	<Channel name="Mouth" />
+	<Priority name="1" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+	
+<SoundDataNode name="hornetroam">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="1" range="4" volume="7" time="14.6" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="#Hornet?hornetflylp1" />
+	<Channel name="Mouth" />
+	<Priority name="6" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+
+<SoundDataNode name="hornetsense">
+	<AudioSource name="Sounds/AudioSource_VO" />
+	<Noise ID="3" range="14" volume="16" time="4" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#Hornet?hornetsense1" />
+	<Channel name="Mouth" />
+	<Priority name="4" />
+	<LocalCrouchVolumeScale name="1.0" />
+	<CrouchNoiseScale name="0.5" />
+	<NoiseScale name="1" />
+	<MaxVoices name="10" />
+	<MaxRepeatRate name="0.9" />
+</SoundDataNode>
+
+<!-- Female Trader Test -->
+
+<SoundDataNode name="femaletraderlikegreeting"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" range="4" volume="7" time="1.5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_greeting_01"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_greeting_02"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_greeting_03"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femaletraderlikesaleaccepted"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" range="4" volume="7" time="1.5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_sale_accepted_01"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_sale_accepted_02"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femaletraderlikesaledeclined"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" range="4" volume="7" time="1.5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_sale_declined_01"/>
+	<AudioClip ClipName="#TraderCaitlin?trader_female_like_sale_declined_02"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+	
+<!-- Female Bandit Sound -->
+	
+<SoundDataNode name="femalehatealert"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_alert_01"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_alert_02"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femalehateattack"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_attack_01"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_attack_02"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femalehatedeath"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="Sounds/Player_Female/player2death1"/>
+	<AudioClip ClipName="Sounds/Player_Female/player2death2"/>
+	<AudioClip ClipName="Sounds/Player_Female/player2death3"/>
+	<AudioClip ClipName="Sounds/Player_Female/player2death4"/>
+	<AudioClip ClipName="Sounds/Player_Female/player2death5"/>
+	<AudioClip ClipName="Sounds/Player_Female/player2death6"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femalehatepain"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_pain_01"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_pain_02"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_pain_03"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_pain_04"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femalehateroam"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_roam_01"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_roam_02"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+
+<SoundDataNode name="femalehatesense"> <AudioSource name="Sounds/AudioSource_VO"/>
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#BanditFemale?female_hate_sense_01"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
+	
+<!-- Laser Rifle -->
+
+<SoundDataNode name="laserrifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="5" range="50" volume="20" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<AudioClip ClipName="#LaserRifle?LaserFire"/>
+	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+
+<!-- <SoundDataNode name="sniperrifle_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_reload"/>
+	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode> -->
 	
 <!-- Titanium Sound Test -->
 

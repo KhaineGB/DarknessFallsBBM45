@@ -1700,12 +1700,12 @@ parts44Magnum_cylinder,items,Part,KgNone,.44 Magnum Cylinder,Barillet de .44 mag
 parts44Magnum_frame,items,Part,KgNone,.44 Magnum Frame,Carcasse de .44 magnum,.44 Magnum Rahmen,,Armazón de Magnum 44
 parts44Magnum_grip,items,Part,KgNone,.44 Magnum Grip,Crosse de .44 magnum,.44 Magnum Griff,,Empuñadura de Magnum 44
 parts44Magnum_parts,items,Part,KgNone,.44 Magnum Parts,Pièces de .44 magnum,.44 Magnum Teile,,Partes de Magnum 44
-parts44MagnumGroupDesc,items,Part,KgNone,A part of the .44 Magnum. Assemble with other parts to create a complete revolver once you've read the Enforcer Magazine.,Une pièce de .44 magnum À assembler à d'autres pièces pour fabriquer un revolver une fois que vous avez lu le Magazine Enforcer.,"Ein Teil von einer .44 Magnum. Setze es mit den anderen Teilen zu einem Revolver zusammen, wenn du das Vollstrecker-Magazin gelesen hast.",,"Una parte de una Magnum 44. Una vez que has leído la Revista del sicario, ármala con otras partes para crear una pistola completa."
+parts44MagnumGroupDesc,items,Part,KgNone,A part of the .44 Magnum. Assemble with other parts to create a complete revolver once you've read the Enforcer Magazine.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de .44 magnum À assembler à d'autres pièces pour fabriquer un revolver une fois que vous avez lu le Magazine Enforcer.,"Ein Teil von einer .44 Magnum. Setze es mit den anderen Teilen zu einem Revolver zusammen, wenn du das Vollstrecker-Magazin gelesen hast.",,"Una parte de una Magnum 44. Una vez que has leído la Revista del sicario, ármala con otras partes para crear una pistola completa."
 partsAK47_barrel,items,Part,KgNone,AK-47 Barrel,Canon d'AK-47,AK-47 Lauf,,Cañón de AK-47
 partsAK47_parts,items,Part,KgNone,AK-47 Parts,Pièces d'AK-47,AK-47 Teile,,Partes de AK-47
 partsAK47_receiver,items,Part,KgNone,AK-47 Receiver,Carcasse d'AK-47,AK-47 Verschlussgehäuse,,Receptor de AK-47
 partsAK47_stock,items,Part,KgNone,AK-47 Stock,Crosse d'AK-47,AK-47 Schaft,,Cantonera de AK-47
-partsAK47GroupDesc,items,Part,KgNone,A part of the AK-47 Assault Rifle. Assemble with other parts to create a complete Ak-47 once you've read the schematic.,Une pièce du fusil d'assaut AK-47. À assembler à d'autres pièces pour fabriquer un fusil d'assaut AK-47 une fois que vous avez lu le schéma.,"Ein Teil von einem AK-47-Sturmgewehr. Setze es mit den anderen Teilen zu einer AK-47 zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de asalto AK-47. Una vez que hayas leído el esquema, ármala con otras partes para crear un AK-47 completo."
+partsAK47GroupDesc,items,Part,KgNone,A part of the AK-47 Assault Rifle. Assemble with other parts to create a complete Ak-47 once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce du fusil d'assaut AK-47. À assembler à d'autres pièces pour fabriquer un fusil d'assaut AK-47 une fois que vous avez lu le schéma.,"Ein Teil von einem AK-47-Sturmgewehr. Setze es mit den anderen Teilen zu einer AK-47 zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de asalto AK-47. Una vez que hayas leído el esquema, ármala con otras partes para crear un AK-47 completo."
 partsAuger_blade,items,Part,KgNone,Auger Blade,Foret de foreuse,Erdbohrer-Bohrkopf,,Cuchilla de barrena
 partsAuger_parts,items,Part,KgNone,Auger Parts,Pièces de foreuse,Erdbohrerteile,,Partes de la barrena
 partsAuger_partsDesc,items,Part,KgNone,A part of a an auger. Assemble with other parts to create a complete auger once you've read the schematic. \n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ],Une pièce de foreuse. À assembler à d'autres pièces pour fabriquer une foreuse complète une fois que vous avez lu le schéma.,"Ein Teil eines Erdbohrers. Setze es mit den anderen Teilen zu einem Erdbohrer zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un taladro. Una vez que has leído el esquema, ármalo con otras partes para crear un taladro completo."
@@ -1718,25 +1718,25 @@ partsHuntingRifle_barrel,items,Part,KgNone,Hunting Rifle Barrel,Canon de fusil d
 partsHuntingRifle_parts,items,Part,KgNone,Hunting Rifle Parts,Pièces de fusil de chasse,Jagdgewehrteile,,Partes del rifle de caza
 partsHuntingRifle_receiver,items,Part,KgNone,Hunting Rifle Receiver,Carcasse de fusil de chasse,Jagdgewehr-Verschlussgehäuse,,Receptor de rifle de caza
 partsHuntingRifle_stock,items,Part,KgNone,Hunting Rifle Stock,Crosse de fusil de chasse,Jagdgewehrschaft,,Cantonera de rifle de caza
-partsHuntingRifleGroupDesc,items,Part,KgNone,A part of the hunting rifle. Assemble with other parts to create a complete hunting rifle once you've read the schematic.,Une pièce de fusil de chasse. À assembler à d'autres pièces pour fabriquer un fusil de chasse une fois que vous avez lu le schéma.,"Ein Teil von einem Jagdgewehr. Setze es mit den anderen Teilen zu einem Jagdgewehr zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de caza. Una vez que has leído el esquema, ármala con otras partes para crear un rifle de caza completo."
+partsHuntingRifleGroupDesc,items,Part,KgNone,A part of the hunting rifle. Assemble with other parts to create a complete hunting rifle once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de fusil de chasse. À assembler à d'autres pièces pour fabriquer un fusil de chasse une fois que vous avez lu le schéma.,"Ein Teil von einem Jagdgewehr. Setze es mit den anderen Teilen zu einem Jagdgewehr zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de caza. Una vez que has leído el esquema, ármala con otras partes para crear un rifle de caza completo."
 partsMP5_barrel,items,Part,KgNone,SMG Barrel,Canon de mitraillette,Maschinenpistolenlauf,,Cañón de metralleta
 partsMP5_parts,items,Part,KgNone,SMG Parts,Pièces de mitraillette,Maschinenpistolenteile,,Partes de metralleta
 partsMP5_receiver,items,Part,KgNone,SMG Receiver,Carcasse de mitraillette,Maschinenpistolen-Verschlussgehäuse,,Receptor de metralleta
 partsMP5_stock,items,Part,KgNone,SMG Stock,Crosse de mitraillette,Maschinenpistolenschaft,,Cantonera de metralleta
-partsMP5GroupDesc,items,Part,KgNone,A part of the Submachine Gun. Assemble with other parts to create a complete SMG once you've read the schematic.,Une pièce de mitraillette. À assembler à d'autres pièces pour fabriquer une mitraillette une fois que vous avez lu le schéma.,"Ein Teil von einer Maschinenpistole. Setze es mit den anderen Teilen zu einer Maschinenpistole zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una metralleta. Una vez que has leído el esquema, ármala con otras partes para crear una metralleta completa."
+partsMP5GroupDesc,items,Part,KgNone,A part of the Submachine Gun. Assemble with other parts to create a complete SMG once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de mitraillette. À assembler à d'autres pièces pour fabriquer une mitraillette une fois que vous avez lu le schéma.,"Ein Teil von einer Maschinenpistole. Setze es mit den anderen Teilen zu einer Maschinenpistole zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una metralleta. Una vez que has leído el esquema, ármala con otras partes para crear una metralleta completa."
 partsPistol_barrel,items,Part,KgNone,Pistol Barrel,Canon de pistolet,Pistolenlauf,,Cañón de revólver
 partsPistol_grip,items,Part,KgNone,Pistol Grip,Crosse de pistolet,Pistolengriff,,Empuñadura de revólver
 partsPistol_parts,items,Part,KgNone,Pistol Parts,Pièces de pistolet,Pistolenteile,,Partes de revólver
 partsPistol_receiver,items,Part,KgNone,Pistol Receiver,Carcasse de pistolet,Pistolen-Verschlussgehäuse,,Receptor de revólver
-partsPistolGroupDesc,items,Part,KgNone,A part of the pistol. Assemble with other parts to create a complete pistol once you've read the pistol book.,Une pièce de pistolet. À assembler à d'autres pièces pour fabriquer un pistolet une fois que vous avez lu « Le livre des pistolets ».,"Ein Teil von einer Pistole. Setze es mit den anderen Teilen zu einer Pistole zusammen, wenn du das Buch „Pistolen“ gelesen hast.",,"Una parte de un revólver. Una vez que has leído el libro de la pistola, se puede armar con otras partes para crear un revólver completo."
+partsPistolGroupDesc,items,Part,KgNone,A part of the pistol. Assemble with other parts to create a complete pistol once you've read the pistol book.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de pistolet. À assembler à d'autres pièces pour fabriquer un pistolet une fois que vous avez lu « Le livre des pistolets ».,"Ein Teil von einer Pistole. Setze es mit den anderen Teilen zu einer Pistole zusammen, wenn du das Buch „Pistolen“ gelesen hast.",,"Una parte de un revólver. Una vez que has leído el libro de la pistola, se puede armar con otras partes para crear un revólver completo."
 partsPumpShotgun_barrel,items,Part,KgNone,Shotgun Long Barrel,Canon long de fusil à pompe,Langer Schrotflintenlauf,,Escopeta de largo alcance
 partsPumpShotgun_barrelShort,items,Part,KgNone,Shotgun Short Barrel,Canon court de fusil à pompe,Kurzer Schrotflintenlauf,,Cañón corto de escopeta
 partsPumpShotgun_parts,items,Part,KgNone,Shotgun Parts,Pièces de fusil à pompe,Schrotflintenteile,,Partes de escopeta
 partsPumpShotgun_receiver,items,Part,KgNone,Shotgun Receiver,Carcasse de fusil à pompe,Schrotflinten-Verschlussgehäuse,,Receptor de escopeta
 partsPumpShotgun_stock,items,Part,KgNone,Shotgun Stock,Crosse de fusil à pompe,Schrotflintenschaft,,Cantonera de escopeta
 partsPumpShotgun_stockShort,items,Part,KgNone,Shotgun Short Stock,Crosse courte de fusil à pompe,Kurzer Schrotflintenschaft,,Cantonera corta de escopeta
-partsPumpShotgunGroupDesc,items,Part,KgNone,A part of the long-barrel shotgun. Assemble with other parts to create a complete shotgun once you've read the shotgun schematic.,Une pièce de fusil à pompe à long canon. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le schéma de fusil à pompe.,"Ein Teil von einer Schrotflinte mit langem Lauf. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den Bauplan für Schrotflinten gelesen hast.",,"Una parte de una escopeta de largo alcance. Una vez que hayas leído el esquema de la escopeta, ármala con otras partes para crear una escopeta completa."
-partsPumpShotgunShortGroupDesc,items,Part,KgNone,A part of the sawed-off shotgun. Assemble with other parts to create a complete shotgun once you've read the schematic.,Une pièce de fusil à pompe à canon scié. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le schéma.,"Ein Teil von einer abgesägten Schrotflinte. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una escopeta recortada. Una vez que has leído el esquema, ármala con otras partes para crear una escopeta completa."
+partsPumpShotgunGroupDesc,items,Part,KgNone,A part of the long-barrel shotgun. Assemble with other parts to create a complete shotgun once you've read the shotgun schematic.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de fusil à pompe à long canon. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le schéma de fusil à pompe.,"Ein Teil von einer Schrotflinte mit langem Lauf. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den Bauplan für Schrotflinten gelesen hast.",,"Una parte de una escopeta de largo alcance. Una vez que hayas leído el esquema de la escopeta, ármala con otras partes para crear una escopeta completa."
+partsPumpShotgunShortGroupDesc,items,Part,KgNone,A part of the sawed-off shotgun. Assemble with other parts to create a complete shotgun once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de fusil à pompe à canon scié. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le schéma.,"Ein Teil von einer abgesägten Schrotflinte. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una escopeta recortada. Una vez que has leído el esquema, ármala con otras partes para crear una escopeta completa."
 partsRocketLauncher_barrel,items,Part,KgNone,Rocket Launcher Barrel,Canon de lance-roquettes,Raketenwerferlauf,,Tubo del lanzacohetes
 partsRocketLauncher_parts,items,Part,KgNone,Rocket Launcher Parts,Pièces de lance-roquettes,Raketenwerferteile,,Partes de lanzacohetes
 partsRocketLauncher_receiver,items,Part,KgNone,Rocket Launcher Receiver,Carcasse de lance-roquettes,Raketenwerfer-Verschlussgehäuse,,Receptor de lanzacohetes
@@ -1746,7 +1746,7 @@ partsSniperRifle_barrel,items,Part,KgNone,Sniper Rifle Barrel,Canon de fusil de 
 partsSniperRifle_parts,items,Part,KgNone,Sniper Rifle Parts,Pièces de fusil de précision,Scharfschützengewehrteile,,Partes de rifle de francotirador
 partsSniperRifle_receiver,items,Part,KgNone,Sniper Rifle Receiver,Carcasse de fusil de précision,Scharfschützen-Verschlussgehäuse,,Receptor de rifle de francotirador
 partsSniperRifle_stock,items,Part,KgNone,Sniper Rifle Stock,Crosse de fusil de précision,Scharfschützengewehrschaft,,Cantonera de rifle de francotirador
-partsSniperRifleGroupDesc,items,Part,KgNone,A part of the sniper rifle. Assemble with other parts to create a complete sniper rifle once you've read the schematic.,Une pièce de fusil de précision. À assembler à d'autres pièces pour fabriquer un fusil de précision une fois que vous avez lu le schéma.,"Ein Teil von einem Scharfschützengewehr. Setze es mit den anderen Teilen zu einem Scharfschützengewehr zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de francotirador. Una vez que has leído el esquema, ármala con otras partes para crear un rifle de francotirador completo."
+partsSniperRifleGroupDesc,items,Part,KgNone,A part of the sniper rifle. Assemble with other parts to create a complete sniper rifle once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],Une pièce de fusil de précision. À assembler à d'autres pièces pour fabriquer un fusil de précision une fois que vous avez lu le schéma.,"Ein Teil von einem Scharfschützengewehr. Setze es mit den anderen Teilen zu einem Scharfschützengewehr zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de francotirador. Una vez que has leído el esquema, ármala con otras partes para crear un rifle de francotirador completo."
 shoppingBasketItem,items,Part,KgNone,Shopping Basket,Panier à provisions,Einkaufskorb,,Cesto de compras
 shoppingBasketItemDesc,items,Part,KgNone,A shopping basket can be used to add storage to minibikes.,Un panier à provisions permet d'ajouter un espace de stockage aux mini-motos.,Ein Einkaufskorb für mehr Platz auf dem Taschenmotorrad.,,Se puede usar un cesto de compras para agregar un espacio de almacenamiento a las minimotos.
 smallEngine,items,Part,KgNone,Small Engine,Petit moteur,Kleiner Motor,,Motor pequeño
@@ -3749,6 +3749,7 @@ npcTraderJimmy,entityclasses,Entity,New,Trader Jimmy,,,,
 npcTraderJoel,entityclasses,Entity,New,Trader Joel,,,,
 npcTraderRekt,entityclasses,Entity,New,Trader Rekt,,,,
 npcTraderTest,entityclasses,Entity,New,Trader Test,,,,
+npcTraderCaitlin,entityclasses,Entity,New,Trader Caitlin,,,,
 Trader,entityclasses,Entity,New,Trader,,,,
 steelDart,items,Ammo,New,Iron Dart (Ammo),,Eisengeschoss (Mun),,
 steelDartDesc,items,Ammo,New,Used as ammunition for traps.\n[Crafting Area: [ff0000]Advanced Forge[-] ],,,,
@@ -5090,11 +5091,11 @@ sugarRushTooltip,buffs,Buff,KgNone,A short-term boost of energy.,,,,
 gunP225,items,Item Gun,KgNone,P225 Pistol,,,,
 gunP225Desc,items,Item Gun,KgNone,Pistol that uses 9mm and 9mm HP ammo. More accurate than the standard pistol and has a larger magazine.,,,,
 gunAR15,items,Item Gun,KgNone,AR15 Semi-Auto Rifle,,,,
-gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets.,,,,
-gunCAWSShotgun,items,Item Gun,KgNone,CAWS Automatic Shotgun,,,,
-gunCAWSShotgunDesc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of shotgun slugs.,,,,
+gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. Uses 7.62mm rounds.,,,,
+gunCAWSShotgun,items,Item Gun,KgNone,Combat Shotgun,,,,
+gunCAWSShotgunDesc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of shotgun shells or slugs.,,,,
 gunWinchesterRifle,items,Item Gun,KgNone,Winchester .44 Rifle,,,,
-gunWinchesterRifleDesc,items,Item Gun,KgNone,Greater stopping power than a standard rifle with a larger magazine.,,,,
+gunWinchesterRifleDesc,items,Item Gun,KgNone,Greater stopping power than a standard rifle with a larger magazine. Uses 44 magnum rounds.,,,,
 partsP225_grip,items,Part,KgNone,P225 Grip,,,,
 partsP225_receiver,items,Part,KgNone,P225 Receiver,,,,
 partsP225_parts,items,Part,KgNone,P225 Parts,,,,
@@ -5111,10 +5112,10 @@ partsWinchesterRifle_stock,items,Part,KgNone,Winchester Rifle Stock,,,,
 partsWinchesterRifle_receiver,items,Part,KgNone,Winchester Rifle Receiver,,,,
 partsWinchesterRifle_parts,items,Part,KgNone,Winchester Rifle Parts,,,,
 partsWinchesterRifle_barrel,items,Part,KgNone,Winchester Rifle Barrel,,,,
-partsWinchesterRifleGroupDesc,items,Part,KgNone,A part of the winchester rifle. Assemble with other parts to create a complete winchester rifle once you've read the schematic.,,,,
-partsCAWSShotgunGroupDesc,items,Part,KgNone,A part of the CAWS Automatic Shotgun. Assemble with other parts to create a complete CAWS once you've read the schematic.,,,,
-partsAR15GroupDesc,items,Part,KgNone,A part of the AR-15 automatic rifle. Assemble with other parts to create a complete AR-15 once you've read the schematic.,,,,
-partsP225GroupDesc,items,Part,KgNone,A part of the P225 pistol. Assemble with other parts to create a complete P225 once you've read the schematic.,,,,
+partsWinchesterRifleGroupDesc,items,Part,KgNone,A part of the winchester rifle. Assemble with other parts to create a complete winchester rifle once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],,,,
+partsCAWSShotgunGroupDesc,items,Part,KgNone,A part of the Combat Shotgun. Assemble with other parts to create a complete CAWS once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],,,,
+partsAR15GroupDesc,items,Part,KgNone,A part of the AR-15 automatic rifle. Assemble with other parts to create a complete AR-15 once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],,,,
+partsP225GroupDesc,items,Part,KgNone,A part of the P225 pistol. Assemble with other parts to create a complete P225 once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],,,,
 9mmBulletHP,items,Item Gun,KgNone,9mm Hollow Point Bullet,,,,
 9mmBulletHPDesc,items,Item Gun,KgNone,These bullets have had their points hollowed out to maximize impact damage.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ],,,,
 44MagBulletHP,items,Item Gun,KgNone,44. Magnum Hollow Point Bullet,,,,
@@ -5129,8 +5130,8 @@ P225Schematic,items,Book,New,P225 Pistol Schematic,,,,
 P225SchematicDesc,items,Book,New,Notes on how to assemble and maintain the P225 pistol.,,,,
 AR15Schematic,items,Book,New,AR15 Rifle Schematic,,,,
 AR15SchematicDesc,items,Book,New,Notes on how to assemble and maintain the AR15 Rifle.,,,,
-CAWSShotgunSchematic,items,Book,New,CAWS Shotgun Schematic,,,,
-CAWSShotgunSchematicDesc,items,Book,New,Notes on how to assemble and maintain the CAWS Automatic Shotgun.,,,,
+CAWSShotgunSchematicDesc,items,Book,New,Notes on how to assemble and maintain the Combat Shotgun Shotgun.,,,,
+CAWSShotgunSchematic,items,Book,New,Combat Shotgun Schematic,,,,
 WinchesterRifleSchematic,items,Book,New,Winchester Rifle Schematic,,,,
 WinchesterRifleSchematicDesc,items,Book,New,Notes on how to assemble and maintain the Winchester Rifle.,,,,
 SteelArmorTitle,progression,Skill,,Steel Armor,,,,
@@ -5262,7 +5263,7 @@ ZUMAChildMaleFeral2,entityclasses,Entity,KgNone,Feral Festering Kid,,,,
 ZUMAChildMaleFeral3,entityclasses,Entity,KgNone,Feral Tough Teen,,,,
 ZUMABehemothFemale,entityclasses,Entity,KgNone,Zombie Behemoth,,,,
 ZUMABehemothFemaleRadiated,entityclasses,Entity,KgNone,Radiated Behemoth,,,,
-cncMachine,blocks,Workstation,KgNone,Portable CNC Machine,,,,
+cncMachine,blocks,Workstation,KgNone,Portable Lathe,,,,
 cncMachineDesc,blocks,Workstation,EnChanged,"Portable is relative in this instance, because it's still huge. Used for making gun parts.",,,,
 macDyverBook,items,Book,KgNone,MacDyvers Book,« Le livre de MacDyver »,Buch „MacDyver“,,El libro de MacDyver
 macDyverBookDesc,items,Book,KgNone,Learn MacDyver's secret to making your own gun mods by reading this gem by the king of made-up stuff.,,,,
@@ -5631,3 +5632,123 @@ ironKnuckles,items,Item KgNone,,Iron Knuckles,,,,
 ironKnucklesDesc,items,Item,KgNone,Bits of metal glued to cloth and then used to augment punches. Better than a bare hand. \n[Crafting Area: [ff0000]Backpack or Workbench[-] ],,,,
 spikedKnuckles,items,Item KgNone,,Spiked Knuckles,,,,
 spikedKnucklesDesc,items,Item,KgNone,"Now that's more like it! Properly forged, shaped and then had nails stuck to the result. Quite a bit more deadly than the iron knuckles. \n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ]",,,,
+seedBanana,items,Item,KgNone,Banana Seed,,,,
+seedBananaDesc,items,Item,KgNone,Banana seeds. They grow Banana trees.\n[Crafting Area: [ff0000]Backpack or Mortar & Pestle[-] ],,,,
+Banana,items,Item,KgNone,Banana,,,,
+BananaDesc,items,Item,KgNone,Good source of potassium. Probably a good idea in the apocalypse.,,,,
+seedTomato,items,Item,KgNone,Tomato Seed,,,,
+seedTomatoDesc,items,Item,KgNone,Tomato seeds. They grow Tomato plants.\n[Crafting Area: [ff0000]Backpack or Mortar & Pestle[-] ],,,,
+Tomato,items,Item,KgNone,Tomato,,,,
+TomatoDesc,items,Item,KgNone,Get a few more of these and you could probably make a nice bolognaise!,,,,
+seedCoconut,items,Item,KgNone,Coconut Seed,,,,
+sseedCoconutDesc,items,Item,KgNone,Coconut seeds. They grow Coconut trees.\n[Crafting Area: [ff0000]Backpack or Mortar & Pestle[-] ],,,,
+Coconut,items,Item,KgNone,Coconut,,,,
+CoconutDesc,items,Item,KgNone,Good source of fluids and food.,,,,
+seedOrange,items,Item,KgNone,Orange Seed,,,,
+seedOrangeDesc,items,Item,KgNone,Orange seeds. They grow Orange trees.\n[Crafting Area: [ff0000]Backpack or Mortar & Pestle[-] ],,,,
+Orange,items,Item,KgNone,Orange,,,,
+OrangeDesc,items,Item,KgNone,Vitamin C was important before the apocalypse. Its probably even more important now.,,,,
+bedrollDesc,blocks,Block,KgNone,Placing it on the ground will let you spawn there when you die and then show the spot on your map. \n[Crafting Area: [ff0000]Backpack or Workbench[-] ],,,,
+FloorPillow,blocks,Block,KgNone,Floor Pillow,,,,
+pillowDesc,blocks,Block,KgNone,Nice and comfy to sit on while you work! Should help to keep you rested \n[Crafting Area: [ff0000]Tailor Workstation[-] ]\n[Tool: [0000ff]Sewing Kit[-] ],,,,
+grilledYucca,items,Item,KgNone,Grilled Yucca,,,,
+grilledYuccaDesc,items,Item,KgNone,"Doesn't hydrate you like the raw stuff, but it won't give you the shits."\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ],,,,
+sugarSickDesc,buffs,Buff,New,Remember when you ate too much sugary crap as a kid and made yourself sick? This is the same thing.,,,,
+sugarSickName,buffs,Buff,New,Sugar Sickness,,,,
+sugarSickTooltip,buffs,Buff,New,You are not feeling well.,,,,
+yuccaSickDesc,buffs,Buff,New,Uncooked yucca fruit is a great emergency food source. The key word there is emergency since too much of it is a laxative. Now you know why you have brown pants.,,,,
+yuccaSickName,buffs,Buff,New,Green Apple Splatters,,,,
+yuccaSickTooltip,buffs,Buff,New,Your guts feel terrible.,,,,
+yuccaWarningDesc,buffs,Buff,New,Uncooked yucca fruit is a great emergency food source. The key word there is emergency since too much of it is a laxative. You may want to ease up on the yucca before you get sick.,,,,
+yuccaWarningName,buffs,Buff,New,Icky Guts,,,,
+yuccaWarningTooltip,buffs,Buff,New,Your guts are starting to hurt.,,,,
+sapWarningDesc,buffs,Buff,New,You are starting to feel sick from too much sugary goodness. Might wanna lay off the sap.,,,,
+sapWarningName,buffs,Buff,New,Sugary Nausea,,,,
+sapWarningTooltip,buffs,Buff,New,Your stomach is getting a little unsettled.,,,,
+tomatoJuice,items,Item,KgNone,Tomato Juice,,,,
+tomatoJuiceDesc,items,Item,KgNone,Great source of hydration and it's good for you!\n[Crafting Area: [ff0000]Mortar and Pestle[-] ],,,,
+appleJuice,items,Item,KgNone,Apple Juice,,,,
+appleJuiceDesc,items,Item,KgNone,Great source of hydration and it's good for you!\n[Crafting Area: [ff0000]Mortar and Pestle[-] ],,,,
+orangeJuice,items,Item,KgNone,Orange Juice,,,,
+orangeJuiceDesc,items,Item,KgNone,Great source of hydration and it's good for you!\n[Crafting Area: [ff0000]Mortar and Pestle[-] ],,,,
+coconutWater,items,Item,KgNone,Coconut Water,,,,
+coconutWaterDesc,items,Item,KgNone,Amazing source of hydration and it's good for you!\n[Crafting Area: [ff0000]Backpack or Workbench[-] ],,,,
+fruitSalad,items,Item,KgNone,Fruit Salad,,,,
+fruitSaladDesc,items,Item,KgNone,"Easy to make, fills you up and it's good for you!"\n[Crafting Area: [ff0000]Backpack or Workbench[-] ],,,,
+bakedApple,items,Item,KgNone,Baked Apple,,,,
+bakedAppleDesc,items,Item,KgNone,"Easy to make, more filling than a normal apple and it's good for you!\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ]",,,,
+stickyApple,items,Item,KgNone,Sticky Apple,,,,
+stickyAppleDesc,items,Item,KgNone,"Gives you a nice sugar rush with no penalties.\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ]",,,,
+bananaBread,items,Item,KgNone,Banana Bread,,,,
+bananaBreadDesc,items,Item,KgNone,Good alternative to normal bread. It's good for you to boot!\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ],,,,
+bananaPancakes,items,Item,KgNone,Banana Pancakes,,,,
+bananaPancakesDesc,items,Item,KgNone,Who doesnt love pancakes for breakfast?.\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ],,,,
+orangeMarmalade,items,Item,KgNone,Orange Marmalade,,,,
+orangeMarmaladeDesc,items,Item,KgNone,Tangy and goes on your toast for breakfast. Can also be eaten straight from the jar like some kind of savage.\n[Crafting Area: [ff0000]Oven[-] ],,,,
+marmaladeToast,items,Item,KgNone,Marmalade on Toast,,,,
+marmaladeToastDesc,items,Item,KgNone,"A very traditional, english breakfast. Yum!\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Grill[-] ]",,,,
+orangeTea,items,Item,KgNone,Orange Tea,,,,
+orangeTeaDesc,items,Item,KgNone,A good source of vitamins and it'll cure the shits.\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ],,,,
+Pasta,items,Item,KgNone,Pasta,,,,
+PastaDesc,items,Item,KgNone,"Made from fresh dough. Can be eaten as-is or used in a bolognese.\n[Crafting Area: [ff0000]Backpack or Workbench[-] ]",,,,
+veggieBolognaise,items,Item,KgNone,Vegetable Bolognese,,,,
+veggieBolognaiseDesc,items,Item,KgNone,Pasta and veggies covered in tomato sauce. Filling and good for you!\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ],,,,
+meatBolognaise,items,Item,KgNone,Meat Bolognese,,,,
+meatBolognaiseDesc,items,Item,KgNone,Pasta and meat covered in tomato sauce. Filling and good for you!\n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ],,,,
+questTraderSupply1,items,Quest Note,KgNone,Trader Supply (Easy),,,,
+questTraderSupply1Desc,items,Quest Note,KgNone,Fetch some supplies for the trader and be rewarded.,,,,
+questTraderSupply2,items,Quest Note,KgNone,Trader Supply (Medium),,,,
+questTraderSupply2Desc,items,Quest Note,KgNone,Fetch some supplies for the trader and be rewarded.,,,,
+questTraderSupply3,items,Quest Note,KgNone,Trader Supply (Hard),,,,
+questTraderSupply3Desc,items,Quest Note,KgNone,Fetch some supplies for the trader and be rewarded.,,,,
+questTraderMedical1,items,Quest Note,KgNone,Trader Medical Supplies (Easy),,,,
+questTraderMedical1Desc,items,Quest Note,KgNone,Fetch some medical supplies for the trader and be rewarded.,,,,
+questTraderMedical2,items,Quest Note,KgNone,Trader Medical Supplies (Medium),,,,
+questTraderMedical2Desc,items,Quest Note,KgNone,Fetch some medical supplies for the trader and be rewarded.,,,,
+questTraderMedical3,items,Quest Note,KgNone,Trader Medical Supplies (Hard),,,,
+questTraderMedical3Desc,items,Quest Note,KgNone,Fetch some medical supplies for the trader and be rewarded.,,,,
+titaniumKnuckles,items,Item KgNone,,Titanium Knuckles,,,,
+titaniumKnucklesDesc,items,Item,KgNone,Bits of titanium glued to cloth and then used to augment punches. Way better than the iron knuckles. \n[Crafting Area: [ff0000]Workbench[-] ]\n[Tool: [0000ff]Clawhammer[-] ],,,,
+titaniumSpikedKnuckles,items,Item KgNone,,Titanium Spiked Knuckles,,,,
+titaniumSpikedKnucklesDesc,items,Item,KgNone,"Now that's more like it! Properly forged and shaped out of titanium, then had nails stuck to the result. Pretty nasty. \n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ]",,,,
+superDynamite,blocks,Block,KgNone,Super Dynamite,,,,
+superDynamiteDesc,blocks,Block,KgNone,"Will absolutely destroy whatever building block it's attached to, and possibly the nearby ones as well. \n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ]",,,,
+ConstructionMastery,progression,Perk,KgNone,Construction Mastery,,,,
+ConstructionMasteryDesc,progression,Perk,KgNone,You have mastered the Construction class. Well done!,,,,
+HunterMastery,progression,Perk,KgNone,Hunter Mastery,,,,
+HunterMasteryDesc,progression,Perk,KgNone,You have mastered the Hunter class. Well done!,,,,
+FarmerMastery,progression,Perk,KgNone,Farmer Mastery,,,,
+FarmerMasteryDesc,progression,Perk,KgNone,You have mastered the Farmer class. Well done!,,,,
+MinerMastery,progression,Perk,KgNone,Miner Mastery,,,,
+MinerMasteryDesc,progression,Perk,KgNone,You have mastered the Miner class. Well done!,,,,
+MechanicMastery,progression,Perk,KgNone,Mechanic Mastery,,,,
+MechanicMasteryDesc,progression,Perk,KgNone,You have mastered the Mechanic class. Well done!,,,,
+ScientistMastery,progression,Perk,KgNone,Scientist Mastery,,,,
+ScientistMasteryDesc,progression,Perk,KgNone,You have mastered the Scientist class. Well done!,,,,
+SecurityMastery,progression,Perk,KgNone,Security Mastery,,,,
+SecurityMasteryDesc,progression,Perk,KgNone,You have mastered the Security class. Well done!,,,,
+SurvivalistMastery,progression,Perk,KgNone,Survivalist Mastery,,,,
+SurvivalistMasteryDesc,progression,Perk,KgNone,You have mastered the Survivalist class. Well done!,,,,
+naturalvitsDesc,buffs,Buff,New,Natural vitamins come from fruit or veg. They are necessary in any diet to combat the onset of scurvy.,,,,
+naturalvitsName,buffs,Buff,New,Natural Vitamins,,,,
+naturalvitsTooltip,buffs,Buff,New,You just ate some fruit or veg. That should keep scurvy away.,,,,
+proteinDesc,buffs,Buff,New,You just ate food with a high protein content. That should keep your body going!,,,,
+proteinName,buffs,Buff,New,High Protein Meal,,,,
+proteinTooltip,buffs,Buff,New,You just ate food with a high protein content. That should keep your body going!,,,,
+scurvyDesc,buffs,Buff,New,"You're showing signs of scurvy. Eat some fruit or veg!",,,,
+scurvyName,buffs,Buff,New,Scurvy,,,,
+scurvyTooltip,buffs,Buff,New,"You're showing signs of scurvy. Eat fruit or veg!",,,,
+PDDDesc,buffs,Buff,New,"You're showing signs of protein deficiency! Eat some meat or eggs!",,,,
+PDDName,buffs,Buff,New,Protein Deficiency,,,,
+PDDTooltip,buffs,Buff,New,"You're showing signs of protein deficiency! Eat some meat or eggs!",,,,
+sleepyDesc,buffs,Buff,New,You are starting to get tired. You should consider some rest.,,,,
+sleepyName,buffs,Buff,New,Sleepy,,,,
+sleepyTooltip,buffs,Buff,New,You feel a bit tired,,,,
+fatiguedDesc,buffs,Buff,New,You are exhausted. Time to hit the sack!,,,,
+fatiguedName,buffs,Buff,New,Exhausted,,,,
+fatiguedTooltip,buffs,Buff,New,You are exhausted,,,,
+sleepdeprivedDesc,buffs,Buff,New,You are that tired it is hard to tell the difference between you and a zombie. GO TO BED!,,,,
+sleepdeprivedName,buffs,Buff,New,Sleep Deprived,,,,
+sleepdeprivedTooltip,buffs,Buff,New,You are experiencing sleep deprevation,,,,
+Grenade,items,Item,KgNone,Grenade,,,,
+GrenadeDesc,items,Item,KgNone,Military-grade munitions are the best munitions! Designed to blow apart people and zombies.,,,,

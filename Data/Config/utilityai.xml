@@ -92,6 +92,27 @@
 			</action>
 		</ai_package>
 		
+		<ai_package name="Human Basic"> <!-- Basic AI -->
+			<action name="Wander" weight="1">
+				<task class="Wander"/>
+			</action>
+			
+			<action name="MoveToWaypoint" weight="1">
+				<task class="MoveToTarget" run="false"/>
+				
+				<consideration class="TargetDistance" min="2" max="4"/>
+				<consideration class="TargetVisible" flip_y="true"/>
+			</action>
+			
+			<action name="Flee" weight="4">
+				<task class="FleeFromTarget" max_distance="10"/>
+				
+				<consideration class="SelfHealth" flip_y="true" min="20" max="30"/>
+				<consideration class="TargetFactionStanding" flip_y="true" max="127"/>
+				<consideration class="TargetDistance" flip_y="true" min="4" max="5"/>
+			</action>
+		</ai_package>
+		
 		<ai_package name="Human Melee"> <!-- Melee Attack AI -->
 			<action name="MoveToEnemy" weight="2">
 				<task class="MoveToTarget" run="false"/>
@@ -145,6 +166,7 @@
 			</action>
 		</ai_package>
 	</ai_packages>
+
 </utility_ai>
 
 

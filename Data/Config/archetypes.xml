@@ -3742,7 +3742,7 @@
 			<gene name="breastSize" value="0"/>
 		</dna>
 	</archetype>
-	<archetype name="TraderCaitlin" male="false" hair_color="90,35,23" eye_color="70,80,70" skin_color="200,200,200" type="None" stance="Like" voice_set="trader">
+	<archetype name="TraderCaitlin" male="false" hair_color="90,35,23" eye_color="70,80,70" skin_color="200,200,200" type="None" stance="Like" voice_set="femaletrader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="female_base_face">
 				<texture name="female_head" color="skin"/>

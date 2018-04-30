@@ -141,7 +141,7 @@
 	<property name="MaxViewAngle" value="180"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="Weight" value="70"/>
-	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
+	<property name="Immunity" value="sickness;disease;bleeding"/>
 
 	<property name="WanderSpeed" value="0.08"/>
 	<property name="ApproachSpeed" value="0.2"/>
@@ -3481,7 +3481,7 @@
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="Minibike"/>
 	<property name="MaxHealth" value="1000000"/>
-	<property name="Immunity" value="sickness;disease;bleeding"/>
+	<property name="Buffs" value="radcuredminibike"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
 	<property name="LootListAlive" value="62"/>
@@ -3492,6 +3492,7 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
 </entity_class>
 
 	<!--entity_class name="driveablecar">
@@ -3676,6 +3677,11 @@
 	<property name="NPCID" value="traderric"/>
 </entity_class>
 
+<entity_class name="npcTraderCaitlin" extends="npcTraderTemplate">
+	<property name="Archetype" value="TraderCaitlin"/>
+	<property name="NPCID" value="tradercaitlin"/>
+</entity_class>
+
 <!-- Bandit Mod --> 
 
 <entity_class name="invisibleBandit"> <!-- A hack to thin the amount of animals spawned (enemy animals) -->
@@ -3814,6 +3820,14 @@
 	
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
+	    <!-- Sounds -->
+    <property name="SoundRandomTime" value="200.0"/>
+    <property name="SoundRandom" value="femalehateroam"/>
+    <property name="SoundAlert" value="femalehatealert"/>
+    <property name="SoundSense" value="femalehatesense"/>
+    <property name="SoundHurt" value="femalehatepain"/>
+    <property name="SoundDeath" value="femalehatedeath"/>
+    <property name="SoundAttack" value="femalehateattack"/>
 </entity_class>
 
 <entity_class name="BanditFemaleMelee2" extends="BanditFemaleMelee">
@@ -3836,10 +3850,11 @@
 
 <entity_class name="BanditRanged" extends="BanditTemplate">
 	<property name="Archetype" value="BanditRanged"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunPistol,npc9mmBullet"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunPistol,npc9mmBullet"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npccrossbow,npcironCrossbowBolt"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npccrossbow,npcironCrossbowBolt"/>
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
+	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
 </entity_class>
 
@@ -3860,10 +3875,11 @@
 
 <entity_class name="BanditFemaleRanged" extends="BanditTemplate">
 	<property name="Archetype" value="BanditFemaleRanged"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunPistol,npc9mmBullet"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunPistol,npc9mmBullet"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npccrossbow,npcironCrossbowBolt"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npccrossbow,npcironCrossbowBolt"/>
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
+	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
 </entity_class>
 
@@ -3882,6 +3898,56 @@
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
 </entity_class>
 
+<entity_class name="BanditRangedWasteland" extends="BanditTemplate">
+	<property name="Archetype" value="BanditRanged"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunPistol,npc9mmBullet"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunPistol,npc9mmBullet"/>
+	<property name="AttackTimeoutDay" value="0.5"/>
+	<property name="AttackTimeoutNight" value="0.5"/>
+	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditRangedWasteland2" extends="BanditRangedWasteland">
+	<property name="Archetype" value="BanditRanged2"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditRangedWasteland3" extends="BanditRangedWasteland">
+	<property name="Archetype" value="BanditRanged3"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditRangedWasteland4" extends="BanditRangedWasteland">
+	<property name="Archetype" value="BanditRanged4"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditFemaleRangedWasteland" extends="BanditTemplate">
+	<property name="Archetype" value="BanditFemaleRanged"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunPistol,npc9mmBullet"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunPistol,npc9mmBullet"/>
+	<property name="AttackTimeoutDay" value="0.5"/>
+	<property name="AttackTimeoutNight" value="0.5"/>
+	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditFemaleRangedWasteland2" extends="BanditFemaleRangedWasteland">
+	<property name="Archetype" value="BanditFemaleRanged2"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditFemaleRangedWasteland3" extends="BanditFemaleRangedWasteland">
+	<property name="Archetype" value="BanditFemaleRanged3"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
+<entity_class name="BanditFemaleRangedWasteland4" extends="BanditFemaleRangedWasteland">
+	<property name="Archetype" value="BanditFemaleRanged4"/>
+    <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+</entity_class>
+
 <entity_class name="BanditLeader" extends="BanditTemplate">
 	<property name="Archetype" value="BanditLeader"/>
 	<property name="MaxHealth" value="500"/>
@@ -3891,6 +3957,7 @@
 	<property name="LootListOnDeath" value="72"/>	
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
+	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock7Prefab"/>
 </entity_class>
 
@@ -3908,6 +3975,7 @@
 	<property name="LootListOnDeath" value="72"/>	
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
+	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock7Prefab"/>
 </entity_class>
 
@@ -3947,16 +4015,15 @@
     <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombieCop"/>
     <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog"/>
     <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCrawl"/>
-    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
-    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
-    <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
-    <property name="AITask-11" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/>
-	<property name="AITask-12" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-    <property name="AITask-13" value="BreakDoor" />
-    <property name="AITask-14" value="BreakBlock" />
-    <property name="AITask-15" value="Swim"/>
-    <property name="AITask-16" value="ApproachSpot"/>
-    <property name="AITask-17" value="Wander"/>
+    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
+    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/>
+	<property name="AITask-11" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+    <property name="AITask-12" value="BreakDoor" />
+    <property name="AITask-13" value="BreakBlock" />
+    <property name="AITask-14" value="Swim"/>
+    <property name="AITask-15" value="ApproachSpot"/>
+    <property name="AITask-16" value="Wander"/>
     <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
     <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop"/>
     <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieDog"/>
@@ -3967,16 +4034,14 @@
     <property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityAnimalStag"/>
     <property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityAnimalRabbit"/>
     <property name="AITarget-10" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>
-    <!-- <property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityPlayer"/> -->
-    <property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
-    <property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieCop"/>
-    <property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieDog"/>
-    <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl"/>
-    <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet"/>
-    <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear"/>
-    <property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
-    <property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit"/>
-    <property name="AITarget-20" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
+    <property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+    <property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombieCop"/>
+    <property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieDog"/>
+    <property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl"/>
+    <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityHornet"/>
+    <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityAnimalBear"/>
+    <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
+    <property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit"/>
     <!-- Movement -->
     <property name="WanderSpeed" value="0.5"/>
     <property name="ApproachSpeed" value="1"/>
@@ -4321,7 +4386,7 @@
     <property name="Prefab" value="NPC"/>
 	<property name="Parent" value="Players"/>
     <property name="HasRagdoll" value="true"/>
-    <property name="IsEnemyEntity" value="true"/>
+    <property name="IsEnemyEntity" value="false"/>
     <property name="SurfaceCategory" value="organic"/>
     <property name="ParticleOnDeath" value="blood_death"/>
     <!-- AI -->
@@ -4333,15 +4398,7 @@
     <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog"/>
     <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCrawl"/>
     <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet"/>
-    <!-- <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
-    <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
-    <property name="AITask-11" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/> 
-	<property name="AITask-12" value="ApproachAndAttackTarget" param1="EntityPlayer"/>  -->
-    <!-- <property name="AITask-13" value="BreakDoor" />
-    <property name="AITask-14" value="BreakBlock" />
-    <property name="AITask-15" value="Swim"/> -->
-    <property name="AITask-16" value="ApproachSpot"/>
-    <!-- <property name="AITask-17" value="Wander"/> -->
+    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
     <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
     <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop"/>
     <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieDog"/>
@@ -4393,7 +4450,7 @@
     <property name="DeadBodyHitPoints" value="20"/>
     <property name="HasDeathAnim" value="true"/>
     <property name="Weight" value="70"/>
-    <property name="SightRange" value="200"/>
+    <property name="SightRange" value="400"/>
     <property name="SightScale" value="-2,50"/>
 </entity_class>
 
@@ -4899,16 +4956,15 @@
     <property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityAnimalStag"/>
     <property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityAnimalRabbit"/>
     <property name="AITarget-10" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>
-    <!-- <property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityPlayer"/> -->
-    <property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
-    <property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieCop"/>
-    <property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieDog"/>
-    <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl"/>
-    <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet"/>
-    <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear"/>
-    <property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
-    <property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit"/>
-    <property name="AITarget-20" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
+    <property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+    <property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombieCop"/>
+    <property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieDog"/>
+    <property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl"/>
+    <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityHornet"/>
+    <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityAnimalBear"/>
+    <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
+    <property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit"/>
+    <property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
     <!-- Movement -->
     <property name="WanderSpeed" value="1"/>
 	<property name="ApproachSpeed" value="1.35"/>
@@ -4980,7 +5036,168 @@
 	<property name="CorpseBlock" value="GoreBlockCP"/>
     <property name="TimeStayAfterDeath" value="5"/>
     <property name="DeadBodyHitPoints" value="20"/>
-</entity_class> 
+</entity_class>
+
+<!-- SDX NPCs -->
+
+<entity_class name="SDXTemplate" extends="zombieTemplateMale">
+	<!-- For fun, let's use the zombie transmogrifier class -->
+	<!--property name="Class" value="EntityZombieSDX, Mods" /-->
+	<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
+	<property name="AvatarController" value="AnimationSDX, Mods" />
+	<!-- With RootMotion true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
+	<property name="RootMotion" value="false" />
+	<!-- Baseline Speed is way too slow, so we need to bump it up a notch or 5 -->
+	<property name="WanderSpeed" value="1" />
+	<property name="ApproachSpeed" value="1" />
+	<property name="NightWanderSpeed" value="1.2" />
+	<property name="NightApproachSpeed" value="1.2" />
+	<property name="HasRagdoll" value="false" />
+</entity_class>
+
+<entity_class name="Worker Hornet" extends="animalTemplateHostile">
+	<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
+	<property name="AvatarController" value="AnimationSDX, Mods" />
+	<!-- With RootMotion true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
+	<property name="RootMotion" value="false" />
+    <property name="Mesh" value="#Hornet?Worker" />
+    <property name="Class" value="EntityVulture" />
+    <property name="AnimationIdle" value="Fly_idle" />
+    <property name="AnimationMainAttack" value="Fly_attack_sting" />
+    <property name="AnimationPain" value="Fly_hit" />
+    <property name="AnimationDeath" value="Fly_dead" />
+    <property name="AnimationRun" value="Fly_idle" />
+    <property name="AnimationWalk" value="Fly_idle" />
+    <property name="WanderSpeed" value="0.8" />
+    <property name="ApproachSpeed" value="1.2" />
+    <property name="NightWanderSpeed" value="1.0" />
+    <property name="NightApproachSpeed" value="1.2" />
+    <property name="HasRagdoll" value="false" />
+    <property name="RootMotion" value="false" />
+	<!-- A15 Hornet Properties -->
+	<property name="HandItem" value="stingHornet" />
+	<property name="MaxHealth" value="50" />
+	<property name="MaxViewAngle" value="180" />
+	<property name="Weight" value="20" />
+	<property name="Immunity" value="sickness;disease;wellness" />
+	<property name="CanClimbLadders" value="true" />
+	<property name="IsEnemyEntity" value="true" />
+	<property name="SurfaceCategory" value="organic" />
+	<property name="AttackTimeoutDay" value="2" /> 
+	<property name="AttackTimeoutNight" value="2" />
+	<property name="ParticleOnDeath" value="blood_death" />
+	<property name="SoundRandomTime" value="60.0" />
+	<property name="SoundRandom" value="hornetroam" />
+	<property name="SoundAlert" value="hornetalert" />
+	<property name="SoundHurt" value="hornetpain" />
+	<property name="SoundDeath" value="hornetdeath" />
+	<property name="SoundAttack" value="hornetattack" />
+	<property name="SoundSense" value="hornetsense" />
+	<property name="SoundGiveUp" value="hornetgiveup" />
+	<property name="SpawnOnGround" value="false" />
+	<property name="ExperienceGain" value="120"/>
+	<property name="CorpseBlockChance" value="0"/>
+	<property name="TimeStayAfterDeath" value="300" />
+	<property name="DeadBodyHitPoints" value="80" /> 
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
+	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
+</entity_class>
+
+<entity_class name="Soldier Hornet" extends="animalTemplateHostile">
+	<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
+	<property name="AvatarController" value="AnimationSDX, Mods" />
+	<!-- With RootMotion true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
+	<property name="RootMotion" value="false" />
+    <property name="Mesh" value="#Hornet?Soldier" />
+    <property name="Class" value="EntityVulture" />
+    <property name="AnimationIdle" value="Fly_idle" />
+    <property name="AnimationMainAttack" value="Fly_attack_sting" />
+    <property name="AnimationPain" value="Fly_hit" />
+    <property name="AnimationDeath" value="Fly_dead" />
+    <property name="AnimationRun" value="Fly_idle" />
+    <property name="AnimationWalk" value="Fly_idle" />
+    <property name="WanderSpeed" value="0.8" />
+    <property name="ApproachSpeed" value="1.4" />
+    <property name="NightWanderSpeed" value="1.2" />
+    <property name="NightApproachSpeed" value="1.4" />
+    <property name="HasRagdoll" value="false" />
+    <property name="RootMotion" value="false" />
+	<!-- A15 Hornet Properties -->
+	<property name="HandItem" value="stingHornet" />
+	<property name="MaxHealth" value="150" />
+	<property name="MaxViewAngle" value="180" />
+	<property name="Weight" value="20" />
+	<property name="Immunity" value="sickness;disease;wellness" />
+	<property name="CanClimbLadders" value="true" />
+	<property name="IsEnemyEntity" value="true" />
+	<property name="SurfaceCategory" value="organic" />
+	<property name="AttackTimeoutDay" value="2" /> 
+	<property name="AttackTimeoutNight" value="2" />
+	<property name="ParticleOnDeath" value="blood_death" />
+	<property name="SoundRandomTime" value="60.0" />
+	<property name="SoundRandom" value="hornetroam" />
+	<property name="SoundAlert" value="hornetalert" />
+	<property name="SoundHurt" value="hornetpain" />
+	<property name="SoundDeath" value="hornetdeath" />
+	<property name="SoundAttack" value="hornetattack" />
+	<property name="SoundSense" value="hornetsense" />
+	<property name="SoundGiveUp" value="hornetgiveup" />
+	<property name="SpawnOnGround" value="false" />
+	<property name="ExperienceGain" value="240"/>
+	<property name="CorpseBlockChance" value="0"/>
+	<property name="TimeStayAfterDeath" value="300" />
+	<property name="DeadBodyHitPoints" value="80" /> 
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
+	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
+</entity_class>
+
+<entity_class name="Queen Hornet" extends="animalTemplateHostile">
+	<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
+	<property name="AvatarController" value="AnimationSDX, Mods" />
+	<!-- With RootMotion true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
+	<property name="RootMotion" value="false" />
+    <property name="Mesh" value="#Hornet?Queen" />
+    <property name="Class" value="EntityVulture" />
+    <property name="AnimationIdle" value="Fly_idle" />
+    <property name="AnimationMainAttack" value="Fly_attack_sting" />
+    <property name="AnimationPain" value="Fly_hit" />
+    <property name="AnimationDeath" value="Fly_dead" />
+    <property name="AnimationRun" value="Fly_idle" />
+    <property name="AnimationWalk" value="Fly_idle" />
+    <property name="WanderSpeed" value="0.8" />
+    <property name="ApproachSpeed" value="1.4" />
+    <property name="NightWanderSpeed" value="1.2" />
+    <property name="NightApproachSpeed" value="1.4" />
+    <property name="HasRagdoll" value="false" />
+    <property name="RootMotion" value="false" />
+	<!-- A15 Hornet Properties -->
+	<property name="HandItem" value="stingHornet" />
+	<property name="MaxHealth" value="300" />
+	<property name="MaxViewAngle" value="180" />
+	<property name="Weight" value="20" />
+	<property name="Immunity" value="sickness;disease;wellness" />
+	<property name="CanClimbLadders" value="true" />
+	<property name="IsEnemyEntity" value="true" />
+	<property name="SurfaceCategory" value="organic" />
+	<property name="AttackTimeoutDay" value="2" /> 
+	<property name="AttackTimeoutNight" value="2" />
+	<property name="ParticleOnDeath" value="blood_death" />
+	<property name="SoundRandomTime" value="60.0" />
+	<property name="SoundRandom" value="hornetroam" />
+	<property name="SoundAlert" value="hornetalert" />
+	<property name="SoundHurt" value="hornetpain" />
+	<property name="SoundDeath" value="hornetdeath" />
+	<property name="SoundAttack" value="hornetattack" />
+	<property name="SoundSense" value="hornetsense" />
+	<property name="SoundGiveUp" value="hornetgiveup" />
+	<property name="SpawnOnGround" value="false" />
+	<property name="ExperienceGain" value="360"/>
+	<property name="CorpseBlockChance" value="0"/>
+	<property name="TimeStayAfterDeath" value="300" />
+	<property name="DeadBodyHitPoints" value="80" /> 
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
+	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
+</entity_class>
 
 </entity_classes>
 

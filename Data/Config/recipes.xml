@@ -949,7 +949,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 </recipe>
 
-<recipe name="leather" count="1" craft_area="campfire">
+<recipe name="leather" count="2" craft_area="campfire">
 	<ingredient name="animalHide" count="1"/>
 	<ingredient name="animalFat" count="1"/>
 </recipe>
@@ -1136,7 +1136,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="oil" count="1" craft_area="chemistryStation">
 	<ingredient name="oilShale" count="24"/>
-	<ingredient name="canEmpty" count="1"/>
+	<ingredient name="emptyJar" count="1"/>
 </recipe>
 
 <recipe name="oilBarrel" count="1" craft_exp_gain="0">
@@ -1836,6 +1836,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="15"/>
 </recipe>
 
+<recipe name="emptyBowl" count="1" craft_area="advForge" material_based="true" craft_time = "30">
+	<ingredient name="unit_clay" count="15"/>
+</recipe>
+
 <recipe name="bowlWater" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="emptyBowl" count="1"/>
@@ -2428,6 +2432,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Carrot" count="1" />
 </recipe>
 
+<recipe name="seedTomato" count="1" >
+	<ingredient name="Tomato" count="1" />
+</recipe>
+
+<recipe name="seedBanana" count="1" >
+	<ingredient name="Banana" count="1" />
+</recipe>
+
+<recipe name="seedCoconut" count="1" >
+	<ingredient name="Coconut" count="1" />
+</recipe>
+
+<recipe name="seedOrange" count="1" >
+	<ingredient name="Orange" count="1" />
+</recipe>
+
 <!-- Animal Traps Mod -->
 
 <recipe name="animalFeed" count="1" scrapable="False" >
@@ -2549,6 +2569,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Yeast" count="1" />
 </recipe>
 
+<recipe name="Dough" count="1">
+	<ingredient name="Coconut" count="1" />
+	<ingredient name="Yeast" count="1" />
+</recipe>
+
 <recipe name="Bread" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="Dough" count="2" />
 </recipe>
@@ -2616,6 +2641,99 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="blueberryPancakes" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="Batter" count="1" />
 	<ingredient name="blueberries" count="1" />
+</recipe>
+
+<recipe name="bakedApple" count="1" craft_area="campfire">
+	<ingredient name="stick" count="2" />
+	<ingredient name="Apple" count="1" />
+</recipe>
+
+<recipe name="bakedApple" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="stick" count="2" />
+	<ingredient name="Apple" count="1" />
+</recipe>
+
+<recipe name="stickyApple" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="stick" count="2" />
+	<ingredient name="Apple" count="1" />
+	<ingredient name="bowlSap" count="2" />
+</recipe>
+
+<recipe name="stickyApple" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="stick" count="2" />
+	<ingredient name="Apple" count="1" />
+	<ingredient name="bowlSap" count="1" />
+</recipe>
+
+<recipe name="bananaBread" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="Banana" count="3" />
+	<ingredient name="egg" count="2" />
+	<ingredient name="Coconut" count="1" />
+</recipe>
+
+<recipe name="bananaPancakes" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Batter" count="2" />
+	<ingredient name="Banana" count="2" />
+</recipe>
+
+<recipe name="bananaPancakes" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="Batter" count="1" />
+	<ingredient name="Banana" count="1" />
+</recipe>
+
+<recipe name="orangeMarmalade" count="2" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="Orange" count="4" />
+	<ingredient name="bowlWater" count="4" />
+</recipe>
+
+<recipe name="marmaladeToast" count="2" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="orangeMarmalade" count="2" />
+	<ingredient name="Bread" count="2" />
+</recipe>
+
+<recipe name="marmaladeToast" count="2" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="orangeMarmalade" count="1" />
+	<ingredient name="Bread" count="1" />
+</recipe>
+
+<recipe name="orangeTea" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Orange" count="1" />
+	<ingredient name="bottledWater" count="1" />
+</recipe>
+
+<recipe name="orangeTea" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="Orange" count="1" />
+	<ingredient name="bottledWater" count="1" />
+</recipe>
+
+<recipe name="Pasta" count="1">
+	<ingredient name="Dough" count="1" />
+</recipe>
+
+<recipe name="veggieBolognaise" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Pasta" count="2" />
+	<ingredient name="tomatoJuice" count="2" />
+	<ingredient name="corn" count="4" />
+	<ingredient name="Carrot" count="4" />
+</recipe>
+
+<recipe name="veggieBolognaise" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="Pasta" count="1" />
+	<ingredient name="tomatoJuice" count="1" />
+	<ingredient name="corn" count="2" />
+	<ingredient name="Carrot" count="2" />
+</recipe>
+
+<recipe name="meatBolognaise" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Pasta" count="2" />
+	<ingredient name="tomatoJuice" count="2" />
+	<ingredient name="rawMeat" count="4" />
+</recipe>
+
+<recipe name="meatBolognaise" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="Pasta" count="1" />
+	<ingredient name="tomatoJuice" count="1" />
+	<ingredient name="rawMeat" count="2" />
 </recipe>
 
 <!-- Sap Recipes -->
@@ -3826,7 +3944,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="5"/>
 </recipe>
 
-<recipe name="leather" count="2" craft_area="workstationTailor" craft_tool="tanningRack">
+<recipe name="leather" count="4" craft_area="workstationTailor" craft_tool="tanningRack">
 	<ingredient name="animalHide" count="1"/>
 	<ingredient name="animalFat" count="1"/>
 </recipe>
@@ -4750,7 +4868,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="titaniumMacheteBlade" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
-	<ingredient name="unit_iron" count="200"/>
+	<ingredient name="unit_titanium" count="200"/>
 	<ingredient name="unit_clay" count="40"/>
 </recipe>
 
@@ -5357,11 +5475,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="quill" count="1"/>
 </recipe>
 
-<recipe name="sulfur" count="1" craft_area="campfire" craft_time = "30">
+<recipe name="sulfur" count="5" craft_area="campfire" craft_time = "30">
 	<ingredient name="rottingFlesh" count="2"/>
 </recipe>
 
-<recipe name="sulfur" count="1" craft_area="chemistryStation" craft_time = "15">
+<recipe name="sulfur" count="5" craft_area="chemistryStation" craft_time = "15">
 	<ingredient name="rottingFlesh" count="1"/>
 </recipe>
 
@@ -5376,6 +5494,68 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="glue" count="1"/>
 	<ingredient name="cloth" count="4"/>
 	<ingredient name="scrapIron" count="10"/>
+</recipe>
+
+<recipe name="titaniumSpikedKnuckles" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="nail" count="4"/>
+	<ingredient name="forgedTitanium" count="10" />
+</recipe>
+
+<recipe name="titaniumKnuckles" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="glue" count="1"/>
+	<ingredient name="cloth" count="4"/>
+	<ingredient name="forgedTitanium" count="5"/>
+</recipe>
+
+<!-- New Fruit Recipes -->
+
+<recipe name="tomatoJuice" count="1" craft_area="PandM" craft_time = "60">
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="Tomato" count="4"/>
+</recipe>
+
+<recipe name="appleJuice" count="1" craft_area="PandM" craft_time = "60">
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="Apple" count="4"/>
+</recipe>
+
+<recipe name="orangeJuice" count="1" craft_area="PandM" craft_time = "60">
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="Orange" count="4"/>
+</recipe>
+
+<recipe name="coconutWater" count="1">
+	<ingredient name="emptyJar" count="1"/>
+	<ingredient name="Coconut" count="1"/>
+</recipe>
+
+<recipe name="fruitSalad" count="1">
+	<ingredient name="Apple" count="2"/>
+	<ingredient name="Orange" count="2"/>
+	<ingredient name="Banana" count="2"/>
+</recipe>
+
+<!-- Floor Pillow -->
+
+<recipe name="FloorPillow" count="1" craft_area="workstationTailor" craft_tool="sewingKit">
+	<ingredient name="cloth" count="60"/>
+</recipe>
+
+<recipe name="grilledYucca" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="foodYuccaFruit" count="1"/>
+</recipe>
+
+<recipe name="grilledYucca" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="foodYuccaFruit" count="1"/>
+</recipe>
+
+<!-- Random Stuff -->
+
+<recipe name="superDynamite" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="yuccaFibers" count="20"/>
+	<ingredient name="gunPowder" count="40"/>
+	<ingredient name="ductTape" count="5"/>
+	<ingredient name="paper" count="20"/>
 </recipe>
 
 </recipes>

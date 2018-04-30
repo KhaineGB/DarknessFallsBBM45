@@ -17,6 +17,14 @@
 		trader_id="1" dialog_id="medstudent1" />
 		
 	<npc_info
+		id="tradercaitlin"
+		name="Traitor Caitlin"
+		name_key="npc_traderRekt"
+		faction="whiteriver"
+		greeting_type="nearby"
+		trader_id="2" dialog_id="medstudent1" />
+		
+	<npc_info
 		id="GuardCaptainMale"
 		name="Guard Captain"
 		name_key="npc_traitorJoel"

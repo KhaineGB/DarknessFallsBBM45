@@ -399,12 +399,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="AR15Schematic"/>
 			<item name="CAWSShotgunSchematic"/>
 			<item name="WinchesterRifleSchematic"/>
-			<item name="clubTitaniumSpikedSchematic"/>
-			<item name="titaniumHuntingKnifeSchematic"/>
 			<item name="titaniumSledgehammerSchematic"/>
 			<item name="steelCrossbowSchematic"/>
 			<item name="combatAxeSchematic"/>
-			<item name="titaniumCombatAxeSchematic"/>
 			<item name="farmingBook2" prob="0.7"/>
 			<item name="farmingBook3" prob="0.7"/>
 			<item name="skillGenericBook" prob="0.1"/>
@@ -570,31 +567,28 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="constructionSupplies">
-			<item name="cement" count="10,50"/> <!-- 70 -->
-			<item name="cobblestones" count="20,80"/> <!-- 70 -->
+			<item name="cement" count="100,500"/> <!-- 70 -->
+			<item name="cobblestones" count="2000,8000"/> <!-- 70 -->
 			<item name="concreteMix" count="5,20"/> <!-- 20 -->
 			<item name="nail" count="3,15"/> <!-- 10 -->
 			<item name="rebarFrameBlock" count="5,20"/> <!-- 10 -->
 			<item name="steelPolish" count="50,150" prob="2"/>
-			<item group="landMines" count="1" prob="0.3"/>
+			<item name="wood" count="10000,50000"/> <!-- 50 -->
+			<item name="rockSmall" count="10000,50000"/> <!-- 50 -->
+			<item name="yuccaFibers" count="500,4000"/> <!-- 50 -->
+			<item name="crushedSand" count="10000,40000"/> <!-- 50 -->
+			<item name="scrapIron" count="500,2000"/> <!-- 10 -->
+			<item name="scrapPlastics" count="100,500"/>
+			<item name="clayLump" count="500,2500"/> <!-- 150 -->
+			<item name="ironFragment" count="500,2000"/> <!-- 10 -->
 		</trader_item_group>
-
+		
 		<trader_item_group name="generalResources"> <!-- bundle size -->
-			<item name="wood" count="100,500"/> <!-- 50 -->
-			<item name="rockSmall" count="100,500"/> <!-- 50 -->
-			<item name="yuccaFibers" count="5,40"/> <!-- 50 -->
-			<item name="crushedSand" count="100,400"/> <!-- 50 -->
-			<item name="scrapIron" count="150,800"/> <!-- 10 -->
-			<item name="scrapPlastics" count="30,150"/>
-			<item name="forgedIron" count="50,250"/>
-			<item name="forgedSteel" count="5,50"/>
 			<item name="shortMetalPipe" count="5,20"/>
-			<item name="macheteBlade" count="1,3"/>
 			<item name="oilShale" count="20,60"/> <!-- 50 -->
 			<item name="animalHide" count="50,250"/>
 			<item name="leather" count="50,300"/>
 			<item name="scrapBrass" count="50,400"/> <!-- 10 -->
-			<item name="clayLump" count="50,250"/> <!-- 150 -->
 			<item name="scrapLead" count="50,900"/> <!-- 5 -->
 			<item name="cloth" count="50,1000"/>
 			<item name="militaryFiber" count="5,20" prob="0.6"/>
@@ -675,7 +669,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="miniblindBottomSheet" count="4,15"/>
 		</trader_item_group>
 
-
 		<trader_item_group name="decorativeBlocks" count="1">
 			<item group="decorativeCurtains"/>
 			<item group="decorativeBlinds"/>
@@ -724,7 +717,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="traderGeneral" count="1">
-			<!-- <item name="beerBook" count="1" prob="0.3"/> -->
+			<item group="landMines" count="1" prob="0.3"/>
 			<item name="plantedHop1" count="1,5" prob="0.3"/>
 			<item name="paint" count="1,12"/> <!-- 50 -->
 			<item group="clothes" count="2,4"/>
@@ -780,6 +773,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="autoTurret" count="1,2" prob="0.5"/>
 			<item name="shotgunTurret" count="1,2" prob="0.7"/>
 			<item name="qc_foreface" count="1" prob="0.7"/>
+			<item name="macheteBlade" count="1,3"/>
 		</trader_item_group>
 
 		<trader_item_group name="stashOnlyItemsHigh" count="1">
@@ -800,6 +794,82 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="SecurityMasteryBook" prob="0.1"/>
 			<item name="SurvivalistMasteryBook" prob="0.1"/>
 		</trader_item_group>
+		
+	<!-- Trader Caitlin's Lists -->
+	
+		<trader_item_group name="rareconstructionSupplies">
+			<item name="concreteMix" count="5000,2000"/> <!-- 20 -->
+			<item name="steelPolish" count="500,1500" />
+			<item name="forgedIron" count="2000,8000" />
+			<item name="forgedSteel" count="1000,4000" />
+		</trader_item_group>
+		
+		<trader_item_group name="rareToolsCaitlin">
+			<item name="chainsaw"/>
+			<item name="auger" />
+			<item name="partsChainsaw_parts"/>
+			<item name="partsAuger_parts"/>
+			<item name="partsAuger_blade"/>
+			<item name="partsChainsaw_blade"/>
+			<item name="nailgun"/>
+			<item name="smallEngine"/>
+			<item name="pickaxeSteel"/>
+			<item name="fireaxeSteel"/>
+			<item name="shovelSteel"/>
+		</trader_item_group>
+		
+		<trader_item_group name="caitlinResources"> <!-- bundle size -->
+			<item name="oilShale" count="200,600"/> <!-- 50 -->
+			<item name="scrapBrass" count="500,4000"/> <!-- 10 -->
+			<item name="scrapLead" count="500,9000"/> <!-- 5 -->
+			<item name="cloth" count="50,1000"/>
+			<item name="militaryFiber" count="50,200" prob="0.6"/>
+			<item name="coal" count="2000,6000"/> <!-- 10 -->
+			<item name="potassiumNitratePowder" count="2000,6000"/> <!-- 10 -->
+			<item name="sulfur" count="2000,6000"/>
+			<item name="gunPowder" count="300,3000"/> <!-- 10 -->
+			<item name="oil" count="300,1000"/>
+			<item name="bucket" prob="0.6"/>
+			<item name="headlight" count="5,20" prob="0.6"/>
+			<item name="ductTape" count="5,20"/>
+			<item name="spring" count="5,30"/>
+			<item name="mechanicalParts" count="150,800" prob="0.8"/>
+			<item name="electricParts" count="150,500" prob="0.7"/>
+			<item name="electronicParts" count="100,300" prob="0.6"/>
+			<item name="insulator" count="20,60" prob="0.6"/>
+		</trader_item_group>
+		
+		<trader_item_group name="toolscaitlin" count="1">
+			<item name="wrench" />
+			<item name="repairKit" count="10,40"/>
+			<item name="anvil" count="1"/>
+			<item name="calipers" />
+			<item name="toolAndDieSet" />
+			<item name="weldingTorch" />
+			<item name="paintTool" />
+			<item name="wireTool"/>
+			<item name="Lockpick" count="10,100"/>
+			<item name="Lockpick2" count="5,50"/>
+		</trader_item_group>
+		
+		<trader_item_group name="minibikeCaitlin" count="3">
+			<item name="minibikeWheels"/>
+			<item name="minibikeChassis"/>
+			<item name="minibikeSeat"/>
+			<item name="minibikeHandlebars"/>
+			<item name="smallEngine" prob="0.3"/>
+			<item name="shoppingBasketItem" prob="0.3"/>
+		</trader_item_group>
+
+		<trader_item_group name="workstationscaitlin" count="2">
+			<item name="forge"/>
+			<item name="workbench"/>
+			<item name="cementMixer"/>
+			<item name="advForge"/>
+			<item name="workstationTailor"/>
+			<item name="workstationMetal"/>
+		</trader_item_group>
+
 
 	</trader_item_groups>
 
@@ -855,8 +925,8 @@ workstations
 		<trader_items count="all">
 			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
-			<item group="generalResources" count="9,14"/>
-			<item group="constructionSupplies" count="2,8"/>
+			<item group="generalResources" count="2,8"/>
+			<item group="constructionSupplies" count="9,14"/>
 			<item group="decorativeBlocks" count="2,7"/>
 			<item group="tools" count="1,2"/>
 			<item group="weaponsCommonParts" count="0,3"/>
@@ -920,10 +990,6 @@ workstations
 			<item group="tools" count="1,2"/>
 			<item group="rareTools" count="3,4"/>
 			<item name="cntVendingMachine" count="2" />
-			<item group="weaponsMixedParts" count="4,6"/>
-			<item group="weaponsGunsMixed" count="2,3"/>
-			<item group="weaponsMilitaryParts" count="1,2"/>
-			<item group="weaponsGunsMilitary" count="1"/>
 			<item group="ammo" count="5,8"/>
 			<item group="heavyArmor" count="3,5"/>
 			<item group="militaryArmor" count="2,3"/>
@@ -945,71 +1011,94 @@ workstations
 
 	<!-- Trader 2, carries better tools and construction material at higher levels. -->
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
-<!--
-	<trader_info id="2" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+
+	<trader_info id="2" min_inventory="40" max_inventory="160" min_items_swapped="80" max_items_swapped="160"
+		reset_interval="2" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
 			<item group="traderAlways"/>
-			<item group="traderGeneral" count="4,8"/>
-			<item group="generalResources" count="11,17"/>
-			<item group="constructionSupplies" count="4,12"/>
-			<item group="decorativeBlocks" count="2,7"/>
-			<item group="tools" count="0,2"/>
-			<item group="weaponsCommonParts" count="0,2"/>
-			<item group="lightArmor" count="1,3"/>
-			<item group="traderElectrical" count="0,1"/>
+			<item group="rareMedicine" count="5" prob="0.2"/>
+			<item group="medicine" count="10,20" prob="1"/>
+			<item group="weaponsMelee" count="5,10" prob="1.5"/>
+			<item group="caitlinResources" count="2,8"/>
+			<item group="rareconstructionSupplies" count="9,14"/>
+			<item group="toolscaitlin" count="5,10"/>
+			<item group="heavyArmor" count="2,4"/>
+			<item group="traderElectrical" count="2,4"/>
 		</trader_items>
 
-		<tier_items level="1,25" count="1,3">
-			<item group="traderElectrical" count="1,2"/>
-			<item group="weaponsGunsCommon" count="1" prob="0.5"/>
-			<item group="constructionSupplies" count="2,3" prob="1"/>
-			<item group="generalResources" count="4,7" prob="1"/>
-			<item group="tools" count="1,2" prob="1"/>
-			<item group="rareTools" count="1" prob="0.5"/>
-			<item group="ammoSupplies" count="2,3" prob="0.4"/>
-			<item group="banditArmor" count="1" prob="0.4"/>
-			<item name="miningHelmet" prob="0.5"/>
-			<item group="ammo" count="1,2" prob="1"/>
+		<tier_items level="1,499" count="all">  <!-- requires Perk 0 -->
+			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
+			<item group="toolscaitlin" count="2,8"/>
+			<item group="ammo" count="10,20"/>
+			<item group="heavyArmor" count="4"/>
+			<item group="paintMagazines" count="4"/>
+			<item group="commonBooks" count="2,4"/>
+			<item group="rareBooks" count="3"/>
 		</tier_items>
 
-		<tier_items level="25,50" count="1,4">
-			<item group="traderElectrical" count="2,3"/>
-			<item group="weaponsGunsCommon" count="1" prob="0.8"/>
-			<item group="weaponsGunsMilitary" count="1" prob="0.2"/>
-			<item group="constructionSupplies" count="2,3" prob="1"/>
-			<item group="generalResources" count="3,4" prob="1"/>
-			<item group="tools" count="1,2" prob="1"/>
-			<item group="rareTools" count="1" prob="0.5"/>
-			<item group="ammoSupplies" count="2,3" prob="0.4"/>
-			<item group="banditArmor" count="1" prob="0.4"/>
-			<item group="hazmatGear" count="1" prob="0.2"/>
-			<item group="workstations" count="1" prob="0.3"/>
-			<item group="minibikeParts" count="1" prob="0.2"/>
-			<item name="miningHelmet" prob="0.5"/>
-			<item group="ammo" count="1,4" prob="1"/>
+		<tier_items level="500,999" count="all">  <!-- requires Perk 1 -->
+			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
+			<item group="traderElectrical" count="4,5"/>
+			<item name="cntVendingMachine" count="1" />
+			<item group="toolscaitlin" count="2,8"/>
+			<item group="rareTools" count="3"/>
+			<item group="weaponsMixedParts" count="3,6"/>
+			<item group="weaponsGunsMixed" count="2,4"/>
+			<item group="ammo" count="20,50"/>
+			<item group="heavyArmor" count="2,5"/>
+			<item group="banditArmor" count="2,5"/>
+			<item group="paintMagazines" count="2,5"/>
+			<item group="commonBooks" count="4,6"/>
+			<item group="rareBooks" count="2,5"/>
+			<item group="stashOnlyItemsLow" count="2,4"/>
 		</tier_items>
 
-		<tier_items level="50,-1" count="2,6">
-			<item group="traderElectrical" count="3"/>
-			<item name="cntVendingMachine" count="1" prob="1" />
-			<item group="weaponsGunsCommon" count="1" prob="1"/>
-			<item group="weaponsGunsMilitary" count="1" prob="0.3"/>
-			<item group="constructionSupplies" count="2,3" prob="1"/>
-			<item group="generalResources" count="3,4" prob="1"/>
-			<item group="tools" count="1,2" prob="0.9"/>
-			<item group="rareTools" count="1" prob="0.6"/>
-			<item group="ammoSupplies" count="2,3" prob="0.4"/>
-			<item group="banditArmor" count="1" prob="0.4"/>
-			<item group="hazmatGear" count="1" prob="0.4"/>
-			<item group="workstations" count="1" prob="0.5"/>
-			<item group="minibikeParts" count="1" prob="0.4"/>
-			<item name="nightvisionGoggles" count="1" prob="0.2" />
-			<item name="miningHelmet" prob="0.5"/>
-			<item group="ammo" count="2,4" prob="1"/>
+		<tier_items level="1000,1499" count="all"> <!-- requires Perk 2 -->
+			<item group="traderElectrical" count="4,5"/>
+			<item name="cntVendingMachine" count="1" />
+			<item group="toolscaitlin" count="2,8"/>
+			<item group="rareTools" count="3"/>
+			<item group="weaponsMixedParts" count="3,6"/>
+			<item group="weaponsGunsMixed" count="2,4"/>
+			<item group="ammo" count="20,50"/>
+			<item group="heavyArmor" count="2,5"/>
+			<item group="militaryArmor" count="2,3"/>
+			<item group="banditArmor" count="2,5"/>
+			<item group="paintMagazines" count="2,5"/>
+			<item group="commonBooks" count="4,6"/>
+			<item group="rareBooks" count="3,6"/>
+			<item name="miningHelmet"/>
+			<item group="minibikeParts" count="1,2"/>
+			<item group="stashOnlyItemsHigh" count="2,3"/>
+		</tier_items>
+
+		<tier_items level="1500,-1" count="all"> <!-- requires Perk 3 -->
+			<item group="traderElectrical" count="4,5"/>
+			<item name="cntVendingMachine" count="1" />
+			<item group="toolscaitlin" count="2,8"/>
+			<item group="rareTools" count="3"/>
+			<item group="weaponsMixedParts" count="3,6"/>
+			<item group="weaponsGunsMixed" count="2,4"/>
+			<item group="weaponsMilitaryParts" count="2,4"/>
+			<item group="weaponsGunsMilitary" count="2"/>
+			<item group="ammo" count="50,80"/>
+			<item group="heavyArmor" count="4,6"/>
+			<item group="militaryArmor" count="3,5"/>
+			<item group="banditArmor" count="4,6"/>
+			<item group="paintMagazines" count="3,5"/>
+			<item group="commonBooks" count="5,7"/>
+			<item group="rareBooks" count="3,6"/>
+			<item name="miningHelmet"/>
+			<item group="minibikeParts" count="2,3"/>
+			<item name="nightvisionGoggles" count="1"/>
+			<!-- <item name="beerBook" count="1"/> -->
+			<item name="plantedHop1" count="1,8"/>
+			<item name="solarbank" count="1"/>
+			<item name="solarCell" count="1,3"/>
+			<item name="batterybankSchematic" count="1"/>
+			<item group="stashOnlyItemsHigh" count="3,4"/>
 		</tier_items>
 	</trader_info>
--->
 
 	<!-- Player Owned - Vending Machine -->
 	<trader_info id="3" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" player_owned="true" />
@@ -1033,11 +1122,17 @@ workstations
 	<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
 	
 	<!-- Trader Guard Captain -->
-	<trader_info id="6" reset_interval="2" override_buy_markup="1.0" allow_sell="false" min_inventory="3" max_inventory="9" min_items_swapped="5" max_items_swapped="9">
-		<trader_items count="3">
+	<trader_info id="6" reset_interval="2" override_buy_markup="1.0" allow_sell="false" min_inventory="20" max_inventory="40" min_items_swapped="20" max_items_swapped="20">
+		<trader_items count="20">
 			<item name="questTrader1" count="1,3"/>
 			<item name="questTrader2" count="1,3"/>
 			<item name="questTrader3" count="1,3"/>
+			<item name="questTraderSupply1" count="1,3"/>
+			<item name="questTraderSupply2" count="1,3"/>
+			<item name="questTraderSupply3" count="1,3"/>
+			<item name="questTraderMedical1" count="1,3"/>
+			<item name="questTraderMedical2" count="1,3"/>
+			<item name="questTraderMedical3" count="1,3"/>
 			<item name="qc_dirtybum" count="1" prob="0.5"/>
 		</trader_items>
 	</trader_info>

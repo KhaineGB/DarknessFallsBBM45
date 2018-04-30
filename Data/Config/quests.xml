@@ -1061,6 +1061,66 @@
 		<reward type="Item" id="scrapSkill" value="5" />
 	</quest>
 	
+	<quest id="quest_trader_supply1" name_key="quest_trader_supply1" subtitle="Fetch Supplies For The Trader (Easy)" subtitle_key="quest_trader_supply1_subtitle" description_key="quest_trader_supply1_description" icon="ui_game_symbol_fork" category_key="quest" offer_key="quest_trader_supply1_offer" repeatable="true" difficulty="easy">
+
+		<objective type="Fetch" id="rawMeat" value="5"/>
+		<objective type="Fetch" id="canBoiledWater" value="5"/>
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="350" />
+		<reward type="Item" id="scrapSkill" value="1" />
+    </quest>
+
+	<quest id="quest_trader_supply2" name_key="quest_trader_supply2" subtitle="Fetch Supplies For The Trader (Medium)" subtitle_key="quest_trader_supply2_subtitle" description_key="quest_trader_supply2_description" icon="ui_game_symbol_fork" category_key="quest" offer_key="quest_trader_supply2_offer" repeatable="true" difficulty="medium">
+
+		<objective type="Fetch" id="grilledMeat" value="5"/>
+		<objective type="Fetch" id="bottledWater" value="5"/>
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="scrapSkill" value="3" />
+    </quest>
+	
+	<quest id="quest_trader_supply3" name_key="quest_trader_supply3" subtitle="Fetch Supplies For The Trader (Hard)" subtitle_key="quest_trader_supply3_subtitle" description_key="quest_trader_supply3_description" icon="ui_game_symbol_fork" category_key="quest" offer_key="quest_trader_supply3_offer" repeatable="true" difficulty="hard">
+
+		<objective type="Fetch" id="blueberryPie" value="5"/>
+		<objective type="Fetch" id="goldenRodTea" value="5"/>
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="700" />
+		<reward type="Item" id="scrapSkill" value="5" />
+    </quest>
+	
+	<quest id="quest_trader_medical1" name_key="quest_trader_medical1" subtitle="Fetch Medical Supplies For The Trader (Easy)" subtitle_key="quest_trader_medical1_subtitle" description_key="quest_trader_medical1_description" icon="ui_game_symbol_medical" category_key="quest" offer_key="quest_trader_medical1_offer" repeatable="true" difficulty="easy">
+
+		<objective type="Fetch" id="splint" value="5"/>
+		<objective type="Fetch" id="sterileBandage" value="5"/>
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="300" />
+		<reward type="Item" id="scrapSkill" value="3" />
+    </quest>
+
+	<quest id="quest_trader_medical2" name_key="quest_trader_medical2" subtitle="Fetch Medical Supplies For The Trader (Medium)" subtitle_key="quest_trader_medical2_subtitle" description_key="quest_trader_medical2_description" icon="ui_game_symbol_medical" category_key="quest" offer_key="quest_trader_medical2_offer" repeatable="true" difficulty="medium">
+
+		<objective type="Fetch" id="foodHoney" value="5"/>
+		<objective type="Fetch" id="painkillers" value="5"/>
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="1000" />
+		<reward type="Item" id="scrapSkill" value="5" />
+    </quest>
+	
+	<quest id="quest_trader_medical3" name_key="quest_trader_medical3" subtitle="Fetch Medical Supplies For The Trader (Hard)" subtitle_key="quest_trader_medical3_subtitle" description_key="quest_trader_medical3_description" icon="ui_game_symbol_medical" category_key="quest" offer_key="quest_trader_medical3_offer" repeatable="true" difficulty="hard">
+
+		<objective type="Fetch" id="antibiotics" value="5"/>
+		<objective type="Fetch" id="firstAidBandage" value="5"/>
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="1200" />
+		<reward type="Item" id="scrapSkill" value="7" />
+    </quest>
+	
 <!-- Unique Content Creator Quests -->
 
 	<quest id="challenge_foreface" name_key="challenge_foreface" subtitle_key="challenge_foreface_subtitle" description_key="challenge_foreface_desc" icon="ui_game_symbol_knife"
@@ -1118,5 +1178,17 @@
 
 		<reward type="SkillPoints" value="5" />
     </quest> -->
+	
+<!-- Quest Test 2 -->
+
+	<quest id="quest_testfetch" name_key="quest_testfetch" subtitle_key="quest_testfetch_subtitle" description_key="quest_testfetch_desc" icon="ui_game_symbol_zombie"
+	repeatable="true" category_key="quest" offer_key="quest_testfetch_offer" difficulty="easy">
+		<objective type="Fetch" id="rawMeat" value="2"/>
+		<objective type="Fetch" id="canBoiledWater" value="2"/>
+		<objective type="Goto" id="trader" value="5" />
+		
+		<reward type="Item" id="scrapSkill" value="3" />
+		<reward type="Item" id="casinoCoin" value="200" />
+	</quest>
 
 </quests>

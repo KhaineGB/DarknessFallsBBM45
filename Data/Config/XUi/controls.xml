@@ -358,12 +358,25 @@
 		</rect>
 	</category_icon>
 	
+	<!-- Old Code
+	
 	<active_buff_entry>
 		<panel height="43" controller="ActiveBuffEntry" width="314" style="press" sound="[recipe_click]" on_hover="true" disableautobackground="true" on_scroll="true" >
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="320" height="49" color="[black]" type="sliced" fillcenter="false" />	
 			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-1,1" /> 
 			<sprite depth="2" name="Icon" sprite="{bufficon|once}" style="icon32px" pos="5,-5"/>
 			<label depth="2" pos="45,-8" width="280" height="30" text="{buffname|once}  [DECEA3]{buffdisplayinfo}[-]" font_size="28" pivot="topleft"/>
+		</panel>
+	</active_buff_entry> -->
+	
+	<!-- New Buff Icon Code -->
+	
+	<active_buff_entry>
+		<panel height="43" controller="ActiveBuffEntry" width="314" style="press" sound="[recipe_click]" on_hover="true" disableautobackground="true" on_scroll="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="320" height="49" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-1,1" />
+			<sprite depth="2" name="Icon" atlas="ItemIconAtlas" sprite="{bufficon|once}" style="icon32px" pos="5,-5" />
+			<label depth="2" pos="45,-8" width="280" height="30" text="{buffname|once}  [DECEA3]{buffdisplayinfo}[-]" font_size="28" pivot="topleft" />
 		</panel>
 	</active_buff_entry>
 	
@@ -564,6 +577,8 @@
 		</rect>
 	</radial_entry>
 	
+	<!-- old code
+	
 	<skill_entry>
 		<panel disableautobackground="true" depth="2" width="645" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="647" height="48" color="[black]" type="sliced" fillcenter="false" />
@@ -585,10 +600,34 @@
 			<label width="90" pos="593,-19" depth="2" text="{grouppointcost}" upper_case="true" pivot="center" justify="center" color="{statuscolor}"/>
 		</panel>
 	</skill_entry>
-	
+
 	<skill_requirement>
 		<rect controller="SkillRequirementEntry">
 			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" sprite="{skillicon}" visible="{hasrequirement}" />
+			<label depth="1" pos="0,-4" text="{requirementtext}" upper_case="true" font_size="26" visible="{hasrequirement}" height="43" width="300" color="{requirementcolor}" justify="center" />
+		</rect>
+	</skill_requirement>	-->
+	
+	<!-- New Skill Entry Icon Code -->
+	
+	<skill_entry>
+		<panel disableautobackground="true" depth="2" width="645" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="647" height="48" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="1" color="{rowstatecolor}" sprite="{rowstatesprite}" width="644" height="45" type="sliced" />
+			<sprite depth="2" sprite="{groupicon}" atlas="ItemIconAtlas" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true" />
+			<sprite depth="3" pos="0,-39" height="3" width="640" color="[lightGrey]" foregroundlayer="true" visible="{skillpercentshouldshow}" type="sliced" />
+			<sprite depth="3" pos="0,-39" height="3" width="640" color="[red]" foregroundlayer="true" type="filled" fill="{skillpercentthislevel}" visible="{skillpercentshouldshow}" />
+			<label width="386" pos="44,-7" depth="2" text="{groupname}" color="{statuscolor}" />
+			<sprite depth="2" pos="386,-19" sprite="ui_game_symbol_lock" visible="{islocked}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true" />
+			<label width="125" pos="386,-19" depth="2" text="{grouplevel}" visible="{isnotlocked}" pivot="center" justify="center" color="{statuscolor}" />
+			<sprite pos="492,-19" depth="2" sprite="{grouptypeicon}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true" />
+			<label width="90" pos="593,-19" depth="2" text="{grouppointcost}" upper_case="true" pivot="center" justify="center" color="{statuscolor}" />
+		</panel>
+	</skill_entry>
+	
+	<skill_requirement>
+		<rect controller="SkillRequirementEntry">
+			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" atlas="ItemIconAtlas" sprite="{skillicon}" visible="{hasrequirement}" />
 			<label depth="1" pos="0,-4" text="{requirementtext}" upper_case="true" font_size="26" visible="{hasrequirement}" height="43" width="300" color="{requirementcolor}" justify="center" />
 		</rect>
 	</skill_requirement>

@@ -129,7 +129,11 @@ built-in buff variables:
 <buff id="isPlayer" buffif="+full > 0" />
 
 <!-- This buff is called on the first time the player spawns into the game and on respawning the player after each death. Can not add buffs. -->
-<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
+<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRPillow,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0);setvar(CTRyucca,0);setvar(CTRsap,0)"/>
+
+<!-- original initvars
+
+<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/> -->
 
 <buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit,sterileBandage">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -444,27 +448,6 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="0" stat="speedmodifier" mulValue="0.4"/>
 </buff>
 
-<buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 10)" />
-<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0)"
-	icon="ui_game_symbol_map_bed" name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip">
-	<modify id="0" stat="health" amount="1" rate="60" />
-	<modify id="0" stat="stamina" amount="1" rate="20" />
-</buff>
-
-<buff id="sleepingBedTrigger" duration="1" actions="setvar(CTRbed, 10)" />
-<buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -3, 2, 0, 0)"
-	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
-	<modify id="0" stat="health" amount="1" rate="30" />
-	<modify id="0" stat="stamina" amount="1" rate="10" />
-</buff>
-
-<buff id="sleepingBigBedTrigger" duration="1" actions="setvar(CTRbigbed, 10)" />
-<buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -3, 2, 0, 0)"
-	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
-	<modify id="0" stat="health" amount="1" rate="15" />
-	<modify id="0" stat="stamina" amount="1" rate="5" />
-</buff>
-
 <buff id="critGunMP5" duration="1" castsound="Buffs/critical_blunt" >
 	<modify id="1" stat="health" amount="-100" rate="1"/>
 </buff>
@@ -586,16 +569,9 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" mulValue="0.1" duration="3.2"/>
 </buff>
 
-<!-- New Buff For Tree Sap -->
-
-<buff id="TreeSapStaminaBoost" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
-	name_key="sugarRush" description_key="sugarRushDesc" tooltip_key="sugarRushTooltip" causes="coffee">
-	<modify id="0" stat="stamina" amount="2" rate="1"/>
-</buff>
-
 <!-- Radiation Stuff -->
 
-<buff id="radiation" mutex="radcured" duration="1800" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip" cures="radcured">
+<buff id="radiation" mutex="radcured" duration="1800" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip" cures="radcured,radcuredminibike">
 	<modify id="0" stat="wellness" amount="-1" rate="60" />
 	<modify id="1" stat="health" amount="-1" rate="30"/>
 	<modify id="2" stat="stamina" amount="-10" rate="30"/>
@@ -605,6 +581,8 @@ This requires a 50+ food bar:
 <!-- Antiradiation Stuff -->
 
 <buff id="radcured" stack="extend" duration="1800" icon="ui_game_symbol_pills" name_key="radcured" description_key="radcuredDesc" tooltip_key="radcuredTooltip"/>
+
+<buff id="radcuredminibike" stack="extend" duration="0" icon="ui_game_symbol_pills" name_key="radcured" description_key="radcuredDesc" tooltip_key="radcuredTooltip"/>
 
 <!-- Make Zombies Look on Fire Stuff -->
 
@@ -629,6 +607,119 @@ This requires a 50+ food bar:
 <buff id="sunblockCooling" duration="3600" stack="discard" type="staminaup" icon="ui_game_symbol_cold"
 	name_key="sunblockCooling" description_key="sunblockCoolingDesc" tooltip_key="sunblockCoolingTooltip" causes="sunblocker">
 	<modify id="1" stat="coretemp" modifyValue="-10"/>
+</buff>
+
+<!-- New Tree Sap System -->
+
+<buff id="drinkSapTrigger" duration="1" actions="increment(CTRsap, 144, 0, 0, 1)"/>
+
+<buff id="metabolizeSapBuff" buffif="CTRsap greater 0" debuffif="CTRsap less 1" actions="increment(CTRsap, -10, 10, 0, 0);min(CTRsap, 0)">
+</buff>
+
+<buff id="warningSapBuff" buffif="CTRsap greater 520" debuffif="CTRsap less 519;CTRsap greater 1040" causes="bottleSap,bowlSap"	type="disease" icon="ui_game_symbol_skull" name_key="sapWarningName" description_key="sapWarningDesc" tooltip_key="sapWarningTooltip">
+</buff>
+
+<buff id="SapSickBuff" duration="0" buffif="CTRsap greater 1040" debuffif="CTRsap less 1040"
+	castsound="Player_*sick5" causes="bottleSap,bowlSap"
+	type="disease" icon="ui_game_symbol_skull" name_key="sugarSickName" description_key="sugarSickDesc" tooltip_key="sugarSickTooltip" actions="debuff(TreeSapStaminaBoost)">
+	<modify id="0" stat="stamina" amount="-2" rate="1"/>
+	<modify id="1" stat="wellness" amount="-.1" rate="20" />
+</buff> 
+
+<buff id="TreeSapStaminaBoost" mutex="SapSickBuff" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
+	name_key="sugarRush" description_key="sugarRushDesc" tooltip_key="sugarRushTooltip" causes="coffee">
+	<modify id="0" stat="stamina" amount="2" rate="1"/>
+</buff>
+
+<!-- Yucca Fruit Debuff -->
+
+<!-- Yucca fruit is a laxative IRL. Especially if it hasn't been grilled. -->
+<buff id="eatYuccaTrigger" duration="1" actions="increment(CTRyucca, 144, 0, 0, 1)"/>
+
+<buff id="metabolizeYuccaBuff" buffif="CTRyucca greater 0" debuffif="CTRyucca less 1" actions="increment(CTRyucca, -10, 10, 0, 0);min(CTRyucca, 0)">
+</buff>
+
+<buff id="warningYuccaBuff" buffif="CTRyucca greater 520" debuffif="CTRyucca less 519;CTRyucca greater 1040" causes="foodYuccaFruit" type="disease" icon="ui_game_symbol_dysentery" name_key="yuccaWarningName" description_key="yuccaWarningDesc" tooltip_key="yuccaWarningTooltip">
+</buff>
+
+<buff id="YuccaPoisonBuff" duration="0" buffif="CTRyucca greater 1040" debuffif="CTRyucca less 1040" castsound="playersick" causes="foodYuccaFruit"	type="disease" icon="ui_game_symbol_dysentery" name_key="yuccaSickName" description_key="yuccaSickDesc" tooltip_key="yuccaSickTooltip" cures="cureYucca">
+	<modify id="0" stat="stamina" amount="-1" rate="1"/>
+</buff>
+
+<buff id="cureYucca" duration="1" actions="setvar(CTRyucca,0)"/>
+
+<!-- Radiation Suit Test -->
+
+
+<!-- Fruit And Veg Requirements -->
+<!-- Lack of fruit and veggies give you scurvy IRL, so you get 1 scurvy level every hour -->
+<buff id="MetabolizeScurvy" mutex="naturalvits" buffif="+full &gt; 0" duration="0" actions="increment(scurvyLevel, 1, 100t, 0, 0)" name_key="MetabolizeScurvy" />
+<!-- Go 1 week without eating any fruit or veg, or food containing it, and you will get scurvy -->
+<buff id="Scurvy" mutex="naturalvits" type="sickness" duration="0" buffif="scurvyLevel greater 168" debuffif="scurvyLevel less 167" icon="ui_game_symbol_scurvy" name_key="scurvyName" description_key="scurvyDesc" tooltip_key="scurvyTooltip">
+		<modify id="0" stat="stamina" amount="-2" rate="1" />
+		<modify id="1" stat="wellness" amount="-1" rate="1800" />
+</buff>
+<buff id="naturalvits" actions="setvar(scurvyLevel, 0);debuff(Scurvy);debuff(MetabolizeScurvy)" duration="100t" onexpired="ResumeScurvy" icon="ui_game_symbol_naturalvits" name_key="naturalvitsName" description_key="naturalvitsDesc" tooltip_key="naturalvitsTooltip" />
+<buff id="ResumeScurvy" duration="1" actions="setvar(scurvyLevel, 1)" onexpired="MetabolizeScurvy" name_key="ResumeScurvy" /> -->
+
+<!-- PROTEIN DEFICIENCY DISEASE -->
+<!-- You get 1 PDD level every hour -->
+<buff id="MetabolizePDD" mutex="protein" buffif="+full &gt; 0" duration="0" actions="increment(proteinLevel, 1, 100t, 0, 0)" name_key="MetabolizePDD" />
+<!-- Go 1 week without eating any meat or other protein and you will get PDD -->
+<buff id="PDD" mutex="protein" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="proteinLevel greater 168" debuffif="proteinLevel less 167" icon="ui_game_symbol_pdd" name_key="PDDName" description_key="PDDDesc" tooltip_key="PDDTooltip">
+	<modify id="0" stat="stamina" amount="-1" rate="1" />
+</buff>
+<buff id="protein" actions="setvar(proteinLevel, 0);debuff(PDD);debuff(MetabolizePDD)" duration="100t" onexpired="ResumePDD" icon="ui_game_symbol_protein" name_key="proteinName" description_key="proteinDesc" tooltip_key="proteinTooltip" />
+<buff id="ResumePDD" duration="1" actions="setvar(proteinLevel, 1)" onexpired="MetabolizePDD" name_key="ResumePDD" />
+
+<!-- Resting requirements -->
+<!-- You get 1 fatigue level every hour -->
+<buff id="fatigue" mutex="wellrested" buffif="+full &gt; 0" duration="0" actions="increment(fatiguelevel, 1, 100t, 0, 0)" name_key="fatigue" />
+<!-- If fatigue less or equal 0, get a 3h well rested buff 
+<buff id="wellrested" actions="setvar(fatiguelevel, 0);debuff(fatigue)" duration="300t" buffif="fatiguelevel less 1" debuffif="fatiguelevel greater 0" onexpired="ResumeFatigue" icon="ui_game_symbol_wellrested" name_key="wellrested" description_key="You feel well rested and ready to go!" tooltip_key="Well Rested">
+	<modify id="0" stat="speedmodifier" setValue="1.2" />
+</buff> -->
+<!-- More then 24 hours without mitigating fatigue, you'll get sleepy -->
+<buff id="sleepy" mutex="fatigued" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="0" buffif="fatiguelevel greater 24" debuffif="fatiguelevel less 1" icon="ui_game_symbol_sleepy1" name_key="sleepyName" description_key="sleepyDesc" tooltip_key="sleepyTooltip" />
+<!-- More then 35 hours without mitigating fatigue, you'll get fatigued -->
+<buff id="fatigued" mutex="sleepDeprived,CoffeeStaminaBoost" type="sickness" actions="increment(@wellness, -0.05, 30t, 0, 0);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 35" debuffif="fatiguelevel less 25" icon="ui_game_symbol_sleepy2" name_key="fatiguedName" description_key="fatiguedDesc" tooltip_key="fatiguedTooltip">
+	<modify id="0" stat="speedmodifier" setValue="0.90" />
+</buff>
+<!-- More then 48 hours without mitigating fatigue, you'll get sleep deprived -->
+<buff id="sleepDeprived" type="sickness" actions="increment(@wellness, -0.25, 50t, 0, 0);debuff(fatigued);debuff(sleepy)" duration="0" buffif="fatiguelevel greater 48" debuffif="fatiguelevel less 36" icon="ui_game_symbol_sleepy3" name_key="sleepdeprivedName" description_key="sleepdeprivedDesc" tooltip_key="sleepdeprivedTooltip">
+	<modify id="0" stat="stamina" amount="-2" rate="1" />
+	<modify id="1" stat="speedmodifier" setValue="0.75" />
+</buff>
+<!-- Restart Fatigue -->
+<buff id="ResumeFatigue" duration="1" actions="setvar(fatiguelevel, 1)" onexpired="fatigue" name_key="ResumeFatigue" />
+
+<!-- Modified Bed Buffs for Fatigue System -->
+
+<buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 10)" />
+<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0);increment(fatiguelevel, -2, 10, 0, 0)"
+	icon="ui_game_symbol_map_bed" name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip">
+	<modify id="0" stat="health" amount="1" rate="60" />
+	<modify id="0" stat="stamina" amount="1" rate="20" />
+</buff>
+
+<buff id="sleepingBedTrigger" duration="1" actions="setvar(CTRbed, 10)" />
+<buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -3, 2, 0, 0);increment(fatiguelevel, -5, 10, 0, 0)"
+	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
+	<modify id="0" stat="health" amount="1" rate="30" />
+	<modify id="0" stat="stamina" amount="1" rate="10" />
+</buff>
+
+<buff id="sleepingBigBedTrigger" duration="1" actions="setvar(CTRbigbed, 10)" />
+<buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -3, 2, 0, 0);increment(fatiguelevel, -7, 10, 0, 0)"
+	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
+	<modify id="0" stat="health" amount="1" rate="15" />
+	<modify id="0" stat="stamina" amount="1" rate="5" />
+</buff>
+
+<buff id="floorPillowTrigger" duration="1" actions="setvar(CTRPillow, 10)" />
+<buff id="floorPillowEffect" duration="0" buffif="CTRPillow greater 0" debuffif="CTRPillow less 1" actions="increment(CTRPillow, -3, 2, 0, 0);increment(fatiguelevel, -2, 10, 0, 0)"
+	icon="ui_game_symbol_map_bed" name_key="pillowAwesome" description_key="pillowAwesomeDesc" tooltip_key="pillowAwesomeTooltip">
+	<modify id="0" stat="health" amount="1" rate="120" />
 </buff>
 
 </buffs>

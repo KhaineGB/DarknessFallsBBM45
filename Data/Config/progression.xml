@@ -848,7 +848,7 @@
 		<recipe name="antirad" unlock_level="5"/>
 	</perk>
 
-	<perk name="electricBasicsPerk" icon="electric_power" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
+	<perk name="electricBasicsPerk" icon="ui_game_symbol_electricity_basics" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1"/>
 		<recipe name="wireTool" unlock_level="1"/>
 		<recipe name="electricwirerelay" unlock_level="1"/>
@@ -865,7 +865,7 @@
 		<recipe name="speaker" unlock_level="2"/>
 	</perk>
 
-	<perk name="electricTriggersPerk" icon="electric_switch" description_key="electricTriggersDesc" title_key="electricTriggersName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="3" group="science">
+	<perk name="electricTriggersPerk" icon="ui_game_symbol_switches" description_key="electricTriggersDesc" title_key="electricTriggersName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="3" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
 		<recipe name="switch" unlock_level="1"/>
 		<recipe name="tripwirepost" unlock_level="1"/>
@@ -885,7 +885,7 @@
 		<recipe name="bladeTrap" unlock_level="2"/>
 	</perk>
 
-	<perk name="electricTrapsRangedPerk" icon="electric_turret" description_key="electricTrapsRangedDesc" title_key="electricTrapsRangedName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
+	<perk name="electricTrapsRangedPerk" icon="ui_game_symbol_ranged_trap" description_key="electricTrapsRangedDesc" title_key="electricTrapsRangedName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
 		<recipe name="dartTrap" unlock_level="1"/>
 		<!--	<recipe name="steelDart" unlock_level="1"/> -->
@@ -895,7 +895,7 @@
 		<recipe name="autoTurret" unlock_level="3"/>
 	</perk>
 
-	<perk name="electricGeneratorPerk" icon="electric_generator" description_key="electricGeneratorDesc" title_key="electricGeneratorName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+	<perk name="electricGeneratorPerk" icon="ui_game_symbol_generator_bank" description_key="electricGeneratorDesc" title_key="electricGeneratorName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
 		<recipe name="generatorbank" unlock_level="1"/>
 	</perk>
@@ -1037,27 +1037,27 @@
 		</effect>
 	</perk>
 
-	<perk name="paintDecorations" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineDecorations" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<perk name="paintDecorations" icon="ui_game_symbol_painting" description_key="paintGroupDesc" title_key="paintMagazineDecorations" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupDecoration" unlock_level="1"/>
 	</perk>
-	<perk name="paintFaux" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineFaux" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<perk name="paintFaux" icon="ui_game_symbol_painting" description_key="paintGroupDesc" title_key="paintMagazineFaux" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupFaux" unlock_level="1"/>
 	</perk>
-	<perk name="paintMasonry" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineMasonry" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<perk name="paintMasonry" icon="ui_game_symbol_painting" description_key="paintGroupDesc" title_key="paintMagazineMasonry" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupMasonry" unlock_level="1"/>
 	</perk>
-	<perk name="paintMetal" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineMetal" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<perk name="paintMetal" icon="ui_game_symbol_painting" description_key="paintGroupDesc" title_key="paintMagazineMetal" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupMetal" unlock_level="1"/>
 	</perk>
-	<perk name="paintWallCoverings" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineWallCoverings" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<perk name="paintWallCoverings" icon="ui_game_symbol_painting" description_key="paintGroupDesc" title_key="paintMagazineWallCoverings" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupWallCovering" unlock_level="1"/>
 	</perk>
-	<perk name="paintWoodAndRoofing" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineWoodAndRoofing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<perk name="paintWoodAndRoofing" icon="ui_game_symbol_painting" description_key="paintGroupDesc" title_key="paintMagazineWoodAndRoofing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupWood" unlock_level="1"/>
 	</perk>
@@ -1517,6 +1517,7 @@
 		<recipe name="titaniumBars" unlock_level="1"/>
 		<recipe name="titaniumBarsCentered" unlock_level="1"/>
 		<recipe name="titaniumclawHammer" unlock_level="1"/>
+		<recipe name="superDynamite" unlock_level="1"/>
 		
 	</perk>
 	
@@ -1548,6 +1549,10 @@
 		
 		<recipe name="seedWheat" unlock_level="1"/>
 		<recipe name="seedCarrot" unlock_level="1"/>
+		<recipe name="seedTomato" unlock_level="1"/>
+		<recipe name="seedBanana" unlock_level="1"/>
+		<recipe name="seedCoconut" unlock_level="1"/>
+		<recipe name="seedOrange" unlock_level="1"/>
 		<recipe name="plantedHop1" unlock_level="1"/>
 		<recipe name="plantedCoffee1" unlock_level="1"/>
 		<recipe name="fertilizer" unlock_level="1"/>		
@@ -1617,6 +1622,7 @@
 		<recipe name="titaniumHelmet" unlock_level="1"/>
 		<recipe name="titaniumLegs" unlock_level="1"/>
 		<recipe name="clubTitaniumSpiked" unlock_level="1"/>
+		<recipe name="titaniumSpikedKnuckles" unlock_level="1"/>
 		
 	</perk>
 
@@ -1633,9 +1639,7 @@
 		<recipe name="jerky" unlock_level="1"/>
 		
 	</perk>
-	
-<!-- Class Capstone Perks -->
-	
+		
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">
 	</perk>
