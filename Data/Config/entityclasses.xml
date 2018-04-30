@@ -3854,7 +3854,6 @@
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npccrossbow,npcironCrossbowBolt"/>
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
-	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
 </entity_class>
 
@@ -3879,8 +3878,15 @@
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npccrossbow,npcironCrossbowBolt"/>
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
-	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+	    <!-- Sounds -->
+    <property name="SoundRandomTime" value="200.0"/>
+    <property name="SoundRandom" value="femalehateroam"/>
+    <property name="SoundAlert" value="femalehatealert"/>
+    <property name="SoundSense" value="femalehatesense"/>
+    <property name="SoundHurt" value="femalehatepain"/>
+    <property name="SoundDeath" value="femalehatedeath"/>
+    <property name="SoundAttack" value="femalehateattack"/>
 </entity_class>
 
 <entity_class name="BanditFemaleRanged2" extends="BanditFemaleRanged">
@@ -3904,7 +3910,6 @@
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunPistol,npc9mmBullet"/>
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
-	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
 </entity_class>
 
@@ -3929,8 +3934,15 @@
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunPistol,npc9mmBullet"/>
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
-	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock6Prefab"/>
+	    <!-- Sounds -->
+    <property name="SoundRandomTime" value="200.0"/>
+    <property name="SoundRandom" value="femalehateroam"/>
+    <property name="SoundAlert" value="femalehatealert"/>
+    <property name="SoundSense" value="femalehatesense"/>
+    <property name="SoundHurt" value="femalehatepain"/>
+    <property name="SoundDeath" value="femalehatedeath"/>
+    <property name="SoundAttack" value="femalehateattack"/>
 </entity_class>
 
 <entity_class name="BanditFemaleRangedWasteland2" extends="BanditFemaleRangedWasteland">
@@ -3957,7 +3969,6 @@
 	<property name="LootListOnDeath" value="72"/>	
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
-	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock7Prefab"/>
 </entity_class>
 
@@ -3975,8 +3986,15 @@
 	<property name="LootListOnDeath" value="72"/>	
 	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
-	<property name="AIPackages" value="Human Basic, Bandit Ranged"/>
     <property name="CorpseBlock" value="GoreBlock7Prefab"/>
+	    <!-- Sounds -->
+    <property name="SoundRandomTime" value="200.0"/>
+    <property name="SoundRandom" value="femalehateroam"/>
+    <property name="SoundAlert" value="femalehatealert"/>
+    <property name="SoundSense" value="femalehatesense"/>
+    <property name="SoundHurt" value="femalehatepain"/>
+    <property name="SoundDeath" value="femalehatedeath"/>
+    <property name="SoundAttack" value="femalehateattack"/>
 </entity_class>
 
 <entity_class name="BanditFemaleLeader2" extends="BanditFemaleLeader">
