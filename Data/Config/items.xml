@@ -8969,6 +8969,9 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Focused_blockname_6" value="waterRainBucket"/>
+		<property name="Focused_blockname_7" value="workingGraniteSink"/>
+		<property name="Focused_blockname_8" value="workingOldSink"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -9019,6 +9022,7 @@ Mesh files no longer used:
 		<property name="Focused_blockname_5" value="waterSource8"/>
 		<property name="Focused_blockname_6" value="workingGraniteSink"/>
 		<property name="Focused_blockname_7" value="workingOldSink"/>
+		<property name="Focused_blockname_8" value="waterRainBucket"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -10130,6 +10134,7 @@ Mesh files no longer used:
 		<property name="Focused_blockname_5" value="waterSource8"/>
 		<property name="Focused_blockname_6" value="workingGraniteSink"/>
 		<property name="Focused_blockname_7" value="workingOldSink"/>
+		<property name="Focused_blockname_8" value="waterRainBucket"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -11768,7 +11773,7 @@ Mesh files no longer used:
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Delay" value="0.5"/>
-		<property name="Blockname" value="waterStaticBucket"/>
+		<property name="Blockname" value="waterRainBucket"/>
 		<property name="Sound_start" value="bucketplace_water"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -15829,29 +15834,600 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
-<item id="3000" name="QuestTest">
-	<property name="CustomIcon" value="civilianBook" />
-	<property name="CustomIconTint" value="ea0606"/>
-	<property name="DescriptionKey" value="MasteryBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
-	<property class="Action1">
-		<property name="Class" value="Quest" />
-		<property name="QuestGiven" value="quest_testfetch" />
+<item id="2221" name="gunM4A1">
+	<property name="CustomIcon" value="gunAR15" />
+	<property name="DescriptionKey" value="gunAR15Desc"/>
+	<property name="Meshfile" value="#M4A1?M4A1"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="48"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsM4A1_stock"/>
+		<property name="Receiver" value="partsM4A1_receiver"/>
+		<property name="Pump" value="partsM4A1_parts"/>
+		<property name="Barrel" value="partsM4A1_barrel"/>
 	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.150"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
+		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
+		<property name="Magazine_size" value="30"/>
+		<property name="Magazine_items" value="9mmBullet, 9mmBulletHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Reload_time" value="3.9"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="ak47_fire_start"/>
+		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Horde_meter_rate" value="2.5"/>
+		<property name="Horde_meter_distance" value="20"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="Buff" value="critGunAK47"/>
+		<property name="Buff_chance" value="0.1"/>
+		<property name="ActionExp" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
 </item>
 
-<!-- <item id="2177" name="QuestTest2">
-	<property name="CustomIcon" value="civilianBook" />
-	<property name="CustomIconTint" value="ea0606"/>
-	<property name="DescriptionKey" value="MasteryBookDesc"/>
-	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
-	<property class="Action1">
-		<property name="Class" value="Quest" />
-		<property name="QuestGiven" value="quest_testpoi2" />
+<item id="2222" name="partsM4A1_stock">
+	<property name="CustomIcon" value="partsAR15_stock" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="12,16"/>
+		<property name="DegradationMax" value="5600,14000"/>
+		<property name="DismembermentBaseChance" value="-0.2,-0.1"/>
 	</property>
-</item> -->
+	<property name="EconomicValue" value="1600"/>
+</item>
 
+<item id="2223" name="partsM4A1_receiver">
+	<property name="CustomIcon" value="partsAR15_receiver" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="54,90"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+
+<item id="2224" name="partsM4A1_parts">
+	<property name="CustomIcon" value="partsAR15_parts" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="7,7"/> <!-- 14.5 -->
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+
+<item id="2225" name="partsM4A1_barrel">
+	<property name="CustomIcon" value="partsAR15_barrel" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_barrel"/> <!-- xxx -->
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="42,70"/>
+		<property name="BlockDamage" value="5,9.5"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+
+<item id="2226" name="gunM4A1Scoped">
+	<property name="CustomIcon" value="gunAR15" />
+	<property name="DescriptionKey" value="gunAR15Desc"/>
+	<property name="Meshfile" value="#M4A1?M4A1Scoped"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="48"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsM4A1_stock"/>
+		<property name="Receiver" value="gunScope"/>
+		<property name="Pump" value="partsM4A1_parts"/>
+		<property name="Barrel" value="partsM4A1_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.150"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
+		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
+		<property name="Magazine_size" value="30"/>
+		<property name="Magazine_items" value="9mmBullet, 9mmBulletHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Reload_time" value="3.9"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="ak47_fire_start"/>
+		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Horde_meter_rate" value="2.5"/>
+		<property name="Horde_meter_distance" value="20"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="Buff" value="critGunAK47"/>
+		<property name="Buff_chance" value="0.1"/>
+		<property name="ActionExp" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="15"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<item id="2227" name="npcgunM4A1Scoped">
+	<property name="CustomIcon" value="gunAR15" />
+	<property name="DescriptionKey" value="gunAR15Desc"/>
+	<property name="Meshfile" value="#M4A1?M4A1Scoped"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="48"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="Candrop" value="false"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="npcpartsM4A1_stock"/>
+		<property name="Receiver" value="npcpartsM4A1_receiver"/>
+		<property name="Pump" value="npcpartsM4A1_parts"/>
+		<property name="Barrel" value="npcpartsM4A1_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.150"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
+		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
+		<property name="Infinite_ammo" value="true" />
+		<property name="Magazine_size" value="30"/>
+		<property name="Magazine_items" value="npc9mmBulletHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Reload_time" value="3.9"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="ak47_fire_start"/>
+		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Horde_meter_rate" value="2.5"/>
+		<property name="Horde_meter_distance" value="20"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="Buff" value="critGunAK47"/>
+		<property name="Buff_chance" value="0.1"/>
+		<property name="ActionExp" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="15"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="Degradation" value="99999" param1="true"/>
+</item>
+
+<item id="2228" name="npcpartsM4A1_stock">
+	<property name="CustomIcon" value="partsAR15_stock" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="12,16"/>
+		<property name="DegradationMax" value="5600,14000"/>
+		<property name="DismembermentBaseChance" value="-0.2,-0.1"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+
+<item id="2229" name="npcpartsM4A1_receiver">
+	<property name="CustomIcon" value="partsAR15_receiver" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="54,90"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+
+<item id="2230" name="npcpartsM4A1_parts">
+	<property name="CustomIcon" value="partsAR15_parts" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="7,7"/> <!-- 14.5 -->
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+
+<item id="2231" name="npcpartsM4A1_barrel">
+	<property name="CustomIcon" value="partsAR15_barrel" />
+	<property name="CustomIconTint" value="746d6c"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_barrel"/> <!-- xxx -->
+	<property name="DescriptionKey" value="partsM4A1GroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="42,70"/>
+		<property name="BlockDamage" value="5,9.5"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1600"/>
+</item>
+<!--
+<item id="2993" name="energyCell"> 
+	<property name="CustomIcon" value="oilpump" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="DescriptionKey" value="partsSniperRifleGroupDesc"/> 
+	<property name="Meshfile" value="#FutureTech?LaserBolt"/>
+	<property name="DropMeshfile" value="#FutureTech?EnergyCell"/>
+	<property name="HandMeshfile" value="#FutureTech?EnergyCell"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="500"/>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="EconomicValue" value="450"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<item id="2994" name="pulseGrenade">
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="CustomIcon" value="grenade" />
+	<property name="DescriptionKey" value="GrenadeDesc"/>
+	<property name="Material" value="metal"/>
+	<property name="Meshfile" value="#FutureTech?PulseGrenade"/>
+	<property name="HoldType" value="54"/>
+	<property name="DropScale" value="2"/>
+	<property name="ThrowableDecoy" value="true"/>
+	<property name="Stacknumber" value="40"/> 
+	<property name="EconomicValue" value="41"/>
+	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="Explosion.EntityDamage" value="300"/>
+	<property name="Explosion.ParticleIndex" value="1"/>
+	<property name="Explosion.RadiusBlocks" value="1"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.DamageBonus.stone" value="0.1"/>
+	<property name="Explosion.DamageBonus.metal" value="0.05"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<property name="Explosion.DamageBonus.wood" value="0.5"/>
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.BlastPower" value="150"/> 
+	<property name="FuseTime" value="20000"/> 
+	<property name="ExplodeOnHit" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Explosion.ParticleIndex" value="8"/>
+		<property name="Throw_strength_default" value="25"/>
+		<property name="Throw_strength_max" value="25"/>
+		<property name="Max_strain_time" value="1.5"/>
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+	<property name="EconomicValue" value="41"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<item id="2995" name="gunLaserPistol">
+	<property name="CustomIcon" value="gunP225" />
+	<property name="DescriptionKey" value="gunP225Desc"/>
+	<property name="Meshfile" value="#FutureTech?LaserPistol"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="1"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="false"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property class="Parts">
+		<property name="Stock" value="partsLPistol_grip"/>
+		<property name="Receiver" value="partsLPistol_receiver"/>
+		<property name="Pump" value="partsLPistol_parts"/>
+		<property name="Barrel" value="partsLPistol_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="pistol_sight_in"/>
+	<property name="Sound_Sight_Out" value="pistol_sight_out"/>
+	<property class="Action0">
+	<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.2"/>
+	<property name="Crosshair_min_distance" value="5"/>
+	<property name="Crosshair_max_distance" value="6"/>
+	<property name="Magazine_size" value="20"/>
+	<property name="Magazine_items" value="9mmBullet, 9mmBulletHP, Unload"/>
+	<property name="Magazine_item_ray_counts" value="1, 1"/>
+	<property name="Magazine_item_ray_spreads" value="0.4, 0.4"/>
+	<property name="Reload_time" value="2"/>
+	<property name="Bullet_icon" value="pistol"/>
+	<property name="Sound_start" value="laserpistol_fire"/>
+	<property name="Sound_repeat" value=""/>
+	<property name="Sound_end" value=""/>
+	<property name="Sound_empty" value="weapon_empty"/>
+	<property name="Sound_reload" value="pistol_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+		<property name="DamageBonus.head" value="8"/>
+		<property name="DamageBonus.wood" value="4"/>
+		<property name="DamageBonus.earth" value="1"/>
+		<property name="DamageBonus.glass" value="2"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="LightSource" value="lightSource"/>
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Pistols"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<item id="2996" name="partsLPistol_grip">
+	<property name="CustomIcon" value="partsP225_grip" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsLPistolGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="15,21"/>
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2997" name="partsLPistol_receiver">
+	<property name="CustomIcon" value="partsP225_receiver" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsLPistolGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="96,160"/>
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2998" name="partsLPistol_parts">
+	<property name="CustomIcon" value="partsP225_parts" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsLPistolGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="1,0.01"/> 
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2999" name="partsLPistol_barrel">
+	<property name="CustomIcon" value="partsP225_barrel" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsLPistolGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="40,60"/>
+		<property name="BlockDamage" value="10,20"/>
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="3001" name="gunLaserRifle">
+	<property name="Meshfile" value="#FutureTech?LaserSniper"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="11"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairOnAim" value="false"/> 
+	<property name="CrosshairUpAfterShot" value="false"/> 
+	<property class="Parts">
+		<property name="Stock" value="partsLaserRifle_stock"/>
+		<property name="Receiver" value="partsLaserRifle_receiver"/>
+		<property name="Pump" value="partsLaserRifle_parts"/>
+		<property name="Barrel" value="partsLaserRifle_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> 
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Crosshair_min_distance" value="45"/> 
+		<property name="Crosshair_max_distance" value="54"/> 
+		<property name="Magazine_size" value="50"/>
+		<property name="Magazine_items" value="762mmBullet, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Reload_time" value="2.5"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="lasersniper_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="sniperrifle_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="9"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> 
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="15"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<item id="3002" name="partsLaserRifle_stock">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsSniperRifle_stock" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="DescriptionKey" value="partsLaserRifleGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="DismembermentBaseChance" value="0.1,0.6"/>
+		<property name="DismembermentBonus" value="0,0"/>
+		<property name="DegradationRate" value="15,21"/>
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="EconomicValue" value="1875"/>
+</item>
+<item id="3003" name="partsLaserRifle_receiver">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsSniperRifle_receiver" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="DescriptionKey" value="partsLaserRifleGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="96,160"/>
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="EconomicValue" value="1875"/>
+</item> 
+<item id="3004" name="partsLaserRifle_parts">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_parts"/> 
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="DescriptionKey" value="partsLaserRifleGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="1,0.01"/> 
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="EconomicValue" value="1875"/>
+</item>
+<item id="3005" name="partsLaserRifle_barrel">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsSniperRifle_barrel" />
+	<property name="CustomIconTint" value="A83418"/>
+	<property name="DescriptionKey" value="partsLaserRifleGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="40"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="60,90"/>
+		<property name="BlockDamage" value="20,40"/>
+		<property name="DegradationMax" value="7000,17500"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="EconomicValue" value="1875"/>
+</item> -->
 
 </items>

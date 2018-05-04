@@ -613,7 +613,7 @@ This requires a 50+ food bar:
 
 <buff id="drinkSapTrigger" duration="1" actions="increment(CTRsap, 144, 0, 0, 1)"/>
 
-<buff id="metabolizeSapBuff" buffif="CTRsap greater 0" debuffif="CTRsap less 1" actions="increment(CTRsap, -10, 10, 0, 0);min(CTRsap, 0)">
+<buff id="metabolizeSapBuff" buffif="CTRsap greater 0" debuffif="CTRsap less 1" actions="increment(CTRsap, -10, 3, 0, 0);min(CTRsap, 0)">
 </buff>
 
 <buff id="warningSapBuff" buffif="CTRsap greater 520" debuffif="CTRsap less 519;CTRsap greater 1040" causes="bottleSap,bowlSap"	type="disease" icon="ui_game_symbol_skull" name_key="sapWarningName" description_key="sapWarningDesc" tooltip_key="sapWarningTooltip">
@@ -636,7 +636,7 @@ This requires a 50+ food bar:
 <!-- Yucca fruit is a laxative IRL. Especially if it hasn't been grilled. -->
 <buff id="eatYuccaTrigger" duration="1" actions="increment(CTRyucca, 144, 0, 0, 1)"/>
 
-<buff id="metabolizeYuccaBuff" buffif="CTRyucca greater 0" debuffif="CTRyucca less 1" actions="increment(CTRyucca, -10, 10, 0, 0);min(CTRyucca, 0)">
+<buff id="metabolizeYuccaBuff" buffif="CTRyucca greater 0" debuffif="CTRyucca less 1" actions="increment(CTRyucca, -10, 3, 0, 0);min(CTRyucca, 0)">
 </buff>
 
 <buff id="warningYuccaBuff" buffif="CTRyucca greater 520" debuffif="CTRyucca less 519;CTRyucca greater 1040" causes="foodYuccaFruit" type="disease" icon="ui_game_symbol_dysentery" name_key="yuccaWarningName" description_key="yuccaWarningDesc" tooltip_key="yuccaWarningTooltip">
@@ -720,6 +720,12 @@ This requires a 50+ food bar:
 <buff id="floorPillowEffect" duration="0" buffif="CTRPillow greater 0" debuffif="CTRPillow less 1" actions="increment(CTRPillow, -3, 2, 0, 0);increment(fatiguelevel, -2, 10, 0, 0)"
 	icon="ui_game_symbol_map_bed" name_key="pillowAwesome" description_key="pillowAwesomeDesc" tooltip_key="pillowAwesomeTooltip">
 	<modify id="0" stat="health" amount="1" rate="120" />
+</buff>
+
+<!-- Special Radiated Buffs for new model zombies and UMA zombies -->
+
+<buff id="newzombieRadiatedBuff80" duration="0" actions="attach(ParticleEffects/RadiatedParticlesOnMesh, @impact)" icon="ui_game_symbol_fire">
+	<modify id="0" stat="health" amount="80" rate="3" />
 </buff>
 
 </buffs>

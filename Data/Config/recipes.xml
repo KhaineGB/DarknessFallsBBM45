@@ -2671,6 +2671,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Coconut" count="1" />
 </recipe>
 
+<recipe name="bananaBread" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Banana" count="6" />
+	<ingredient name="egg" count="4" />
+	<ingredient name="Coconut" count="2" />
+</recipe>
+
 <recipe name="bananaPancakes" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="Batter" count="2" />
 	<ingredient name="Banana" count="2" />
@@ -5533,6 +5539,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Apple" count="2"/>
 	<ingredient name="Orange" count="2"/>
 	<ingredient name="Banana" count="2"/>
+	<ingredient name="emptyBowl" count="1"/>	
 </recipe>
 
 <!-- Floor Pillow -->

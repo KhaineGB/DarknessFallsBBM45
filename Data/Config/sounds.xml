@@ -4770,7 +4770,7 @@
 
 <SoundDataNode name="hornetalert">
 	<AudioSource name="Sounds/AudioSource_VO" />
-	<Noise ID="2" range="7" volume="11" time="3" muffled_when_crouched="0.5" />
+	<Noise ID="2" range="7" volume="9" time="3" muffled_when_crouched="0.5" />
 	<AudioClip ClipName="#Hornet?hornetalert1" />
 	<AudioClip ClipName="#Hornet?hornetalert2" />
 	<AudioClip ClipName="#Hornet?hornetalert3" />
@@ -4785,7 +4785,7 @@
 	
 <SoundDataNode name="hornetattack">
 	<AudioSource name="Sounds/AudioSource_VO" />
-	<Noise ID="1" range="4" volume="7" time="1.5" muffled_when_crouched="0.5" />
+	<Noise ID="1" range="4" volume="9" time="1.5" muffled_when_crouched="0.5" />
 	<AudioClip ClipName="#Hornet?hornetattack1" />
 	<AudioClip ClipName="#Hornet?hornetattack2" />
 	<AudioClip ClipName="#Hornet?hornetattack3" />
@@ -4800,7 +4800,7 @@
 	
 <SoundDataNode name="hornetdeath">
 	<AudioSource name="Sounds/AudioSource_VO" />
-	<Noise ID="3" range="14" volume="16" time="2.5" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<Noise ID="3" range="14" volume="9" time="2.5" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 	<AudioClip ClipName="#Hornet?hornetdeath1" />
 	<AudioClip ClipName="#Hornet?hornetdeath2" />
 	<AudioClip ClipName="#Hornet?hornetdeath3" />
@@ -4815,7 +4815,7 @@
 	
 <SoundDataNode name="hornetgiveup">
 	<AudioSource name="Sounds/AudioSource_VO" />
-	<Noise ID="1" range="4" volume="7" time="3" muffled_when_crouched="0.5" />
+	<Noise ID="1" range="4" volume="11" time="3" muffled_when_crouched="0.5" />
 	<AudioClip ClipName="#Hornet?hornetroam1" />
 	<Channel name="Mouth" />
 	<Priority name="5" />
@@ -4828,7 +4828,7 @@
 	
 <SoundDataNode name="hornetpain">
 	<AudioSource name="Sounds/AudioSource_VO" />
-	<Noise ID="2" range="7" volume="11" time="1.5" muffled_when_crouched="0.5" />
+	<Noise ID="2" range="7" volume="9" time="1.5" muffled_when_crouched="0.5" />
 	<AudioClip ClipName="#Hornet?hornetpain1" />
 	<AudioClip ClipName="#Hornet?hornetpain2" />
 	<AudioClip ClipName="#Hornet?hornetpain3" />
@@ -4856,7 +4856,7 @@
 
 <SoundDataNode name="hornetsense">
 	<AudioSource name="Sounds/AudioSource_VO" />
-	<Noise ID="3" range="14" volume="16" time="4" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<Noise ID="3" range="14" volume="9" time="4" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 	<AudioClip ClipName="#Hornet?hornetsense1" />
 	<Channel name="Mouth" />
 	<Priority name="4" />
@@ -4933,15 +4933,22 @@
 	
 <!-- Laser Rifle -->
 
-<SoundDataNode name="laserrifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="50" volume="20" time="2" heat_map_strength="0.3" heat_map_time="120"/>
-	<AudioClip ClipName="#LaserRifle?LaserFire"/>
+<SoundDataNode name="lasersniper_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="5" range="50" volume="10" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<AudioClip ClipName="#FutureTech?LaserSniperFire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <!-- <SoundDataNode name="sniperrifle_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Weapons/Ranged/sniperrifle/sniperrifle_reload"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode> -->
+	
+<!-- Laser Pistol -->
+
+<SoundDataNode name="laserpistol_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="5" range="50" volume="15" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<AudioClip ClipName="#FutureTech?LaserShoot"/>
+	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 	
 <!-- Titanium Sound Test -->
 

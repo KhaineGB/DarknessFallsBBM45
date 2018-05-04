@@ -26,6 +26,7 @@
 			<hub_rule name="cityLarge" prob="0.15"/>
 			<hub_rule name="cityMedium" prob="0.3"/>
 			<hub_rule name="citySmall" prob="0.3"/>
+			<hub_rule name="noHub" prob="0.3"/>
 
 			<wilderness_rule name="wildernessCity"/>
 			
@@ -39,6 +40,7 @@
 			<hub_rule name="townLarge" prob="0.15"/>
 			<hub_rule name="townMedium" prob="0.3"/>
 			<hub_rule name="townSmall" prob="0.3"/>
+			<hub_rule name="noHub" prob="0.3"/>
 
 			<wilderness_rule name="wildernessTown"/>
 			
@@ -52,6 +54,7 @@
 			<hub_rule name="ruralLarge" prob="0.15"/>
 			<hub_rule name="ruralMedium" prob="0.3"/>
 			<hub_rule name="ruralSmall" prob="0.3"/>
+			<hub_rule name="noHub" prob="0.3"/>
 
 			<wilderness_rule name="wildernessRural"/>
 			
@@ -448,21 +451,21 @@
 
 	<wilderness_rules>
 		<!-- Wilderness pois for city cell -->
-		<wilderness_rule name="wildernessCity" spawn_min_max="30,35"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessCity" spawn_min_max="20,25"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="asphalt" />
 			<path_radius value="4" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroupCity" prob="1"/>
 		</wilderness_rule>
 		<!-- Wilderness pois for town cell -->
-		<wilderness_rule name="wildernessTown" spawn_min_max="35,40"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessTown" spawn_min_max="20,30"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="gravel" />
 			<path_radius value="3" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroupTown" prob="1"/>
 		</wilderness_rule>
 		<!-- Wilderness pois for rural cell -->
-		<wilderness_rule name="wildernessRural" spawn_min_max="40,45"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessRural" spawn_min_max="20,25"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="dirt" />
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
