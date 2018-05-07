@@ -17,32 +17,32 @@
 	<!-- JOEL: change "respawndelay" to world days, change "maxcount" to entities per area -->
 <!-- All Navezgane Cities Now not used -->
     <biome name="city">
-        <spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
-        <spawn maxcount="8" respawndelay="1" time="Night" entitygroup="ZombieFeralNight" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+        <spawn maxcount="6" respawndelay="0.5" time="Day" entitygroup="ZombiesAll" />
+        <spawn maxcount="8" respawndelay="0.5" time="Night" entitygroup="ZombieFeralNight" />
+		<spawn maxcount="2" respawndelay="0.5" time="Any" entitygroup="ZombieDogGroup" />
 		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="BanditGroup" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
     </biome>
 	
 	<biome name="town">
-        <spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
-        <spawn maxcount="8" respawndelay="1" time="Night" entitygroup="ZombieFeralNight" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+        <spawn maxcount="6" respawndelay="0.5" time="Day" entitygroup="ZombiesAll" />
+        <spawn maxcount="8" respawndelay="0.5" time="Night" entitygroup="ZombieFeralNight" />
+		<spawn maxcount="2" respawndelay="0.5" time="Any" entitygroup="ZombieDogGroup" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
 		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
     </biome>
 	
     <biome name="rural">
-        <spawn maxcount="6" respawndelay="4" time="Day"   entitygroup="ZombiesAll" />
-		<spawn maxcount="6" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
+        <spawn maxcount="6" respawndelay="2" time="Day"   entitygroup="ZombiesAll" />
+		<spawn maxcount="6" respawndelay="2" time="Night" entitygroup="ZombieFeralNight" />
 		<spawn maxcount="2" respawndelay="1" time="Day" entitygroup="SurvivorGroup" />
 		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="BanditGroup" />
     </biome>
 <!-- Not Used anymore in Navezgane-->
     <biome name="city_wasteland">
-      <spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
-      <spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
-      <spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+      <spawn maxcount="2" respawndelay="0.25" time="Day" entitygroup="ZombiesAll" />
+      <spawn maxcount="2" respawndelay="0.25" time="Any" entitygroup="ZombiesBoss" />
+      <spawn maxcount="2" respawndelay="0.25" time="Night" entitygroup="ZombiesWastelandNight" />
       <spawn maxcount="2" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
     </biome>
 	
@@ -57,10 +57,11 @@
 	<!-- New Code for the wasteland_hub -->
 	
 	<biome name="wasteland_hub">
-      <spawn maxcount="10" respawndelay="1" time="Day" entitygroup="ZombieBadassGroup" />
-      <spawn maxcount="10" respawndelay="1" time="Night" entitygroup="ZombieFeralRadiatedGroup" />
-	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+      <spawn maxcount="10" respawndelay="0.25" time="Day" entitygroup="ZombieBadassGroup" />
+      <spawn maxcount="10" respawndelay="0.25" time="Night" entitygroup="ZombieFeralRadiatedGroup" />
+	  <spawn maxcount="3" respawndelay="0.25" time="Any" entitygroup="ZombieDogGroup" />
 	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="BanditGroupHub" />
+	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="WastelandMilitary" />
     </biome>
 
     <biome name="forest">

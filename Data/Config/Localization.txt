@@ -1675,7 +1675,7 @@ clubBarbedDesc,items,Melee,KgNone,A club with barbs. Added chance for bleeding. 
 clubIron,items,Melee,KgNone,Iron Reinforced Club,Massue renforcée avec du fer,Eisenverstärkter Knüppel,,Garrote reforzado con hierro
 clubIronDesc,items,Melee,KgNone,"Like a wooden club, but more durable and does more damage. \n[Crafting Area: [ff0000]Backpack or Workbench[-] ]","Semblable à la massue en bois, mais plus résistante et inflige plus de dégâts.","Wie ein Holzknüppel, aber widerstandsfähiger. Verursacht auch mehr Schaden.",,"Como un garrote de madera, pero con el doble de durabilidad y hace más daño."
 clubSpiked,items,Melee,KgNone,Spiked Club,Massue à pointes,Gespickter Knüppel,,Lucero del alba
-clubSpikedDesc,items,Melee,KgNone,A badass club with sharp spikes. Added chance for bleeding. \n[Crafting Area: [ff0000Workbench[-] ]\n[Tool: [0000ff]Clawhammer[-] ],Une massue trop cool hérissée de pointes coupantes. Augmente les chances d'infliger une hémorragie.,Ein cooler Knüppel mit scharfen Nägeln. Erhöhte Chance auf Blutungen.,,Una intimidante garrote con clavos afilados. Posibilidad adicional de hemorragia.
+clubSpikedDesc,items,Melee,KgNone,A badass club with sharp spikes. Added chance for bleeding. \n[Crafting Area: [ff0000]Workbench[-] ]\n[Tool: [0000ff]Clawhammer[-] ],Une massue trop cool hérissée de pointes coupantes. Augmente les chances d'infliger une hémorragie.,Ein cooler Knüppel mit scharfen Nägeln. Erhöhte Chance auf Blutungen.,,Una intimidante garrote con clavos afilados. Posibilidad adicional de hemorragia.
 clubWood,items,Melee,KgNone,Wooden Club,Massue en bois,Holzknüppel,,Garrote de madera
 clubWoodDesc,items,Melee,KgNone,A wooden club. Good for breaking knees and skulls. \n[Crafting Area: [ff0000]Backpack or Workbench[-] ],Une massue en bois. Parfaite pour briser des genoux et défoncer des crânes.,"Ein Holzknüppel. Eignet sich dazu, Kniescheiben und Schädel zu brechen.",,Un garrote de madera. Genial para romper rodillas y cabezas.
 huntingKnife,items,Melee,KgNone,Hunting Knife,Couteau de chasse,Jagdmesser,,Cuchillo de caza
@@ -5091,7 +5091,7 @@ sugarRushTooltip,buffs,Buff,KgNone,A short-term boost of energy.,,,,
 gunP225,items,Item Gun,KgNone,P225 Pistol,,,,
 gunP225Desc,items,Item Gun,KgNone,Pistol that uses 9mm and 9mm HP ammo. More accurate than the standard pistol and has a larger magazine.,,,,
 gunAR15,items,Item Gun,KgNone,AR15 Semi-Auto Rifle,,,,
-gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. Uses 7.62mm rounds.,,,,
+gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. Uses 9mm rounds.,,,,
 gunCAWSShotgun,items,Item Gun,KgNone,Combat Shotgun,,,,
 gunCAWSShotgunDesc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of shotgun shells or slugs.,,,,
 gunWinchesterRifle,items,Item Gun,KgNone,Winchester .44 Rifle,,,,
@@ -5322,6 +5322,7 @@ GoreBlock5Prefab,blocks,Block,New,Human Remains,,,,
 GoreBlock6Prefab,blocks,Block,New,Human Remains,,,,
 GoreBlock7Prefab,blocks,Block,New,Human Remains,,,,
 GoreBlock8Prefab,blocks,Block,New,Human Remains,,,,
+GoreBlock9Prefab,blocks,Block,New,Human Remains,,,,
 ZUMABob,entityclasses,Entity,KgNone,Zombie Trader Bob,,,,
 ZUMAJoel,entityclasses,Entity,KgNone,Zombie Trader Joel,,,,
 ZUMAJimmy,entityclasses,Entity,KgNone,Zombie Trader Jimmy,,,,
@@ -5751,3 +5752,12 @@ sleepdeprivedName,buffs,Buff,New,Sleep Deprived,,,,
 sleepdeprivedTooltip,buffs,Buff,New,You are experiencing sleep deprevation,,,,
 Grenade,items,Item,KgNone,Grenade,,,,
 GrenadeDesc,items,Item,KgNone,Military-grade munitions are the best munitions! Designed to blow apart people and zombies.,,,,
+gunM4A1,items,Item Gun,KgNone,M4A1 Automatic Rifle,,,,
+gunM4A1Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. Modified to use 9mm rounds.,,,,
+gunM4A1Scoped,items,Item Gun,KgNone,M4A1 Automatic Rifle (Scoped),,,,
+gunM4A1ScopedDesc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. Modified to use 9mm rounds. This one is scoped.,,,,
+partsM4A1_stock,items,Part,KgNone,M4A1 Stock,,,,
+partsM4A1_receiver,items,Part,KgNone,M4A1 Receiver,,,,
+partsM4A1_parts,items,Part,KgNone,M4A1 Parts,,,,
+partsM4A1_barrel,items,Part,KgNone,M4A1 Barrel,,,,
+partsM4A1GroupDesc,items,Part,KgNone,A part of the M4A1 automatic rifle. Assemble with other parts to create a complete M4A1 once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],,,,

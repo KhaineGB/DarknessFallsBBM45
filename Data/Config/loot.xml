@@ -1565,6 +1565,18 @@
 	<item name="canEmpty"/>
 </lootgroup>
 
+<lootgroup name="weaponsM4A1" count="all">
+	<item name="partsM4A1_stock"/>
+	<item name="partsM4A1_receiver"/>
+	<item name="partsM4A1_parts"/>
+	<item name="partsM4A1_barrel"/>
+</lootgroup>
+
+<lootgroup name="weaponsM4A1+ammo" count="all">
+	<item name="gunM4A1"/>
+	<item name="9mmBulletHP" count="20,60"/>
+</lootgroup>
+
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
 	<item group="junk"/>
@@ -1771,6 +1783,7 @@
 	<item group="weaponsBasicGuns+ammo" prob="0.03"/>
 	<item group="weaponsMelee" prob="0.03"/>
 	<item name="padlock" prob="0.5"/>
+	<item name="sewingKit" />
 </lootcontainer>
 
 <!-- gore block dummy -->
@@ -1805,6 +1818,7 @@
 	<item group="militaryAmmo" prob="1"/>
 	<item group="militaryArmor" prob="0.1"/>
 	<item name="Grenade" count="2,10" prob="0.8"/>
+	<item group="weaponsM4A1" prob="0.35"/>
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
@@ -2054,10 +2068,8 @@
 
 <!-- ZombieSoldier loot -->
 <lootcontainer id="73" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-	<item group="weaponsMilitaryGuns+ammo" prob="1"/>
+	<item group="weaponsM4A1+ammo" prob="1"/>
 	<item group="weaponsMilitaryParts" prob="0.2"/>
-	<item group="weaponsRocketLauncher+ammo" prob="0.06"/>
-	<item name="rocket" count="2,6" prob="0.12"/>
 	<item group="militaryArmor" prob="1"/>
 	<item name="Grenade" count="2,4" prob="0.5"/>
 </lootcontainer>
@@ -2617,6 +2629,15 @@
 <!-- extra large storage containers the player crafts-->
 <lootcontainer id="119" count="0" size="9,10" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<!-- Military Survivor Loot -->
+
+<lootcontainer id="120" count="2,6" size="6,11" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="treasureTemplate">
+	<item group="weaponsM4A1+ammo" prob="1"/>
+	<item group="militaryArmor" prob="1"/>
+	<item name="Grenade" count="2,4" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
 </lootcontainer>
 
 </lootcontainers>

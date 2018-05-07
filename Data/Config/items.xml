@@ -15959,7 +15959,7 @@ Mesh files no longer used:
 
 <item id="2226" name="gunM4A1Scoped">
 	<property name="CustomIcon" value="gunAR15" />
-	<property name="DescriptionKey" value="gunAR15Desc"/>
+	<property name="DescriptionKey" value="gunM4A1ScopedDesc"/>
 	<property name="Meshfile" value="#M4A1?M4A1Scoped"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
@@ -16148,8 +16148,8 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1600"/>
 </item>
-<!--
-<item id="2993" name="energyCell"> 
+
+<!-- <item id="2993" name="energyCell"> 
 	<property name="CustomIcon" value="oilpump" />
 	<property name="CustomIconTint" value="A83418"/>
 	<property name="DescriptionKey" value="partsSniperRifleGroupDesc"/> 

@@ -3967,33 +3967,33 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="scrapBoots" count="1" craft_area="workstationTailor" craft_tool="sewingKit">
-	<ingredient name="scrapIron" count="100"/>
-	<ingredient name="leather" count="2"/>
+	<ingredient name="scrapIron" count="50"/>
+	<ingredient name="leather" count="1"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
 <recipe name="scrapChestArmor" count="1" craft_area="workstationTailor" craft_tool="sewingKit">
-	<ingredient name="scrapIron" count="150"/>
-	<ingredient name="leather" count="5"/>
-	<ingredient name="ductTape" count="3"/>
+	<ingredient name="scrapIron" count="75"/>
+	<ingredient name="leather" count="2"/>
+	<ingredient name="ductTape" count="2"/>
 </recipe>
 
 <recipe name="scrapGloves" count="1" craft_area="workstationTailor" craft_tool="sewingKit">
-	<ingredient name="scrapIron" count="100"/>
-	<ingredient name="leather" count="2"/>
+	<ingredient name="scrapIron" count="50"/>
+	<ingredient name="leather" count="1"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
 <recipe name="scrapHelmet" count="1" craft_area="workstationTailor" craft_tool="sewingKit">
-	<ingredient name="scrapIron" count="100"/>
-	<ingredient name="leather" count="2"/>
+	<ingredient name="scrapIron" count="50"/>
+	<ingredient name="leather" count="1"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
 <recipe name="scrapLegArmor" count="1" craft_area="workstationTailor" craft_tool="sewingKit">
-	<ingredient name="scrapIron" count="150"/>
-	<ingredient name="leather" count="5"/>
-	<ingredient name="ductTape" count="3"/>
+	<ingredient name="scrapIron" count="75"/>
+	<ingredient name="leather" count="2"/>
+	<ingredient name="ductTape" count="2"/>
 </recipe>
 
 <recipe name="sectionalPlaidCouchSofaArm" count="1" craft_area="workstationTailor" craft_tool="sewingKit">

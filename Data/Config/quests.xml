@@ -1171,12 +1171,9 @@
 		<objective type="ZombieKill" id="ZUMAGuardMale,ZUMAGuardMale2,ZUMAGuardMale3,ZUMAGuardMale4,ZUMAGuardMale5,ZUMAGuardFemale,ZUMAGuardFemale2,ZUMAGuardFemale3,ZUMAGuardFemale4,ZUMAGuardFemale5" value="10" />
 
 		<reward type="SkillPoints" value="5" />
-    </quest>
+    </quest> 
 	
-	<quest id="quest_testpoi2" group_name_key="quest_testpoi2" name_key="quest_testpoi2" subtitle_key="quest_testpoi2_subtitle" description_key="quest_testpoi2_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
-		<objective type="Goto" id="store" value="5" />
-
-		<reward type="SkillPoints" value="5" />
+	<quest id="quest_testpoi2" group_name_key="quest_testpoi2" name_key="quest_testpoi2" subtitle_key="quest_testpoi2_subtitle" description_key="{mapdaytimetitle}: [DECEA3]{mapdaytime}[-]" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
     </quest> -->
 	
 <!-- Quest Test 2 -->

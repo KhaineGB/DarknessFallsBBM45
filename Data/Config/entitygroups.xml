@@ -879,6 +879,11 @@
 		<entity name="BanditFemaleMelee3" />
 		<entity name="BanditFemaleMelee4" />
 	</entitygroup>
+	
+	<entitygroup name="WastelandMilitary">
+		<entity name="SpecOpsMale1" />
+		<!-- <entity name="SpecOpsFemale1" /> -->
+	</entitygroup>
 
 	<!-- https://7daystodie.com/forums/showthread.php?56533-Gamestage-Blood-Moon-Horde-generator -->
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated sleeper horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
