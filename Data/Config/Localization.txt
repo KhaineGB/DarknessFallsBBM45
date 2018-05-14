@@ -1473,7 +1473,7 @@ goldenRodTeaDesc,items,Food,KgNone,Got dysentery? This bottle of sweet goldenrod
 grainAlcohol,items,Food,KgNone,Grain Alcohol,Alcool de grain,Spiritus,,Alcohol de grano
 grainAlcoholDesc,items,Food,KgNone,Grain alcohol can be made in a beaker at a campfire. Useful for homemade gas and first aid kits. \n[Crafting Area: [ff0000]Campfire or Chemistry Station[-] ]\n[Tool: [0000ff]Beaker[-] ],L'alcool de grain peut être fabriqué dans un bécher sur le feu de camp. Très pratique pour une composition d'essence maison et les trousses de premiers soins.,Spiritus kann in einem Messbecher am Lagerfeuer gefertigt werden. Nützlich für die Fertigung von Benzin und Verbandskasten.,,Se puede elaborar alcohol de grano en un matraz en una fogata. Muy útil para el gas casero y botiquines de primeros auxilios.
 grilledMeat,items,Food,KgNone,Grilled Meat,Viande grillée,Gegrilltes Wildbret,,Carne a la parrilla
-grilledMeatDesc,items,Food,EnChanged,"Meat! Meat on fire! Good! Nutritious, filling and will boost your wellness. \n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ffCooking Grill[-] ]","Viande ! Viande cuite ! Bonne ! Nourrit, remplit et améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Fleisch! Fleisch auf Feuer! Gut! Nahrhaft, sättigend und erhöht dein Wohlbefinden.",,"¡Carne! ¡Carne cocinada! ¡Bien! Es nutritiva, te saciará y mejorará tu bienestar. Puede atraer zombis si la llevas encima."
+grilledMeatDesc,items,Food,EnChanged,"Meat! Meat on fire! Good! Nutritious, filling and will boost your wellness. \n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Grill[-] ]","Viande ! Viande cuite ! Bonne ! Nourrit, remplit et améliore votre bien-être. Susceptible d'attirer des zombies si vous la portez.","Fleisch! Fleisch auf Feuer! Gut! Nahrhaft, sättigend und erhöht dein Wohlbefinden.",,"¡Carne! ¡Carne cocinada! ¡Bien! Es nutritiva, te saciará y mejorará tu bienestar. Puede atraer zombis si la llevas encima."
 meatStew,items,Food,KgNone,Meat Stew,Ragoût de viande,Wildbreteintopf,,Estofado de carne
 meatStewDesc,items,Food,KgNone,"A survivor isn't worth his salt if he can't make a meat stew. Raises wellness, too! \n[Crafting Area: [ff0000]Campfire or Oven[-] ]\n[Tool: [0000ff]Cooking Pot[-] ]",Un survivant ne vaut rien s'il ne sait pas cuisiner un ragoût de viande. Celui-ci améliore également le bien-être !,"Wer keinen Wildbreteintopf zubereiten kann, darf sich nicht Überlebender schimpfen. Erhöht auch das Wohlbefinden!",,Un sobreviviente no es digno de llamarse así si no puede preparar un estofado de carne. ¡También aumenta el bienestar!
 moldyBread,items,Food,KgNone,Moldy Bread,Pain moisi,Schimmeliges Brot,,Pan mohoso
@@ -5761,3 +5761,15 @@ partsM4A1_receiver,items,Part,KgNone,M4A1 Receiver,,,,
 partsM4A1_parts,items,Part,KgNone,M4A1 Parts,,,,
 partsM4A1_barrel,items,Part,KgNone,M4A1 Barrel,,,,
 partsM4A1GroupDesc,items,Part,KgNone,A part of the M4A1 automatic rifle. Assemble with other parts to create a complete M4A1 once you've read the schematic.\n[Crafting Area: [ff0000]Lathe[-] ],,,,
+ElevatorBottomFloor,blocks,Block,KgNone,Elevator Ground
+ElevatorFloor,blocks,Block,KgNone,Elevator Floor,,,,
+ElevatorShaft,blocks,Block,KgNone,Elevator Shaft,,,,
+ElevatorShaftSmall,blocks,Block,KgNone,Small Elevator Shaft,,,,
+ElevatorPlatformBase,blocks,Block,KgNone,2x2 Lift,,,,
+ElevatorPlatformFloor,blocks,Block,KgNone,2x2 Lift Floor,,,,
+ElevatorBottomFloorDesc,blocks,Block,KgNone,Ground floor requires a 3x3 space 4 blocks high. Sits 1 block bellow the floor. Place shafts on top to reach the next floor then place a floor. You can place upto 8 additional floors. Use the numpad to select a floor while standing in the elevator.,,,,
+ElevatorFloorDesc,blocks,Block,KgNone,Adds additional floors to your elevator. Requires a 3x3 space 4 blocks high and can only be placed on top of shafts. You can have a total of 9 floors including the ground.,,,,
+ElevatorShaftDesc,blocks,Block,KgNone,Use this to reach the next floor. This can be placed on top of any elevator part. Requires a 3x3 space 4 blocks high.,,,,
+ElevatorShaftSmallDesc,blocks,Block,KgNone,Use this to reach the next floor. This can be placed on top of any elevator part. Requires a 3x3 space 1 block high.,,,,
+ElevatorPlatformBaseDesc,blocks,Block,KgNone,Ground floor requires a 2x2 space 1 blocks high. Sits 1 block bellow the floor. Place floor levels at any height directly above the base. You can place upto 8 additional floors. Use the numpad to select a floor while standing on the platform.,,,,
+ElevatorPlatformFloorDesc,blocks,Block,KgNone,Adds additional floors to your lift. Requires a 2x2 space 1 block high and can only be placed directly above to base. You can have a total of 9 floors including the ground.,,,,

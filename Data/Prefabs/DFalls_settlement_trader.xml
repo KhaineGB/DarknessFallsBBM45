@@ -9,5 +9,5 @@
     <property name="YOffset" value="-1" />
     <property name="DistantPOIYOffset" value="0" />
     <property name="AllowedTownships" value="city,rural,town,wilderness"/>
-    <property name="AllowedBiomes" value="wasteland,wasteland_hub"/>
+    <property name="AllowedBiomes" value="wasteland_hub"/>
 </prefab>

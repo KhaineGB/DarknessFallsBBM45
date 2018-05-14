@@ -801,7 +801,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledMeat" count="1" craft_area="campfire" craft_tool="cookingGrill">
-	<ingredient name="rawMeat" count="2"/>
+	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
 <recipe name="gun44Magnum" count="1" craft_area="assembly">
@@ -2451,7 +2451,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- Animal Traps Mod -->
 
 <recipe name="animalFeed" count="1" scrapable="False" >
-	<ingredient name="corn" count="4" />
+	<ingredient name="Apple" count="2" />
+</recipe>
+
+<recipe name="animalFeed" count="1" scrapable="False" craft_area="PandM">
+	<ingredient name="Apple" count="1" />
+</recipe>
+
+<recipe name="animalFeed" count="1" scrapable="False" >
+	<ingredient name="Banana" count="2" />
+</recipe>
+
+<recipe name="animalFeed" count="1" scrapable="False" craft_area="PandM">
+	<ingredient name="Banana" count="1" />
 </recipe>
 
 <recipe name="animalSnare" count="1" scrapable="False">
@@ -2464,10 +2476,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="10"/>
 	<ingredient name="yuccaFibers" count="15" />
 	<ingredient name="animalFeed" count="2" />
-</recipe>
-
-<recipe name="animalFeed" count="1" scrapable="False" craft_area="PandM">
-	<ingredient name="corn" count="2" />
 </recipe>
 
 <!-- Mortar and Pestle -->
@@ -5563,6 +5571,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="gunPowder" count="40"/>
 	<ingredient name="ductTape" count="5"/>
 	<ingredient name="paper" count="20"/>
+</recipe>
+
+<!-- Elevator Mod -->
+
+<recipe name="ElevatorPlatformBase" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="200"/>
+	<ingredient name="cloth" count="100"/>
+	<ingredient name="mechanicalParts" count="50"/>
+</recipe>
+
+<recipe name="ElevatorPlatformFloor" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="100"/>
+	<ingredient name="cloth" count="50"/>
+	<ingredient name="mechanicalParts" count="25"/>
 </recipe>
 
 </recipes>

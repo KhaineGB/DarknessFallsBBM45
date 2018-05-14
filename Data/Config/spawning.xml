@@ -61,7 +61,7 @@
       <spawn maxcount="10" respawndelay="0.25" time="Night" entitygroup="ZombieFeralRadiatedGroup" />
 	  <spawn maxcount="3" respawndelay="0.25" time="Any" entitygroup="ZombieDogGroup" />
 	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="BanditGroupHub" />
-	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="WastelandMilitary" />
+	  <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WastelandMilitary" />
     </biome>
 
     <biome name="forest">
@@ -95,6 +95,7 @@
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsDesert" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
     </biome>
 
     <biome name="wasteland">

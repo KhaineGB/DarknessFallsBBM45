@@ -7,6 +7,15 @@
 				as long as this style file is included in a window file.
 		-->
 		
+		<!-- Set ONLY the HORIZONTAL VALUE, for a best starting position take your horizontal W and divide by 2.6 , Fine tune in 10px increments 
+		value="HORIZONTAL,VERTICAL" 
+		0 is center of middle monitor, higher values push out to additional monitors, lower values pull in to center monitor -->
+		
+		<style_entry name="righttop" value="960,-100"/> <!-- 960 default -->
+		<style_entry name="bottomleft" value="-890,100"/> <!-- 960 default -->
+		<style_entry name="bottomcenter" value="-970,0"/> <!-- 960 default -->
+		<style_entry name="bottomright" value="960,5"/> <!-- 960 default -->
+		
 		<!--NAMED COLORS-->
 		<style_entry name="limeGreen" 		value="222,255,163,255"/>
 		<style_entry name="tan" 					value="182,166,123,255"/>

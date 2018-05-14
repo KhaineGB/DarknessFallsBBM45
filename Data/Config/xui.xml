@@ -106,9 +106,12 @@
 		<window_group name="toolbelt" actionSet="false">
 			<window name="HUDXpBar" />	
 			<window name="windowToolbelt" anchor="CenterBottom" />
-			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="HUDBuffPopout" anchor="LeftBottom" />
+			<window name="HUDLeftStatBars" anchor="CenterBottom" /> 
 			<window name="HUDRightStatBars" anchor="RightBottom" />
-			<window name="windowQuestTracker" anchor="RightTop" />
+	        <window name="windowQuestTracker" anchor="RightTop" /> 
+			<!-- <window name="windowQuestTracker" anchor="RightTop" /> -->
+            <!-- <window name="HUDRightStatBars" anchor="CenterBottom" /> -->
 		</window_group>
 		
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">

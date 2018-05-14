@@ -32,70 +32,53 @@
 	
 	-->
 	
-	<window name="HUDLeftStatBars">
-		<grid name="hud" pos="9,183" rows="3" cols="1" width="188" cell_width="188" cell_height="46" repeat_content="false" side="left" >
-			<rect width="188" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
-				<sprite depth="4" name="Icon" sprite="ui_game_symbol_temperature" size="32,32" pos="8,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="0,-10" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playercoretemp}" height="30" controller="PlayerStatsWindow" effect="outline" />
-			</rect>
-
-			<rect width="188" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="182" fill="0"  />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
-			</rect>
-
-			<rect width="188" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="182" fill="0" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
-			</rect>
-		</grid>
-
-		<grid name="hud" pos="9,45" rows="1" cols="2" width="188" cell_width="94" cell_height="46" repeat_content="false" side="left" >
-			<rect width="93" height="43" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="90" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  color="0,128,0,150" type="filled" height="37" width="87" fill="{playerfoodfill}" controller="PlayerStatsWindow" />
-				<sprite depth="4" name="Icon" sprite="ui_game_symbol_hunger" size="32,32" pos="4,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%" height="30"/>
-			</rect>
-
-			<rect width="93" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="90" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  color="64,164,223,150" type="filled" height="37" width="87" fill="{playerwaterfill}" controller="PlayerStatsWindow" />
-				<sprite depth="4" name="Icon" sprite="ui_game_symbol_water" size="32,32" pos="4,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%" height="30"/>
-			</rect>
-		</grid>
-		
-		<!-- Old Buff Popout List
-		
-		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft" >			
-			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
-				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]"/>
-				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center"/>
-			</panel>
+	<window name="HUDBuffPopout">
+		<!-- <rect name="leftposition" pos="[bottomleft]">
+			<rect name="offset" pos="50,0"> -->
+				<rect name="hud" pos="90,25" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+					<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70,0" >
+						<!-- <sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
+						<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="-58,0" pivot="center" color="[transparent]" />
+						<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center" /> -->
+						<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
+						<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="-58,0" pivot="center" color="[transparent]" />
+						<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center" />
+					</panel>
+				</rect>
+			<!-- </rect>
 		</rect> -->
-		
-		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft">
-			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
-				<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="-58,0" pivot="center" color="[transparent]" />
-				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center" />
-			</panel>
-		</rect>
-		
 	</window>
+	
+	<window name="HUDLeftStatBars">
+		<rect name="centerposition" pos="[bottomcenter]">
+			<rect name="offset" pos="50,0">
+				<grid name="hud" pos="515,12" rows="1" cols="4" width="212" cell_width="53" cell_height="90" repeat_content="false" controller="InGameHUD" > 		
+					<rect width="30" height="80" controller="HUDStatBar" stat_type="Health" visible="{StatVisible}">
+						<sprite depth="3" pos="16,-3"  name="BarContent" height="30" width="77" color="120,0,5,230" type="filled" fill="{StatFill}" rotation="90"/>
+						<sprite depth="4" name="Icon" atlas="{StatIconAtlas|once}" sprite="ui_game_symbol_add" size="20,20" pos="21,22" foregroundlayer="true"/>
+					</rect>	
 
+					<rect width="30" height="80" controller="HUDStatBar" stat_type="Stamina" visible="{StatVisible}">
+						<sprite depth="3" pos="3,-3"  name="BarContent" height="30" width="77" color="4,31,128,230" type="filled" fill="{StatFill}" rotation="90"/>
+						<sprite depth="4" name="Icon" atlas="{StatIconAtlas|once}" sprite="ui_game_symbol_run" size="20,20" pos="8,22" foregroundlayer="true"/>
+					</rect>
+				</grid>
+		
+				<grid name="hud" pos="1215,12" rows="1" cols="4" width="212" cell_width="53" cell_height="90" repeat_content="false" controller="InGameHUD" > 
+					<rect width="30" height="80" controller="HUDStatBar" stat_type="Food" visible="{StatVisible}"> 
+						<sprite depth="3" pos="3,-3"  name="BarContent" height="30" width="77" color="0,68,0,230" type="filled" fill="{StatFill}" rotation="90"/>
+						<sprite depth="4" name="Icon" atlas="{StatIconAtlas|once}" sprite="ui_game_symbol_fork" size="20,20" pos="8,22" foregroundlayer="true"/>
+					</rect>
+			
+					<rect width="30" height="80" controller="HUDStatBar" stat_type="Water" visible="{StatVisible}">
+						<sprite depth="3" pos="-10,-3"  name="BarContent" height="30" width="77" color="0,93,190,230" type="filled" fill="{StatFill}" rotation="90"/>
+						<sprite depth="4" name="Icon" atlas="{StatIconAtlas|once}" sprite="ui_game_symbol_water" size="20,20" pos="-6,22" foregroundlayer="true"/>
+					</rect>
+				</grid>		
+			</rect>
+		</rect>
+	</window>
+	
 	<window name="HUDRightStatBars">
 
 		<rect name="hud" pos="-90,31" side="right" controller="CollectedItemList" pivot="BottomLeft">
@@ -192,7 +175,11 @@
 		</texture>
 		
 		<sprite pos="200,-60" sprite="" color="255,255,255,255" globalopacitymod="1.8">
-			<label depth="2" width="300" height="30" text="{daytitle}: {day|always}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<sprite depth="2" name="Icon" sprite="ui_game_symbol_temperature" size="28,28" pos="-150,15" foregroundlayer="true"/>
+			<label depth="4" name="TextContent" pos="-290,15" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playercoretemp}" height="30" controller="PlayerStatsWindow" effect="outline" />
+			<label depth="6" width="300" height="30" text="{daytitle}: {day|always}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<sprite depth="8" name="Icon" sprite="ui_game_symbol_trophy" size="28,28" pos="90,15" foregroundlayer="true"/>
+			<label depth="10" name="TextContent" pos="-70,15" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerlevel}" height="30" controller="PlayerStatsWindow" effect="outline" />
 		</sprite>
 
 		<!-- <sprite pos="200,-60" sprite="" color="255,255,255,255" globalopacitymod="1.8">
@@ -3053,16 +3040,27 @@
 	
 	<window name="HUDXpBar" controller="ToolbeltWindow" visible="{ToolbeltVisible}" anchor="CenterBottom" pos="-313, 100">
 	
-		<!-- Icon coupled with player level -->
+		<!-- Icon coupled with player level 
 		<rect pos="-35,12" width="32" height="32" >
 			<sprite depth="3" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_trophy" />
 			<label depth="4" name="levelNumber" pos="2,-4" width="28" height="28" text="{playerlevel}" color="255,191,0" justify="center" controller="PlayerStatsWindow" effect="outline" />
-		</rect>
+		</rect> -->
 
 		<!-- Experience bar -->
 		<sprite depth="2" width="603" pos="0, 0" height="10" type="sliced" color="[black]" />
 		<sprite depth="2" width="599" pos="2, -2" height="8" type="sliced" color="120,120,120,120" />
 		<sprite depth="2" width="599" pos="2, -2" height="8" type="filled" color="255,191,0" fill="{playerlevelfill}" controller="PlayerStatsWindow" />
+		
+		<!-- Core Temp
+		
+		<grid name="hud" pos="9,-10" rows="3" cols="1" width="188" cell_width="188" cell_height="46" repeat_content="false" side="left" >
+			<rect width="188" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
+				<sprite depth="4" name="Icon" sprite="ui_game_symbol_temperature" size="32,32" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-10" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playercoretemp}" height="30" controller="PlayerStatsWindow" effect="outline" />
+			</rect>
+		</grid> -->
 
 		<!-- Toolbelt numbers -->
 		<grid depth="1" rows="1" cols="8" pos="6,-14" cell_width="75" cell_height="75" repeat_content="false">
@@ -3088,13 +3086,13 @@
 	
 	<window name="DFalls">
 		<!-- <texture name="DFalls" depth="0" size="100,50" texture="@file:Mods\SDX\Textures\Misc\wwhudlogo.png" material="Materials/Transparent Colored" pos="-500,-6" /> -->
-		<label name="ServerInfo" depth="0" size="100,50" text="V1.7.2" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
+		<label name="ServerInfo" depth="0" size="100,50" text="V1.7.3)" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
 	</window>
 
 	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<texture name="DFalls" depth="0" size="888,666" texture="@file:Mods\SDX\Textures\Misc\DFLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
 		<!-- <label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> -->
-		<label name="DFallsVersion" pos="0, -440" depth="0" size="250,33" text="V1.7.2" font_size="32" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="0, -440" depth="0" size="250,33" text="V1.7.3)" font_size="32" effect="outline" color="[white]" justify="center" />
 		<grid name="buttons" pos="0, -475" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
 			<simplebutton name="btnSave" depth="3" width="250" height="46" caption_key="xuiMenuSave" font_size="40" />

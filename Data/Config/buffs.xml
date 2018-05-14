@@ -722,6 +722,17 @@ This requires a 50+ food bar:
 	<modify id="0" stat="health" amount="1" rate="120" />
 </buff>
 
+<!-- Road Runner -->
+
+<buff id="asphaltStaBoostTrigger" duration="1" actions="setvar(CTRroadrun, 10)" />
+<!-- <buff id="asphaltStaminaEffect" duration="0" buffif="CTRroadrun greater 0" debuffif="CTRroadrun less 1" actions="increment(CTRroadrun, -1, 1, 0, 0)">
+	<modify id="0" stat="stamina" amount="1" rate="2" />
+</buff> -->
+<buff id="asphaltStaminaEffect" duration="0" buffif="CTRroadrun greater 0" debuffif="CTRroadrun less 1" actions="increment(CTRroadrun, -1, 1, 0, 0)"
+	icon="ui_game_symbol_run" name_key="Road Runner" description_key="Meep meep!" tooltip_key="Meep meep!">
+	<modify id="0" stat="stamina" amount="1" rate="1"/>
+</buff>
+
 <!-- Special Radiated Buffs for new model zombies and UMA zombies -->
 
 <buff id="newzombieRadiatedBuff80" duration="0" actions="attach(ParticleEffects/RadiatedParticlesOnMesh, @impact)" icon="ui_game_symbol_fire">

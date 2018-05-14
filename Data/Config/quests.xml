@@ -495,6 +495,7 @@
 		<objective type="Craft" id="forge" value="1" />
 		<objective type="BlockPlace" id="forge" value="1" />
 
+		<reward type="Recipe" id="nailgun"/>
 		<reward type="Quest" id="quest_classtrainingconstruction6" />
     </quest>
 	
@@ -504,7 +505,8 @@
 		<objective type="FetchKeep" id="forgedIron" value="16" />
 		<objective type="FetchKeep" id="wood" value="10" />
 		<objective type="Craft" id="clubBarbed" value="1" />
-	
+
+		<reward type="Item" id="nailgun" value="50" />		
 		<reward type="Skill" id="ClassConstruction" value="1" stage="aftercomplete"/> 
     </quest>
 	
@@ -637,9 +639,9 @@
 	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
 
 		<objective type="FetchKeep" id="chrysanthemumPlant" value="10" />
-		<objective type="FetchKeep" id="corn" value="26" />
+		<objective type="FetchKeep" id="Apple" value="12" />
 		<objective type="Craft" id="plantedChrysanthemum1" value="5" />
-		<objective type="Craft" id="plantedCorn1" value="5" />	
+		<objective type="Craft" id="seedApple" value="4" />	
 
 		<reward type="Quest" id="quest_classtrainingfarmer5" />
 		<reward type="Skill" id="Animal Coops and Snares" value="1" stage="aftercomplete"/> 
