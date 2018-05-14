@@ -167,11 +167,11 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.2"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="SlowSwoosh"/>
-		<property name="Stamina_usage" value="15"/>
+		<property name="Stamina_usage" value="10"/>
 		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
 		<property name="Buff_chance" value="0.5,0.3,0.3"/>
 		<property name="DamageBonus.wood" value="0.5"/>
-		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.head" value="7"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
@@ -6946,7 +6946,7 @@ Mesh files no longer used:
 		<property name="Delay" value="2.1"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="16"/>
+		<property name="Gain_food" value="8"/>
 		<property name="Buff" value="eatFood_14_Trigger,protein"/>
 		<property name="Gain_water" value="-3"/>
 		<property name="Gain_wellness" value="1.35"/>
@@ -12722,7 +12722,7 @@ Mesh files no longer used:
 		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
 		<property name="Buff_chance" value="0.6,0.4,0.4"/>
 		<property name="DamageBonus.wood" value="0.6"/>
-		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.head" value="7"/>
 		<property name="DamageBonus.glass" value="2"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
@@ -15016,7 +15016,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2174" name="ironKnuckles"> 
-	<!-- <property name="Extends" value="handPlayer"/> -->
+	<property name="Extends" value="handPlayer"/>
 	<property name="CreativeMode" value="Player"/>
     <property name="CustomIcon" value="ironknuckles"/>
 	<property name="DescriptionKey" value="ironKnucklesDesc"/>
@@ -15713,7 +15713,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2218" name="titaniumKnuckles"> 
-	<property name="Extends" value="handPlayer"/>
+	<property name="Extends" value="ironKnuckles"/>
 	<property name="CreativeMode" value="Player"/>
     <property name="CustomIcon" value="ironknuckles"/>
 	<property name="CustomIconTint" value="0033FF"/>

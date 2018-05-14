@@ -801,7 +801,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledMeat" count="1" craft_area="campfire" craft_tool="cookingGrill">
-	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="rawMeat" count="2"/>
 </recipe>
 
 <recipe name="gun44Magnum" count="1" craft_area="assembly">
@@ -2364,7 +2364,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledMeat" count="1" craft_area="oven" craft_tool="carBattery">
-	<ingredient name="rawMeat" count="2"/>
+	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
 <recipe name="herbalAntibiotics" count="1" craft_area="oven" craft_tool="carBattery">
