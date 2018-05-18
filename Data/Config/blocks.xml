@@ -16353,6 +16353,9 @@ kind of free
 		<property name="Modules" value="tools,output,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
+	<property class="RepairItems">
+		<property name="forgedIron" value="50"/>
+	</property>
 	<drop event="Harvest" name="mechanicalParts" count="0,3" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
@@ -16382,6 +16385,9 @@ kind of free
 		<property name="Modules" value="tools,output,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
+	<property class="RepairItems">
+		<property name="forgedIron" value="50"/>
+	</property>
 	<drop event="Harvest" name="mechanicalParts" count="0,3" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
@@ -16407,6 +16413,9 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="50"/>
+	</property>
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="DescriptionKey" value="workingGraniteSinkDesc"/>
@@ -16427,6 +16436,9 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="50"/>
+	</property>
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
@@ -16742,8 +16754,6 @@ kind of free
 	</property>
 	<property class="RepairItems">
 		<property name="forgedIron" value="25"/>
-		<property name="mechanicalParts" value="20"/>
-		<property name="wood" value="50"/>
 	</property>
 	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
@@ -16780,8 +16790,6 @@ kind of free
 	</property>
 	<property class="RepairItems">
 		<property name="forgedIron" value="25"/>
-		<property name="mechanicalParts" value="20"/>
-		<property name="wood" value="50"/>
 	</property>
 	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>

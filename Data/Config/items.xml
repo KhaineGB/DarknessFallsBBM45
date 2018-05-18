@@ -9050,7 +9050,8 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
-		<property name="Focused_blockname_6" value="waterSource8"/>
+		<property name="Focused_blockname_6" value="workingGraniteSink"/>
+		<property name="Focused_blockname_7" value="workingOldSink"/>
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -16149,7 +16150,82 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1600"/>
 </item>
 
-<!-- <item id="2993" name="energyCell"> 
+<item id="2232" name="npcgunWinchesterRifleSilenced">
+	<property name="Candrop" value="false"/>
+	<property name="CustomIcon" value="gunWinchesterRifle" />
+	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="30"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="32"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="npcpartsWinchesterRifle_stock"/>
+		<property name="Receiver" value="npcpartsWinchesterRifle_receiver"/>
+		<property name="Pump" value="npcpartsWinchesterRifle_parts"/>
+		<property name="Barrel" value="npcgunSilencerWinchester"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.34"/>
+		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
+		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
+		<property name="Infinite_ammo" value="true" />
+		<property name="Magazine_size" value="15"/>
+		<property name="Magazine_items" value="npc44MagBulletHP"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Reload_time" value="2.66"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="metalhitcloth"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="hunting_rifle_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="4"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<item id="2233" name="npcgunSilencerWinchester">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="45,75"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2993" name="energyCell"> 
 	<property name="CustomIcon" value="oilpump" />
 	<property name="CustomIconTint" value="A83418"/>
 	<property name="DescriptionKey" value="partsSniperRifleGroupDesc"/> 
@@ -16428,6 +16504,6 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftFutureTech"/>
 	<property name="EconomicValue" value="1875"/>
-</item> -->
+</item>
 
 </items>

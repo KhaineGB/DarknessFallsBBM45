@@ -4522,9 +4522,6 @@
     <property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieDog"/>
     <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl"/>
     <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet"/>
-    <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear"/>
-    <property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
-    <property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit"/>
     <!-- Movement -->
     <property name="WanderSpeed" value="0.5"/>
     <property name="ApproachSpeed" value="1"/>
@@ -4563,8 +4560,8 @@
 
 <entity_class name="npcMaleGuard1" extends="npcGuardTemplate">
 	<property name="Archetype" value="SurvivorMale1"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunWinchesterRifle,npc44MagBulletHP"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunWinchesterRifle,npc44MagBulletHP"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunWinchesterRifleSilenced,npc44MagBulletHP"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunWinchesterRifleSilenced,npc44MagBulletHP"/>
 	<!-- <property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/> -->
 </entity_class>
@@ -4587,8 +4584,8 @@
 
 <entity_class name="npcFemaleGuard1" extends="npcGuardTemplate">
 	<property name="Archetype" value="SurvivorFemale1"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunWinchesterRifle,npc44MagBulletHP"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunWinchesterRifle,npc44MagBulletHP"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcgunWinchesterRifleSilenced,npc44MagBulletHP"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcgunWinchesterRifleSilenced,npc44MagBulletHP"/>
 	<!-- <property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/> -->
 	<property name="SoundHurt" value="Player_Female/player2painlg"/>
