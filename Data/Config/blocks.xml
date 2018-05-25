@@ -3628,7 +3628,7 @@ group desc for stuff like metal siding
 	<property name="DowngradeBlock" value="cntDeskSafeInsecure"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cntDeskSafeInsecure"/>
-		<property name="Item" value="Lockpick"/>
+		<property name="Item" value="LockComponents"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="25"/>
 	</property>
@@ -3652,7 +3652,7 @@ group desc for stuff like metal siding
 	<property name="DowngradeBlock" value="cntWallSafeInsecure"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cntWallSafeInsecure"/>
-		<property name="Item" value="Lockpick"/>
+		<property name="Item" value="LockComponents"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="25"/>
 	</property>
@@ -6179,7 +6179,7 @@ kind of free
 	<property name="DowngradeBlock" value="cntGunSafeInsecure"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cntGunSafeInsecure"/>
-		<property name="Item" value="Lockpick"/>
+		<property name="Item" value="LockComponents"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="25"/>
 	</property>
@@ -13910,6 +13910,7 @@ kind of free
 
 <block id="1546" name="metalPipeStraight">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="DescriptionKey" value="metalPipeDesc" />
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="4"/>
 	<property name="Model" value="pipe_straight"/>
@@ -13933,6 +13934,7 @@ kind of free
 
 <block id="1548" name="metalPipeCorner">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="DescriptionKey" value="metalPipeDesc" />
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="4"/>
 	<property name="Model" value="pipe_corner"/>
@@ -13943,6 +13945,7 @@ kind of free
 
 <block id="1549" name="metalPipeJoint">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="DescriptionKey" value="metalPipeDesc" />
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="4"/>
 	<property name="Model" value="pipe_joint"/>
@@ -13953,6 +13956,7 @@ kind of free
 
 <block id="1550" name="metalPipeCap">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="DescriptionKey" value="metalPipeDesc" />
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="4"/>
 	<property name="Model" value="pipe_cap"/>
@@ -13989,6 +13993,7 @@ kind of free
 
 <block id="1552" name="metalPipeValve">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="DescriptionKey" value="metalPipeDesc" />
 	<property name="Shape" value="New"/>
 	<property name="Mesh" value="cutout"/> <!-- because of that cutout wheel -->
 	<property name="LightOpacity" value="4"/>
@@ -14000,6 +14005,7 @@ kind of free
 
 <block id="1553" name="metalPipeFlange">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+	<property name="DescriptionKey" value="metalPipeDesc" />
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="4"/>
 	<property name="Model" value="pipe_flange"/>

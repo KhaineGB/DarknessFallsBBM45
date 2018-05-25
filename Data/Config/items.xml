@@ -43,7 +43,7 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.33"/>
-		<property name="Range" value="2.2"/>
+		<property name="Range" value="2.3"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="7"/> <!-- 10 is the break even point with maxed Athletics and Sexosaurus, standing still -->
@@ -13519,7 +13519,7 @@ Mesh files no longer used:
 <!-- Lockpicks -->
 
 <item id="2098" name="Lockpick">
-	<property name="Degradation" value="125" param1="true"/>
+	<property name="CustomIcon" value="lockpickset"/>
 	<property name="DescriptionKey" value="LockpickDesc"/>
 	<property name="Meshfile" value="#Lockpick?Lockpick"/>
 	<property name="Material" value="metal"/>
@@ -13533,13 +13533,23 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="50" />
 		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="UseActions/repair_block"/>
-		<property name="Allowed_upgrade_items" value="Lockpick"/>
+		<property name="Allowed_upgrade_items" value="LockComponents"/>
 	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10"/>
+		<property name="BlockDamage" value="2,10"/>
+		<property name="DegradationMax" value="500,1400"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
 <item id="2177" name="Lockpick2">
-	<property name="CustomIcon" value="Lockpick"/>
-	<property name="Degradation" value="125" param1="true"/>
+	<property name="CustomIcon" value="lockpickset"/>
 	<property name="DescriptionKey" value="Lockpick2Desc"/>
 	<property name="Meshfile" value="#Lockpick?Lockpick2"/>
 	<property name="Material" value="metal"/>
@@ -13553,8 +13563,19 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="100" />
 		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="UseActions/repair_block"/>
-		<property name="Allowed_upgrade_items" value="Lockpick"/>
+		<property name="Allowed_upgrade_items" value="LockComponents"/>
 	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10"/>
+		<property name="BlockDamage" value="2,10"/>
+		<property name="DegradationMax" value="500,1400"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
 <item id="2099" name="stoneHammer">
@@ -15028,7 +15049,7 @@ Mesh files no longer used:
 	<property class="Action0">
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.75"/>
-		<property name="Range" value="2.5"/>
+		<property name="Range" value="2.2"/>
 		<property name="Stamina_usage" value="4"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.5"/>
@@ -15067,7 +15088,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="0"/>
 	<property class="Action0">
 		<property name="Delay" value="0.75"/>
-		<property name="Range" value="2.5"/>
+		<property name="Range" value="2.2"/>
 		<property name="Stamina_usage" value="3"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.5"/>
@@ -15724,7 +15745,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="0"/>
 	<property class="Action0">
 		<property name="Delay" value="0.75"/>
-		<property name="Range" value="2.5"/>
+		<property name="Range" value="2.2"/>
 		<property name="Stamina_usage" value="2"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.5"/>
@@ -15763,7 +15784,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="0"/>
 	<property class="Action0">
 		<property name="Delay" value="0.75"/>
-		<property name="Range" value="2.5"/>
+		<property name="Range" value="2.2"/>
 		<property name="Stamina_usage" value="1"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.5"/>
@@ -16222,6 +16243,26 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="45,75"/>
 		<property name="BlockDamage" value="8,14"/>
 		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2234" name="LockComponents">
+	<property name="CustomIcon" value="Lockpick"/>
+	<property name="Degradation" value="125" param1="true"/>
+	<property name="DescriptionKey" value="LockComponentsDesc"/>
+	<property name="Meshfile" value="#Lockpick?Lockpick"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="36"/>
+	<property name="Group" value="Resources"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="10"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="1"/>
+		<property name="Repair_amount" value="50" />
+		<property name="Upgrade_hit_offset" value="-1"/>
+		<property name="Sound_start" value="UseActions/repair_block"/>
+		<property name="Allowed_upgrade_items" value="LockComponents"/>
 	</property>
 </item>
 

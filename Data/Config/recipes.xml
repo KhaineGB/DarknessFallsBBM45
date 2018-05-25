@@ -4514,11 +4514,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- Lockpicks -->
 
 <recipe name="Lockpick" count="1">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="20"/>
 </recipe>
 
 <recipe name="Lockpick2" count="1"  craft_area="workstationMetal" craft_tool="calipers">
-	<ingredient name="forgedIron" count="1"/>
+	<ingredient name="forgedIron" count="2"/>
+</recipe>
+
+<recipe name="LockComponents" count="1">
+	<ingredient name="scrapIron" count="5"/>
 </recipe>
 
 <!-- Stone Hammer -->
@@ -5585,6 +5589,32 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedIron" count="100"/>
 	<ingredient name="cloth" count="50"/>
 	<ingredient name="mechanicalParts" count="25"/>
+</recipe>
+
+<!-- Metal Pipes for decoration purposes -->
+
+<recipe name="metalPipeCap" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="10"/>
+</recipe>
+
+<recipe name="metalPipeCorner" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="10"/>
+</recipe>
+
+<recipe name="metalPipeFlange" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="10"/>
+</recipe>
+
+<recipe name="metalPipeJoint" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="10"/>
+</recipe>
+
+<recipe name="metalPipeStraight" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="10"/>
+</recipe>
+
+<recipe name="metalPipeValve" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedIron" count="10"/>
 </recipe>
 
 </recipes>

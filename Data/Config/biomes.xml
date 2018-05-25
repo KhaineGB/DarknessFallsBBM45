@@ -1158,8 +1158,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<Temperature min="-40" max="40" prob="1"/>
 			<Fog min="0" max="0" prob=".8"/>
 			<Fog min="100" max="100" prob=".2"/>
-			<CloudThickness min="0" max="0" prob=".2"/>
-			<CloudThickness min="10" max="70" prob=".5"/>
+			<CloudThickness min="70" max="100" prob=".7"/>
 			<CloudThickness min="100" max="100" prob=".3"/>
 			<Precipitation min="0" max="0" prob=".0"/>
 			<Precipitation min="50" max="100" prob=".75"/>
