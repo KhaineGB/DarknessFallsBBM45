@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="Industrial"/>
+    <property name="RotationToFaceNorth" value="2"/>
+    <property name="YOffset" value="-7"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,desert,wasteland"/>
+    <property name="SleeperVolumeStart" value="21,2,55#106,2,54#78,2,24#48,2,23#75,2,3#75,2,3#61,2,2#47,2,2#17,2,15#22,2,3#8,2,39#8,2,33#20,2,40#21,2,34#15,2,32#15,2,26#92,6,0#79,7,0#97,7,0#42,7,0#65,2,53#84,7,45#27,7,19#8,7,40#8,7,34#8,7,28#20,7,26#0,7,8#51,8,22"/>
+    <property name="SleeperVolumeSize" value="27,3,27#27,3,31#26,3,32#32,3,32#30,3,21#30,3,21#16,3,18#15,3,16#55,3,8#22,6,12#9,3,6#9,3,6#8,3,5#7,4,5#7,3,13#12,5,8#47,6,13#37,6,46#32,3,25#55,3,21#32,3,31#12,3,13#24,3,29#13,3,5#13,3,5#13,3,5#9,3,19#10,3,13#28,3,32"/>
+    <property name="SleeperVolumeGroup" value="S_ZomUtilityWorker_L,S_ZomUtilityWorker_L,S_ZomUtilityWorker_Med,S_ZomUtilityWorker_L,S_ZomSoldier_L,S_ZomUtilityWorker_Med,S_ZomUtilityWorker_Med,S_LootRoom_L,S_Default_XL,S_Default_XL,S_BusinessMan_L,S_BusinessMan_L,S_Default_XL,S_BusinessMan_L,S_ZomSoldier_L,S_Badass_XL,S_Badass_XL,S_ZomSoldier_L,S_Badass_L,S_ZomUtilityWorker_Med,S_ZomUtilityWorker_L,S_ZomUtilityWorker_L,S_Default_XL,S_BusinessMan_L,S_Default_XL,S_BusinessMan_L,S_ZomUtilityWorker_L,S_Badass_XL,S_ZomUtilityWorker_L"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,,,,,,,,,,,,,,,,,,,,,,,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+</prefab>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="False"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="ResidentialNew,ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="3"/>
+    <property name="YOffset" value="-2"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
+    <property name="SleeperVolumeStart" value="56,1,41#52,1,35#52,1,37#57,1,29#48,1,33#38,1,37#35,1,29#36,5,35#58,5,29#35,5,29#55,10,29#48,10,35#38,10,40#38,10,36#38,10,29#55,15,29#49,15,34#38,15,39#38,15,29#41,19,28"/>
+    <property name="SleeperVolumeSize" value="12,3,7#14,3,6#3,3,10#7,3,7#3,3,14#11,3,10#14,3,7#29,3,12#6,3,6#13,3,7#9,3,7#22,3,12#12,3,7#10,3,5#10,3,8#9,3,7#15,3,13#12,3,8#11,3,12#20,3,20"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_Default_Med,S_LootRoom_XL,S_Default_Med,S_LootRoom_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,,,,,,,0,,,,,,,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+</prefab>

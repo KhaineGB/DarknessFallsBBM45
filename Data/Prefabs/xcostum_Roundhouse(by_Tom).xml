@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="Commercial,Downtown,Industrial,ResidentialNew,ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="1"/>
+    <property name="YOffset" value="-1"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,town"/>
+    <property name="SleeperVolumeStart" value="9,0,20#0,0,25#10,0,8#9,0,17#24,0,5#15,0,28#18,0,6#33,0,10#10,5,5#12,5,31#18,5,5#22,5,18#0,4,1#7,10,25#21,7,21#33,10,6"/>
+    <property name="SleeperVolumeSize" value="10,6,8#22,12,26#13,6,16#30,22,20#17,6,6#29,6,17#28,6,15#16,6,33#28,6,26#25,6,15#31,8,25#24,6,28#39,18,34#29,9,26#29,12,24#17,9,27"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med,S_LootRoom_XS,S_GhostTown_Med,S_LootRoom_XS,S_LootRoom_XS,S_LootRoom_XS,S_Default_Med,S_Default_Med,S_LootRoom_XS,S_LootRoom_XS,S_LootRoom_XS,S_LootRoom_XS,S_LootRoom_XS,S_FootballStadium_Med,S_GhostTown_Med,S_Default_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value="medium,250,350,250,250,medium,200,medium,250,250,medium,250,350,250,medium,350"/>
+    <property name="SleeperIsLootVolume" value="True,False,False,False,False,True,True,False,False,False,False,False,False,True,False,False"/>
+</prefab>
