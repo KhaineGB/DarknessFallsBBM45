@@ -952,7 +952,6 @@
 		<objective type="ZombieKill" value="10" />
 
 		<reward type="SkillPoints" value="5" />
-		<reward type="Item" value="M4A1Schematic" />
 		<reward type="Skill" id="ClassSecurity" value="1" stage="aftercomplete"/> 
     </quest> 
 	
