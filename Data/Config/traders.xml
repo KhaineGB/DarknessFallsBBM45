@@ -787,7 +787,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="autoTurret" count="1,2" prob="0.5"/>
 			<item name="shotgunTurret" count="1,3" prob="0.7"/>
 			<item name="cncMachine" prob="0.05"/>
-			<item name="CivilianMasteryBook" prob="0.1"/>
 			<item name="ConstructionMasteryBook" prob="0.1"/>
 			<item name="HunterMasteryBook" prob="0.1"/>
 			<item name="FarmerMasteryBook" prob="0.1"/>
