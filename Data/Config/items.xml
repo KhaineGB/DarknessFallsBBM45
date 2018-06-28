@@ -16601,6 +16601,16 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="2258" name="M4A1Schematic">
+	<property name="CustomIcon" value="AR15Schematic" />
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="gunM4A1,gunM4A1Scoped"/>
+	</property>
+	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
+</item>
+
 <item id="2992" name="laserSword">
 	<property name="CustomIcon" value="titaniumMachete" />
 	<property name="DescriptionKey" value="laserSwordDesc"/>

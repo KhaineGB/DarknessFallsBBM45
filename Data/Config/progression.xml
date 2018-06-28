@@ -1610,10 +1610,11 @@
 	</perk>
 	
 	<perk name="ClassSecurity" icon="ui_game_symbol_armor_iron" description_key="ClassSecurityDesc" title_key="ClassSecurity" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
-	</perk>
-	
+
 		<recipe name="gunM4A1" unlock_level="1"/>
 		<recipe name="gunM4A1Scoped" unlock_level="1"/>
+		
+	</perk>
 	
 	<perk name="SecurityMastery" icon="ui_game_symbol_armor_iron" description_key="SecurityMasteryDesc" title_key="SecurityMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
 		<requirement skill_level="1" required_skill_name="ClassSecurity" required_skill_level="1"/>
