@@ -5504,7 +5504,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="futureTechBook" count="1" craft_area="writingDesk">
-	<ingredient name="scrapSkill" count="20"/>
+	<ingredient name="researchNotes" count="20"/>
 	<ingredient name="paper" count="10"/>
 	<ingredient name="ink" count="2"/>
 	<ingredient name="quill" count="1"/>
