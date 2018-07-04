@@ -3184,13 +3184,13 @@
 	
 	<window name="DFalls">
 		<!-- <texture name="DFalls" depth="0" size="100,50" texture="@file:Mods\SDX\Textures\Misc\wwhudlogo.png" material="Materials/Transparent Colored" pos="-500,-6" /> -->
-		<label name="ServerInfo" depth="0" size="100,50" text="V1.8" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
+		<label name="ServerInfo" depth="0" size="100,50" text="V1.8.1" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
 	</window>
 
 	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<texture name="DFalls" depth="0" size="888,666" texture="@file:Mods\SDX\Textures\Misc\DFLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
 		<!-- <label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> -->
-		<label name="DFallsVersion" pos="0, -440" depth="0" size="250,33" text="V1.8" font_size="32" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="0, -440" depth="0" size="250,33" text="V1.8.1" font_size="32" effect="outline" color="[white]" justify="center" />
 		<grid name="buttons" pos="0, -475" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
 			<simplebutton name="btnSave" depth="3" width="250" height="46" caption_key="xuiMenuSave" font_size="40" />

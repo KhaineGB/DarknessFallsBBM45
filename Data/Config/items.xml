@@ -11373,7 +11373,7 @@ Mesh files no longer used:
 		<property name="Mesh" value="armor_scrapmetal_helmet"/>
 		<property name="Overlay" value="gear_swat_helmet"/>
 		<property name="Layer" value="2"/>
-		<property name="UISlot" value="Headgear, xEyewear"/>
+		<property name="UISlot" value="Headgear"/>
 		<property name="ShowHair" value="true"/>
 	</property>
 </item>
@@ -14616,7 +14616,7 @@ Mesh files no longer used:
 		<property name="Mesh" value="armor_scrapmetal_helmet"/>
 		<property name="Overlay" value="gear_swat_helmet"/>
 		<property name="Layer" value="2"/>
-		<property name="UISlot" value="Headgear, xEyewear"/>
+		<property name="UISlot" value="Headgear"/>
 		<property name="ShowHair" value="true"/>
 		<property name="Overlay0Tint" value="0, 51, 204"/>
 	</property>
@@ -16609,6 +16609,18 @@ Mesh files no longer used:
 		<property name="Recipes_to_learn" value="gunM4A1,gunM4A1Scoped"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
+</item>
+
+<item id="2259" name="titaniumHelmetLight">
+	<property name="Extends" value="titaniumHelmet"/>
+	<property name="DescriptionKey" value="HelmetLightDesc"/>
+	<property name="Class" value="ItemClassToggle"/>
+	<property name="ActivateObject" value="miningHelmetLightSource(Clone)"/>
+	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource"/>
+	<property name="CustomIconTint" value="0033FF"/>
+	<property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab"/>
+	<property name="CustomIcon" value="scrapHelmetLight"/>
+	<property name="CustomIconTint" value="0033FF"/>
 </item>
 
 <item id="2992" name="laserSword">

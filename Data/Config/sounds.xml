@@ -4990,66 +4990,57 @@
 	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire4"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 	
-<!-- Titanium Sound Test -->
+<!-- Zombie Behemoth Male -->
 
-<SoundDataNode name="titaniumhitcloth"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitcloth1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitcloth2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitcloth3"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+<SoundDataNode name="zombiebehemothalert"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Angry_1"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Angry_2"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Angry_3"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Angry_4"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="3"/> </SoundDataNode>
 
-<SoundDataNode name="titaniumhitearth"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth3"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+<SoundDataNode name="zombiebehemothattack"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Attack_1"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Attack_2"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Attack_3"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Attack_4"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.8"/> </SoundDataNode>
 
-<SoundDataNode name="titaniumhitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal3"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+<SoundDataNode name="zombiebehemothdeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Death_1"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Death_2"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Death_3"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Death_4"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
 
-<SoundDataNode name="titaniumhitglass"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass3"/>
-  <AudioClip ClipName="Sounds/ImpactSurface/metalhitglass4"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+<SoundDataNode name="zombiebehemothpain"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Pain_1"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Pain_2"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Pain_3"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Pain_4"/>
+	<Channel name="Mouth"/>
+	<Priority name="1"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="1.8"/> </SoundDataNode>
 
-<SoundDataNode name="titaniumhitorganic"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitorganic1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitorganic2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitorganic3"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+<SoundDataNode name="zombiebehemothroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Growl_1"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Growl_1v2"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Growl_2"/>
+	<Channel name="Mouth"/>
+	<Priority name="5"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="3"/> </SoundDataNode>
 
-<SoundDataNode name="titaniumhitplant"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitplant1"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
-
-<SoundDataNode name="titaniumhitstone"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitstone1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitstone2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitstone3"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
-
-<SoundDataNode name="titaniumhitwater"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwater1"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
-
-<SoundDataNode name="titaniumhitwood"> <AudioSource name="Sounds/AudioSource_Impact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwood1"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwood2"/>
-	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwood3"/>
-	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+<SoundDataNode name="zombiebehemothsense"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Growl_1"/>
+	<AudioClip ClipName="#BehemothAudio?Medium_Monster_Growl_2"/>
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="3"/> </SoundDataNode>
 	
 </Sounds>

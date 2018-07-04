@@ -18731,7 +18731,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
-		<property name="CraftingAreaRecipes" value="player,workbench"/>
+		<property name="CraftingAreaRecipes" value="ScifiBench"/>
 	</property>
 	<property class="RepairItems">
 		<property name="forgedTitanium" value="20"/>

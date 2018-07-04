@@ -8,9 +8,9 @@
 		
 			<cell_rule name="deadCell" prob="0.005"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
 			<cell_rule name="cityCell" prob="0.15"/>
-			<cell_rule name="townCell" prob="0.33"/>
-			<cell_rule name="ruralCell" prob="0.33"/>
-			<cell_rule name="customHubTest" position="0,1" prob="1"/>
+			<cell_rule name="ruralCell" prob="0.25"/>
+			<cell_rule name="townCell" prob="0.35"/>
+			<cell_rule name="customHubTest" position="0,1" prob="100"/>
 			
 		</ruleset>
 	</rulesets>
@@ -76,7 +76,7 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 			
-			<hub_rule name="cityHub" prob="1"/>
+			<hub_rule name="cityHub" prob="100"/>
 			
 			<wilderness_rule name="wildernessWasteland"/>
 		</cell_rule>
@@ -438,14 +438,46 @@
 				<alt_commands chars="A"/>
 			</street_gen>
 		</hub_rule>
-
+		
 		<hub_rule name="customHubTest">
+			<hub_type value="city"/>
+			<width value="1260, 1680" />
+			<height value="1260, 1680" />
+			<path_material value="asphalt" />
+			<path_radius value="10" />
+			<downtown_zone_size_perc value="0.5"/>
+
+			<prefab_rule name="cityPoisHub"/>
+
+			<street_gen level="25" length_multiplier="4">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/> <!-- 	Draws 2 rectngls side by side -->
+				<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/> <!-- Draws 2 boxes side by side -->
+				<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/> <!-- Draws cross street -->
+				<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/> <!-- draw T section LFT -->
+				<rule char="E" replace_with="F[F][FF*]+[FF*]"/> <!-- draw T section RT-->
+				<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/> <!-- draw T section -->
+				<rule char="H" replace_with="F[F]-[FF*]"/> <!-- LFT Turn-->
+				<rule char="Z" replace_with="F[F]+[FF*]"/> <!-- RT Turn-->
+				<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/> <!-- Center Spoked Box -->
+				<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/> <!-- Small Spoked box off center -->
+				<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/> <!-- Lrg Spoked box Off center -->
+				<alt_commands chars="T,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
+			</street_gen>
+		</hub_rule>
+
+		<!-- <hub_rule name="customHubTest">
 		
 			<hub_type value="city"/>
 			<hub_layout name="customHubTest"/>
 
 			<prefab_rule name="cityPois"/>
-		</hub_rule>
+		</hub_rule> -->
 		
 	</hub_rules>
 
@@ -525,7 +557,6 @@
 			<prefab rule="industrialGroupCity"/> -->
 			<prefab rule="hubCity"/>
 			<prefab rule="detailFillerGroup"/>
-			<prefab rule="none"/>
 		</prefab_rule>
 		
 		<prefab_rule name="cityPois">

@@ -3355,7 +3355,8 @@
 	<property name="AvatarController" value="AvatarAnimalController"/>
 	<property name="HasRagdoll" value="false"/>
 	<property name="RagdollOnDeathChance" value="0"/>
-	<property name="Class" value="EntityZombie"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+	<!-- <property name="Class" value="EntityZombie"/> -->
 	<property name="Parent" value="Enemies"/>
 	<property name="PhysicsBody" value="snake"/>
 	<property name="Faction" value="undead"/>
@@ -4896,6 +4897,13 @@
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="ApproachSpeed" value="1.3"/>
 	<property name="NightApproachSpeed" value="1.3"/>
+	<property name="SoundRandom" value="zombiefemalesnowroam"/>
+	<property name="SoundAlertTime" value="12.5"/> <!-- It will play the roam every 25/12.5 seconds-->
+	<property name="SoundAlert" value="zombiefemalesnowalert"/>
+	<property name="SoundAttack" value="zombiefemalesnowattack"/>
+	<property name="SoundHurt" value="zombiefemalesnowpain"/>
+	<property name="SoundDeath" value="zombiefemalesnowdeath"/>
+	<property name="SoundSense" value="zombiefemalesnowsense"/>
 	<property name="HandItem" value="handZombieBehemoth"/>
 	<property name="HeadDismemberBaseChance" value="-.15"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
@@ -5416,13 +5424,13 @@
 	<property name="AttackTimeoutNight" value="2" />
 	<property name="ParticleOnDeath" value="blood_death" />
 	<property name="SoundRandomTime" value="30.0"/> <!-- It will play the roam every 60/30 seconds -->
-	<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam"/>
+	<property name="SoundRandom" value="zombiebehemothroam"/>
 	<property name="SoundAlertTime" value="12.5"/> <!-- It will play the roam every 25/12.5 seconds-->
-	<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert"/>
-	<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense"/>
-	<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain"/>
-	<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath"/>
-	<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack"/>
+	<property name="SoundAlert" value="zombiebehemothalert"/>
+	<property name="SoundSense" value="zombiebehemothsense"/>
+	<property name="SoundHurt" value="zombiebehemothpain"/>
+	<property name="SoundDeath" value="zombiebehemothdeath"/>
+	<property name="SoundAttack" value="zombiebehemothattack"/>
 	<property name="SoundSleeperSense" value="sleepersense"/>
 	<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
 	<property name="SpawnOnGround" value="true" />
@@ -5852,13 +5860,13 @@
 	<property name="AttackTimeoutNight" value="2" />
 	<property name="ParticleOnDeath" value="blood_death" />
 	<property name="SoundRandomTime" value="30.0"/> <!-- It will play the roam every 60/30 seconds -->
-	<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam"/>
+	<property name="SoundRandom" value="zombiebehemothroam"/>
 	<property name="SoundAlertTime" value="12.5"/> <!-- It will play the roam every 25/12.5 seconds-->
-	<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert"/>
-	<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense"/>
-	<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain"/>
-	<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath"/>
-	<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack"/>
+	<property name="SoundAlert" value="zombiebehemothalert"/>
+	<property name="SoundSense" value="zombiebehemothsense"/>
+	<property name="SoundHurt" value="zombiebehemothpain"/>
+	<property name="SoundDeath" value="zombiebehemothdeath"/>
+	<property name="SoundAttack" value="zombiebehemothattack"/>
 	<property name="SoundSleeperSense" value="sleepersense"/>
 	<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
 	<property name="SpawnOnGround" value="true" />
@@ -5898,19 +5906,80 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="LootListOnDeath" value="66"/>
+	<property name="LootListOnDeath" value="118"/>
 	<property name="Buffs" value="isZombieBoss"/>
 </entity_class>
 
 <!-- <entity_class name="Sheep" extends="animalTemplateHostile">
 	<property name="AvatarController" value="AnimationSDX, Mods" />
 	<property name="RootMotion" value="false" />
-    <property name="Mesh" value="#Badger?Badger" />
+    <property name="Mesh" value="#Sheep?Sheep" />
+    <property name="Class" value="EntityAnimalStag" />
+    <property name="AnimationIdle" value="Idle" />
+    <property name="AnimationDeath" value="Death" />
+    <property name="AnimationRun" value="Run" />
+    <property name="AnimationWalk" value="Walk" />
+    <property name="WanderSpeed" value="0.8" />
+    <property name="ApproachSpeed" value="1.2" />
+    <property name="NightWanderSpeed" value="1.0" />
+    <property name="NightApproachSpeed" value="1.2" />
+    <property name="HasRagdoll" value="false" />
+    <property name="RootMotion" value="false" />
+	<property name="HandItem" value="stingHornet" />
+	<property name="MaxHealth" value="50" />
+	<property name="MaxViewAngle" value="180" />
+	<property name="Weight" value="20" />
+	<property name="Immunity" value="sickness;disease;wellness" />
+	<property name="CanClimbLadders" value="false" />
+	<property name="IsEnemyEntity" value="false" />
+	<property name="SurfaceCategory" value="organic" />
+	<property name="AttackTimeoutDay" value="2" /> 
+	<property name="AttackTimeoutNight" value="2" />
+	<property name="ParticleOnDeath" value="blood_death" />
+	<property name="SoundRandomTime" value="60.0" />
+	<property name="SoundRandom" value="hornetroam" />
+	<property name="SoundAlert" value="hornetalert" />
+	<property name="SoundHurt" value="hornetpain" />
+	<property name="SoundDeath" value="hornetdeath" />
+	<property name="SoundAttack" value="hornetattack" />
+	<property name="SoundSense" value="hornetsense" />
+	<property name="SoundGiveUp" value="hornetgiveup" />
+	<property name="SpawnOnGround" value="true" />
+	<property name="ExperienceGain" value="120"/>
+	<property name="CorpseBlockChance" value="0"/>
+	<property name="TimeStayAfterDeath" value="300" />
+	<property name="DeadBodyHitPoints" value="80" /> 
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Wander"/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC"/>
+	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
+	<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>
+	<property name="AITarget-4" value="SetAsTargetIfHurt" param1="EntityBandit"/>
+	<property name="AITarget-5" value="BlockingTargetTask"/>
+	<property name="AITarget-6" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
+	<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
+	<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityBandit"/>
+	<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
+	<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+	<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit" />
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
+	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
+</entity_class>
+
+<entity_class name="Rat" extends="animalTemplateHostile">
+	<property name="AvatarController" value="AnimationSDX, Mods" />
+	<property name="RootMotion" value="false" />
+    <property name="Mesh" value="#Rat?Rat" />
     <property name="Class" value="EntityAnimalStag" />
     <property name="AnimationIdle" value="idle" />
-    <property name="AnimationMainAttack" value="attack" />
-    <property name="AnimationPain" value="hit" />
-    <property name="AnimationDeath" value="die" />
+    <property name="AnimationMainAttack" value="ramAttack" />
+    <property name="AnimationPain" value="getHit" />
+    <property name="AnimationDeath" value="death" />
     <property name="AnimationRun" value="run" />
     <property name="AnimationWalk" value="walk" />
     <property name="WanderSpeed" value="0.8" />

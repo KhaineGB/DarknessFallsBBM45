@@ -1613,6 +1613,10 @@
 
 		<recipe name="gunM4A1" unlock_level="1"/>
 		<recipe name="gunM4A1Scoped" unlock_level="1"/>
+		<recipe name="partsM4A1_stock" unlock_level="1"/>
+		<recipe name="partsM4A1_receiver" unlock_level="1"/>
+		<recipe name="partsM4A1_parts" unlock_level="1"/>
+		<recipe name="partsM4A1_barrel" unlock_level="1"/>
 		
 	</perk>
 	
