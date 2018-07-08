@@ -1203,6 +1203,7 @@
 		<recipe name="pickaxeScrap" unlock_level="1"/>
 		<recipe name="shovelScrap" unlock_level="1"/>
 		<recipe name="hoeScrap" unlock_level="1"/>
+		<recipe name="scrapMachete" unlock_level="1"/>
 	</perk>
 	
 	<!-- Iron Tool Crafting -->
@@ -1589,7 +1590,8 @@
 		<recipe name="TitaniumMinibikeHandlebars" unlock_level="1"/>
 		<recipe name="largeEngine" unlock_level="1"/>
 		<recipe name="largeBattery" unlock_level="1"/>		
-		<recipe name="oilPump" unlock_level="1"/>		
+		<recipe name="oilPump" unlock_level="1"/>
+		<recipe name="steelWrench" unlock_level="1"/>			
 		
 	</perk>
 	

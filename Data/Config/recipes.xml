@@ -5078,6 +5078,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="sulfuricAcid" count="2" />
 </recipe>
 
+<recipe name="steelWrench" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="forgedSteel" count="24"/>
+	<ingredient name="mechanicalParts" count="4"/>
+</recipe>
+
 <!-- Miner Class Mastery -->
 
 <recipe name="augerTitanium" count="1" craft_area="assembly">
@@ -6457,6 +6462,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="metalStairsWalkwayRailing" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
 	<ingredient name="forgedIron" count="6"/>
 	<ingredient name="shortMetalPipe" count="4"/>
+</recipe>
+
+<recipe name="scrapMachete" count="1">
+	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapPlastics" count="2"/>
+	<ingredient name="wood" count="2"/>
+	<ingredient name="ductTape" count="1"/>
+</recipe>
+
+<recipe name="steelWrench" count="1" craft_area="workbench">
+	<ingredient name="forgedSteel" count="12"/>
+	<ingredient name="mechanicalParts" count="4"/>
 </recipe>
 
 </recipes>

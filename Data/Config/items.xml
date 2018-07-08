@@ -9651,7 +9651,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillBarter" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Barter"/>
+		<property name="Skills_to_gain" value="Barter,Barter"/>
 	</property>
 </item>
 
@@ -9659,7 +9659,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillArchery" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Archery"/>
+		<property name="Skills_to_gain" value="Archery,Archery"/>
 	</property>
 </item>
 
@@ -9667,7 +9667,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillAthletics" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Athletics"/>
+		<property name="Skills_to_gain" value="Athletics,Athletics"/>
 	</property>
 </item>
 
@@ -9675,7 +9675,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillBlades" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Blade Weapons"/>
+		<property name="Skills_to_gain" value="Blade Weapons,Blade Weapons"/>
 	</property>
 </item>
 
@@ -9683,7 +9683,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillBlunt" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Blunt Weapons"/>
+		<property name="Skills_to_gain" value="Blunt Weapons,Blunt Weapons"/>
 	</property>
 </item>
 
@@ -9691,7 +9691,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillCloth-Armor" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Clothing/Armor"/>
+		<property name="Skills_to_gain" value="Clothing/Armor,Clothing/Armor"/>
 	</property>
 </item>
 
@@ -9699,7 +9699,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillConstruction" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Construction Tools"/>
+		<property name="Skills_to_gain" value="Construction Tools,Construction Tools"/>
 	</property>
 </item>
 
@@ -9707,7 +9707,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillMedicine" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Medicine"/>
+		<property name="Skills_to_gain" value="Medicine,Medicine"/>
 	</property>
 </item>
 
@@ -9715,7 +9715,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillMining" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Mining Tools"/>
+		<property name="Skills_to_gain" value="Mining Tools,Mining Tools"/>
 	</property>
 </item>
 
@@ -9723,7 +9723,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillPistol" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Pistols"/>
+		<property name="Skills_to_gain" value="Pistols,Pistols"/>
 	</property>
 </item>
 
@@ -9731,7 +9731,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillRifle" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Rifles"/>
+		<property name="Skills_to_gain" value="Rifles,Rifles"/>
 	</property>
 </item>
 
@@ -9739,7 +9739,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillScavenging" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Scavenging"/>
+		<property name="Skills_to_gain" value="Scavenging,Scavenging"/>
 	</property>
 </item>
 
@@ -9747,7 +9747,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillShotgun" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Shotguns"/>
+		<property name="Skills_to_gain" value="Shotguns,Shotguns"/>
 	</property>
 </item>
 
@@ -10245,12 +10245,6 @@ Mesh files no longer used:
 	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="500"/>
 	<property name="FuelValue" value="20"/>
-	<!-- <property name="Group" value="Survival"/>
-		<property class="Action1">
-		<property name="Class" value="Quest"/>
-		<property name="QuestGiven" value="survivorNotes"/>
-		<property name="Delay" value="0"/> 
-	</property> -->
 </item>
 
 <item id="1938" name="skillGenericBook">
@@ -11560,7 +11554,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3" />
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
-	<property name="EconomicValue" value="2000"/>
+	<property name="EconomicValue" value="1000"/>
 	<property class="Preview">
 		<property name="Zoom" value="28" />
 		<property name="Pos" value="0,-0.05" />
@@ -11595,7 +11589,7 @@ Mesh files no longer used:
 	<property name="Weight" value="5" />
 	<property name="Stacknumber" value="1" /> <!-- STK loot -->
 	<property name="Group" value="Resources" />
-	<property name="EconomicValue" value="2000"/>
+	<property name="EconomicValue" value="1000"/>
 </item>
 
 <!-- Fishing Mod Stuff -->
@@ -13629,7 +13623,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="skillAxes" />
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Axes"/>
+		<property name="Skills_to_gain" value="Axes,Axes"/>
 	</property>
 </item>
 
@@ -14931,7 +14925,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Class" value="Quest" />
 		<property name="QuestGiven" value="quest_civilianMastery" />
@@ -14943,7 +14937,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="ConstructionMastery"/>
 	</property>
@@ -14954,7 +14948,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="HunterMastery"/>
 	</property>
@@ -14965,7 +14959,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="FarmerMastery"/>
 	</property>
@@ -14976,7 +14970,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="MinerMastery"/>
 	</property>
@@ -14987,7 +14981,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="MechanicMastery"/>
 	</property>
@@ -14998,7 +14992,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="ScientistMastery"/>
 	</property>
@@ -15009,7 +15003,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="SecurityMastery"/>
 	</property>
@@ -15020,7 +15014,7 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="ea0606"/>
 	<property name="DescriptionKey" value="MasteryBookDesc"/>
 	<property name="Extends" value="schematicMaster"/>
-	<property name="EconomicValue" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="SurvivalistMastery"/>
 	</property>
@@ -16621,6 +16615,110 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab"/>
 	<property name="CustomIcon" value="scrapHelmetLight"/>
 	<property name="CustomIconTint" value="0033FF"/>
+</item>
+
+<item id="2260" name="steelWrench">
+	<property name="CustomIcon" value="steelWrench"/>
+	<property name="DescriptionKey" value="steelWrenchDesc"/>
+	<property name="Meshfile" value="#SteelWrench?SteelWrench"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedSteel"/>
+	<property name="HoldType" value="29"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="288"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="4.5"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.metal" value="4"/>
+		<property name="DamageBonus.organic" value="0.5"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Disassemble" value="1" param1="2"  />
+		<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+        <property name="Particle_harvesting" value="true" param1="metal" />
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.4"/>
+		<property name="Repair_amount" value="700"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="8,20"/>
+		<property name="BlockDamage" value="4,20"/>
+		<property name="DegradationMax" value="1000,2800"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="2261" name="scrapMachete">
+	<property name="CustomIcon" value="scrapMachete"/>
+	<property name="DescriptionKey" value="scrapMacheteDesc"/>
+	<property name="Meshfile" value="#ScrapMachete?ScrapMachete"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="iron"/>
+	<property name="HoldType" value="47"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="6.51"/>
+		<property name="DamageBonus.wood" value="3"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="3"/>
+		<property name="ToolCategory.Butcher" value="1" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="6,15"/>
+		<property name="BlockDamage" value="2,5"/>
+		<property name="DegradationMax" value="200,800"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0.01,0.03"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="2262" name="KagesBook">
+	<property name="CustomIcon" value="skillGeneric" />
+	<property name="CustomIconTint" value="993300"/>
+	<property name="Extends" value="schematicMaster"/>
+	<property class="Action1">
+		<property name="Class" value="Quest" />
+		<property name="QuestGiven" value="quest_KagesBook" />
+	<property name="DescriptionKey" value="KagesBookDesc" />
+	</property>
 </item>
 
 <item id="2992" name="laserSword">

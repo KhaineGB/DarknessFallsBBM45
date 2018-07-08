@@ -19237,7 +19237,7 @@ kind of free
 	<property name="ParticleOffset" value="0,1.2,0.5" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="ImposterDontBlock" value="true" />
-	<property name="Class" value="Campfire" />
+	<property name="Class" value="Forge"/>
 </block>
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

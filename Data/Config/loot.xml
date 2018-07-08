@@ -899,36 +899,26 @@
 	<item name="crossbowSchematic"/>
 	<item name="huntingKnifeBook"/>
 	<item name="huntingRifleSchematic"/>
-	<!-- <item name="leatherBootsSchematic"/>
-	<item name="leatherGlovesSchematic"/>
-	<item name="leatherHoodSchematic"/>
-	<item name="leatherPantsSchematic"/> -->
 	<item name="leatherJacketSchematic"/>
 	<item name="pistolBook"/>
 	<item name="pumpShotgunSchematic"/>
-	<!-- <item name="scrapBootsSchematic" prob="0.7"/>
-	<item name="scrapLegArmorSchematic" prob="0.7"/>
-	<item name="scrapHelmetSchematic" prob="0.7"/>
-	<item name="scrapGlovesSchematic" prob="0.7"/> -->
 	<item name="scrapChestArmorSchematic" prob="0.7"/>
 	<item name="forgeAheadBook" prob="0.7"/>
-	<item name="leatherTanningBook" prob="0.7"/>
-	<item name="farmingBook" prob="0.7"/>
-	<item name="skillArcheryBook" prob="0.7"/>
-	<item name="skillAthleticsBook" prob="0.7"/>
-	<item name="skillAxeBook" prob="0.7"/>
-	<item name="skillBarterBook" prob="0.7"/>
-	<item name="skillBladesBook" prob="0.7"/>
-	<item name="skillBluntBook" prob="0.7"/>
-	<item name="skillCloth-ArmorBook" prob="0.7"/>
-	<item name="skillConstructionBook" prob="0.7"/>
-	<item name="skillMedicineBook" prob="0.7"/>
-	<item name="skillMiningBook" prob="0.7"/>
-	<item name="skillPistolBook" prob="0.7"/>
-	<item name="skillRifleBook" prob="0.7"/>
-	<item name="skillScavengingBook" prob="0.7"/>
-	<item name="skillShotgunBook" prob="0.7"/>
-	<item name="P225Schematic" prob="0.7"/>
+	<item name="skillArcheryBook" prob="0.4"/>
+	<item name="skillAthleticsBook" prob="0.4"/>
+	<item name="skillAxeBook" prob="0.4"/>
+	<item name="skillBarterBook" prob="0.4"/>
+	<item name="skillBladesBook" prob="0.4"/>
+	<item name="skillBluntBook" prob="0.4"/>
+	<item name="skillCloth-ArmorBook" prob="0.4"/>
+	<item name="skillConstructionBook" prob="0.4"/>
+	<item name="skillMedicineBook" prob="0.4"/>
+	<item name="skillMiningBook" prob="0.4"/>
+	<item name="skillPistolBook" prob="0.4"/>
+	<item name="skillRifleBook" prob="0.4"/>
+	<item name="skillScavengingBook" prob="0.4"/>
+	<item name="skillShotgunBook" prob="0.4"/>
+	<item name="P225Schematic" prob="0.5"/>
 	<item name="wrenchSchematic"/>	
 </lootgroup>
 
@@ -955,28 +945,31 @@
 	<item name="theEnforcerMagazine"/>
 	<item name="nailgunSchematic"/>
 	<item name="compoundBowSchematic"/>
-	<item name="AR15Schematic"/>
-	<item name="CAWSShotgunSchematic"/>
-	<item name="WinchesterRifleSchematic"/>
-	<item name="titaniumHuntingKnifeSchematic" prob="0.3"/>
-	<item name="titaniumSledgehammerSchematic" prob="0.3"/>
-	<item name="titaniumSpearSchematic" prob="0.3"/>
+	<item name="AR15Schematic" prob="0.7"/>
+	<item name="CAWSShotgunSchematic" prob="0.7"/>
+	<item name="WinchesterRifleSchematic" prob="0.7"/>
+	<item name="scrapSkill" prob="0.5" />
+	<item name="KagesBook" prob="0.25" />
+	<item name="titaniumHuntingKnifeSchematic" prob="0.2"/>
+	<item name="titaniumSledgehammerSchematic" prob="0.2"/>
+	<item name="titaniumSpearSchematic" prob="0.2"/>
 	<item name="steelCrossbowSchematic"/>
 	<item name="combatAxeSchematic"/>
-	<item name="runForestrunBook" prob="0.3"/>
-	<item name="StealthTrainingBook" prob="0.3"/>
-	<item name="ArmorTrainingBook" prob="0.3"/>
-	<item name="weaponCraftingBook" prob="0.3"/>
-	<item name="toolCraftingBook" prob="0.3"/>
-	<item name="gunCraftingBook" prob="0.3"/>
-	<item name="scienceCraftingBook" prob="0.3"/>
-	<item name="armorCraftingBook" prob="0.3"/>
-	<item name="farmingBook2" prob="0.7"/>
-	<item name="farmingBook3" prob="0.7"/>
-	<item name="skillGenericBook" prob="0.7"/>
+	<item name="runForestrunBook" prob="0.1"/>
+	<item name="StealthTrainingBook" prob="0.1"/>
+	<item name="ArmorTrainingBook" prob="0.1"/>
+	<item name="weaponCraftingBook" prob="0.1"/>
+	<item name="toolCraftingBook" prob="0.1"/>
+	<item name="gunCraftingBook" prob="0.1"/>
+	<item name="scienceCraftingBook" prob="0.1"/>
+	<item name="armorCraftingBook" prob="0.1"/>
+	<item name="leatherTanningBook" prob="0.7"/>
+	<item name="farmingBook" prob="0.3"/>
+	<item name="farmingBook2" prob="0.3"/>
+	<item name="farmingBook3" prob="0.3"/>
+	<item name="skillGenericBook" prob="0.4"/>
 	<item group="questChallenge" count="1"/>
 	<item name="macDyverBook" />
-	<!-- <item name="CivilianMasteryBook" prob="0.1"/> -->
 	<item name="ConstructionMasteryBook" prob="0.1"/>
 	<item name="HunterMasteryBook" prob="0.1"/>
 	<item name="FarmerMasteryBook" prob="0.1"/>
@@ -985,12 +978,6 @@
 	<item name="ScientistMasteryBook" prob="0.1"/>
 	<item name="SecurityMasteryBook" prob="0.1"/>
 	<item name="SurvivalistMasteryBook" prob="0.1"/>
-	<!-- <item name="handleBarsSchematic"/>
-	<item name="theRiddleOfSteel"/>
-	<item name="setInConcrete"/>
-	<item name="10mmBulletSchematic"/>
-	<item name="762mmBulletSchematic"/>
-	-->
 </lootgroup>
 
 <lootgroup name="paintMagazines" count="1">
@@ -1645,6 +1632,7 @@
 	<item group="weaponsPistol+ammo" prob="1.5"/>
 	<item name="flashlight02"/>
 	<item name="sewingKit" />
+	<item name="ink"  prob="0.5" />
 </lootcontainer>
 
 <!-- medicine cabinets -->

@@ -506,3 +506,7 @@ quest_trader_building3,,Quest Info,KgNone,Trader Building Supplies (Hard),,,,
 quest_trader_building3_offer,,Quest Info,KeyCon KgNone,"What you've fetched so far is pretty good, but we need a tougher, second layer.\n\nGet out there and fetch some rebar frames!",,,,
 quest_trader_building3_subtitle,,Quest Info,Reordered,Fetch Some Rebar Frames.,,,,
 quest_trader_building3_description,,Quest Info,Reordered,"Help reinforce the traders walls. Fetch some rebar frames.",,,,
+
+quest_KagesBook,,Quest Info,KgNone,"Kage's Book",,,,
+quest_KagesBook_offer,,Quest Info,KeyCon KgNone,"There are two notes inside the book. The first reads:\n\nWhat's up zombie slayers!? This is Kage848 and this is my collection of skill notes, so leave them alone. SKILL NOTES FOR DAYZ!\n\nThe second reads:\n\nKage, leave my damn books alone!\n- Khaine.",,,,
+quest_KagesBook_subtitle,,Quest Info,Reordered,Gain Some Skill Notes,,,,

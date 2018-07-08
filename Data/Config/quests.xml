@@ -1208,6 +1208,14 @@
 		<reward type="SkillPoints" value="30" />
 	</quest>
 	
+<!-- Stop Scrapping My Books, Kage! -->
+
+	<quest id="quest_KagesBook" name_key="quest_KagesBook" subtitle_key="quest_KagesBook_subtitle" description_key="quest_KagesBook_offer" icon="ui_game_symbol_skills"
+	repeatable="true" category_key="quest" offer_key="quest_KagesBook_offer" difficulty="easy">
+
+		<reward type="Item" id="scrapSkill" value="15" />
+	</quest>
+	
 <!-- Quest Test 
 
 	<quest id="quest_testpoi" group_name_key="quest_testpoi" name_key="quest_testpoi" subtitle_key="quest_testpoi_subtitle" description_key="quest_testpoi_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
@@ -1218,9 +1226,9 @@
     </quest> 
 	
 	<quest id="quest_testpoi2" group_name_key="quest_testpoi2" name_key="quest_testpoi2" subtitle_key="quest_testpoi2_subtitle" description_key="{mapdaytimetitle}: [DECEA3]{mapdaytime}[-]" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
-    </quest> -->
+    </quest>
 	
-<!-- Quest Test 2 -->
+Quest Test 2 
 
 	<quest id="quest_testfetch" name_key="quest_testfetch" subtitle_key="quest_testfetch_subtitle" description_key="quest_testfetch_desc" icon="ui_game_symbol_zombie"
 	repeatable="true" category_key="quest" offer_key="quest_testfetch_offer" difficulty="easy">
@@ -1237,6 +1245,6 @@
 		
 		<reward type="Item" id="scrapSkill" value="3" />
 		<reward type="Item" id="casinoCoin" value="200" />
-	</quest>
+	</quest> -->
 
 </quests>
