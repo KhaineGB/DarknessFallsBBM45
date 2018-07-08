@@ -16681,7 +16681,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="600"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
-	<property name="Weight" value="200"/>
+	<property name="Weight" value="10"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.2"/>
