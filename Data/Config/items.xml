@@ -7513,7 +7513,7 @@ Mesh files no longer used:
 <item id="913" name="beerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="plantedHop1,beer,signShopColdBeer"/>
+		<property name="Recipes_to_learn" value="plantedHop1"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
 	</property>
 </item>
