@@ -8,9 +8,9 @@
 		
 			<cell_rule name="deadCell" prob="0.005"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
 			<cell_rule name="cityCell" prob="0.15"/>
-			<cell_rule name="ruralCell" prob="0.25"/>
-			<cell_rule name="townCell" prob="0.35"/>
-			<cell_rule name="customHubTest" position="0,1" prob="100"/>
+			<cell_rule name="townCell" prob="0.33"/>
+			<cell_rule name="ruralCell" prob="0.33"/>
+			<cell_rule name="customHubTest" position="0,0" prob="1"/>
 			
 		</ruleset>
 	</rulesets>
@@ -76,7 +76,7 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 			
-			<hub_rule name="cityHub" prob="100"/>
+			<hub_rule name="cityHub" prob="1"/>
 			
 			<wilderness_rule name="wildernessWasteland"/>
 		</cell_rule>
@@ -438,73 +438,41 @@
 				<alt_commands chars="A"/>
 			</street_gen>
 		</hub_rule>
-		
+
 		<hub_rule name="customHubTest">
-			<hub_type value="city"/>
-			<width value="1260, 1680" />
-			<height value="1260, 1680" />
-			<path_material value="asphalt" />
-			<path_radius value="10" />
-			<downtown_zone_size_perc value="0.5"/>
-
-			<prefab_rule name="cityPoisHub"/>
-
-			<street_gen level="25" length_multiplier="4">
-				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-
-				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-				<rule char="A" replace_with="[FFFF*]-[FF+FFF+FF.]++[FF-FFF-FF.]"/> <!-- 	Draws 2 rectngls side by side -->
-				<rule char="B" replace_with="[FFF*]-[FF+FF+FF.]++[FF-FF-FF.]"/> <!-- Draws 2 boxes side by side -->
-				<rule char="C" replace_with="F[F]-[FFA]+[FFB]+[FFJ]"/> <!-- Draws cross street -->
-				<rule char="D" replace_with="F[F]-[FF*]+[FF*]"/> <!-- draw T section LFT -->
-				<rule char="E" replace_with="F[F][FF*]+[FF*]"/> <!-- draw T section RT-->
-				<rule char="G" replace_with="F[F]-[FF*]++[FF*]"/> <!-- draw T section -->
-				<rule char="H" replace_with="F[F]-[FF*]"/> <!-- LFT Turn-->
-				<rule char="Z" replace_with="F[F]+[FF*]"/> <!-- RT Turn-->
-				<rule char="J" replace_with="F[F]-F+F[-FF*]F+F[-FF*]F+F[-FF*]F+F."/> <!-- Center Spoked Box -->
-				<rule char="Y" replace_with="F[F]-F[FF*]+F[FF*]+F[FF*]+F[FF*]."/> <!-- Small Spoked box off center -->
-				<rule char="L" replace_with="FF[F]-FF[FFF*]+FF[FFF*]+FF[FFF*]+FF[FFF*]."/> <!-- Lrg Spoked box Off center -->
-				<alt_commands chars="T,K,A,B,C,D,E,G,H,Z,J,Y,L"/>
-			</street_gen>
-		</hub_rule>
-
-		<!-- <hub_rule name="customHubTest">
 		
 			<hub_type value="city"/>
 			<hub_layout name="customHubTest"/>
 
 			<prefab_rule name="cityPois"/>
-		</hub_rule> -->
+		</hub_rule>
 		
 	</hub_rules>
 
 	<wilderness_rules>
 		<!-- Wilderness pois for city cell -->
-		<wilderness_rule name="wildernessCity" spawn_min_max="20,25"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessCity" spawn_min_max="30,40"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="asphalt" />
 			<path_radius value="4" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroupCity" prob="1"/>
 		</wilderness_rule>
 		<!-- Wilderness pois for town cell -->
-		<wilderness_rule name="wildernessTown" spawn_min_max="20,30"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessTown" spawn_min_max="30,40"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="gravel" />
 			<path_radius value="3" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroupTown" prob="1"/>
 		</wilderness_rule>
 		<!-- Wilderness pois for rural cell -->
-		<wilderness_rule name="wildernessRural" spawn_min_max="20,25"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessRural" spawn_min_max="30,40"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="dirt" />
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroupRural" prob="1"/>
 		</wilderness_rule>
 		
-		<wilderness_rule name="wildernessWasteland" spawn_min_max="15,25"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
+		<wilderness_rule name="wildernessWasteland" spawn_min_max="10,20"> <!-- increase spawn_min_max="" to add more wilderness pois for each cell area -->
 			<path_material value="dirt" />
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
@@ -523,30 +491,30 @@
 			<prefab name="xcostum_Asia_Dojo(by_RedLotus)" min_count="1" max_count="2" />
 			<prefab name="xcostum_Asia_KhooKongsi(by_StompyNZ)" min_count="1" max_count="2" />
 			<prefab name="xcostum_Asia_KungFuSchool(by_magoli)" min_count="1" max_count="2" />
-			<prefab name="xcostum_Asia_Livinghouse_sm_01(by_magoli)" min_count="1" max_count="3" />
-			<prefab name="xcostum_Asia_ModernCottage_01(by_StompyNZ)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Livinghouse_sm_01(by_magoli)" min_count="1" max_count="4" />
+			<prefab name="xcostum_Asia_ModernCottage_01(by_StompyNZ)" min_count="1" max_count="4" />
 			<prefab name="xcostum_Asia_Pagoda(by_RedLotus)" min_count="1" max_count="2" />
 			<prefab name="xcostum_Asia_Pagoda_sm_01(by_magoli)" min_count="1" max_count="2" />			
-			<prefab name="xcostum_Asia_Restaurant(by_Redlotus)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Asia_Swordmaster(by_magoli)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Restaurant(by_Redlotus)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Swordmaster(by_magoli)" min_count="1" max_count="2" />
 			<prefab name="xcostum_Asia_Temple9Powermonks(by_magoli)" min_count="1" max_count="2" />
-			<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" min_count="1" max_count="2" />
 			<prefab name="xcostum_Asia_ChineseGate(by_XXX)" />
-			<prefab name="trailer_01" max_count="1" />
-			<prefab name="trailer_02" max_count="1" />
-			<prefab name="trailer_03" max_count="1" />
-			<prefab name="trailer_04" max_count="1" />
-			<prefab name="trailer_park_01" max_count="1" />
-			<prefab name="garageyellow1" max_count="1" />
-			<prefab name="garagewhite1" max_count="1" />
-			<prefab name="garagetan1" max_count="1" />
-			<prefab name="garagestucco1" max_count="1" />
-			<prefab name="store_book_lg_01" prob="0.6" max_count="1" />
-			<prefab name="xcostum_Flagstonemansion_sm(by_elitelex)" max_count="1" />			
-			<prefab name="store_pharmacy_sm_01" max_count="1" />
-			<prefab name="parking_lot_03" max_count="1"/>
-			<prefab name="xvanilla_Trailerhousemix03" max_count="1" />			
+			<prefab name="trailer_01" max_count="4" />
+			<prefab name="trailer_02" max_count="4" />
+			<prefab name="trailer_03" max_count="4" />
+			<prefab name="trailer_04" max_count="4" />
+			<prefab name="trailer_park_01" max_count="4" />
+			<prefab name="garageyellow1" max_count="4" />
+			<prefab name="garagewhite1" max_count="4" />
+			<prefab name="garagetan1" max_count="4" />
+			<prefab name="garagestucco1" max_count="4" />
+			<prefab name="store_book_lg_01" prob="0.6" max_count="2" />
+			<prefab name="xcostum_Flagstonemansion_sm(by_elitelex)" max_count="2" />			
+			<prefab name="store_pharmacy_sm_01" max_count="2" />
+			<prefab name="parking_lot_03" max_count="2"/>
+			<prefab name="xvanilla_Trailerhousemix03" max_count="2" />			
 		</prefab_rule>
 		
 		<!-- Poi group list for use in hubs -->
@@ -557,6 +525,7 @@
 			<prefab rule="industrialGroupCity"/> -->
 			<prefab rule="hubCity"/>
 			<prefab rule="detailFillerGroup"/>
+			<prefab rule="none"/>
 		</prefab_rule>
 		
 		<prefab_rule name="cityPois">
@@ -595,27 +564,27 @@
 		<prefab_rule name="hubCity">
 			<prefab rule="waterPois" max_count="3"/>
 			<prefab rule="skyscrapers" min_count="3" max_count="6"/>
-			<prefab name="store_gun_lg_01" prob="0.5" max_count="1"/>
-			<prefab name="store_hardware_lg_01" prob="0.5" max_count="1"/>
-			<prefab name="store_book_lg_01" prob="0.5" max_count="1"/>
-			<prefab name="store_grocery_lg_01" prob="0.5" max_count="1"/>
-			<prefab name="store_bank_lg_01" max_count="1"/>
+			<prefab name="store_gun_lg_01" prob="0.5" max_count="2"/>
+			<prefab name="store_hardware_lg_01" prob="0.5" max_count="2"/>
+			<prefab name="store_book_lg_01" prob="0.5" max_count="2"/>
+			<prefab name="store_grocery_lg_01" prob="0.5" max_count="2"/>
+			<prefab name="store_bank_lg_01" max_count="2"/>
 			<prefab name="gas_station1" max_count="1" prob="0.2"/>
 			<prefab name="gas_station2" max_count="1" prob="0.21"/>
 			<prefab name="gas_station3" max_count="1" prob="0.22"/>
 			<prefab name="gas_station4" max_count="1" prob="0.23"/>
 			<prefab name="gas_station5" max_count="1" prob="0.24"/>
-			<prefab name="diner_01" max_count="1"/>
-			<prefab name="diner_02" max_count="1"/>
-			<prefab name="fastfood_01" max_count="1"/>
-			<prefab name="fastfood_02" max_count="1"/>
-			<prefab name="fastfood_03" max_count="1"/>
-			<prefab name="carlot_01" max_count="1" prob="0.5"/>
-			<prefab name="carlot_02" max_count="1" prob="0.5"/>
+			<prefab name="diner_01" max_count="3"/>
+			<prefab name="diner_02" max_count="3"/>
+			<prefab name="fastfood_01" max_count="3"/>
+			<prefab name="fastfood_02" max_count="3"/>
+			<prefab name="fastfood_03" max_count="3"/>
+			<prefab name="carlot_01" max_count="2" prob="0.5"/>
+			<prefab name="carlot_02" max_count="2" prob="0.5"/>
 			<prefab name="store_autoparts_01" max_count="2"/>
 			<prefab name="skate_park_01"  max_count="1" prob="0.1"/>
-			<prefab name="store_laundry_01" max_count="4" />
-			<prefab name="store_salon" max_count="4" />
+			<prefab name="store_laundry_01" max_count="2" />
+			<prefab name="store_salon" max_count="2" />
 		</prefab_rule>
 		
 		<prefab_rule name="wildernessGroupWasteland">
@@ -692,14 +661,14 @@
 			<prefab name="xcostum_Bunker_deep(by_Devilhunter)" max_count="1" />
 			<prefab name="xcostum_SC_Bunker(by_Rhapsodos)" max_count="1" />
 			<prefab name="xcostum_Bunker_Top(by_Fr0gb0mber)" max_count="1" />
-			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="1" />
-			<prefab name="xcostum_house2(by_Curbolt)" max_count="1" />
-			<prefab name="xcostum_house3(by_Curbolt)" max_count="1" />
-			<prefab name="xcostum_house4(by_Curbolt)" max_count="1" />
-			<prefab name="xcostum_house7(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="2" />
+			<prefab name="xcostum_house2(by_Curbolt)" max_count="2" />
+			<prefab name="xcostum_house3(by_Curbolt)" max_count="2" />
+			<prefab name="xcostum_house4(by_Curbolt)" max_count="2" />
+			<prefab name="xcostum_house7(by_Curbolt)" max_count="2" />
 			<prefab name="xcostum_FuneralHome(by_Wsiegel)" max_count="1" />			
-			<prefab name="xcostum_kuldbrickhouse(by_Kuldiin)" max_count="1" />			
-			<prefab name="xcostum_kuldlargehouse(by_Kuldiin)" max_count="1" />
+			<prefab name="xcostum_kuldbrickhouse(by_Kuldiin)" max_count="2" />			
+			<prefab name="xcostum_kuldlargehouse(by_Kuldiin)" max_count="2" />
 			<prefab name="xcostum_Apartment(by_Spider)" max_count="1" />			
 			<prefab name="xcostum_moestaverne(by_magoli)" max_count="1" />
 			<prefab name="xcostum_Restaurant(by_Gertle)" max_count="1" />
@@ -712,10 +681,10 @@
 			<prefab name="xcostum_Household_Storage_sm(by_Devilhunter)" max_count="1" />
 			<prefab name="xcostum_Info_Center(by_LuckyStar)" max_count="1" />	
 			<prefab name="xcostum_Trailer(by_Sorrowthief)" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix01" max_count="1" />		
-			<prefab name="xvanilla_Trailerhousemix02" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix03" max_count="1" />
-			<prefab name="xvanilla_Trailerhousemix04" max_count="1" />
+			<prefab name="xvanilla_Trailerhousemix01" max_count="2" />		
+			<prefab name="xvanilla_Trailerhousemix02" max_count="2" />
+			<prefab name="xvanilla_Trailerhousemix03" max_count="2" />
+			<prefab name="xvanilla_Trailerhousemix04" max_count="2" />
 			<prefab name="xcostum_LittleLeagueBaseball(by_Curmudgeon)" max_count="1" />
 			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_Hightop(by_Curbolt)" max_count="1" />
@@ -751,7 +720,7 @@
 			<prefab name="funeral_home_01" max_count="1" />
 			
 			<!-- Compo pack28 Pois -->
-			<prefab name="xcostum_Car_Dealership_new(by_p1ut0nium)" max_count="1" />
+			<prefab name="xcostum_Car_Dealership_new(by_p1ut0nium)" max_count="2" />
 			<prefab name="xcostum_Dark_Mausoleum32(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_Church(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_crematory(by_magoli)" max_count="1" />
@@ -759,51 +728,51 @@
 			<prefab name="xcostum_Orphanage(ex_vanilla_ornate02)" max_count="1" />			
 			<prefab name="xcostum_School(by_LazMan)" max_count="1" />
 			<prefab name="xcostum_TownHall(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_House(by_LastI)" max_count="1" />
-			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_House(by_LastI)" max_count="3" />
+			<prefab name="xcostum_House(by_ShoNuff)" max_count="3" />
 			<prefab name="xcostum_Manorhouse(by_WereWulfen)" max_count="1" />
-			<prefab name="xcostum_myhouse(by_magoli)" max_count="1" />
-			<prefab name="xcostum_Nicehouse(by_BigC90210)" max_count="1" />
-			<prefab name="xcostum_simpsonshouse(by_magoli)" max_count="1" />
+			<prefab name="xcostum_myhouse(by_magoli)" max_count="2" />
+			<prefab name="xcostum_Nicehouse(by_BigC90210)" max_count="2" />
+			<prefab name="xcostum_simpsonshouse(by_magoli)" max_count="2" />
 			<prefab name="xcostum_Flagstonemansion_sm(by_elitelex)" max_count="1" />			
 			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" max_count="1" />
 			<prefab name="xcostum_Apartment(by_Gertle)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Apartments(by_Batman)" min_count="1" max_count="1" />
 			<prefab name="xcostum_WulftownA(by_WereWulfen)" max_count="1" />
-			<prefab name="xcostum_House(by_LastI)" max_count="1" />
-			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_House(by_LastI)" max_count="3" />
+			<prefab name="xcostum_House(by_ShoNuff)" max_count="3" />
 			<prefab name="xcostum_Twinhaus-Hostel(by__Tom_GERPVE)" max_count="1" />
-			<prefab name="xcostum_house01(byGuppycur)" max_count="1" />
-			<prefab name="xcostum_house02(byGuppycur)" max_count="1" />
-			<prefab name="xcostum_house03(byGuppycur)" max_count="1" />
-			<prefab name="xcostum_house04(byGuppycur)" max_count="1" />
-			<prefab name="xcostum_house05(byGuppycur)" max_count="1" />
+			<prefab name="xcostum_house01(byGuppycur)" max_count="3" />
+			<prefab name="xcostum_house02(byGuppycur)" max_count="3" />
+			<prefab name="xcostum_house03(byGuppycur)" max_count="3" />
+			<prefab name="xcostum_house04(byGuppycur)" max_count="3" />
+			<prefab name="xcostum_house05(byGuppycur)" max_count="3" />
 			<prefab name="xcostum_collapsed_bldg_01(by_BuLLeTZ)" max_count="1" />
 			<prefab name="xcostum_ZHigh(by_Volar)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_FuneralParlor(by_Zombieman)" max_count="1" prob="0.1" />
 			<prefab name="xcostum_icestadium(by_magoli)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_TheEstate(by_Ekk0)" max_count="1" prob="0.3" />
-			<prefab name="xcostum_house_modern_01(by_Kam)" max_count="1"/>
-			<prefab name="xcostum_house_modern_02(by_Kam)" max_count="1"/>
-			<prefab name="xcostum_house_modern_03(by_Kam)" max_count="1"/>
-			<prefab name="xcostum_house_modern_04(by_Kam)" max_count="1"/>
-			<prefab name="xcostum_house_modern_05(by_Kam)" max_count="1"/>
-			<prefab name="xcostum_house_number14(by_Kam)" max_count="1"/>
+			<prefab name="xcostum_house_modern_01(by_Kam)" max_count="2"/>
+			<prefab name="xcostum_house_modern_02(by_Kam)" max_count="2"/>
+			<prefab name="xcostum_house_modern_03(by_Kam)" max_count="2"/>
+			<prefab name="xcostum_house_modern_04(by_Kam)" max_count="2"/>
+			<prefab name="xcostum_house_modern_05(by_Kam)" max_count="2"/>
+			<prefab name="xcostum_house_number14(by_Kam)" max_count="2"/>
 			<prefab name="xcostum_Redhouse(by_Tom)" max_count="1"/>
 			<prefab name="xcostum_Roundhouse(by_Tom)" max_count="1"/>
 		</prefab_rule>
 
 		<!-- List of Prefabs used for commercial area in city hubs--> 
 		<prefab_rule name="commercialGroupCity">
-			<prefab name="store_gun_sm_01" prob="0.6" max_count="2"/>
-			<prefab name="store_gun_lg_01" prob="0.4" max_count="1"/>
+			<prefab name="store_gun_sm_01" prob="0.85" max_count="2"/>
+			<prefab name="store_gun_lg_01" prob="0.5" max_count="1"/>
 			<prefab name="store_pharmacy_sm_01" max_count="2"/>
-			<prefab name="store_hardware_sm_01" prob="0.6" max_count="2"/>
-			<prefab name="store_hardware_lg_01" prob="0.4" max_count="1"/>
-			<prefab name="store_book_sm_01" prob="0.6" max_count="2"/>
-			<prefab name="store_book_lg_01" prob="0.4" max_count="1"/>
-			<prefab name="store_grocery_lg_01" prob="0.4" max_count="2"/>
-			<prefab name="store_grocery_sm_01" prob="0.6" max_count="1"/>
+			<prefab name="store_hardware_sm_01" prob="0.85" max_count="2"/>
+			<prefab name="store_hardware_lg_01" prob="0.5" max_count="1"/>
+			<prefab name="store_book_sm_01" prob="0.85" max_count="2"/>
+			<prefab name="store_book_lg_01" prob="0.5" max_count="1"/>
+			<prefab name="store_grocery_lg_01" prob="0.85" max_count="2"/>
+			<prefab name="store_grocery_sm_01" prob="0.5" max_count="1"/>
 			<prefab name="store_bank_lg_01" max_count="1"/>
 			<prefab name="gas_station1" max_count="1"/>
 			<prefab name="gas_station2" max_count="1"/>
@@ -829,24 +798,24 @@
 			<prefab name="xcostum_kwikemart(by_magoli)"  prob="0.3" max_count="1" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" />
 			<prefab name="xcostum_tv_store(by_magoli)" max_count="1" />
-			<prefab name="xcostum_Pawnshop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Pawnshop(by_magoli)" prob="0.5" max_count="1" />
 			<prefab name="xcostum_Wooden_Store(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_McDonalds(by_BigC90210)" max_count="1" />			
-			<prefab name="xcostum_Tank_Garage(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_Tank_Garage(by_LuckyStar)" prob="0.3" max_count="1" />
 			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
-			<prefab name="xcostum_MultiStore(by_ANT)" max_count="1" />
-			<prefab name="xcostum_SuperStore(by_Volar)" max_count="1" />
+			<prefab name="xcostum_MultiStore(by_ANT)" prob="0.3" max_count="1" />
+			<prefab name="xcostum_SuperStore(by_Volar)" prob="0.3" max_count="1" />
 			<prefab name="xcostum_Shrub_Conservatory(by_Werewulfen)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Stripmall(by_Guppycur)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Stripmall(by_Guppycur)" prob="0.5" min_count="1" max_count="1" />
 			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" />
 			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" />
 			<prefab name="xcostum_seafoodshop(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_storeset1(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_storeset2(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_storeset1(by_Guppycur)" prob="0.3" max_count="1" />
+			<prefab name="xcostum_storeset2(by_Guppycur)" prob="0.3" max_count="1" />
 			<prefab name="xcostum_WulftownCD(by_WereWulfen)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_Glass_factory_big(by_Khyber)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_minigolf(by_magoli)" max_count="1" prob="0.1" />
@@ -897,14 +866,14 @@
 			<prefab name="xcostum_SuperStore(by_Volar)" max_count="1" />
 			<prefab name="xcostum_Shrub_Conservatory(by_Werewulfen)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Stripmall(by_Guppycur)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Stripmall(by_Guppycur)" prob="0.5" min_count="1" max_count="1" />
 			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" />
 			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" />
 			<prefab name="xcostum_seafoodshop(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_storeset1(by_Guppycur)" max_count="1" />
-			<prefab name="xcostum_storeset2(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_storeset1(by_Guppycur)" prob="0.5" max_count="1" />
+			<prefab name="xcostum_storeset2(by_Guppycur)" prob="0.5" max_count="1" />
 			<prefab name="xcostum_WulftownCD(by_WereWulfen)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_Glass_factory_big(by_Khyber)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_minigolf(by_magoli)" max_count="1" prob="0.1" />
@@ -914,7 +883,7 @@
 		<prefab_rule name="commercialGroupRural">
 			<prefab name="store_gun_sm_01" max_count="1"/>
 			<prefab name="store_pharmacy_sm_01" max_count="1"/>
-			<prefab name="store_hardware_sm_01" prob="0.5" max_count="1"/>
+			<prefab name="store_hardware_sm_01" max_count="1"/>
 			<prefab name="store_hardware_lg_01" prob="0.5" max_count="1"/>
 			<prefab name="store_book_sm_01" prob="0.5" max_count="1"/>
 			<prefab name="store_grocery_sm_01" max_count="1"/>
@@ -948,7 +917,7 @@
 			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_MultiStore(by_ANT)" max_count="1" />
 			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" min_count="1" max_count="1" />
-			<prefab name="xcostum_Stripmall(by_Guppycur)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Stripmall(by_Guppycur)" prob="0.2" min_count="1" max_count="1" />
 			<prefab name="xcostum_townsquare(by_snake0567)" min_count="1" max_count="1" />
 			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />
 			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" prob="0.1"/>
