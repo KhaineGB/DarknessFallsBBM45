@@ -7743,14 +7743,13 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="980" name="gasCanSchematic">
+<!-- <item id="980" name="gasCanSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gasCan"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
 	</property>
-</item>
+</item> -->
 
 <item id="981" name="augerSchematic">
 	<property name="Extends" value="schematicMaster"/>
@@ -16718,6 +16717,424 @@ Mesh files no longer used:
 		<property name="Class" value="Quest" />
 		<property name="QuestGiven" value="quest_KagesBook" />
 	<property name="DescriptionKey" value="KagesBookDesc" />
+	</property>
+</item>
+
+<item id="2263" name="bioFuel">
+	<property name="CustomIcon" value="bioFuel" />
+	<property name="DescriptionKey" value="bioFuelDesc" />
+	<property name="Meshfile" value="Items/Food/honeyPrefab" />
+	<property name="Material" value="glass" />
+	<property name="Weight" value="10" />
+	<property name="HoldType" value="3" />
+	<property name="FuelValue" value="20" />
+	<property name="Stacknumber" value="250" /> <!-- STK resource -->
+	<property name="EconomicValue" value="30" />
+	<property name="Group" value="Chemicals" />
+	<property name="CraftingSkillGroup" value="Science"/>
+</item>
+
+<item id="2264" name="gunCoilpistol">
+	<property name="CustomIcon" value="gunCoilpistol" />
+	<property name="DescriptionKey" value="gunCoilpistolDesc"/>
+	<property name="Meshfile" value="#Coilguns?Coilpistol"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="44"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsCoilPistol_grip"/>
+		<property name="Receiver" value="partsCoilPistol_cylinder"/>
+		<property name="Pump" value="partsCoilPistol_parts"/>
+		<property name="Barrel" value="partsCoilPistol_frame"/>
+	</property>
+	<property name="Sound_Sight_In" value="revolver_sight_in"/>
+	<property name="Sound_Sight_Out" value="revolver_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.34"/>
+		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
+		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
+		<property name="Magazine_size" value="6"/>
+		<property name="Magazine_items" value="44MagCoilround, 44MagCoilroundHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0.87, 0.87"/> <!-- .87 -->
+		<property name="Reload_time" value="4"/>
+		<property name="Bullet_icon" value="pistol"/>
+		<property name="Sound_start" value="44magnum_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="44magnum_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="4"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Pistols"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="SellableToTrader" value="false" />
+</item>
+
+<item id="2265" name="gunCoilcarbine">
+	<property name="CustomIcon" value="gunCoilcarbine" />
+	<property name="DescriptionKey" value="gunCoilcarbineDesc"/>
+	<property name="Meshfile" value="#Coilguns?Coilcarbine"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="48"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsCoilcarbine_stock"/>
+		<property name="Receiver" value="partsCoilcarbine_receiver"/>
+		<property name="Pump" value="partsCoilcarbine_parts"/>
+		<property name="Barrel" value="partsCoilcarbine_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.150"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
+		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
+		<property name="Magazine_size" value="30"/>
+		<property name="Magazine_items" value="762mmCoilround, 762mmCoilroundHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Reload_time" value="3.9"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="ak47_fire_start"/>
+		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Horde_meter_rate" value="2.5"/>
+		<property name="Horde_meter_distance" value="20"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="Buff" value="critGunAK47"/>
+		<property name="Buff_chance" value="0.1"/>
+		<property name="ActionExp" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="SellableToTrader" value="false" />
+</item>
+
+<item id="2266" name="gunCoilRifle">
+	<property name="CustomIcon" value="gunCoilRifle" />
+	<property name="DescriptionKey" value="gunCoilRifleDesc"/>
+	<property name="Meshfile" value="#Coilguns?Coilrifle"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="11"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsCoilRifle_stock"/>
+		<property name="Receiver" value="partsCoilRifle_receiver"/>
+		<property name="Pump" value="partsCoilRifle_parts"/>
+		<property name="Barrel" value="partsCoilRifle_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Crosshair_min_distance" value="45"/> <!-- 45 -->
+		<property name="Crosshair_max_distance" value="54"/> <!-- 54 -->
+		<property name="Magazine_size" value="5"/>
+		<property name="Magazine_items" value="762mmCoilround, 762mmCoilroundHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Reload_time" value="2.5"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="sniperrifle_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="sniperrifle_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="9"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="15"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
+	<property name="SellableToTrader" value="false" />
+</item>
+
+<item id="2267" name="partsCoilPistol_grip">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="parts44Magnum_grip" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilPistolGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="20,34"/>
+		<property name="DegradationMax" value="5000,13500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2268" name="partsCoilPistol_cylinder">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="parts44Magnum_cylinder" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilPistolGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="30,50"/>
+		<property name="DegradationMax" value="5000,13500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2269" name="partsCoilPistol_parts">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="parts44Magnum_parts" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilPistolGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<!-- <property name="Accuracy" value="1,0.05"/> -->
+		<property name="DegradationMax" value="5000,13500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2270" name="partsCoilPistol_frame">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="parts44Magnum_frame" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilPistolGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="52,88"/>
+		<property name="BlockDamage" value="14,24"/>
+		<property name="DegradationMax" value="5000,13500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+
+<item id="2271" name="partsCoilcarbine_stock">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsAK47_stock" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilcarbineGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="12,16"/>
+		<property name="DegradationMax" value="6500,15500"/>
+		<property name="DismembermentBaseChance" value="-0.2,-0.1"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2272" name="partsCoilcarbine_receiver">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsAK47_receiver" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilcarbineGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="65,100"/>
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2273" name="partsCoilcarbine_parts">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsAK47_parts" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilcarbineGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="10,10"/> <!-- 14.5 -->
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2274" name="partsCoilcarbine_barrel">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_barrel"/>
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilcarbineGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="42,70"/>
+		<property name="BlockDamage" value="5,9.5"/>
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+
+<item id="2275" name="partsCoilRifle_stock">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsSniperRifle_stock" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilRifleGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="DismembermentBaseChance" value="0.01,0.06"/>
+		<property name="DismembermentBonus" value="0,0"/>
+		<property name="DegradationRate" value="15,21"/>
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2276" name="partsCoilRifle_receiver">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsSniperRifle_receiver" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilRifleGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="96,160"/>
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2277" name="partsCoilRifle_parts">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_parts"/>
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilRifleGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="16,16"/> <!-- 39 -->
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+<item id="2278" name="partsCoilRifle_barrel">
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsSniperRifle_barrel" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="partsCoilRifleGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="40"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="42,70"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="6500,15500"/>
+	</property>
+	<property name="SellableToTrader" value="false" />
+</item>
+
+<item id="2279" name="coilBattery"> 
+	<property name="CustomIcon" value="partsNailgun_battery" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="coilBatteryDesc"/> 
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow"/>
+	<property name="DropMeshfile" value="#FutureTech?EnergyCell"/>
+	<property name="HandMeshfile" value="#FutureTech?EnergyCell"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="500"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="SellableToTrader" value="false" />
+	<property name="EconomicValue" value="450"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<item id="2280" name="44MagCoilround">
+	<property name="CustomIcon" value="44MagCoilround" />
+	<property name="DescriptionKey" value="44MagCoilroundDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab"/>
+	<property name="Material" value="brass"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="EconomicValue" value="19"/>
+</item>
+
+<item id="2281" name="762mmCoilround">
+	<property name="CustomIcon" value="762mmCoilround" />
+	<property name="DescriptionKey" value="762mmCoilroundDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab"/>
+	<property name="Material" value="brass"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="EconomicValue" value="19"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<item id="2282" name="44MagCoilroundHP">
+	<property name="CustomIcon" value="44MagCoilroundHP" />
+	<property name="DescriptionKey" value="44MagCoilroundHPDesc"/>
+	<property name="Extends" value="44MagCoilround"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="10,12"/>
+		<property name="BlockDamage" value="5,7"/>
+		<property name="ApplyBuff" value="0.7,0.7" param1="stunned"/>
+	</property>
+</item>
+
+<item id="2283" name="762mmCoilroundHP">
+	<property name="CustomIcon" value="762mmCoilroundHP" />
+	<property name="DescriptionKey" value="762mmCoilroundHPDesc"/>
+	<property name="Extends" value="762mmCoilround"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="10,12"/>
+		<property name="BlockDamage" value="5,7"/>
+		<property name="ApplyBuff" value="0.7,0.7" param1="stunned"/>
 	</property>
 </item>
 

@@ -1608,6 +1608,7 @@
 		<recipe name="steelPolish" unlock_level="1"/>
 		<recipe name="sunblocker" unlock_level="1"/>
 		<recipe name="antirad" unlock_level="1"/>
+		<recipe name="bioFuel" unlock_level="1"/>
 		
 	</perk>
 	
@@ -1756,6 +1757,38 @@
 		<recipe name="partsLaserRifle_stock" unlock_level="5"/>
 		<recipe name="partsLaserRifle_parts" unlock_level="5"/>
 		
+	</perk>
+	
+	<perk name="coilgunsperk" icon="pistol" description_key="coingunsperkDesc" title_key="coilgunsperk" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">	
+		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
+		<requirement skill_level="2" required_skill_name="craftSkillWeapons" required_skill_level="6"/>
+		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<requirement skill_level="3" required_skill_name="craftSkillWeapons" required_skill_level="7"/>
+		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="4"/>
+	
+		<recipe name="gunCoilpistol" unlock_level="1"/>
+		<recipe name="coilBattery" unlock_level="1"/>
+		<recipe name="44MagCoilround" unlock_level="1"/>
+		<recipe name="partsCoilPistol_grip" unlock_level="1"/>
+		<recipe name="partsCoilPistol_cylinder" unlock_level="1"/>
+		<recipe name="partsCoilPistol_parts" unlock_level="1"/>
+		<recipe name="partsCoilPistol_frame" unlock_level="1"/>
+
+		<recipe name="gunCoilcarbine" unlock_level="2"/>
+		<recipe name="44MagCoilroundHP" unlock_level="2"/>
+		<recipe name="762mmCoilround" unlock_level="2"/>
+		<recipe name="partsCoilcarbine_stock" unlock_level="2"/>
+		<recipe name="partsCoilcarbine_receiver" unlock_level="2"/>
+		<recipe name="partsCoilcarbine_parts" unlock_level="2"/>
+		<recipe name="partsCoilcarbine_barrel" unlock_level="2"/>	
+
+		<recipe name="gunCoilRifle" unlock_level="3"/>
+		<recipe name="762mmCoilroundHP" unlock_level="3"/>
+		<recipe name="partsCoilRifle_stock" unlock_level="3"/>
+		<recipe name="partsCoilRifle_receiver" unlock_level="3"/>
+		<recipe name="partsCoilRifle_parts" unlock_level="3"/>
+		<recipe name="partsCoilRifle_barrel" unlock_level="3"/>	
 	</perk>
 	
 <!--

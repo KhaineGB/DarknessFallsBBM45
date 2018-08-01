@@ -785,7 +785,6 @@
 		
 		<reward type="Item" id="canBoiledWater" value="2" />
 		<reward type="Item" id="canChicken" value="2" />
-		<reward type="Recipe" id="gasCan"/>
 		<reward type="Quest" id="quest_classtrainingmechanic5" />
     </quest>
 	
@@ -1039,7 +1038,7 @@
 
 	<quest id="quest_Trader1" name_key="quest_Trader1" subtitle="Defend the Trader (Easy)" subtitle_key="quest_Trader1_subtitle" description_key="quest_Trader1_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader1_offer" repeatable="true" difficulty="easy">
 
-		<objective type="ZombieKill" value="5" />
+		<objective type="ZombieKill" value="20" />
 
 		<reward type="Item" id="casinoCoin" value="250" />
 		<reward type="Item" id="scrapSkill" value="1" />
@@ -1047,8 +1046,7 @@
 	
 	<quest id="quest_Trader2" name_key="quest_Trader2" subtitle="Defend the Trader (Medium)" subtitle_key="quest_Trader2_subtitle" description_key="quest_Trader2_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader2_offer" repeatable="true" difficulty="medium">
 
-		<objective type="ZombieKill" value="10"  />
-		<requirement type="Holding" id="clubWood" />
+		<objective type="ZombieKill" id="zombieBoeRadiated,zombieFootballPlayerRadiated,zombieFemaleFatRadiated,zombieJoeRadiated,zombieMoeRadiated,zombieArleneRadiated,zombieDarleneRadiated,zombieMarleneRadiated,zombieYoRadiated,zombieSteveRadiated,zombieBusinessManRadiated,zombieSpiderRadiated,zombieNurseRadiated,zombieFatHawaiianRadiated,zombieFatCopRadiated,zombieUtilityWorkerRadiated,zombieSoldierRadiated,zombieSkateboarderRadiated,zombieCheerleaderRadiated,zombieOldTimerRadiated,zombieBikerRadiated,zombieFarmerRadiated,zombieStripperRadiated" value="15" />
 
 		<reward type="Item" id="casinoCoin" value="400" />
 		<reward type="Item" id="scrapSkill" value="3" />
@@ -1056,11 +1054,10 @@
 	
 	<quest id="quest_Trader3" name_key="quest_Trader3" subtitle="Defend the Trader (Hard)" subtitle_key="quest_Trader3_subtitle" description_key="quest_Trader3_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader3_offer" repeatable="true" difficulty="hard">
 
-		<objective type="ZombieKill" value="15"  />
-		<requirement type="Holding" id="" />
+		<objective type="ZombieKill" id="zombieArleneFeral,zombieBoeFeral,zombieBusinessManFeral,zombieCheerleaderFeral,zombieDarleneFeral,zombieFarmerFeral,zombieFatCopFeral,zombieFatHawaiianFeral,zombieFemaleFatFeral,zombieJoeFeral,zombieMarleneFeral,zombieMoeFeral,zombieNurseFeral,zombieOldTimerFeral,zombieSkateboarderFeral,zombieSnowFeral,zombieFrostbittenWorkerFeral,zombieSoldierFeral,zombieSpiderFeral,zombieSteveFeral,zombieUtilityWorkerFeral,zombieWightFeral,zombieYoFeral,ZUMABuisnesswomanFeral,ZUMABadGirlFeral,ZUMADoctorMaleFeral,ZUMADoctorFemaleFeral,ZUMAChildFemaleFeral,ZUMAChildFemaleFeral2,ZUMAChildMaleFeral,ZUMAChildMaleFeral2,ZUMAChildMaleFeral3,ZUMAMaleStripperFeral,ZUMABikerFemaleFeral,zombieFootballPlayerFeral,zombieBurntFeral,zombieMaleHazmatFeral,zombieBikerFeral" value="10" />
 
 		<reward type="Item" id="casinoCoin" value="800" />
-		<reward type="Item" id="scrapSkill" value="5" />
+		<reward type="SkillPoints" value="1" />
 	</quest>
 	
 	<quest id="quest_trader_supply1" name_key="quest_trader_supply1" subtitle="Fetch Supplies For The Trader (Easy)" subtitle_key="quest_trader_supply1_subtitle" description_key="quest_trader_supply1_description" icon="ui_game_symbol_fork" category_key="quest" offer_key="quest_trader_supply1_offer" repeatable="true" difficulty="easy">

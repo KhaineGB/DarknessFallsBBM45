@@ -648,18 +648,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="oilShale" count="12"/>
 </recipe>
 
-<recipe name="gasCan" count="100" craft_area="campfire" craft_tool="beaker">
-	<ingredient name="animalFat" count="3"/>
-	<ingredient name="grainAlcohol" count="1"/>
-</recipe>
-
-<recipe name="gasCan" count="100" craft_area="chemistryStation">
-	<ingredient name="animalFat" count="2"/>
-	<ingredient name="cornMeal" count="1"/>
-	<ingredient name="bottledRiverWater" count="1"/>
-</recipe>
-
-<recipe name="gasCan" count="600" craft_exp_gain="0">
+<recipe name="gasCan" count="300" craft_exp_gain="0">
 	<ingredient name="oilBarrel" count="1"/>
 </recipe>
 
@@ -1147,7 +1136,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="oilBarrel" count="1" craft_exp_gain="0">
-	<ingredient name="gasCan" count="600"/>
+	<ingredient name="gasCan" count="300"/>
 </recipe>
 
 <recipe name="paper" count="10" craft_area="chemistryStation">
@@ -6474,6 +6463,138 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelWrench" count="1" craft_area="workbench">
 	<ingredient name="forgedSteel" count="12"/>
 	<ingredient name="mechanicalParts" count="4"/>
+</recipe>
+
+<!-- Biofuel is back, baby! -->
+
+<recipe name="gasCan" count="50" craft_area="campfire" craft_tool="beaker">
+	<ingredient name="bioFuel" count="4"/>
+	<ingredient name="cornMeal" count="2"/>
+</recipe>
+
+<recipe name="gasCan" count="50" craft_area="chemistryStation">
+	<ingredient name="bioFuel" count="2"/>
+	<ingredient name="cornMeal" count="1"/>
+</recipe>
+
+<recipe name="bioFuel" count="1" craft_area="chemistryStation">
+	<ingredient name="animalFat" count="4"/>
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="bioFuel" count="1" craft_area="campfire" craft_tool="beaker">
+	<ingredient name="animalFat" count="8"/>
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<!-- Coilguns -->
+
+<recipe name="gunCoilpistol" count="1" craft_area="assembly">
+	<ingredient name="partsCoilPistol_frame" count="1"/>
+	<ingredient name="partsCoilPistol_cylinder" count="1"/>
+	<ingredient name="partsCoilPistol_parts" count="1"/>
+	<ingredient name="partsCoilPistol_grip" count="1"/>
+</recipe>
+
+<recipe name="gunCoilcarbine" count="1" craft_area="assembly">
+	<ingredient name="partsCoilcarbine_barrel" count="1"/>
+	<ingredient name="partsCoilcarbine_receiver" count="1"/>
+	<ingredient name="partsCoilcarbine_parts" count="1"/>
+	<ingredient name="partsCoilcarbine_stock" count="1"/>
+</recipe>
+
+<recipe name="gunCoilRifle" count="1" craft_area="assembly">
+	<ingredient name="partsCoilRifle_barrel" count="1"/>
+	<ingredient name="partsCoilRifle_receiver" count="1"/>
+	<ingredient name="partsCoilRifle_parts" count="1"/>
+	<ingredient name="partsCoilRifle_stock" count="1"/>
+</recipe>
+
+<recipe name="partsCoilPistol_grip" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsCoilPistol_cylinder" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="electronicParts" count="8"/>
+</recipe>
+
+<recipe name="partsCoilPistol_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="electronicParts" count="8"/>
+</recipe>
+
+<recipe name="partsCoilPistol_frame" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="electronicParts" count="1"/>
+</recipe>
+
+<recipe name="partsCoilcarbine_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsCoilcarbine_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="electronicParts" count="8"/>
+</recipe>
+
+<recipe name="partsCoilcarbine_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="electronicParts" count="8"/>
+</recipe>
+
+<recipe name="partsCoilcarbine_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="electronicParts" count="1"/>
+</recipe>
+
+<recipe name="partsCoilRifle_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsCoilRifle_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="electronicParts" count="8"/>
+</recipe>
+
+<recipe name="partsCoilRifle_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="electronicParts" count="8"/>
+</recipe>
+
+<recipe name="partsCoilRifle_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="electronicParts" count="1"/>
+</recipe>
+
+<recipe name="coilBattery" count="1" craft_area="workstationMetal">
+	<ingredient name="scrapPlastics" count="10"/>
+	<ingredient name="scrapLead" count="5"/>
+	<ingredient name="electronicParts" count="5"/>	
+</recipe>
+
+<recipe name="44MagCoilround" count="10" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="bulletTip" count="10"/>
+	<ingredient name="bulletCasing" count="10"/>
+	<ingredient name="coilBattery" count="1"/>
+</recipe>
+
+<recipe name="762mmCoilround" count="10" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="bulletTip" count="10"/>
+	<ingredient name="bulletCasing" count="10"/>
+	<ingredient name="coilBattery" count="1"/>
+</recipe>
+
+<recipe name="44MagCoilroundHP" count="10" scrapable="True" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="HollowTip" count="10" />
+	<ingredient name="bulletCasing" count="10"/>
+	<ingredient name="coilBattery" count="1"/>
+</recipe>
+
+<recipe name="762mmCoilroundHP" count="10" scrapable="True" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="HollowTip" count="10" />
+	<ingredient name="bulletCasing" count="10"/>
+	<ingredient name="coilBattery" count="1"/>
 </recipe>
 
 </recipes>

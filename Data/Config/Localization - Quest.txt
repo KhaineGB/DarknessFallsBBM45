@@ -436,13 +436,13 @@ quest_Trader1_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe again
 quest_Trader1_subtitle,,Quest Info,Reordered,Kill Some Zombies,,,,.
 quest_Trader1_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies.",,,,
 quest_Trader2,,Quest Info,KgNone,Trader Defense (Medium),,,,
-quest_Trader2_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world. Ammo is hard to come by, so get some practice in with a basic club.\n\nGet out there and kill some zombies!",,,,
-quest_Trader2_subtitle,,Quest Info,Reordered,Kill Some Zombies With A Wooden Club,,,,.
-quest_Trader2_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies With A Wooden Club.",,,,
+quest_Trader2_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world.\n\nGet out there and kill some radiated zombies!",,,,
+quest_Trader2_subtitle,,Quest Info,Reordered,Kill Some Radiated Zombies,,,,
+quest_Trader2_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Radiated Zombies.",,,,
 quest_Trader3,,Quest Info,KgNone,Trader Defense (Hard),,,,
-quest_Trader3_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world. Sometimes it's best not to rely on weapons other than your fists.\n\nGet out there and kill some zombies!",,,,
-quest_Trader3_subtitle,,Quest Info,Reordered,Kill Some Zombies Barehanded,,,,.
-quest_Trader3_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies Barehanded.",,,,
+quest_Trader3_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world.\n\nGet out there and kill some feral zombies!",,,,
+quest_Trader3_subtitle,,Quest Info,Reordered,Kill Some Feral Zombies,,,,
+quest_Trader3_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Feral Zombies.",,,,
 
 challenge_foreface,,Quest Info,KgNone,Right In The Foreface,,,,
 challenge_foreface_offer,,Quest Info,KeyCon KgNone,"There's some crazy bastard running around, beating up my mates, taking their stuff and yelling 'right in the foreface' when he hits them!.\n\nGet out there take his weapon for me!\n\nI'm slicker than cat shit on linoleum... Willie",,,,
