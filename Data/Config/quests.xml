@@ -1184,6 +1184,7 @@
 		
 		<reward type="SkillPoints" value="3"/>
 		<reward type="Item" id="superCoffee" value="1"/>
+		<reward type="Recipe" id="superCoffee"/>
 	</quest>
 	
 	<quest id="challenge_biggamehunt" name_key="challenge_biggamehunt" subtitle_key="challenge_biggamehunt_subtitle" description_key="challenge_biggamehunt_desc" icon="ui_game_symbol_zombie"

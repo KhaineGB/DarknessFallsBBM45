@@ -163,7 +163,7 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.8"/>
-		<property name="Range" value="2.4"/>
+		<property name="Range" value="2.75"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="SlowSwoosh"/>
@@ -1090,8 +1090,8 @@ Mesh files no longer used:
 	<property class="Action0">
 		<property name="DamageEntity" value="10"/>
 		<property name="DamageBlock" value="20"/>
-		<property name="Buff" value="bleeding,infection,stunned"/>
-		<property name="Buff_chance" value="0.04,0.04,0.5"/>
+		<property name="Buff" value="bleeding,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.04,0.04,0.5,0.5"/>
 	</property>
 </item>
 
@@ -1114,8 +1114,8 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.4"/>
 		<property name="DamageEntity" value="12"/>
 		<property name="DamageBlock" value="2"/>
-		<property name="Buff" value="burningSmall,infection,stunned"/>
-		<property name="Buff_chance" value="0.5,0.07,0.4"/>
+		<property name="Buff" value="burningSmall,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.5,0.07,0.4,0.4"/>
 	</property>
 </item>
 
@@ -1127,8 +1127,8 @@ Mesh files no longer used:
 		<property name="Range" value="1.75"/>
 		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="250"/>
-		<property name="Buff" value="bleeding,infection,stunned"/>
-		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+		<property name="Buff" value="bleeding,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4,0.4"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
@@ -1192,8 +1192,8 @@ Mesh files no longer used:
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="50"/>
-		<property name="Buff" value="bleeding,infection,stunned"/>
-		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+		<property name="Buff" value="bleeding,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4,0.4"/>
 	</property>
 </item>
 
@@ -1207,8 +1207,8 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.4"/>
 		<property name="DamageEntity" value="30"/>
 		<property name="DamageBlock" value="50"/>
-		<property name="Buff" value="bleeding,stunned"/>
-		<property name="Buff_chance" value="0.2,0.3"/>
+		<property name="Buff" value="bleeding,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.2,0.3,0.3"/>
 	</property>
 </item>
 
@@ -1219,8 +1219,8 @@ Mesh files no longer used:
 		<property name="Range" value="2.75"/>
 		<property name="DamageEntity" value="50"/>
 		<property name="DamageBlock" value="100"/>
-		<property name="Buff" value="bleeding,stunned,infection"/>
-		<property name="Buff_chance" value="0.3,0.4,0.4"/>
+		<property name="Buff" value="bleeding,stunned,stunned2,infection"/>
+		<property name="Buff_chance" value="0.3,0.4,0.4,0.4"/>
 	</property>
 </item>
 
@@ -1229,8 +1229,8 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
-		<property name="Buff" value="bleeding,infection1,stunned"/>
-		<property name="Buff_chance" value="0.04,0.25,0.5"/>
+		<property name="Buff" value="bleeding,infection1,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.04,0.25,0.5,0.5"/>
 	</property>
 </item>
 
@@ -1248,8 +1248,8 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
-		<property name="Buff" value="bleeding,infection,stunned"/>
-		<property name="Buff_chance" value="0.04,0.04,0.6"/>
+		<property name="Buff" value="bleeding,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.04,0.04,0.6,0.6"/>
 	</property>
 </item>
 
@@ -1258,8 +1258,8 @@ Mesh files no longer used:
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="8"/>
-		<property name="Buff" value="bleeding,infection,stunned"/>
-		<property name="Buff_chance" value="0.02,0.2,0.1"/>
+		<property name="Buff" value="bleeding,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.02,0.2,0.1,0.1"/>
 	</property>
 </item>
 
@@ -11283,18 +11283,17 @@ Mesh files no longer used:
 
 <item id="1989" name="steelBoots">
 	<property name="Extends" value="ironBoots"/>
-
 	<property name="CustomIcon" value="scrapBoots"/>
 	<property name="CustomIconTint" value="696B67"/>
 	<property name="Degradation" value="270" param1="true"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.4, 0.9"/>
+		<property name="ConcussiveProtection" value="0.4, 0.8"/>
 		<property name="PunctureProtection" value="0.4, 0.8"/>
-		<property name="FireProtection" value="0.05, 0.2"/>
-		<property name="RadiationProtection" value="0.05, 0.2"/>
-		<property name="DegradationMax" value="40,600"/>
-	</property>
+		<property name="FireProtection" value="0.3, 0.6"/>
+		<property name="RadiationProtection" value="0.07, 0.2"/>
+		<property name="DegradationMax" value="400,1000"/>
+	</property>	
 	<property class="UMA">
 		<property name="Mesh" value="armor_scrap_metal_feet"/>
 		<property name="Overlay" value="gear_swat_helmet"/>
@@ -11311,12 +11310,12 @@ Mesh files no longer used:
 	<property name="Degradation" value="270" param1="true"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.4, 0.9"/>
-		<property name="PunctureProtection" value="0.3, 0.6"/>
-		<property name="FireProtection" value="0.05, 0.2"/>
-		<property name="RadiationProtection" value="0.05, 0.2"/>
-		<property name="DegradationMax" value="40,600"/>
-	</property>
+		<property name="ConcussiveProtection" value="0.4, 0.8"/>
+		<property name="PunctureProtection" value="0.4, 0.8"/>
+		<property name="FireProtection" value="0.3, 0.6"/>
+		<property name="RadiationProtection" value="0.07, 0.2"/>
+		<property name="DegradationMax" value="400,1000"/>
+	</property>	
 	<property class="UMA">
 		<property name="Overlay0" value="gear_swat_helmet"/>
 		<property name="Layer" value="3"/>
@@ -11332,12 +11331,12 @@ Mesh files no longer used:
 	<property name="Degradation" value="270" param1="true"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.4, 0.9"/>
-		<property name="PunctureProtection" value="0.4, 0.6"/>
-		<property name="FireProtection" value="0.05, 0.2"/>
-		<property name="RadiationProtection" value="0.05, 0.2"/>
-		<property name="DegradationMax" value="40,600"/>
-	</property>
+		<property name="ConcussiveProtection" value="0.4, 0.8"/>
+		<property name="PunctureProtection" value="0.4, 0.8"/>
+		<property name="FireProtection" value="0.3, 0.6"/>
+		<property name="RadiationProtection" value="0.07, 0.2"/>
+		<property name="DegradationMax" value="400,1000"/>
+	</property>	
 	<property class="UMA">
 		<property name="Overlay0" value="gear_swat_helmet"/>
 		<property name="Layer" value="2"/>
@@ -11356,12 +11355,12 @@ Mesh files no longer used:
 	<property name="RepairTools" value="forgedSteel"/>		<property name="CraftingIngredientTime" value="5"/>
 	<property name="EquipSlot" value="Head"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.4, 0.9"/>
+		<property name="ConcussiveProtection" value="0.4, 0.8"/>
 		<property name="PunctureProtection" value="0.4, 0.8"/>
-		<property name="FireProtection" value="0.08, 0.3"/>
-		<property name="RadiationProtection" value="0.08, 0.3"/>
-		<property name="DegradationMax" value="40,600"/>
-	</property>
+		<property name="FireProtection" value="0.3, 0.6"/>
+		<property name="RadiationProtection" value="0.07, 0.2"/>
+		<property name="DegradationMax" value="400,1000"/>
+	</property>	
 	<property class="UMA">
 		<property name="Mesh" value="armor_scrapmetal_helmet"/>
 		<property name="Overlay" value="gear_swat_helmet"/>
@@ -11379,12 +11378,12 @@ Mesh files no longer used:
 	<property name="Degradation" value="270" param1="true"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property class="Attributes">
-		<property name="ConcussiveProtection" value="0.4, 0.9"/>
-		<property name="PunctureProtection" value="0.4, 0.9"/>
-		<property name="FireProtection" value="0.08, 0.3"/>
-		<property name="RadiationProtection" value="0.08, 0.3"/>
-		<property name="DegradationMax" value="40,600"/>
-	</property>
+		<property name="ConcussiveProtection" value="0.4, 0.8"/>
+		<property name="PunctureProtection" value="0.4, 0.8"/>
+		<property name="FireProtection" value="0.3, 0.6"/>
+		<property name="RadiationProtection" value="0.07, 0.2"/>
+		<property name="DegradationMax" value="400,1000"/>
+	</property>	
 	<property class="UMA">
 		<property name="Mesh" value="armor_scrap_metal_hands"/>
 		<property name="Overlay" value="gear_swat_helmet"/>
@@ -12707,7 +12706,7 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.5"/>
-		<property name="Range" value="2.4"/>
+		<property name="Range" value="2.75"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="SlowSwoosh"/>
@@ -13782,8 +13781,8 @@ Mesh files no longer used:
 		<property name="Range" value="1.75"/>
 		<property name="DamageEntity" value="10"/>
 		<property name="DamageBlock" value="250"/>
-		<property name="Buff" value="burning,infection,stunned"/>
-		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+		<property name="Buff" value="burning,infection,stunned,stunned2"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4,0.4"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
@@ -16314,7 +16313,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="2240" name="scifiAIOT">
+<!-- <item id="2240" name="scifiAIOT">
 	<property name="CustomIcon" value="aiot" />
 	<property name="DescriptionKey" value="scifiAIOTDesc"/>
 	<property name="Meshfile" value="#scifiAIOT?scifiAIOT"/>
@@ -16325,7 +16324,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="EconomicValue" value="288"/>
-	<property class="Action0"> <!-- AttackAction -->
+	<property class="Action0">
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
 		<property name="Range" value="2"/>
@@ -16345,7 +16344,7 @@ Mesh files no longer used:
         <property name="Particle_harvesting" value="true" param1="metal" />
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<property class="Action1">
 		<property name="Class" value="Repair"/>
 		<property name="Delay" value="0.4"/>
 		<property name="Repair_amount" value="700"/>
@@ -16355,6 +16354,58 @@ Mesh files no longer used:
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,20"/>
+		<property name="BlockDamage" value="4,20"/>
+		<property name="DegradationMax" value="1000,2800"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftFutureTech"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item> -->
+
+<item id="2240" name="scifiAIOT">
+	<property name="CustomIcon" value="aiot" />
+	<property name="DescriptionKey" value="scifiAIOTDesc"/>
+	<property name="Meshfile" value="#scifiAIOT?scifiAIOT"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="energyCell"/>
+	<property name="HoldType" value="1"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="288"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="8.27"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.metal" value="4"/>
+		<property name="DamageBonus.organic" value="0.5"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Disassemble" value="1" param1="2"  />
+		<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+        <property name="Particle_harvesting" value="true" param1="metal" />
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.4"/>
+		<property name="Repair_amount" value="350"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgedTitanium"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10"/>
 		<property name="BlockDamage" value="4,20"/>
 		<property name="DegradationMax" value="1000,2800"/>
 		<property name="DegradationRate" value="1,1"/>
@@ -17136,6 +17187,68 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="5,7"/>
 		<property name="ApplyBuff" value="0.7,0.7" param1="stunned"/>
 	</property>
+</item>
+
+<item id="2284" name="gunThompson">
+	<property name="Meshfile" value="#Thompson?Thompson"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="48"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="flashlight02"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsAK47_stock"/>
+		<property name="Receiver" value="partsAK47_receiver"/>
+		<property name="Pump" value="partsAK47_parts"/>
+		<property name="Barrel" value="partsAK47_barrel"/>
+	</property>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.150"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
+		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
+		<property name="Magazine_size" value="30"/>
+		<property name="Magazine_items" value="762mmBullet, 762mmBulletHP, Unload"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Reload_time" value="3.9"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="ak47_fire_start"/>
+		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Horde_meter_rate" value="2.5"/>
+		<property name="Horde_meter_distance" value="20"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="5"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="Buff" value="critGunAK47"/>
+		<property name="Buff_chance" value="0.1"/>
+		<property name="ActionExp" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="flashlight02"/> <!-- End: Needed for the attachment flashlight -->
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value="0.45"/>
 </item>
 
 <item id="2992" name="laserSword">

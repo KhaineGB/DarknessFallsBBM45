@@ -145,13 +145,13 @@ built-in buff variables:
 	name_key="trapDamage1EffectName" description_key="trapDamage1EffectDesc" tooltip_key="trapDamage1EffectTooltip" icon="ui_game_symbol_critical" >
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
-	<modify id="2" stat="speedmodifier" setValue="0.2" />
+	<modify id="2" stat="speedmodifier" mulValue="0.2" />
 </buff>
 
 <!-- Special buff for (small) wood spikes that only affects zombehs -->
 <buff id="trapDamageZombie" mutex="isPlayer,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="2" stack="reset" >
 	<modify id="1" stat="health" amount="-33" rate="1"/>
-	<modify id="2" stat="speedmodifier" setValue="0.2" />
+	<modify id="2" stat="speedmodifier" mulValue="0.2" />
 </buff>
 
 <!--
@@ -176,7 +176,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
 
-<buff id="DrinkGrainAlcohol" duration="1" actions="increment(beers, 4, 0, 0, 1)">
+<buff id="DrinkGrainAlcohol" duration="1" actions="increment(beers, 6, 0, 0, 1)">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
 
@@ -188,10 +188,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
 
-<buff id="Drunk" mutex="Hangover,SickDrunk,AlcoholPoisoning,stunned" buffif="beers greater 5" debuffif="beers less 2" actions="debuff(Buzzed)" causes="beer,grainAlcohol"
+<buff id="Drunk" mutex="Hangover,SickDrunk,AlcoholPoisoning,stunned,stunned2" buffif="beers greater 5" debuffif="beers less 2" actions="debuff(Buzzed)" causes="beer,grainAlcohol"
 	type="staminadown" icon="ui_game_symbol_drunk" name_key="drunk" description_key="drunkDesc" tooltip_key="drunkTooltip">
 	<modify id="0" stat="stamina" amount="5" rate="1"/>
-	<modify id="0" stat="speedmodifier" setValue="0.90"/>
+	<modify id="0" stat="speedmodifier" setValue="0.6"/>
 </buff>
 
 <buff id="InstantSickDrunk" mutex="SickDrunk,AlcoholPoisoning" requires="Hangover" duration="1" buffif="beers greater 0" actions="setvar(beers, 9)"
@@ -200,7 +200,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="SickDrunk" mutex="AlcoholPoisoning" buffif="beers greater 8" debuffif="beers less 1" ondebuff="Hangover" actions="increment(@wellness, -0.5, 100t, 0, 0);debuff(Drunk);debuff(Hangover)"
 	type="staminadown" icon="ui_game_symbol_dysentery" name_key="sickDrunk" description_key="sickDrunkDesc" tooltip_key="sickDrunkTooltip">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
-	<modify id="0" stat="speedmodifier" setValue="0.70"/>
+	<modify id="0" stat="speedmodifier" setValue="0.75"/>
 </buff>
 
 <buff id="Hangover" mutex="AlcoholPoisoning"  type="staminadown"
@@ -327,7 +327,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" mulValue="0.80"/>
 </buff>
 
-<buff id="stunned" mutex="stunCooldown,painkillerBuff,Buzzed,Drunk,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
+<buff id="stunned" mutex="stunCooldown,painkillerBuff,Drunk,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.1"/>
 </buff>
 <buff id="stunCooldown" duration="3" stack="discard"/>
@@ -738,6 +738,10 @@ This requires a 50+ food bar:
 
 <buff id="newzombieRadiatedBuff80" duration="0" actions="attach(ParticleEffects/RadiatedParticlesOnMesh, @impact)" icon="ui_game_symbol_fire">
 	<modify id="0" stat="health" amount="80" rate="3" />
+</buff>
+
+<buff id="stunned2" mutex="stunCooldown,stunned,Drunk,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
+	<modify id="0" stat="speedmodifier" mulValue="0.5"/>
 </buff>
 
 </buffs>
