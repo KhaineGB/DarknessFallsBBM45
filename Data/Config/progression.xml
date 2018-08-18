@@ -1609,6 +1609,7 @@
 		<recipe name="sunblocker" unlock_level="1"/>
 		<recipe name="antirad" unlock_level="1"/>
 		<recipe name="bioFuel" unlock_level="1"/>
+		<recipe name="grainAlcohol" unlock_level="1"/>
 		
 	</perk>
 	

@@ -611,7 +611,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="firstAidKit" count="1" craft_area="chemistryStation">
 	<ingredient name="bloodBag" count="1"/>
-	<ingredient name="grainAlcohol" count="1"/>
+	<ingredient name="aloeCream" count="5"/>
 	<ingredient name="bandage" count="1"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
