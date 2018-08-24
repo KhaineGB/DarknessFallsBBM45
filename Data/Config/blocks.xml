@@ -16612,7 +16612,7 @@ kind of free
     <property name="Material" value="plants" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Tag" value="TreeTrunk" />
-	<property name="Model" value="#CarrotPlant?CarrotHarvest" />
+	<property name="Model" value="#CarrotPlant?CarrotMature" />
 	<property name="Collide" value="melee"/>
 	<drop event="Harvest" name="Carrot" count="2"/>
 </block>
@@ -18079,7 +18079,7 @@ kind of free
 	<property name="Shape" value="ModelEntity" />
 	<property name="Tag" value="TreeTrunk" />
 	<property name="BigDecorationRadius" value="2" />
-	<property name="Model" value="#BananaTree?BananaTreeEmpty" />
+	<property name="Model" value="#BananaTree?BananaTreeYoung" />
 	<property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,0,0" />
 	<property name="MultiBlockDim" value="1,4,1"/>
@@ -18198,7 +18198,7 @@ kind of free
 	<property name="Shape" value="ModelEntity" />
 	<property name="Tag" value="TreeTrunk" />
 	<property name="BigDecorationRadius" value="2" />
-	<property name="Model" value="#CoconutTree?CoconutTreeEmpty" />
+	<property name="Model" value="#CoconutTree?CoconutTreeYoung" />
 	<property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,0,0" />
 	<property name="MultiBlockDim" value="1,4,1"/>
@@ -19319,6 +19319,56 @@ kind of free
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="SpawnEntity"/>
 	<property name="SpawnClass" value="ZUMABuisnesswomanFeral"/>
+</block>
+
+<block id="1996" name="playerSciFiDoubleDoor">
+	<property name="CustomIcon" value="playerScifiDouble" />
+	<property name="DescriptionKey" value="scifiDoorGroupDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> <!-- -rocket -->
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#SciFi?SciFiDoubleDoor"/> <property name="ModelOffset" value="0,.5,0"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="OpenSound" value="scifi_door_use"/>
+	<property name="CloseSound" value="scifi_door_use"/>
+	<property class="RepairItems"> <property name="forgedTitanium" value="12"/> </property>
+	<property name="CustomUpgradeSound" value="password_set"/>
+	<drop event="Harvest" name="scrapTitanium" count="8" prob="1"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+</block>
+
+<block id="1997" name="playerSciFiDoor">
+	<property name="CustomIcon" value="playerScifiSingle" />
+	<property name="DescriptionKey" value="scifiDoorGroupDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/> <!-- build restriction -->
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#SciFi?SciFiSingleDoor"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  <!-- door replacer -->
+	<property name="OpenSound" value="scifi_door_use"/>
+	<property name="CloseSound" value="scifi_door_use"/>
+	<property class="RepairItems"> <property name="forgedTitanium" value="2"/> </property>
+	<property name="CustomUpgradeSound" value="password_set"/>
+	<drop event="Harvest" name="scrapTitanium" count="8" prob="1"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
 </block>
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

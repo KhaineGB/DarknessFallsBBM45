@@ -611,7 +611,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="firstAidKit" count="1" craft_area="chemistryStation">
 	<ingredient name="bloodBag" count="1"/>
-	<ingredient name="aloeCream" count="5"/>
+	<ingredient name="grainAlcohol" count="1"/>
 	<ingredient name="bandage" count="1"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
@@ -2925,7 +2925,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cowboyHat" count="1" />
 </recipe>
 
-<recipe name="blackCowboyHat" count="1" >
+<recipe name="blackCowboyHatLight" count="1" >
 	<ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
 	<ingredient name="blackCowboyHat" count="1" />
@@ -5204,8 +5204,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		
 <recipe name="titaniumLegs" count="1" craft_area="workstationTailor" craft_tool="sewingKit" craft_exp_gain="15">
 	<ingredient name="leather" count="10"/>
-	<ingredient name="forgedSteel" count="30"/>
-	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="forgedTitanium" count="30"/>
+	<ingredient name="leatherStrips" count="20"/>
 </recipe>
 
 <!-- Survivalist Class Mastery -->
@@ -6022,6 +6022,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="HollowTip" count="10" />
 	<ingredient name="bulletCasing" count="10"/>
 	<ingredient name="coilBattery" count="1"/>
+</recipe>
+
+<recipe name="playerSciFiDoor" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedTitanium" count="12"/>
+	<ingredient name="spring" count="2"/>
+	<ingredient name="energyCell" count="1"/>
+</recipe>
+
+<recipe name="playerSciFiDoubleDoor" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedTitanium" count="24"/>
+	<ingredient name="spring" count="4"/>
+	<ingredient name="energyCell" count="2"/>
 </recipe>
 
 </recipes>

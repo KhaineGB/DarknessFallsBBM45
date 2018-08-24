@@ -350,6 +350,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-5" rate="1"/>
 </buff>
 
+<buff id="Burning" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="10" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="Burning" description_key="BurningDesc" tooltip_key="BurningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+	<modify id="1" stat="health" amount="-5" rate="1"/>
+</buff>
+
 <buff id="burningMolotov" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="16" stack="reset" ffcheck="true"
 actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0);buff(burningMolotovZombie)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
 	<modify id="1" stat="health" amount="-4" rate="1"/>

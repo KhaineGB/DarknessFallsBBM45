@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <prefab>
-    <property name="CopyAirBlocks" value="True"/>
-    <property name="AllowTopSoilDecorations" value="True"/>
-    <property name="TraderArea" value="False"/>
-    <property name="ExcludeDistantPOIMesh" value="False"/>
-    <property name="Zoning" value="Downtown,ResidentialNew"/>
-    <property name="RotationToFaceNorth" value="2"/>
-    <property name="YOffset" value="-34"/>
-    <property name="DistantPOIYOffset" value="0"/>
-    <property name="Condition" value="New"/>
-    <property name="AllowedBiomes" value="wasteland_hub,wasteland,city_wasteland,radiated"/>
-    <property name="SleeperVolumeStart" value="15,2,10#29,2,10#15,2,2#9,2,32#2,2,13#9,2,2#9,9,10#9,9,28#17,9,10#17,9,28#9,9,16#2,9,13#3,15,2#3,15,6#33,15,6#16,15,7#8,15,7#16,15,23#0,34,0"/>
-    <property name="SleeperVolumeSize" value="13,5,21#14,5,21#28,5,7#34,5,6#6,5,25#5,5,29#7,5,5#7,5,5#21,5,5#21,5,5#28,5,11#6,5,16#40,3,4#4,3,23#10,3,27#17,3,13#7,3,20#16,3,10#45,8,40"/>
-    <property name="SleeperVolumeGroup" value="Level3TestLabs,Level3TestLabs,Level3Behemoth,LabCorridors,LabCorridors,Level3ResearchLab,Level3ResearchLab,Level3ResearchLab,LabCorridors,LabCorridors,Level3ResearchLab,Level2MeetingRoom,LabCorridors,LabCorridors,LabCorridors,Level2MeetingRoom,Level2MeetingRoom,S_LootRoom_XS,S_ZomSoldier_L"/>
-    <property name="SleeperVolumeGameStageAdjust" value=",,,,,,,,,,,,,,,,,,"/>
-    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False"/>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="Zoning" value="Downtown,ResidentialNew" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="YOffset" value="-34" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="Condition" value="New" />
+    <property name="AllowedBiomes" value="wasteland_hub,wasteland,city_wasteland,radiated" />
 </prefab>

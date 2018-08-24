@@ -1219,7 +1219,7 @@
 	
 	<!-- Farming Perk -->
 	
-	<perk name="Farming" icon="resource" description_key="farmingDesc" title_key="farming" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" group="crafting">
+	<perk name="Farming" icon="resource" description_key="farmingDesc" title_key="farming" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="0" group="crafting">
 		<!-- <requirement skill_level="1" required_skill_name="Scrap Iron Tools" required_skill_level="1"/> -->
 		<recipe name="plantedChrysanthemum1" unlock_level="1"/>
 		<recipe name="plantedCorn1" unlock_level="1"/>
@@ -1237,7 +1237,7 @@
 	
 	<!-- Animal Coop and Snare Perk -->
 	
-	<perk name="Animal Coops and Snares" icon="resource" description_key="animalCoopperkDesc" title_key="animalCoopperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+	<perk name="Animal Coops and Snares" icon="resource" description_key="animalCoopperkDesc" title_key="animalCoopperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="tools">
 		<recipe name="animalFeed" unlock_level="1"/>
 		<recipe name="animalSnare" unlock_level="1"/>
 		<recipe name="chickenCoop" unlock_level="1"/>
@@ -1609,7 +1609,6 @@
 		<recipe name="sunblocker" unlock_level="1"/>
 		<recipe name="antirad" unlock_level="1"/>
 		<recipe name="bioFuel" unlock_level="1"/>
-		<recipe name="grainAlcohol" unlock_level="1"/>
 		
 	</perk>
 	
@@ -1743,8 +1742,10 @@
 		
 		<recipe name="scifiAIOT" unlock_level="1"/>
 		<recipe name="energyCell" unlock_level="1"/>
-		<recipe name="ScifiBench" unlock_level="2"/>
-		<recipe name="laserSword" unlock_level="1"/>
+		<recipe name="ScifiBench" unlock_level="1"/>
+		<recipe name="playerSciFiDoubleDoor" unlock_level="1"/>
+		<recipe name="playerSciFiDoor" unlock_level="1"/>
+		<recipe name="laserSword" unlock_level="2"/>
 		<recipe name="SciFiForge" unlock_level="3"/>
 		<recipe name="gunLaserPistol" unlock_level="4"/>
 		<recipe name="partsLPistol_barrel" unlock_level="4"/>

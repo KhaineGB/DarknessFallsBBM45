@@ -4973,14 +4973,14 @@
 <!-- Combat Shotgun -->
 	
 <SoundDataNode name="CAWS_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="11" time="2" muffled_when_crouched="0.5"/>
 	<Sequence/>
 	<distantfadestart name="25"/>
 	<distantfadeend name="35"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/mp5/mp5_fire_start"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/mp5/mp5_fire_lp" Loop="true"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/mp5/mp5_fire_end"/>
-	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/></SoundDataNode>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_fire"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_fire" Loop="true"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_fire"/>
+	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.01"/></SoundDataNode>
 	
 <SoundDataNode name="CAWS_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 	<Noise ID="5" range="50" volume="20" time="2" heat_map_strength="0.3" heat_map_time="120"/>

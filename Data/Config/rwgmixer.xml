@@ -1312,7 +1312,6 @@
 			<prefab name="oldwest_sm_shop_03" max_count="2"/>
 			
 			<!-- Compo Pack28 Pois -->
-			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" />
 			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" />
 			<prefab name="xcostum_DriveIn(by_Wsiegel)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_Storage(by_ShoNuff)" max_count="1" />
@@ -1359,7 +1358,6 @@
 			<prefab name="xcostum_TruckStop(by_magoli)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_TruckStop_Roadhouse(by_stallionsden)" max_count="1" prob="0.1"/>
-			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" prob="0.3"/>
 			<prefab name="xvanilla_Trailerhousemix01" max_count="1" prob="0.1"/>
 			<prefab name="xvanilla_Trailerhousemix02" max_count="1" prob="0.1"/>
@@ -1482,7 +1480,6 @@
 			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.05"/>
 			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.1" />	
-			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.2" />	
 			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.05" />
 			<prefab name="xcostum_Asylum(by_Wsiegel)" max_count="1" prob="0.1"/>		
 			<prefab name="xcostum_RocketLaunchPad(by_Saeid)" max_count="1" prob="0.05"/>
@@ -1554,7 +1551,6 @@
 			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.05"/>
 			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />	
-			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.05" />	
 			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.05" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" prob="0.3"/>		
 			<prefab name="xcostum_Firewatchtower(by_SciFiFlippa)" max_count="1" prob="0.2"/>
@@ -1628,8 +1624,7 @@
     		<prefab name="xcostum_Tavern(by_Limodor)" max_count="1" prob="0.3"/>
 			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_Chernobyl(by Maz_Burt)" max_count="1" prob="0.03"/>
-			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />	
-			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.01" />	
+			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />		
 			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.03" />
 			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" prob="0.3"/>		
 			<prefab name="xcostum_Firewatchtower(by_SciFiFlippa)" max_count="1" prob="0.2"/>

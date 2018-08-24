@@ -2324,7 +2324,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="17"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="6,10"/>
+		<property name="EntityDamage" value="15,20"/>
 		<property name="BlockDamage" value="5.4,13.5"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -10303,7 +10303,8 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="carrot" />
 	<property name="Meshfile" value="#CarrotPlant?Carrot" />
 	<property name="Material" value="organic" />
-	<property name="HoldType" value="3" />
+	<!-- <property name="HoldType" value="3" /> -->
+	<property name="HoldType" value="36"/>
 	<property name="CraftingIngredientTime" value="8" />
 	<property name="Stacknumber" value="500" />
 	<property class="Action1">
@@ -10855,19 +10856,19 @@ Mesh files no longer used:
 	</property>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Ranged"/>
-		<property name="Delay" value="0.4"/>
+		<property name="Delay" value="0.9"/>
 		<property name="Auto_fire" value="true"/>
 		<property name="Crosshair_min_distance" value="23"/> <!-- 23 -->
 		<property name="Crosshair_max_distance" value="28"/> <!-- 28 -->
-		<property name="Magazine_size" value="10"/>
+		<property name="Magazine_size" value="15"/>
 		<property name="Magazine_items" value="shotgunShell, shotgunSlug, shotgunDBShell, Unload"/>
 		<property name="Magazine_item_ray_counts" value="8, 1, 8"/>
 		<property name="Magazine_item_ray_spreads" value="0.735,0.505, 0.735"/> <!-- .835 / .605 -->
 		<property name="Reload_time" value="2.6"/>
 		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire1"/>
-		<property name="Sound_repeat" value="pump_shotgun_fire"/>
-		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_start" value="CAWS_fire_start"/>
+		<property name="Sound_repeat" value="CAWS_fire_start"/>
+		<property name="Sound_end" value="CAWS_shotgun_fire"/>
 		<property name="Sound_empty" value="weapon_empty"/>
 		<property name="Sound_reload" value="shotgun_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
@@ -13305,6 +13306,7 @@ Mesh files no longer used:
 <item id="2088" name="gunAR15Scope">
 	<property name="Extends" value="gunAR15" />
 	<property name="CustomIcon" value="gunAR15Scope"/>
+	<property name="Meshfile" value="#AR15?AR15Scoped"/>
 	<property name="DescriptionKey" value="gunAR15ScopeDesc"/>
 		<property class="Parts">
 			<property name="Receiver" value="gunScope" />
@@ -14119,7 +14121,7 @@ Mesh files no longer used:
     </property>
    <property class="Attributes">
         <property name="GetQualityFromWeapon" value="true" />
-        <property name="ApplyBuff" value="1, 1" param1="burningMolotov" />
+        <!-- <property name="ApplyBuff" value="1, 1" param1="burningMolotov" /> -->
     </property>
     <property name="CraftingSkillGroup" value="craftSkillScience"/>
     <property name="Group" value="Resources,Chemicals" />
@@ -15136,7 +15138,7 @@ Mesh files no longer used:
 
 <item id="2178" name="Banana">
 	<property name="CustomIcon" value="Banana" />
-	<property name="Meshfile" value="#BananaTree?Banana" />
+	<property name="Meshfile" value="#Banana?Banana" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="3" />
 	<property name="CraftingIngredientTime" value="5" />
@@ -16934,7 +16936,7 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="2.5"/>
 		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value="sniperrifle_fire"/>
+		<property name="Sound_start" value="metalhitcloth"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="weapon_empty"/>
