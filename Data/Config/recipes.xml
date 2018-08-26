@@ -200,6 +200,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="blueberries" count="2"/>
 </recipe>
 
+<recipe name="plantedSnowberry1" count="1" craft_time="1">
+	<ingredient name="snowberryPlant" count="2"/>
+</recipe>
+
 <recipe name="blunderbuss" count="1">
 	<ingredient name="forgedIron" count="16"/>
 	<ingredient name="shortMetalPipe" count="2"/>
@@ -2490,6 +2494,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="plantedBlueberry1" count="1" craft_time="1" craft_area="PandM">
 	<ingredient name="blueberries" count="1"/>
+</recipe>
+
+<recipe name="plantedSnowberry1" count="1" craft_time="1" craft_area="PandM">
+	<ingredient name="snowberryPlant" count="1"/>
 </recipe>
 
 <recipe name="plantedChrysanthemum1" count="1" craft_time="1" craft_area="PandM">
@@ -5252,28 +5260,28 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="ink" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="goldenrodPlant" count="8"/>
 	<ingredient name="chrysanthemumPlant" count="8"/>
-	<ingredient name="blueberries" count="8"/>
+	<ingredient name="snowberryPlant" count="8"/>
 	<ingredient name="bottledWater" count="2"/>
 </recipe>
 
 <recipe name="ink" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="goldenrodPlant" count="8"/>
 	<ingredient name="chrysanthemumPlant" count="8"/>
-	<ingredient name="blueberries" count="8"/>
+	<ingredient name="snowberryPlant" count="8"/>
 	<ingredient name="bowlWater" count="2"/>
 </recipe>
 
 <recipe name="ink" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="goldenrodPlant" count="4"/>
 	<ingredient name="chrysanthemumPlant" count="4"/>
-	<ingredient name="blueberries" count="4"/>
+	<ingredient name="snowberryPlant" count="4"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
 <recipe name="ink" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="goldenrodPlant" count="4"/>
 	<ingredient name="chrysanthemumPlant" count="4"/>
-	<ingredient name="blueberries" count="4"/>
+	<ingredient name="snowberryPlant" count="4"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 

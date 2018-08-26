@@ -19371,4 +19371,26 @@ kind of free
 	<property name="Group" value="Building"/>
 </block>
 
+<block id="17" name="plantedSnowberry1">
+	<property name="CustomIcon" value="plantedBlueberry1" />
+	<property name="DescriptionKey" value="plantedSnowberryDesc"/>
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+	<property name="PlantGrowing.Next" value="plantedSnowberry2"/>
+	<property name="Group" value="Food/Cooking"/>
+	<drop event="Destroy" name="plantedSnowberry1" count="1"/>
+</block>
+
+<block id="21" name="plantedSnowberry2">
+	<property name="CustomIcon" value="plantedBlueberry2" />
+	<property name="DescriptionKey" value="plantedSnowberryDesc"/>
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+	<property name="PlantGrowing.Next" value="snowberry3Harvest"/>
+	<property name="Group" value="Food/Cooking"/>
+	<drop event="Destroy" name="plantedSnowberry1" count="1"/>
+</block>
+
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->
