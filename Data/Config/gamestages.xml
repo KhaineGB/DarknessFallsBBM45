@@ -98,56 +98,56 @@ There is a console command: forcegamestage
 	<spawner name="WanderingHorde"> <!-- These will wrap around at 50. -->
 		<!-- Will probably have to undo that later. Rev 19924 /19944 -->
 		
-		<gamestage stage="01"><spawn group="ZombiesAll"					num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="02"><spawn group="ZombiesAll"					num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="03"><spawn group="ZombiesAll"					num="15" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="04"><spawn group="ZombieDogGroup"				num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="05"><spawn group="ZombieDogGroup"				num="05" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="06"><spawn group="ZombiesAll"					num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="07"><spawn group="ZombiesAll"					num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="08"><spawn group="ZombiesAll"					num="16" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="09"><spawn group="ZombieRadDogGroup"			num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="10"><spawn group="ZombieRadDogGroup"			num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="11"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="12"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="13"><spawn group="ZombieRadGroup"				num="10" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="14"><spawn group="BaseBreakersNoBears"		num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="15"><spawn group="BaseBreakersNoBears"		num="04" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="16"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="17"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="18"><spawn group="ZombieRadGroup"				num="12" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="19"><spawn group="ZombieDogGroup"				num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="20"><spawn group="ZombieDogGroup"				num="08" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="21"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="22"><spawn group="ZombieRadGroup"				num="03" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="23"><spawn group="ZombieRadGroup"				num="12" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="24"><spawn group="BaseBreakersBears"			num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="25"><spawn group="BaseBreakersBears"			num="04" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="26"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="27"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="28"><spawn group="ZombieFeralWandering"		num="10" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="29"><spawn group="ZombieDogGroup"				num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="30"><spawn group="ZombieDogGroup"				num="07" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="31"><spawn group="ZombieRadGroup"				num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="32"><spawn group="ZombieRadGroup"				num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="33"><spawn group="ZombieRadGroup"				num="10" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="34"><spawn group="ZombieRadDogGroup"			num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="35"><spawn group="ZombieRadDogGroup"			num="05" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="36"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="37"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="38"><spawn group="ZombieFeralWandering"		num="12" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="39"><spawn group="BaseBreakersUlt"			num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="40"><spawn group="BaseBreakersUlt"			num="08" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="41"><spawn group="ZombieRadGroup"				num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="42"><spawn group="ZombieRadGroup"				num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="43"><spawn group="ZombieRadGroup"				num="08" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="44"><spawn group="ZombieRadDogGroup"			num="01" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="45"><spawn group="ZombieRadDogGroup"			num="08" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="46"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="47"><spawn group="ZombieFeralWandering"		num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="48"><spawn group="ZombieFeralWandering"		num="10" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="49"><spawn group="BaseBreakersUlt"			num="02" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="50"><spawn group="BaseBreakersUlt"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="01"><spawn group="ZombiesAll"					num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="02"><spawn group="ZombiesAll"					num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="03"><spawn group="ZombiesAll"					num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="04"><spawn group="ZombieDogGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="05"><spawn group="ZombieDogGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="06"><spawn group="ZombiesAll"					num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="07"><spawn group="ZombiesAll"					num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="08"><spawn group="ZombiesAll"					num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="09"><spawn group="ZombieRadDogGroup"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieRadDogGroup"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="11"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="12"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="13"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="14"><spawn group="BaseBreakersNoBears"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="15"><spawn group="BaseBreakersNoBears"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="16"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="17"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="18"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="19"><spawn group="ZombieDogGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieDogGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="21"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="22"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="23"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="24"><spawn group="BaseBreakersBears"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="25"><spawn group="BaseBreakersBears"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="26"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="27"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="28"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="29"><spawn group="ZombieDogGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="30"><spawn group="ZombieDogGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="31"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="32"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="33"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="34"><spawn group="ZombieRadDogGroup"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="35"><spawn group="ZombieRadDogGroup"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="36"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="37"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="38"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="39"><spawn group="BaseBreakersUlt"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="40"><spawn group="BaseBreakersUlt"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="41"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="42"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="43"><spawn group="ZombieRadGroup"				num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="44"><spawn group="ZombieRadDogGroup"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="45"><spawn group="ZombieRadDogGroup"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="46"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="47"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="48"><spawn group="ZombieFeralWandering"		num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="49"><spawn group="BaseBreakersUlt"			num="512" maxAlive="512" duration="09"/></gamestage>
+		<gamestage stage="50"><spawn group="BaseBreakersUlt"			num="512" maxAlive="512" duration="09"/></gamestage>
 		
 		<!-- Original Code
 		<gamestage stage="01"><spawn group="scoutHordeStageGS1"	num="15" maxAlive="30" duration="09"/></gamestage>
@@ -1130,25 +1130,28 @@ There is a console command: forcegamestage
 		<gamestage stage="650"><spawn group="ZombieFeralNight" num="70" maxAlive="71" duration="3"/><spawn group="ZombieRadDogGroup" num="70" maxAlive="71" duration="3"/><spawn group="BaseBreakersNoBears" num="70" maxAlive="71" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
 		<gamestage stage="700"><spawn group="ZombieFeralNight" num="75" maxAlive="77" duration="3"/><spawn group="ZombieRadDogGroup" num="75" maxAlive="77" duration="3"/><spawn group="BaseBreakersNoBears" num="75" maxAlive="77" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
 		<gamestage stage="750"><spawn group="ZombieFeralNight" num="78" maxAlive="81" duration="3"/><spawn group="ZombieRadDogGroup" num="78" maxAlive="81" duration="3"/><spawn group="BaseBreakersNoBears" num="78" maxAlive="81" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="800"><spawn group="ZombieFeralNight" num="83" maxAlive="87" duration="3"/><spawn group="BaseBreakersBears" num="83" maxAlive="87" duration="3"/><spawn group="VultureGroup" num="83" maxAlive="87" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="800"><spawn group="ZombieFeralNight" num="83" maxAlive="87" duration="3"/><spawn group="BaseBreakersBears" num="83" maxAlive="87" duration="3"/><spawn group="ZombieRadDogGroup" num="83" maxAlive="87" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
 		<gamestage stage="850"><spawn group="ZombieFeralNight" num="87" maxAlive="92" duration="3"/><spawn group="BaseBreakersBears" num="87" maxAlive="92" duration="3"/><spawn group="VultureGroup" num="87" maxAlive="92" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="900"><spawn group="ZombieFeralNight" num="91" maxAlive="98" duration="3"/><spawn group="BaseBreakersBears" num="91" maxAlive="98" duration="3"/><spawn group="VultureGroup" num="91" maxAlive="98" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="950"><spawn group="ZombieFeralNight" num="95" maxAlive="103" duration="3"/><spawn group="BaseBreakersBears" num="95" maxAlive="103" duration="3"/><spawn group="VultureGroup" num="95" maxAlive="103" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1000"><spawn group="ZombieFeralNight" num="99" maxAlive="108" duration="3"/><spawn group="BaseBreakersBears" num="99" maxAlive="108" duration="3"/><spawn group="VultureGroup" num="99" maxAlive="108" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1100"><spawn group="ZombieFeralNight" num="108" maxAlive="120" duration="3"/><spawn group="BaseBreakersBears" num="108" maxAlive="120" duration="3"/><spawn group="ZombieRadDogGroup" num="108" maxAlive="120" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1200"><spawn group="ZombieFeralNight" num="117" maxAlive="131" duration="3" interval="39"/><spawn group="BaseBreakersBears" num="117" maxAlive="131" duration="3"/><spawn group="ZombieRadDogGroup" num="117" maxAlive="131" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1300"><spawn group="ZombieFeralNight" num="125" maxAlive="141" duration="3" interval="25"/><spawn group="BaseBreakersBears" num="125" maxAlive="141" duration="3" interval="18"/><spawn group="ZombieRadDogGroup" num="125" maxAlive="141" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1400"><spawn group="ZombieFeralNight" num="133" maxAlive="151" duration="3"/><spawn group="BaseBreakersBears" num="133" maxAlive="151" duration="3"/><spawn group="ZombieRadDogGroup" num="133" maxAlive="151" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1500"><spawn group="ZombieFeralNight" num="142" maxAlive="163" duration="3"/><spawn group="BaseBreakersBears" num="142" maxAlive="163" duration="3"/><spawn group="ZombieRadDogGroup" num="142" maxAlive="163" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1600"><spawn group="ZombieBadassGroup" num="150" maxAlive="173" duration="3"/><spawn group="BaseBreakersNoBears" num="150" maxAlive="173" duration="3"/><spawn group="ZombieBadassGroup" num="150" maxAlive="173" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1700"><spawn group="ZombieBadassGroup" num="158" maxAlive="183" duration="3"/><spawn group="BaseBreakersNoBears" num="158" maxAlive="183" duration="3" interval="24"/><spawn group="ZombieBadassGroup" num="158" maxAlive="183" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1800"><spawn group="ZombieBadassGroup" num="166" maxAlive="194" duration="3" interval="15"/><spawn group="BaseBreakersNoBears" num="166" maxAlive="194" duration="3"/><spawn group="ZombieBadassGroup" num="166" maxAlive="194" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="1900"><spawn group="ZombieBadassGroup" num="175" maxAlive="204" duration="3"/><spawn group="BaseBreakersNoBears" num="175" maxAlive="204" duration="3"/><spawn group="ZombieBadassGroup" num="175" maxAlive="204" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="2000"><spawn group="ZombieBadassGroup" num="183" maxAlive="215" duration="3"/><spawn group="BaseBreakersNoBears" num="183" maxAlive="215" duration="3"/><spawn group="ZombieBadassGroup" num="183" maxAlive="215" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="2500"><spawn group="ZombieFeralRadiatedGroup" num="226" maxAlive="256" duration="3" interval="23"/><spawn group="BaseBreakersUlt" num="226" maxAlive="256" duration="3"/><spawn group="BaseBreakersUlt" num="226" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadiatedGroup" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="3000"><spawn group="ZombieFeralRadiatedGroup" num="268" maxAlive="256" duration="3"/><spawn group="BaseBreakersUlt" num="268" maxAlive="256" duration="3"/><spawn group="BaseBreakersUlt" num="268" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadiatedGroup" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="3500"><spawn group="ZombieFeralRadiatedGroup" num="300" maxAlive="256" duration="3" interval="33"/><spawn group="BaseBreakersUlt" num="300" maxAlive="256" duration="3" interval="4"/><spawn group="BaseBreakersUlt" num="300" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadiatedGroup" num="600" maxAlive="50"/></gamestage>
-		<gamestage stage="4000"><spawn group="ZombieFeralRadiatedGroup" num="300" maxAlive="256" duration="3"/><spawn group="BaseBreakersUlt" num="300" maxAlive="256" duration="3"/><spawn group="BaseBreakersUlt" num="300" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadiatedGroup" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="900"><spawn group="ZombieFeralNight" num="91" maxAlive="98" duration="3"/><spawn group="BaseBreakersBears" num="91" maxAlive="98" duration="3"/><spawn group="ZombieRadDogGroup" num="91" maxAlive="98" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="950"><spawn group="ZombieFeralNight" num="95" maxAlive="103" duration="3"/><spawn group="BaseBreakersBears" num="95" maxAlive="103" duration="3"/><spawn group="BaseBreakersUlt" num="95" maxAlive="103" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1000"><spawn group="ZombieFeralNight" num="99" maxAlive="108" duration="3"/><spawn group="BaseBreakersBears" num="99" maxAlive="108" duration="3"/><spawn group="ZombieRadDogGroup" num="99" maxAlive="108" duration="1"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1100"><spawn group="ZombieFeralNight" num="108" maxAlive="120" duration="3"/><spawn group="BaseBreakersBears" num="108" maxAlive="120" duration="3"/><spawn group="BaseBreakersUlt" num="108" maxAlive="120" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1200"><spawn group="ZombieFeralNight" num="117" maxAlive="131" duration="3" interval="39"/><spawn group="BaseBreakersBears" num="117" maxAlive="131" duration="3"/><spawn group="BaseBreakersUlt" num="117" maxAlive="131" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1300"><spawn group="ZombieFeralNight" num="125" maxAlive="141" duration="3" interval="25"/><spawn group="BaseBreakersBears" num="125" maxAlive="141" duration="3" interval="18"/><spawn group="BaseBreakersUlt" num="125" maxAlive="141" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1400"><spawn group="ZombieFeralNight" num="133" maxAlive="151" duration="3"/><spawn group="BaseBreakersBears" num="133" maxAlive="151" duration="3"/><spawn group="BaseBreakersUlt" num="133" maxAlive="151" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1500"><spawn group="ZombieFeralNight" num="142" maxAlive="163" duration="3"/><spawn group="BaseBreakersBears" num="142" maxAlive="163" duration="3"/><spawn group="BaseBreakersUlt" num="142" maxAlive="163" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<!-- Add a couple of devil spawns here -->
+		<gamestage stage="1600"><spawn group="ZombieBadassGroup" num="150" maxAlive="173" duration="3"/><spawn group="DemonHorde" num="150" maxAlive="173" duration="3"/><spawn group="BaseBreakersUlt" num="150" maxAlive="173" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1700"><spawn group="ZombieBadassGroup" num="158" maxAlive="183" duration="3"/><spawn group="DemonHorde" num="158" maxAlive="183" duration="3" interval="24"/><spawn group="BaseBreakersUlt" num="158" maxAlive="183" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<!-- Leave from here alone -->
+		<gamestage stage="1800"><spawn group="ZombieBadassGroup" num="166" maxAlive="194" duration="3" interval="15"/><spawn group="ZombieFeralRadWandering" num="166" maxAlive="194" duration="3"/><spawn group="DemonHorde" num="166" maxAlive="194" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="1900"><spawn group="ZombieBadassGroup" num="175" maxAlive="204" duration="3"/><spawn group="DemonHorde" num="175" maxAlive="204" duration="3"/><spawn group="ZombieFeralRadWandering" num="175" maxAlive="204" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="2000"><spawn group="ZombieBadassGroup" num="183" maxAlive="215" duration="3"/><spawn group="BaseBreakersNoBears" num="183" maxAlive="215" duration="3"/><spawn group="DemonHorde" num="183" maxAlive="215" duration="3"/><spawn group="ZombieFeralNight" num="600" maxAlive="50"/></gamestage>
+		<!-- Edit From Here -->
+		<gamestage stage="2500"><spawn group="ZombieFeralRadWandering" num="226" maxAlive="256" duration="3" interval="23"/><spawn group="DemonHorde" num="226" maxAlive="256" duration="3"/><spawn group="DemonHorde" num="226" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadWandering" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="3000"><spawn group="ZombieFeralRadWandering" num="268" maxAlive="256" duration="3"/><spawn group="DemonHorde" num="268" maxAlive="256" duration="3"/><spawn group="DemonHorde" num="268" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadiatedGroup" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="3500"><spawn group="ZombieFeralRadiatedGroup" num="300" maxAlive="256" duration="3" interval="33"/><spawn group="ZombieFeralRadWandering" num="300" maxAlive="256" duration="3" interval="4"/><spawn group="DemonHorde" num="300" maxAlive="256" duration="3"/><spawn group="DemonHorde" num="600" maxAlive="50"/></gamestage>
+		<gamestage stage="4000"><spawn group="ZombieFeralRadiatedGroup" num="300" maxAlive="256" duration="3"/><spawn group="ZombieFeralRadWandering" num="300" maxAlive="256" duration="3"/><spawn group="DemonHorde" num="300" maxAlive="256" duration="3"/><spawn group="DemonHorde" num="600" maxAlive="50"/></gamestage>
 	</spawner>
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX 

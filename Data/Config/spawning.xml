@@ -120,7 +120,7 @@
 	</biome>
 	
 	<biome name="radiated">
-		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="ZombieFeralRadiatedGroup" />
+		<spawn maxcount="10" respawndelay="0.25" time="Any" entitygroup="RadZone" />
 	</biome>
 
 

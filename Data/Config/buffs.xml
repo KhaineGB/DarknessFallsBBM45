@@ -140,7 +140,7 @@ built-in buff variables:
 	<modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
 
-<buff id="trapDamage1Trigger" mutex="isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="1" type="bleeding" actions="setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)" /> <!-- spikes and other traps -->
+<buff id="trapDamage1Trigger" mutex="isZombieBoss,zombieRadiatedBuff80,zombieonfire,isZombieDemon,isDemon" duration="1" type="bleeding" actions="setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)" /> <!-- spikes and other traps -->
 <buff id="trapDamage1Effect" buffif="CTRtrapDmg1 greater 0" debuffif="CTRtrapDmg1 less 1" duration="0" type="bleeding" actions="increment(CTRtrapDmg1, -1, 1, 0, 0)"
 	name_key="trapDamage1EffectName" description_key="trapDamage1EffectDesc" tooltip_key="trapDamage1EffectTooltip" icon="ui_game_symbol_critical" >
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -149,7 +149,7 @@ built-in buff variables:
 </buff>
 
 <!-- Special buff for (small) wood spikes that only affects zombehs -->
-<buff id="trapDamageZombie" mutex="isPlayer,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="2" stack="reset" >
+<buff id="trapDamageZombie" mutex="isPlayer,isZombieBoss,zombieRadiatedBuff80,zombieonfire,isZombieDemon,isDemon" duration="2" stack="reset" >
 	<modify id="1" stat="health" amount="-33" rate="1"/>
 	<modify id="2" stat="speedmodifier" mulValue="0.2" />
 </buff>
@@ -327,38 +327,38 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" mulValue="0.80"/>
 </buff>
 
-<buff id="stunned" mutex="stunCooldown,painkillerBuff,Drunk,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
+<buff id="stunned" mutex="stunCooldown,painkillerBuff,Drunk,isZombieBoss,zombieRadiatedBuff80,zombieonfire,isZombieDemon,isDemon" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.1"/>
 </buff>
 <buff id="stunCooldown" duration="3" stack="discard"/>
 
-<buff id="blockBurn2Trigger" mutex="cannotBreath,drowning,extinguishFireBuff" duration="1" actions="increment(CTRblockBurn2, 1, 1, 0, 0)" /> <!-- emberPile -->
+<buff id="blockBurn2Trigger" mutex="cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" duration="1" actions="increment(CTRblockBurn2, 1, 1, 0, 0)" /> <!-- emberPile -->
 <buff id="blockBurn2Effect" buffif="CTRblockBurn2 greater 1" debuffif="CTRblockBurn2 less 1" duration="0"
 	name_key="blockBurnEffectName" description_key="blockBurnEffectDesc" tooltip_key="blockBurnEffectTooltip" icon="ui_game_symbol_fire"
 	actions="increment(CTRblockBurn2, -1, 1, 0, 0);attach(ParticleEffects/p_onFire, @impact);damage(2,1,0,0)" />
 
-<buff id="blockBurn3Trigger" mutex="cannotBreath,drowning,extinguishFireBuff" duration="1" actions="increment(CTRblockBurn3, 1, 1, 0, 0)" /> <!-- campfire -->
+<buff id="blockBurn3Trigger" mutex="cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" duration="1" actions="increment(CTRblockBurn3, 1, 1, 0, 0)" /> <!-- campfire -->
 <buff id="blockBurn3Effect" buffif="CTRblockBurn3 greater 1" debuffif="CTRblockBurn3 less 1" duration="0"
 	name_key="blockBurnEffectName" description_key="blockBurnEffectDesc" tooltip_key="blockBurnEffectTooltip" icon="ui_game_symbol_fire"
 	actions="increment(CTRblockBurn3, -1, 1, 0, 0);attach(ParticleEffects/p_onFire, @impact);damage(3,1,0,0)" />
 
-<buff id="burningSmall" mutex="burning,cannotBreath,drowning,extinguishFireBuff" duration="10" stack="reset" debuffif="+water > 1" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,2,0,0)" icon="ui_game_symbol_fire" name_key="burningSmall" description_key="burningSmallDesc" tooltip_key="burningSmallTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+<buff id="burningSmall" mutex="burning,cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" duration="10" stack="reset" debuffif="+water > 1" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,2,0,0)" icon="ui_game_symbol_fire" name_key="burningSmall" description_key="burningSmallDesc" tooltip_key="burningSmallTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
 	<modify id="1" stat="health" amount="-2" rate="1"/>
 </buff>
 
-<buff id="burning" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="10" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+<buff id="burning" mutex="cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" debuffif="+water > 1" duration="10" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
 	<modify id="1" stat="health" amount="-5" rate="1"/>
 </buff>
 
-<buff id="Burning" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="10" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="Burning" description_key="BurningDesc" tooltip_key="BurningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+<buff id="Burning" mutex="cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" debuffif="+water > 1" duration="10" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="Burning" description_key="BurningDesc" tooltip_key="BurningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
 	<modify id="1" stat="health" amount="-5" rate="1"/>
 </buff>
 
-<buff id="burningMolotov" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="16" stack="reset" ffcheck="true"
+<buff id="burningMolotov" mutex="cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" debuffif="+water > 1" duration="16" stack="reset" ffcheck="true"
 actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0);buff(burningMolotovZombie)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
 	<modify id="1" stat="health" amount="-4" rate="1"/>
 </buff>
-<buff id="burningMolotovZombie" mutex="isPlayer,cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="16" stack="reset" ffcheck="true">
+<buff id="burningMolotovZombie" mutex="isPlayer,cannotBreath,drowning,extinguishFireBuff,isZombieDemon,isDemon" debuffif="+water > 1" duration="16" stack="reset" ffcheck="true">
 	<modify id="1" stat="health" amount="-8" rate="1"/>
 </buff>
 
@@ -450,7 +450,7 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 <buff id="testBreath" duration="0" stack="discard" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" icon="ui_game_symbol_cold" description_key=""/>
 
 
-<buff id="shotgunWound" mutex="painkillerBuff,isZombieBoss,zombieRadiatedBuff80,zombieonfire" duration="5" stack="reset" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="shotgunWound" description_key="shotgunWoundDesc" tooltip_key="shotgunWoundTooltip">
+<buff id="shotgunWound" mutex="painkillerBuff,isZombieBoss,zombieRadiatedBuff80,zombieonfire,isZombieDemon,isDemon" duration="5" stack="reset" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="shotgunWound" description_key="shotgunWoundDesc" tooltip_key="shotgunWoundTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.4"/>
 </buff>
 
@@ -572,7 +572,22 @@ This requires a 50+ food bar:
 	<modify id="0" stat="health" amount="1" rate="1" />
 </buff>
 
-<buff id="shockedBuff" duration="4.5" stack="discard" debuffif="ShockAmount equals 0" buffif="ShockAmount greater 0"
+<buff id="isZombieDemon" duration="0" actions="attach(ParticleEffects/p_onFire, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip">
+	<modify id="0" stat="health" amount="120" rate="3" />
+	<modify id="1" stat="speedmodifier" setValue="1.50"/>
+</buff>
+
+<buff id="isDemonMale" duration="0" icon="ui_game_symbol_fire">
+	<modify id="0" stat="health" amount="120" rate="3" />
+	<modify id="1" stat="speedmodifier" setValue="1.50"/>
+</buff>
+
+<buff id="isDemonFemale" duration="0" icon="ui_game_symbol_fire">
+	<modify id="0" stat="health" amount="40" rate="3" />
+	<modify id="1" stat="speedmodifier" setValue="1.50"/>
+</buff>
+
+<buff id="shockedBuff" mutex="isDemon" duration="4.5" stack="discard" debuffif="ShockAmount equals 0" buffif="ShockAmount greater 0"
 	actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact"
 	icon="ui_game_symbol_electric_power" name_key="shockedBuffName" description_key="shockedBuffDesc" tooltip_key="shockedBuffTooltip">
 	<modify id="0" stat="health" amount="-3" rate="0.5"/>
@@ -596,7 +611,6 @@ This requires a 50+ food bar:
 
 <!-- Make Zombies Look on Fire Stuff -->
 
-<!-- <buff id="zombieonfire" actions="attach(ParticleEffects/p_onFire, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/> -->
 <buff id="zombieonfire" actions="attach(ParticleEffects/p_signal_flareprefab, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/>
 
 <!-- Peruvian Marching Powder... goddamnit kickz -->

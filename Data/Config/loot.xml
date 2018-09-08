@@ -1073,6 +1073,7 @@
 	<item name="plantedCotton1" prob="0.5"/>
 	<item name="plantedGoldenrod1"/>
 	<item name="plantedYucca1"/>
+	<item name="plantedSnowberry1" prob="0.75"/>
 	<item name="treePlantedMountainPine1m" prob="0.3"/>
 	<item name="treePlantedMaple1m" prob="0.3"/>
 	<item name="treePlantedWinterPine1m" prob="0.3"/>

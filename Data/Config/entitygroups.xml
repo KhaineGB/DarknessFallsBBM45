@@ -489,7 +489,8 @@
 		<entity name="zombieBikerFeralRadiated" />
 		<entity name="zombieFarmerFeralRadiated" />
 		<entity name="zombieStripperFeralRadiated" />
-		<entity name="ZUMABehemothFemaleRadiated" prob="0.2" />
+		<entity name="ZUMABehemothFemaleRadiated" prob="0.4" />
+		<entity name="zombieBehemothRadiated" prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="ZombieFarmGroup">
@@ -826,8 +827,8 @@
 		<entity name="zombieBikerFeralRadiated" />
 		<entity name="zombieFarmerFeralRadiated" />
 		<entity name="zombieStripperFeralRadiated" />
-		<entity name="ZUMABehemothFemaleRadiated" prob="0.2" />
-		<entity name="zombieBehemothRadiated" prob="0.2" />
+		<entity name="ZUMABehemothFemaleRadiated" prob="0.35" />
+		<entity name="zombieBehemothRadiated" prob="0.35" />
 	</entitygroup>
 	
 	<entitygroup name="WanderingBandits">
@@ -890,6 +891,80 @@
 		<entity name="ZUMABuisnesswomanFeral" />
 		<entity name="LabZombieFemale" prob="0.2"/>
 		<entity name="LabZombieMale" prob="0.2"/>
+	</entitygroup>
+	
+	<entitygroup name="DemonHorde">
+		<entity name="zombieBoeFireFeral"/>
+		<entity name="zombieArleneFireFeral"/>
+		<entity name="zombieBusinessManFireFeral"/>
+		<entity name="zombieDarleneFireFeral" />
+		<entity name="zombieFootballPlayerFireFeral" />
+		<entity name="zombieFemaleFatFireFeral" />
+		<entity name="zombieJoeFireFeral" />
+		<entity name="zombieMoeFireFeral"/>
+		<entity name="zombieMarleneFireFeral" />
+		<entity name="zombieYoFireFeral" />
+		<entity name="zombieNurseFireFeral" />
+		<entity name="zombieFatHawaiianFireFeral" />
+		<entity name="zombieSoldierFireFeral" />
+		<entity name="zombieSkateboarderFireFeral" />
+		<entity name="zombieCheerleaderFireFeral" />
+		<entity name="zombieOldTimerFireFeral" />
+		<entity name="zombieBikerFireFeral" />
+		<entity name="zombieFarmerFireFeral" />
+		<entity name="zombieStripperFireFeral" />
+		<entity name="Demon" />
+		<entity name="Succubus" />
+	</entitygroup>
+	
+	<entitygroup name="RadZone">
+		<entity name="zombieBoeFireFeral"/>
+		<entity name="zombieArleneFireFeral"/>
+		<entity name="zombieBusinessManFireFeral"/>
+		<entity name="zombieDarleneFireFeral" />
+		<entity name="zombieFootballPlayerFireFeral" />
+		<entity name="zombieFemaleFatFireFeral" />
+		<entity name="zombieJoeFireFeral" />
+		<entity name="zombieMoeFireFeral"/>
+		<entity name="zombieMarleneFireFeral" />
+		<entity name="zombieYoFireFeral" />
+		<entity name="zombieNurseFireFeral" />
+		<entity name="zombieFatHawaiianFireFeral" />
+		<entity name="zombieSoldierFireFeral" />
+		<entity name="zombieSkateboarderFireFeral" />
+		<entity name="zombieCheerleaderFireFeral" />
+		<entity name="zombieOldTimerFireFeral" />
+		<entity name="zombieBikerFireFeral" />
+		<entity name="zombieFarmerFireFeral" />
+		<entity name="zombieStripperFireFeral" />
+		<entity name="zombieSpiderFeralRadiated" />
+		<entity name="zombieWightFeralRadiated" />
+		<entity name="zombieFatCopFeralRadiated" />
+		<entity name="zombieBoeFeralRadiated" />
+		<entity name="zombieFootballPlayerFeralRadiated" />
+		<entity name="zombieFemaleFatFeralRadiated" />
+		<entity name="zombieJoeFeralRadiated" />
+		<entity name="zombieMoeFeralRadiated" />
+		<entity name="zombieArleneFeralRadiated" />
+		<entity name="zombieDarleneFeralRadiated" />
+		<entity name="zombieMarleneFeralRadiated" />
+		<entity name="zombieYoFeralRadiated" />
+		<entity name="zombieSteveFeralRadiated" />
+		<entity name="zombieBusinessManFeralRadiated" />
+		<entity name="zombieNurseFeralRadiated" />
+		<entity name="zombieFatHawaiianFeralRadiated" />
+		<entity name="zombieUtilityWorkerFeralRadiated" />
+		<entity name="zombieSoldierFeralRadiated" />
+		<entity name="zombieSkateboarderFeralRadiated" />
+		<entity name="zombieCheerleaderFeralRadiated" />
+		<entity name="zombieOldTimerFeralRadiated" />
+		<entity name="zombieBikerFeralRadiated" />
+		<entity name="zombieFarmerFeralRadiated" />
+		<entity name="zombieStripperFeralRadiated" />
+		<entity name="ZUMABehemothFemaleRadiated" />
+		<entity name="zombieBehemothRadiated" />
+		<entity name="Demon" />
+		<entity name="Succubus" />
 	</entitygroup>
 
 	<!-- https://7daystodie.com/forums/showthread.php?56533-Gamestage-Blood-Moon-Horde-generator -->
