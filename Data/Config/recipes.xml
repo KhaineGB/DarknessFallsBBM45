@@ -2524,10 +2524,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="hopsFlower" count="1"/>
 </recipe>
 
-<recipe name="seedWheat" count="1" craft_area="PandM">
-	<ingredient name="Wheat" count="1" />
-</recipe>
-
 <recipe name="aloeCream" count="1" craft_area="PandM">
 	<ingredient name="aloePlant" count="4"/>
 </recipe>
@@ -2544,6 +2540,34 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="coal" count="2"/>
 	<ingredient name="potassiumNitratePowder" count="4"/>
 	<ingredient name="sulfur" count="2"/>
+</recipe>
+
+<recipe name="seedWheat" count="1" craft_area="PandM">
+	<ingredient name="Wheat" count="1" />
+</recipe>
+
+<recipe name="seedApple" count="1" craft_area="PandM">
+	<ingredient name="Apple" count="1" />
+</recipe>
+
+<recipe name="seedCarrot" count="1" craft_area="PandM">
+	<ingredient name="Carrot" count="1" />
+</recipe>
+
+<recipe name="seedTomato" count="1" craft_area="PandM">
+	<ingredient name="Tomato" count="1" />
+</recipe>
+
+<recipe name="seedBanana" count="1" craft_area="PandM">
+	<ingredient name="Banana" count="1" />
+</recipe>
+
+<recipe name="seedCoconut" count="1" craft_area="PandM">
+	<ingredient name="Coconut" count="1" />
+</recipe>
+
+<recipe name="seedOrange" count="1" craft_area="PandM">
+	<ingredient name="Orange" count="1" />
 </recipe>
 
 <!-- Battery and Engine Crafting -->
