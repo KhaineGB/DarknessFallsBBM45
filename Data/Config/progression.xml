@@ -1585,11 +1585,11 @@
 		<requirement skill_level="1" required_skill_name="ClassMechanic" required_skill_level="1"/>
 		
 		<recipe name="partsHandlebarsTitanium" unlock_level="1"/>	
-		<recipe name="TitaniumMinibikeChassis" unlock_level="1"/>	
-		<recipe name="TitaniumMinibikeSeat" unlock_level="1"/>	
-		<recipe name="TitaniumMinibikeHandlebars" unlock_level="1"/>
-		<recipe name="largeEngine" unlock_level="1"/>
-		<recipe name="largeBattery" unlock_level="1"/>		
+		<recipe name="roadHogChassis" unlock_level="1"/>	
+		<recipe name="proBikeSeat" unlock_level="1"/>	
+		<recipe name="proBikeHandlebars" unlock_level="1"/>
+		<recipe name="bigEngine" unlock_level="1"/>
+		<recipe name="bigBattery" unlock_level="1"/>		
 		<recipe name="oilPump" unlock_level="1"/>
 		<recipe name="steelWrench" unlock_level="1"/>			
 		

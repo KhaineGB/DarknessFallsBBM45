@@ -787,7 +787,8 @@ cntMailBox03,blocks,Container,KgNone,Mail Box,Boîte aux lettres,Briefkasten,,Bu
 cntMailboxDesc,blocks,Container,KgNone,If anyone was left to send you mail you would be able to receive it! \n[Crafting Area: [ff0000]Backpack or Workbench[-] ],"S'il restait quelqu'un susceptible de vous envoyer du courrier, vous pourriez le recevoir !","Wenn es noch jemanden geben würde, der dir Post schickt, dann könntest du sie empfangen!",,"¡Si hubiera alguien para enviarte correo, lo recibirías!"
 cntMedicineCabinet,blocks,Container,KgNone,Medicine Cabinet,Armoire à pharmacie,Medizinschrank,,Botiquín
 cntMountainManStorageChest,blocks,Container,KgNone,Mountain Man Chest,Coffre de montagnard,Hochländer-Truhe,,Cofre del hombre de las montañas
-cntMunitionsBox,blocks,Container,KgNone,Munitions Box,Boîte de munitions,Munitionskasten,,Caja de munición
+cntMunitionsBoxBad,blocks,Container,KgNone,Munitions Box,Boîte de munitions,Munitionskasten,,Caja de munición
+cntMunitionsBoxGood,blocks,Container,KgNone,Munitions Box,Boîte de munitions,Munitionskasten,,Caja de munición
 cntNightstand,blocks,Container,KgNone,Night Stand,Table de chevet,Nachttisch,,Mesita de noche
 cntOven,blocks,Container,KgNone,Oven,Four,Ofen,,Horno
 cntPillCase,blocks,Container,KgNone,Pill Case,Étui à médicaments,Pillendose,,Pastillero
@@ -1523,8 +1524,6 @@ ballisticFiberDesc,items,Item,KgNone,Pre-apocalypse synthetic fibers like Kevlar
 beaker,items,Item,KgNone,Beaker,Bécher,Messbecher,,Matraz
 beakerDesc,items,Item,KgNone,A cooking utensil used in the campfire to unlock recipes.,Un ustensile de cuisine à utiliser sur le feu de camp pour déverrouiller des compositions.,"Ein Kochgerät, mit dem am Lagerfeuer Rezepte freigeschaltet werden.",,Un instrumento de cocina que se usa en la fogata para desbloquear recetas.
 bellows,items,Item,KgNone,Bellows,Soufflet,Blasebalg,,Fuelles
-bioFuel,items,Item,KgNone,Biofuel,Biocarburant,Biosprit,,Biocombustible
-bioFuelDesc,items,Item,KgNone,Biofuel is made at the campfire and can be used to make gasoline.,Le biocarburant se fabrique sur le feu de camp et peut servir à faire de l'essence.,"Biosprit wird am Lagerfeuer gefertigt und kann benutzt werden, um Benzin herzustellen.",,El biocombustible se produce en la fogata y se puede usar para hacer gasolina.
 book,items,Item,KgNone,Book,Livre,Buch,,Libro
 bookDesc,items,Item,KgNone,An old book will get you paper.,Un vieux livre qui vous fournira du papier.,Durch ein altes Buch erhältst du Papier.,,Con un libro viejo puedes conseguir papel.
 bowl,items,Item,KgNone,Clay Bowl,Bol en argile,Lehmschale,,Tazón de arcilla
@@ -5585,18 +5584,18 @@ radio,blocks,Block,KgNone,Radio,,,,
 radioDesc,blocks,Block,GrChanged,This radio will tell you the up to date day and time. It can also be used for crafting quests.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ],,,,
 writingDesk,blocks,Block,KgNone,Writing Desk,,,,
 writingDeskDesc,blocks,Block,GrChanged,Who doesn't love a stylish desk in the home? Can be used to create skill and class books for less resources.\n[Crafting Area: [ff0000]Workbench[-] ],,,,
-largeEngine,items,Item,KgNone,Large Engine,,,,
+bigEngine,items,Item,KgNone,Large Engine,,,,
 largeEngineDesc,items,Item,KgNone,"Faster version of the standard engine, holds more gasoline but also uses more. Unique to the mechanic class.\n[Crafting Area: [ff0000]Metal Workstation[-] ]",,,,
-largeBattery,items,Item,KgNone,Large Battery,,,,
+bigBattery,items,Item,KgNone,Large Battery,,,,
 largeBatteryDesc,items,Item,KgNone,Larger version of the standard battery. Holds more charge so you're less likely to wake up with a flat battery. Unique to the mechanic class.\n[Crafting Area: [ff0000]Metal Workstation[-] ],,,,
-OffroadMinibikeWheels,items,Item,KgNone,Offroad Minibike Wheels,,,,
-OffroadMinibikeWheelsDesc,items,Item,KgNone,Better grip for greater control while driving the minibike.,,,,
-TitaniumMinibikeChassis,items,Item,KgNone,Titanium Minibike Chassis,,,,
-TitaniumMinibikeChassisDesc,items,Item,KgNone,Greater durability than the standard chassis. Unique to the mechanic class.\n[Crafting Area: [ff0000]Advanced Forge[-] ],,,,
-TitaniumMinibikeSeat,items,Item,KgNone,Titanium Minibike Seat,,,,
-TitaniumMinibikeSeatDesc,items,Item,KgNone,Greater durability than the standard minibike seat. Unique to the mechanic class.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ],,,,
-TitaniumMinibikeHandlebars,items,Item,KgNone,Titanium Minibike Handlebars,,,,
-TitaniumMinibikeHandlebarsDesc,items,Item,KgNone,Greater durability than the standard handlebars. Unique to the mechanic class.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ],,,,
+proBikeWheels,items,Item,KgNone,Performance Wheels,,,,
+OffroadMinibikeWheelsDesc,items,Item,KgNone,Better grip for greater control while driving various vehicles.,,,,
+roadHogChassis,items,Item,KgNone,Roadhog Chassis,,,,
+roadHogChassisDesc,items,Item,KgNone,Greater durability than the minibike. Unique to the mechanic class.\n[Crafting Area: [ff0000]Advanced Forge[-] ],,,,
+proBikeSeat,items,Item,KgNone,Roadhog Seat,,,,
+TitaniumMinibikeSeatDesc,items,Item,KgNone,Greater durability than the minibike. Required for the Roadhog. Unique to the mechanic class.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ],,,,
+proBikeHandlebars,items,Item,KgNone,Roadhog Handlebars,,,,
+TitaniumMinibikeHandlebarsDesc,items,Item,KgNone,Greater durability than the standard handlebars. Required for the Roadhog. Unique to the mechanic class.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ],,,,
 partsHandlebarsTitanium,items,Item,KgNone,Titanium Handlebars,,,,
 partsHandlebarsTitaniumDesc,items,Item,KgNone,"A part for a chainsaw, auger or minibike handlebars. Assemble with other parts to create a complete tool once you've read the right schematic.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ]",,,,
 augerTitanium,items,Item,KgNone,Titanium Auger,,,,
@@ -5928,8 +5927,8 @@ partsCoilPistolGroupDesc,items,Part,KgNone,A part of the Coilpistol. Assemble wi
 762mmCoilroundDesc,items,Item Gun,KgNone,"These bullets do not use gunpowder in crafting, but are otherwise identical to normal 7.62 rounds.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ]",,,,
 44MagCoilroundHP,items,Item Gun,KgNone,.44 Magnum Hollow Point Coilround,,,,
 44MagCoilroundHPDesc,items,Item Gun,KgNone,"These bullets have had their points hollowed out and do not use gunpowder in crafting, but are otherwise identical to 44 magnum hollow point rounds.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ]",,,,
-762mmBulletHP,items,Item Gun,KgNone,7.62mm Hollow Point Coilround,,,,
-762mmBulletHPDesc,items,Item Gun,KgNone,"These bullets have had their points hollowed out and do not use gunpowder in crafting, but are otherwise identical to 7.62 hollow point rounds.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ]",,,,
+762mmCoilroundHP,items,Item Gun,KgNone,7.62mm Hollow Point Coilround,,,,
+762mmCoilroundHPDesc,items,Item Gun,KgNone,"These bullets have had their points hollowed out and do not use gunpowder in crafting, but are otherwise identical to 7.62 hollow point rounds.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ]",,,,
 coilBattery,items,Item,KgNone,Coil Battery,,,,
 coilBatteryDesc,items,Item,KgNone,"Coil batteries are used in crafting coilrounds. Very important for coilguns. \n[Crafting Area: [ff0000]Metal Workstation[-] ]",,,,
 coilgunsperk,progression,Perk,KgNone,Coilguns,,,,
@@ -5945,3 +5944,19 @@ playerSciFiDoor,blocks,Block,KgNone,SciFi Single Door,,,,
 scifiDoorGroupDesc,blocks,Block,KgNone,Press & hold [activate] to lock it or set a combination. Repair with forged titanium and a titanium clawhammer using the secondary action. \n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ],,,,
 plantedSnowberry1,blocks,Farming,New,Snowberry Seed,,,,
 plantedSnowberryDesc,items,Farming,KgNone,Plant snowberry seeds in fertile dirt to grow snowberry plants. \n[Crafting Area: [ff0000]Backpack or Mortar and Pestle[-] ],,,,
+carMuscleBlack,blocks,Container,EnChanged,Muscle Car,,,,
+carMuscleBlue,blocks,Container,EnChanged,Muscle Car,,,,
+carAmbulance,blocks,Container,EnChanged,Ambulance,,,,
+CarArmourChassis,items,Item,KgNone,Car Chassis,,,,
+CarArmourDesc,items,Item,KgNone,Greater durability than both bikes. Learned from a rare book.\n[Crafting Area: [ff0000]Advanced Forge[-] ],,,,
+carSeat,items,Item,KgNone,Car Seat,,,,
+carSeatDesc,items,Item,KgNone,Required to build the armoured car. Can be built or scavenged.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Calipers[-] ],,,,
+carSteering,items,Item,KgNone,Car Steering Assembly,,,,
+carSteeringDesc,items,Item,KgNone,Steering assembly used in the construction of cars. Can be built or scavenged.\n[Crafting Area: [ff0000]Metal Workstation[-] ]\n[Tool: [0000ff]Welding Torch[-] ],,,,
+V8Engine,items,Item,KgNone,V8 Engine,,,,
+V8EngineDesc,items,Item,KgNone,"Best engine available, holds more gasoline but also uses more. Can be built or scavenged.\n[Crafting Area: [ff0000]Metal Workstation[-] ]",,,,
+CarArmour,entityclasses,Entity,New,Armoured Car,,,,
+carsForDumbshits,items,Book,KgNone,Cars For Dumbshits,,,,
+carsForDumbshitsDesc,items,Book,KgNone,"Ever wanted to build your own car in the apocalypse, but too much of a dumbshit to figure it out? This book is for you! Kill zombies in style!",,,,
+BigBag,items,Part,KgNone,Duffle Bag,,,
+BigBagDesc,items,Part,KgNone,A duffle bag can be used to add storage to the Roadhog.,,,,

@@ -4771,9 +4771,9 @@
 <SoundDataNode name="hornetalert">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="2" range="7" volume="9" time="3" muffled_when_crouched="0.5" />
-	<AudioClip ClipName="#Hornet?hornetalert1" />
-	<AudioClip ClipName="#Hornet?hornetalert2" />
-	<AudioClip ClipName="#Hornet?hornetalert3" />
+	<AudioClip ClipName="#HornetSounds?hornetalert1" />
+	<AudioClip ClipName="#HornetSounds?hornetalert2" />
+	<AudioClip ClipName="#HornetSounds?hornetalert3" />
 	<Channel name="Mouth" />
 	<Priority name="3" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4786,9 +4786,9 @@
 <SoundDataNode name="hornetattack">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="1" range="4" volume="9" time="1.5" muffled_when_crouched="0.5" />
-	<AudioClip ClipName="#Hornet?hornetattack1" />
-	<AudioClip ClipName="#Hornet?hornetattack2" />
-	<AudioClip ClipName="#Hornet?hornetattack3" />
+	<AudioClip ClipName="#HornetSounds?hornetattack1" />
+	<AudioClip ClipName="#HornetSounds?hornetattack2" />
+	<AudioClip ClipName="#HornetSounds?hornetattack3" />
 	<Channel name="Mouth" />
 	<Priority name="2" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4801,9 +4801,9 @@
 <SoundDataNode name="hornetdeath">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="3" range="14" volume="9" time="2.5" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
-	<AudioClip ClipName="#Hornet?hornetdeath1" />
-	<AudioClip ClipName="#Hornet?hornetdeath2" />
-	<AudioClip ClipName="#Hornet?hornetdeath3" />
+	<AudioClip ClipName="#HornetSounds?hornetdeath1" />
+	<AudioClip ClipName="#HornetSounds?hornetdeath2" />
+	<AudioClip ClipName="#HornetSounds?hornetdeath3" />
 	<Channel name="Mouth" />
 	<Priority name="0" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4816,7 +4816,7 @@
 <SoundDataNode name="hornetgiveup">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="1" range="4" volume="11" time="3" muffled_when_crouched="0.5" />
-	<AudioClip ClipName="#Hornet?hornetroam1" />
+	<AudioClip ClipName="#HornetSounds?hornetroam1" />
 	<Channel name="Mouth" />
 	<Priority name="5" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4829,9 +4829,9 @@
 <SoundDataNode name="hornetpain">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="2" range="7" volume="9" time="1.5" muffled_when_crouched="0.5" />
-	<AudioClip ClipName="#Hornet?hornetpain1" />
-	<AudioClip ClipName="#Hornet?hornetpain2" />
-	<AudioClip ClipName="#Hornet?hornetpain3" />
+	<AudioClip ClipName="#HornetSounds?hornetpain1" />
+	<AudioClip ClipName="#HornetSounds?hornetpain2" />
+	<AudioClip ClipName="#HornetSounds?hornetpain3" />
 	<Channel name="Mouth" />
 	<Priority name="1" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4844,7 +4844,7 @@
 <SoundDataNode name="hornetroam">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="1" range="4" volume="7" time="14.6" muffled_when_crouched="0.5" />
-	<AudioClip ClipName="#Hornet?hornetflylp1" />
+	<AudioClip ClipName="#HornetSounds?hornetflylp1" />
 	<Channel name="Mouth" />
 	<Priority name="6" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4857,7 +4857,7 @@
 <SoundDataNode name="hornetsense">
 	<AudioSource name="Sounds/AudioSource_VO" />
 	<Noise ID="3" range="14" volume="9" time="4" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
-	<AudioClip ClipName="#Hornet?hornetsense1" />
+	<AudioClip ClipName="#HornetSounds?hornetsense1" />
 	<Channel name="Mouth" />
 	<Priority name="4" />
 	<LocalCrouchVolumeScale name="1.0" />
@@ -4977,17 +4977,16 @@
 	<Sequence/>
 	<distantfadestart name="25"/>
 	<distantfadeend name="35"/>
-	<AudioClip ClipName="#CShotgun?auto_shotgun_fire"/>
-	<AudioClip ClipName="#CShotgun?auto_shotgun_fire" Loop="true"/>
-	<AudioClip ClipName="#CShotgun?auto_shotgun_fire"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_firev2"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_firev2" Loop="true"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_end"/>
+	<!-- <AudioClip ClipName="#CShotgun?auto_shotgun_fire"/> -->
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.01"/></SoundDataNode>
 	
 <SoundDataNode name="CAWS_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 	<Noise ID="5" range="50" volume="20" time="2" heat_map_strength="0.3" heat_map_time="120"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire1"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire2" Loop="true"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire3"/>
-	<AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire4"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_fire"/>
+	<AudioClip ClipName="#CShotgun?auto_shotgun_fire" Loop="true"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 	
 <!-- Zombie Behemoth Male -->
@@ -5042,5 +5041,55 @@
 	<Channel name="Mouth"/>
 	<Priority name="4"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="3"/> </SoundDataNode>
+	
+<!--MANUX Custom Vehicles: JaxTeller718's Road Hog Sounds -->
+<SoundDataNode name="roadHog_accel_"><AudioSource name="Sounds/AudioSource_Vehicle" /><Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+	<AudioClip ClipName="#JaxTeller718RoadHogSounds2?Chopper Accel" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="2" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+
+<SoundDataNode name="roadHog_decel_"><AudioSource name="Sounds/AudioSource_Vehicle" />
+	<AudioClip ClipName="#JaxTeller718RoadHogSounds2?Chopper Decel" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="2" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_empty_"><AudioSource name="Sounds/AudioSource_Vehicle" /><Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_empty_1" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_empty_2" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="10" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_horn"><AudioSource name="Sounds/AudioSource_SmallHorn" /><Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90" />
+	<AudioClip ClipName="#JaxTeller718RoadHogHorns?Horn Cucaracha" />
+	<AudioClip ClipName="#JaxTeller718RoadHogHorns?Horn Godfather" />
+	<AudioClip ClipName="#JaxTeller718RoadHogHorns?Horn Hazard" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="1" /><NoiseScale name="1" /><MaxVoices name="3" /><MaxEntities name="6" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_idle_lp_"><AudioSource name="Sounds/AudioSource_Vehicle" />
+	<AudioClip ClipName="#JaxTeller718RoadHogSounds2?Chopper Idle" Loop="true" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="10" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_impact_"><AudioSource name="Sounds/AudioSource_Impact" /><Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_1" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_2" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_3" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_4" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="2" /><MaxRepeatRate name="1.2" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_run_lp_"><AudioSource name="Sounds/AudioSource_Vehicle" />
+	<AudioClip ClipName="#JaxTeller718RoadHogSounds2?Chopper Run" Loop="true" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="10" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_shutoff_"><AudioSource name="Sounds/AudioSource_Vehicle" />
+	<AudioClip ClipName="#JaxTeller718RoadHogSounds2?Chopper Decel" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="10" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_start_">
+	<AudioSource name="Sounds/AudioSource_Vehicle" /><Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5" />
+	<AudioClip ClipName="#JaxTeller718RoadHogSounds2?Chopper Start" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="10" /><MaxRepeatRate name="0.01" /></SoundDataNode>
+	
+<SoundDataNode name="roadHog_suspension_">
+	<AudioSource name="Sounds/AudioSource_Impact" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_suspension_1" />
+	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_suspension_2" />
+	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="3" /><MaxRepeatRate name="1.0" /></SoundDataNode>
 	
 </Sounds>

@@ -5064,13 +5064,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electronicParts" count="20"/>
 </recipe>
 
-<recipe name="TitaniumMinibikeChassis" count="1" craft_area="advforge" material_based="true">
+<recipe name="roadHogChassis" count="1" craft_area="advforge" material_based="true">
 	<ingredient name="unit_iron" count="100"/>
 	<ingredient name="unit_titanium" count="100"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
 
-<recipe name="TitaniumMinibikeHandlebars" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+<recipe name="proBikeHandlebars" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
 	<ingredient name="partsHandlebarsTitanium" count="1"/>
 	<ingredient name="ductTape" count="2"/>
 	<ingredient name="headlight" count="1"/>
@@ -5078,21 +5078,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="shortMetalPipe" count="2"/>
 </recipe>
 
-<recipe name="TitaniumMinibikeSeat" count="1" craft_area="workstationMetal" craft_tool="calipers">
+<recipe name="proBikeSeat" count="1" craft_area="workstationMetal" craft_tool="calipers">
 	<ingredient name="ductTape" count="4"/>
 	<ingredient name="leather" count="7"/>
 	<ingredient name="cottonPlant" count="3"/>
 	<ingredient name="forgedTitanium" count="10"/>
 </recipe>
 
-<recipe name="largeEngine" count="1" craft_area="workstationMetal">
+<recipe name="bigEngine" count="1" craft_area="workstationMetal">
 	<ingredient name="forgedSteel" count="100"/>
 	<ingredient name="mechanicalParts" count="30"/>
 	<ingredient name="electricParts" count="30"/>
 	<ingredient name="silverNugget" count="5"/>
 </recipe>
 
-<recipe name="largeBattery" count="1" craft_area="workstationMetal">
+<recipe name="bigBattery" count="1" craft_area="workstationMetal">
 	<ingredient name="scrapPlastics" count="40"/>
 	<ingredient name="scrapLead" count="20"/>
 	<ingredient name="scrapBrass" count="20"/>	
@@ -6066,6 +6066,35 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedTitanium" count="24"/>
 	<ingredient name="spring" count="4"/>
 	<ingredient name="energyCell" count="2"/>
+</recipe>
+
+<!-- Armoured Car -->
+
+<recipe name="CarArmourChassis" count="1" craft_area="advforge" material_based="true">
+	<ingredient name="unit_iron" count="1000"/>
+	<ingredient name="unit_clay" count="100"/>
+</recipe>
+
+<recipe name="carSteering" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedSteel" count="50"/>
+	<ingredient name="electricParts" count="5"/>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="ductTape" count="2"/>
+	<ingredient name="headlight" count="1"/>
+</recipe>
+
+<recipe name="carSeat" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="forgedSteel" count="25"/>
+	<ingredient name="leather" count="7"/>
+	<ingredient name="ductTape" count="4"/>
+	<ingredient name="cottonPlant" count="3"/>
+</recipe>
+
+<recipe name="V8Engine" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedSteel" count="200"/>
+	<ingredient name="mechanicalParts" count="40"/>
+	<ingredient name="electricParts" count="40"/>
+	<ingredient name="silverNugget" count="10"/>
 </recipe>
 
 </recipes>

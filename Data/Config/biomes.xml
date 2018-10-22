@@ -420,7 +420,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeDeadShrub" prob ="0.0005" />
 			<decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
 			<decoration type="block" blockname="cntBirdnest" prob ="0.002" />
-			<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.002"/>
+			<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.005"/>
 			<decoration type="block" blockname="treeAzalea" prob="0.015"/>
 			<decoration type="block" blockname="treeBirch10m" prob="0.0016" rotatemax="7"/>
 			<decoration type="block" blockname="treeBirch12m" prob="0.0018" rotatemax="7"/>

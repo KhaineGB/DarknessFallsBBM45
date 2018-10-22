@@ -2044,7 +2044,7 @@ Mesh files no longer used:
 		<property name="UseMeleeCrosshair" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="2" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
-		<property name="ActionExp" value="1"/>
+		<property name="ActionExp" value="0"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
@@ -9263,7 +9263,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="DegradationMax" value="1000,6000"/>
 		<property name="VehicleNoise" value="1,0.1"/>
-		<property name="VehicleMaxSpeed" value="5,18"/>
+		<property name="VehicleMaxSpeed" value="6,12"/>
 		<property name="VehicleAcceleration" value="7,14"/>
 		<property name="VehicleMetersPerLiter" value="8,12"/>
 		<property name="VehicleIdleSecondsPerLiter" value="6,12"/>
@@ -10877,8 +10877,8 @@ Mesh files no longer used:
 		<property name="Reload_time" value="2.6"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="CAWS_fire_start"/>
-		<property name="Sound_repeat" value="CAWS_fire_start"/>
-		<property name="Sound_end" value="CAWS_shotgun_fire"/>
+		<property name="Sound_repeat" value="#CShotgun?auto_shotgun_fire"/>
+		<property name="Sound_end" value="#CShotgun?auto_shotgun_end"/>
 		<property name="Sound_empty" value="weapon_empty"/>
 		<property name="Sound_reload" value="shotgun_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
@@ -14139,17 +14139,18 @@ Mesh files no longer used:
 
 <!-- Mechanic Class Mastery Items -->
 
-<item id="2127" name="largeEngine">
+<item id="2127" name="bigEngine">
 	<property name="Extends" value="smallEngine" />
-	<property name="CustomIcon" value="smallEngine" />
-	<property name="CustomIconTint" value="800000"/>
+	<property name="CustomIcon" value="bigEngine" />
 	<property name="DescriptionKey" value="largeEngineDesc"/>
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="200" />
+	<property name="VehicleSlotType" value="engine"/>
+	<property name="IsVehicleCustomPart" value="true" />
 	<property class="Attributes">
 		<property name="DegradationMax" value="7000,12000" />
 		<property name="VehicleNoise" value="1.2,0.8" />
-		<property name="VehicleMaxSpeed" value="12,24" />
+		<property name="VehicleMaxSpeed" value="8,16" />
 		<property name="VehicleAcceleration" value="11,16" />
 		<property name="VehicleMetersPerLiter" value="6,10" />
 		<property name="VehicleIdleSecondsPerLiter" value="5,11" />
@@ -14161,27 +14162,35 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1950" />
 </item>
 
-<item id="2128" name="largeBattery">
-	<property name="Extends" value="carBattery" />
+<item id="2128" name="bigBattery">
 	<property name="CustomIcon" value="carBattery" />
 	<property name="CustomIconTint" value="800000"/>
 	<property name="DescriptionKey" value="largeBatteryDesc"/>
-	<property name="Weight" value="180" />
+	<property name="Meshfile" value="Items/Misc/car_battery"/>
+	<property name="Material" value="lead"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="160"/>
+	<property name="EconomicValue" value="1100" />
+	<property name="Group" value="Resources"/>
+	<property name="VehicleSlotType" value="battery"/>
+	<property name="IsVehicleCustomPart" value="true" />
+	<property name="DegradationBreaksAfter" value="false"/>
 	<property class="Attributes">
 		<property name="DegradationMax" value="7000,12000" />
 		<property name="BatteryMaxLoadInVolts" value="30, 42" />
 		<property name="BatteryDischargeTimeInMinutes" value="50,120" />
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="EconomicValue" value="1100" />
-</item>
+</item>	
 
-<item id="2129" name="OffroadMinibikeWheels">
+<item id="2129" name="proBikeWheels">
 	<property name="Extends" value="minibikeWheels" />
-	<property name="CustomIcon" value="minibikeWheels" />
-	<property name="CustomIconTint" value="800000"/>
+	<property name="CustomIcon" value="proBikeWheels" />
 	<property name="DescriptionKey" value="OffroadMinibikeWheelsDesc"/>
  	<property name="Weight" value="50" />
+	<property name="IsVehicleCustomPart" value="true" />
 	<property class="Attributes">
 		<property name="VehicleTraction" value="0.7,1.1" />
 		<property name="VehicleDrag" value="0.011,0.01" />
@@ -14191,35 +14200,28 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1000" />
 </item>
 
-<item id="2130" name="TitaniumMinibikeChassis">
-	<property name="CustomIcon" value="minibikeChassis" />
-	<property name="CustomIconTint" value="0033FF"/>
-	<property name="DescriptionKey" value="TitaniumMinibikeChassisDesc"/>
-	<property name="VehicleSlotType" value="chassis" />
-	<property name="HoldingItemHidden" value="true" />
-	<property name="Meshfile" value="Items/Misc/chassisPrefab" />
-	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="repairKit" />
-	<property name="HoldType" value="7" />
- 	<property name="Group" value="Resources" />
+<item id="13" name="roadHogChassis">
+	<property name="Extends" value="minibikeChassis" />
+	<property name="DescriptionKey" value="roadHogChassisDesc"/>
+	<property name="Meshfile" value="#RoadHog?RoadHogChassisPrefab" />
+	<property name="IsVehicleCustomPart" value="true" />
 	<property class="Attributes">
-		<property name="VehicleDamagePassedToPlayer" value="0.3, 0.1" />
+		<property name="VehicleDamagePassedToPlayer" value="0.5, 0.1" />
 		<property name="DegradationRate" value="10,10" />
 		<property name="DegradationMax" value="6600,12000" />
 	</property>
 	<property class="Action1">
-		<property name="Class" value="SpawnMinibike" />
+		<property name="Class" value="SpawnCustomVehicle, Mods" />
+		<property name="VehicleToSpawn" value="roadhog" />
 	</property>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="EconomicValue" value="1000" />
 </item>
 
-<item id="2131" name="TitaniumMinibikeSeat">
+<item id="2131" name="proBikeSeat">
 	<property name="Extends" value="minibikeSeat" />
-	<property name="CustomIcon" value="minibikeSeat" />
-	<property name="CustomIconTint" value="0033FF"/>
+	<property name="CustomIcon" value="proBikeSeat" />
 	<property name="DescriptionKey" value="TitaniumMinibikeSeatDesc"/>
 	<property name="Material" value="metal"/>
+	<property name="IsVehicleCustomPart" value="true" />
 	<property class="Attributes">
 		<property name="VehiclePlayerStaminaDrainRate" value="1,0" />
 		<property name="DegradationMax" value="7600,12000" />
@@ -14228,12 +14230,12 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1100" />
 </item>
 
-<item id="2132" name="TitaniumMinibikeHandlebars">
+<item id="2132" name="proBikeHandlebars">
 	<property name="Extends" value="minibikeHandlebars" />
-	<property name="CustomIcon" value="minibikeHandlebars" />
-	<property name="CustomIconTint" value="0033FF"/>
+	<property name="CustomIcon" value="proBikeHandlebars" />
 	<property name="DescriptionKey" value="TitaniumMinibikeHandlebarsDesc"/>
 	<property name="Material" value="metal"/>
+	<property name="IsVehicleCustomPart" value="true" />
 	<property class="Attributes">
 		<property name="VehicleSteering" value="3,3" />
 		<property name="VehicleMaxSteeringAngle" value="11,11" />
@@ -14292,7 +14294,7 @@ Mesh files no longer used:
 		<property name="UseMeleeCrosshair" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="2.2" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
-		<property name="ActionExp" value="1"/>
+		<property name="ActionExp" value="0"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
@@ -17241,6 +17243,108 @@ Mesh files no longer used:
 		<property name="Buff" value="burningSmall,infection,stunned" />
 		<property name="Buff_chance" value="0.7,0.7,0.5" />
 	</property>
+</item>
+
+<!--- Darkness Falls Car -->
+
+<item id="2287" name="CarArmourChassis">
+	<property name="Extends" value="minibikeChassis" />
+	<property name="CustomIcon" value="carArmoured" />
+	<property name="DescriptionKey" value="CarArmourDesc"/>
+	<property name="Meshfile" value="#CarArmour?CamoHand" />
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleDamagePassedToPlayer" value="0.3, 0.1" />
+		<property name="DegradationRate" value="10,10" />
+		<property name="DegradationMax" value="6600,12000" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="SpawnCustomVehicle, Mods" />
+		<property name="VehicleToSpawn" value="CarArmour" />
+	</property>
+</item>
+
+<item id="2288" name="V8Engine">
+	<property name="Extends" value="smallEngine" />
+	<property name="CustomIcon" value="V8Engine" />
+	<property name="DescriptionKey" value="V8EngineDesc"/>
+	<property name="Material" value="Msteel" />
+	<property name="Weight" value="300" />
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="10000,15000" />
+		<property name="VehicleNoise" value="1.6,1.2" />
+		<property name="VehicleMaxSpeed" value="12,20" />
+		<property name="VehicleAcceleration" value="11,16" />
+		<property name="VehicleMetersPerLiter" value="10,15" />
+		<property name="VehicleIdleSecondsPerLiter" value="5,11" />
+		<property name="VehicleStartDelayInSeconds" value="1,0.1" />
+		<property name="VehicleStartChance" value="0.65,0.99" />
+		<property name="VehicleTankSize" value="4000, 7000" />
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="EconomicValue" value="3900" />
+</item>
+
+<item id="2289" name="carSeat">
+	<property name="Extends" value="minibikeSeat" />
+	<property name="CustomIcon" value="carSeat" />
+	<property name="DescriptionKey" value="carSeatDesc"/>
+	<property name="Material" value="metal"/>
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehiclePlayerStaminaDrainRate" value="1,0" />
+		<property name="DegradationMax" value="7600,12000" />
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="EconomicValue" value="1100" />
+</item>
+
+<item id="2290" name="carSteering">
+	<property name="Extends" value="minibikeHandlebars" />
+	<property name="CustomIcon" value="carSteering" />
+	<property name="DescriptionKey" value="carSteeringDesc"/>
+	<property name="Material" value="metal"/>
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleSteering" value="3,3" />
+		<property name="VehicleMaxSteeringAngle" value="20,20" />
+		<property name="VehicleBraking" value="35,35" />
+		<property name="LightIntensity" value="0.5,1.5" />
+		<property name="DegradationMax" value="7600,12000" />
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="EconomicValue" value="825" />
+</item>
+
+<item id="2291" name="carsForDumbshits">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIcon" value="carsfordumbshits" />
+	<property name="DescriptionKey" value="carsForDumbshitsDesc"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="CarArmourChassis,carSeat,carSteering,V8Engine"/>
+	</property>
+</item>
+
+<item id="2292" name="BigBag">
+	<property name="VehicleSlotType" value="basket"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="cntDuffle01" />
+	<property name="DescriptionKey" value="BigBagDesc"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="45"/>
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleStorageWidth" value="3,8"/>
+		<property name="VehicleStorageHeight" value="3,5"/>
+		<property name="DegradationMax" value="1200,6000"/>
+	</property>
+	<property name="Group" value="Decor/Miscellaneous"/>
 </item>
 
 <item id="2992" name="laserSword">

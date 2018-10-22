@@ -69,7 +69,7 @@
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsForest" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="SurvivorGroup" />
     </biome>
 
     <biome name="pine_forest">
@@ -94,7 +94,7 @@
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsDesert" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="SurvivorGroup" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
     </biome>
 
@@ -108,7 +108,7 @@
 		<spawn maxcount="2" respawndelay="7" time="Any"   entitygroup="EnemyAnimalsBurntForest" spawnDeadChance="0" />
 		<spawn maxcount="4" respawndelay="4" time="Night" entitygroup="ZombiesBurntForestNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="SurvivorGroup" />
 	</biome>
 
     <biome name="snow">
@@ -116,7 +116,7 @@
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="EnemyAnimalsSnow" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsSnow" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="SnowZombiesNight" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="SurvivorGroup" />
 	</biome>
 	
 	<biome name="radiated">
