@@ -4315,6 +4315,8 @@ group desc for stuff like metal siding
 <block id="426" name="cntDuffle01">
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="Model" value="LootContainers/duffle01" param1="main_mesh"/>
+	<drop event="Harvest" name="BigBag" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="BigBag" count="1" prob="0.2"/>
 </block>
 
 <block id="427" name="cntSportsBag01">
