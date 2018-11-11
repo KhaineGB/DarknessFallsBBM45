@@ -48,7 +48,7 @@
 	<property name="MapIcon" value="ui_game_symbol_map_player_arrow"/>
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="keystoneBlock,ClassPaper"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="keystoneBlock,ClassPaper,ClassPaper"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="keystoneBlock,ClassPaper"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
@@ -3536,26 +3536,35 @@
 	<property name="ControllerStepOffset" value="1" />
 	<property name="VehicleActivationCenter" value="0, 0.65, 0.2" />
 	<property name="VehicleActivationSize" value="1, 1.3, 3" />
-	<property name="WaterCraft" value="true" />
 	<property name="Airtight" value="false" />
 	<property name="Prefab" value="Minibike" />
 	<property name="MaxHealth" value="1000000" />
 	<property name="SurfaceCategory" value="metal" />
 	<property name="IgnoreTrigger" value="true" />
-	<property name="LootListAlive" value="62" />
+	<property name="LootListAlive" value="152" />
 	<property name="IsEnemyEntity" value="false" />
 	<property name="Explosion.ParticleIndex" value="6" />
 	<property name="Explosion.RadiusBlocks" value="6" />
 	<property name="Explosion.RadiusEntities" value="6" />
 	<property name="RotateToGround" value="true" />
 	<property name="Faction" value="none" />
-	<property name="MapIcon" value="ui_game_symbol_minibike" />
+	<property name="EntityDamage" value="75" />
+	<property name="EntityHitMinSpeed" value="5" />
+	<property name="EntityCriticalHitMinSpeed" value="15" />
+	<property name="BlockDamage" value="1000" />
+	<property name="VehicleDamageFactor_entities" value="4" />
+	<property name="DestructionRadius" value="1" />
+	<property name="DestructionHeight" value="1" />
+	<property name="VehicleXuiName" value="vehicleRoadhog" />
+	<property name="WaterCraft" value="false" />
+	<property name="MapIcon" value="manux_ui_game_symbol_roadhog" />
+	<property name="CompassIcon" value="manux_ui_game_symbol_roadhog" />
 	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
 </entity_class>
 
 <!-- Darkness Falls Armoured Car -->
 <entity_class name="CarArmour">
-	<property name="Class" value="EntityCustomLoader, Mods" />
+	<property name="Class" value="EntityCustomCar, Mods" />
 	<property name="Parent" value="Cars" />
 	<property name="CameraOffset" value="0.5, 0.1, -5" />
 	<property name="3rdPersonModelVisible" value="false" />
@@ -3566,20 +3575,135 @@
 	<property name="MaxHealth" value="1000000" />
 	<property name="SurfaceCategory" value="metal" />
 	<property name="IgnoreTrigger" value="true" />
-	<property name="LootListAlive" value="62" />
+	<property name="LootListAlive" value="153" />
 	<property name="IsEnemyEntity" value="false" />
 	<property name="Explosion.ParticleIndex" value="6" />
 	<property name="Explosion.RadiusBlocks" value="6" />
 	<property name="Explosion.RadiusEntities" value="6" />
 	<property name="RotateToGround" value="true" />
 	<property name="Faction" value="none" />
-	<property name="EntityDamage" value="100" />
+	<property name="EntityDamage" value="75" />
+	<property name="EntityHitMinSpeed" value="5" />
+	<property name="EntityCriticalHitMinSpeed" value="15" />
 	<property name="BlockDamage" value="1000" />
+	<property name="VehicleDamageFactor_blocks" value="4" />
+	<property name="VehicleDamageFactor_entities" value="6" />
 	<property name="DestructionRadius" value="1" />
 	<property name="DestructionHeight" value="1" />
-	<property name="DestroyBlocks" value="plant,cactus,shrubOrBush,rock,rareOres,tire,fence,buildings,debris,poleOrPillar,lootCtn" />
-	<property name="HarvestToVehicleInventory" value="false" />
-	<property name="MapIcon" value="ui_game_symbol_minibike" />
+	<property name="DestroyBlocks" value="grass,plant,cactus,shrubOrBush,rock,tire,fenceOrDoor,softDebris,hardDebris,poleOrPillar,lootCtn" />
+	<property name="DestroyXPFactor" value="0" />
+	<property name="VehicleXuiName" value="vehicleCar" />
+	<property name="WaterCraft" value="false" />
+	<property name="MapIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="CompassIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
+</entity_class>
+
+<entity_class name="CarArmourBlue">
+	<property name="Class" value="EntityCustomCar, Mods" />
+	<property name="Parent" value="Cars" />
+	<property name="CameraOffset" value="0.5, 0.1, -5" />
+	<property name="3rdPersonModelVisible" value="false" />
+	<property name="ColliderCenter" value="0.4, 1.01, -0.4" />
+	<property name="ColliderRadius" value="1" />
+	<property name="ColliderHeight" value="1" />
+	<property name="Prefab" value="Minibike" />
+	<property name="MaxHealth" value="1000000" />
+	<property name="SurfaceCategory" value="metal" />
+	<property name="IgnoreTrigger" value="true" />
+	<property name="LootListAlive" value="153" />
+	<property name="IsEnemyEntity" value="false" />
+	<property name="Explosion.ParticleIndex" value="6" />
+	<property name="Explosion.RadiusBlocks" value="6" />
+	<property name="Explosion.RadiusEntities" value="6" />
+	<property name="RotateToGround" value="true" />
+	<property name="Faction" value="none" />
+	<property name="EntityDamage" value="75" />
+	<property name="EntityHitMinSpeed" value="5" />
+	<property name="EntityCriticalHitMinSpeed" value="15" />
+	<property name="BlockDamage" value="1000" />
+	<property name="VehicleDamageFactor_blocks" value="4" />
+	<property name="VehicleDamageFactor_entities" value="6" />
+	<property name="DestructionRadius" value="1" />
+	<property name="DestructionHeight" value="1" />
+	<property name="DestroyBlocks" value="grass,plant,cactus,shrubOrBush,rock,tire,fenceOrDoor,softDebris,hardDebris,poleOrPillar,lootCtn" />
+	<property name="DestroyXPFactor" value="0" />
+	<property name="VehicleXuiName" value="vehicleCar" />
+	<property name="WaterCraft" value="false" />
+	<property name="MapIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="CompassIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
+</entity_class>
+
+<entity_class name="CarArmourBlack">
+	<property name="Class" value="EntityCustomCar, Mods" />
+	<property name="Parent" value="Cars" />
+	<property name="CameraOffset" value="0.5, 0.1, -5" />
+	<property name="3rdPersonModelVisible" value="false" />
+	<property name="ColliderCenter" value="0.4, 1.01, -0.4" />
+	<property name="ColliderRadius" value="1" />
+	<property name="ColliderHeight" value="1" />
+	<property name="Prefab" value="Minibike" />
+	<property name="MaxHealth" value="1000000" />
+	<property name="SurfaceCategory" value="metal" />
+	<property name="IgnoreTrigger" value="true" />
+	<property name="LootListAlive" value="153" />
+	<property name="IsEnemyEntity" value="false" />
+	<property name="Explosion.ParticleIndex" value="6" />
+	<property name="Explosion.RadiusBlocks" value="6" />
+	<property name="Explosion.RadiusEntities" value="6" />
+	<property name="RotateToGround" value="true" />
+	<property name="Faction" value="none" />
+	<property name="EntityDamage" value="75" />
+	<property name="EntityHitMinSpeed" value="5" />
+	<property name="EntityCriticalHitMinSpeed" value="15" />
+	<property name="BlockDamage" value="1000" />
+	<property name="VehicleDamageFactor_blocks" value="4" />
+	<property name="VehicleDamageFactor_entities" value="6" />
+	<property name="DestructionRadius" value="1" />
+	<property name="DestructionHeight" value="1" />
+	<property name="DestroyBlocks" value="grass,plant,cactus,shrubOrBush,rock,tire,fenceOrDoor,softDebris,hardDebris,poleOrPillar,lootCtn" />
+	<property name="DestroyXPFactor" value="0" />
+	<property name="VehicleXuiName" value="vehicleCar" />
+	<property name="WaterCraft" value="false" />
+	<property name="MapIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="CompassIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
+</entity_class>
+
+<entity_class name="CarArmourRed">
+	<property name="Class" value="EntityCustomCar, Mods" />
+	<property name="Parent" value="Cars" />
+	<property name="CameraOffset" value="0.5, 0.1, -5" />
+	<property name="3rdPersonModelVisible" value="false" />
+	<property name="ColliderCenter" value="0.4, 1.01, -0.4" />
+	<property name="ColliderRadius" value="1" />
+	<property name="ColliderHeight" value="1" />
+	<property name="Prefab" value="Minibike" />
+	<property name="MaxHealth" value="1000000" />
+	<property name="SurfaceCategory" value="metal" />
+	<property name="IgnoreTrigger" value="true" />
+	<property name="LootListAlive" value="153" />
+	<property name="IsEnemyEntity" value="false" />
+	<property name="Explosion.ParticleIndex" value="6" />
+	<property name="Explosion.RadiusBlocks" value="6" />
+	<property name="Explosion.RadiusEntities" value="6" />
+	<property name="RotateToGround" value="true" />
+	<property name="Faction" value="none" />
+	<property name="EntityDamage" value="75" />
+	<property name="EntityHitMinSpeed" value="5" />
+	<property name="EntityCriticalHitMinSpeed" value="15" />
+	<property name="BlockDamage" value="1000" />
+	<property name="VehicleDamageFactor_blocks" value="4" />
+	<property name="VehicleDamageFactor_entities" value="6" />
+	<property name="DestructionRadius" value="1" />
+	<property name="DestructionHeight" value="1" />
+	<property name="DestroyBlocks" value="grass,plant,cactus,shrubOrBush,rock,tire,fenceOrDoor,softDebris,hardDebris,poleOrPillar,lootCtn" />
+	<property name="DestroyXPFactor" value="0" />
+	<property name="VehicleXuiName" value="vehicleCar" />
+	<property name="WaterCraft" value="false" />
+	<property name="MapIcon" value="manux_ui_game_symbol_cicada" />
+	<property name="CompassIcon" value="manux_ui_game_symbol_cicada" />
 	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
 </entity_class>
 	
@@ -5548,14 +5672,14 @@
 	<property name="AITask-1" value="BreakDoor"/>
 	<property name="AITask-2" value="BreakBlock"/>
 	<property name="AITask-3" value="Territorial"/>
-	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-    <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityBandit"/>
-    <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
-    <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
-    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/>
-    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
-	<property name="AITask-10" value="ApproachSpot"/>
-	<property name="AITask-11" value="Wander"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Wander"/>
+	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityNPC"/>
+    <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityBandit"/>
+    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
+    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/>
+    <property name="AITask-11" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC"/>
 	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
 	<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>

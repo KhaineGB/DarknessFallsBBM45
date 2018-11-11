@@ -13334,7 +13334,6 @@ kind of free
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
-	<drop event="Harvest" name="V8Engine" count="1" prob="0.05" tool_category="Disassemble"/>
 	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="cloth" count="3,7"/>
@@ -13347,6 +13346,7 @@ kind of free
 	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="TrunkLining" count="1" prob="0.1" tool_category="Disassemble"/>
 	<!-- <drop event="Fall" name="cntCar03SedanDamage2" count="1" prob="1.0" stick_chance="1"/> -->
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>
 	<property name="BigDecorationRadius" value="5"/>
@@ -13387,7 +13387,6 @@ kind of free
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="bigBattery" count="1" prob="0.05" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="gasCan" count="6,20" prob="0.5"/>
 	<drop event="Harvest" name="gasCan" count="12,30" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
@@ -14648,6 +14647,67 @@ kind of free
 	</property>
 </block>
 	<!-- n Free -->
+	
+<block id="1677" name="coilTurret">
+	<property name="CustomIcon" value="autoTurret" />
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="DescriptionKey" value="coilTurretDesc"/>
+	<property name="Class" value="Ranged"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+	<property name="AmmoItem" value="762mmCoilround,762mmCoilroundHP"/>
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="50"/>
+	<property name="EntityDamage" value="40"/> <!-- 146 dps, 330 / burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+	<property name="DamageBonus.glass" value="1"/>
+	<property name="DamageBonus.wood" value="2"/>
+	<property name="DamageBonus.earth" value="0.2"/>
+	<property name="DamageBonus.stone" value="0.2"/>
+	<property name="DamageBonus.metal" value="0.2"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+	<property name="RequiredPower" value="15"/>
+
+	<property class="RepairItems">
+		<property name="forgedIron" value="12"/>
+		<property name="mechanicalParts" value="2"/>
+		<property name="electricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+</block>
 
 <block id="1678" name="autoTurret">
 	<property name="Class" value="Ranged"/>
@@ -14656,7 +14716,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
 	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
-	<property name="AmmoItem" value="9mmBullet"/>
+	<property name="AmmoItem" value="9mmBullet,9mmBulletHP"/>
 	<property name="TurnSpeed" value="22.5"/>
 	<property name="MaxDistance" value="30"/>
 	<property name="EntityDamage" value="22"/> <!-- 146 dps, 330 / burst -->
@@ -15592,7 +15652,7 @@ kind of free
 	<property name="OutputPerFuel" value="11250"/>
 	<property name="MaxPower" value="25000"/>
 	<property name="OutputPerStack" value="100"/>
-	<property name="SlotItem" value="smallEngine,largeEngine,V8Engine"/>
+	<property name="SlotItem" value="smallEngine,bigEngine,V8Engine"/>
 	<property name="Group" value="Science"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="8"/>
@@ -19489,8 +19549,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
-	<property name="DowngradeBlock" value="carFrameCustom"/>
+	<property name="DowngradeBlock" value="carMuscleBlackDmg"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property class="Explosion">
@@ -19523,8 +19582,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
-	<property name="DowngradeBlock" value="carFrameCustom"/>
+	<property name="DowngradeBlock" value="carMuscleBlueDmg"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property class="Explosion">
@@ -19592,7 +19650,8 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="DowngradeBlock" value="carAmbulanceDmg"/>
+	<property name="BigDecorationRadius" value="7"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/>
@@ -19638,6 +19697,978 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="30" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="250"/> <!-- disassemble value -->
+</block>
+
+<block id="77" name="carMuscleBlackDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="146"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?carBlackDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="3,10"/>
+	<drop event="Harvest" name="gasCan" count="5,30" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="TrunkLining" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carFrameCustom"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="78" name="carMuscleBlueDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="146"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?carBlueDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="6,20" prob="0.5"/>
+	<drop event="Harvest" name="gasCan" count="12,30" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
+	<drop event="Harvest" name="gasCan" count="3,10"/>
+	<drop event="Harvest" name="gasCan" count="5,30" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="TrunkLining" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carFrameCustom"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="79" name="carAmbulanceDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="147"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?AmbulanceDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="10,20"/>
+	<drop event="Harvest" name="gasCan" count="10,60" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.075" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.075" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="7"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="80" name="Motorbike">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="146"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?Motorbike"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.05" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="MotorbikeDmg"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="81" name="MotorbikeDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="146"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MotorbikeDmg1"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="3,10"/>
+	<drop event="Harvest" name="gasCan" count="5,30" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeHandlebars" count="1" prob="0.05" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="MotorbikeFrame"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="82" name="MotorbikeFrame">
+	<property name="Class" value="CarExplode"/>
+	<property name="Material" value="metal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MotorbikeDmg2"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan" count="6,20" prob="0.5"/>
+	<drop event="Harvest" name="gasCan" count="12,30" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
+	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="6,20" prob="0.5"/>
+	<drop event="Harvest" name="gasCan" count="12,30" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
+	<drop event="Harvest" name="mechanicalParts" count="1,5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="12"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> 
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="83" name="APCLocked">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="149"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryAPC"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="APCUnlocked"/>
+		<property name="Item" value="LockComponents"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="50"/>
+	</property>
+	<property name="DowngradeBlock" value="APCDamaged"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="10000"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="84" name="APCUnlocked">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="149"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryAPC"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="APCDamaged"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="85" name="APCDamaged">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplode"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryAPCDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="86" name="ScoutLocked">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="151"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryScout"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="ScoutUnlocked"/>
+		<property name="Item" value="LockComponents"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="50"/>
+	</property>
+	<property name="DowngradeBlock" value="ScoutDamaged"/>
+	<property name="BigDecorationRadius" value="7"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="10000"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="87" name="ScoutUnlocked">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="151"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryScout"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="ScoutDamaged"/>
+	<property name="BigDecorationRadius" value="7"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="88" name="ScoutDamaged">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplode"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryScoutDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="7"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="89" name="TruckLocked">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="150"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryTruck"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="TruckUnlocked"/>
+		<property name="Item" value="LockComponents"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="50"/>
+	</property>
+	<property name="DowngradeBlock" value="TruckDamaged"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="10000"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="90" name="TruckUnlocked">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="150"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryTruck"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="TruckDamaged"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="91" name="TruckDamaged">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplode"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MilitaryTruckDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="92" name="carFireTruck">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="156"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?FireTruck"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carFireTruckDmg"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="93" name="carFireTruckDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="156"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?FireTruckDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="94" name="carSchoolbus">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="155"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?SchoolBus"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carSchoolbusDmg"/>
+	<property name="BigDecorationRadius" value="8"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="95" name="carSchoolbusDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="155"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?SchoolBusDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="8"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="96" name="carMailtruck">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="155"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MailTruck"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carMailtruckDmg"/>
+	<property name="BigDecorationRadius" value="8"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="97" name="carMailtruckDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="155"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?MailTruckDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="8"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="98" name="carTaxi">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="19"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?Taxi"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carTaxiDmg"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="5000"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="99" name="carTaxiDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="19"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?TaxiDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
+	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="cloth" count="3,7"/>
+	<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan" count="3,10"/>
+	<drop event="Harvest" name="gasCan" count="5,30" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="12"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="TrunkLining" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="5000"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="100" name="carPolice">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="154"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?Police"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carPoliceDmg"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="5000"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="101" name="carPoliceDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="154"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?PoliceDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
+	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="cloth" count="3,7"/>
+	<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan" count="3,10"/>
+	<drop event="Harvest" name="gasCan" count="5,30" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="12"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="TrunkLining" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="5000"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="102" name="carGarbageTruck">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="157"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?GarbageTruck"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="proBikeWheels" count="1" prob="0.1" tool_category="Disassemble"/>
+	<property name="DowngradeBlock" value="carGarbageTruckDmg"/>
+	<property name="BigDecorationRadius" value="8"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
+</block>
+
+<block id="103" name="carGarbageTruckDmg">
+	<property name="Material" value="metal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="LootList" value="157"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Vehicles?GarbageTruckDmg"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
+	<drop event="Harvest" name="scrapIron" count="10,20"/>
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="gasCan" count="15,30"/>
+	<drop event="Harvest" name="gasCan" count="30,90" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSeat" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carSteering" count="1" prob="0.05" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigBattery" count="1" prob="0.025" tool_category="Disassemble"/>
+	<drop event="Harvest" name="bigEngine" count="1" prob="0.025" tool_category="Disassemble"/>
+	<property name="BigDecorationRadius" value="8"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="70"/> 
+	</property>
+	<property name="ActivationDistance" value="6"/>
 </block>
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

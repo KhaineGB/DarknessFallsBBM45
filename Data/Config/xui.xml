@@ -124,6 +124,20 @@
 			<window name="windowVehicleStorage" />
 		</window_group>
 		
+		<window_group name="vehicleRoadhog" controller="XUiC_VehicleWindowGroup">
+			<window name="VehicleRoadhog"/>
+			<window name="windowNonPagingHeader" />
+			<window name="VehicleRoadhogStats" />
+			<window name="VehicleRoadhogStorage" />
+		</window_group>
+
+		<window_group name="vehicleCar" controller="XUiC_VehicleWindowGroup">
+			<window name="VehicleCar"/>
+			<window name="windowNonPagingHeader" />
+			<window name="VehicleCarStats" />
+			<window name="VehicleCarStorage" />
+		</window_group>
+		
 		<window_group name="windowpaging" actionSet="false">
 			<window name="windowPagingHeader" anchor="CenterTop"/>
 		</window_group>

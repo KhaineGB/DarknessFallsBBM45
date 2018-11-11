@@ -1105,7 +1105,7 @@ workstations
 	<trader_info id="3" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" player_owned="true" />
 
 	<!-- Vending Machines found in the world. -->
-	<trader_info id="4" reset_interval="1" override_buy_markup="1.0" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
+	<trader_info id="4" reset_interval="1" override_buy_markup="1.5" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
 		<trader_items count="10">
 			<item name="bottledWater" count="1,2"/>
 			<item name="goldenRodTea" count="1,2"/>

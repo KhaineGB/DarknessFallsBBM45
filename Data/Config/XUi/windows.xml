@@ -472,7 +472,9 @@
 			<label depth="3" name="windowName" pos="42,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" />
 
 			<label depth="2" pos="472,-8" width="100" height="28" text="{currencyamount}" color="[mediumGrey]" justify="right" />
-			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[white]" foregroundlayer="true" />
+			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="487,-10" color="[white]" foregroundlayer="true" />
+			<button depth="4" name="btnStashAll" style="icon30px, press" pos="537,-21" atlas="ItemIconAtlas" sprite="manux_ui_game_symbol_stash_all" pivot="center" tooltip="STASH ALL" sound="[paging_click]" />
+			<button depth="4" name="btnStashAllButFirst" style="icon30px, press" pos="577,-21" atlas="ItemIconAtlas" sprite="manux_ui_game_symbol_stash_all_but_first" pivot="center" tooltip="STASH ALL BUT FIRST ROW" sound="[paging_click]" />
 		</panel>
 
 		<panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
@@ -1358,20 +1360,20 @@
 	</window>
 	
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
-	<window name="windowVehicleStorage" width="304" height="644" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]" cursor_area="true" >
-	<!--#$-IGS END.-$#-->
+	<window name="windowVehicleStorage" width="304" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]" cursor_area="true">
+		<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<button depth="1" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_minibike" tooltip_key="lblSortContainer" sound="[paging_click]" />
+			<button depth="1" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
 			<label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" />
+			<button depth="4" name="btnTakeAll" style="icon30px, press" pos="244,-21" sprite="ui_game_symbol_hand" pivot="center" tooltip="TAKE ALL" tooltip_key="btnTakeAll" sound="[paging_click]" />
+			<button depth="4" name="btnDropAll" style="icon30px, press" pos="284,-21" atlas="ItemIconAtlas" sprite="manux_ui_game_symbol_thrash" pivot="center" tooltip="DROP ALL" sound="[paging_click]" />
 		</panel>
-		
-		<grid depth="2" name="inventory" rows="9" cols="5" pos="3,-43" cell_width="67" cell_height="67" repeat_content="true" controller="VehicleContainer">
-			<item_stack_inventory name="0"/>
+		<grid depth="2" name="inventory" rows="6" cols="4" pos="3,-46" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
+			<item_stack name="0"/>
 		</grid>
-		
-		<panel name="emptyPanel" height="600" depth="4" pos="0,-43" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">			
-			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
-			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD BASKET TO ACCESS STORAGE." text_key="xuiEmptyVehicleStorage" justify="center" font_size="24"/>			
+		<panel name="emptyPanel" height="450" depth="4" pos="0,-49" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">
+			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD BASKET TO ACCESS STORAGE." text_key="xuiEmptyVehicleStorage" justify="center" font_size="24" />
 		</panel>
 	</window>
 
@@ -2602,7 +2604,7 @@
 			<togglebutton name="toggleFromBiome" caption_key="xuiSpawnEntitiesBiomeSpawner" width="192" height="31" pos="802, -42" depth="3" />
 
 			<!-- <grid name="entities" pos="2,-78" rows="24" cols="5" width="995" height="800" cell_width="199" cell_height="28" repeat_content="true"> -->
-			<grid name="entities" pos="2,-78" rows="30" cols="7" width="1295" height="700" cell_width="199" cell_height="28" repeat_content="true">
+			<grid name="entities" pos="2,-78" rows="30" cols="10" width="1295" height="700" cell_width="199" cell_height="28" repeat_content="true">
 				<simplebutton name="btnSpawn" depth="3" pos="0, 0" width="200" height="28" caption="-SpawnName-" />
 			</grid>
 
@@ -2914,14 +2916,39 @@
 	</window>
 	
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
-		<window name="windowAdvForgeInput" width="228" height="304" panel="Right"
+	<window name="windowAdvForgeInput" width="228" height="229" panel="Right"
 		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay,titanium" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
 			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
 		</panel>
 
-		<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="303" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<rect name="content" depth="1" pos="0,-46" height="153">
+
+			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+				<item_stack name="0"/>
+			</grid>
+
+		</rect>
+
+		<rect name="content2" depth="0" pos="78, -49" width="147" height="223">
+			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
+			<grid rows="7" cols="1" pos="3,-3" cell_width="147" cell_height="32"  repeat_content="true">
+				<forge_material name="0"/>
+			</grid>
+		</rect>
+	</window>
+	
+	
+	<!-- <window name="windowAdvForgeInput" width="228" height="304" panel="Right"
+		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay,titanium" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
+			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
+		</panel>
+
+		<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 		<rect name="content" depth="1" pos="0,-46" height="303">
 
 			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
@@ -2936,7 +2963,7 @@
 				<forge_material name="0"/>
 			</grid>
 		</rect>
-	</window>
+	</window> -->
 	
 	<window name="windowAdvForgeOutput" pos="0,-48" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
 		<panel style="header.panel" pos="0,-40" height="43" depth="1" disableautobackground="false" >
@@ -2953,14 +2980,38 @@
 	
 	<!-- Big Forge Mod -->
 	
-	<window name="windowBigForgeInput" width="228" height="304" panel="Right"
+	<window name="windowBigForgeInput" width="228" height="229" panel="Right"
 		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
 			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
 		</panel>
 
-		<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="303" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<rect name="content" depth="1" pos="0,-46" height="153">
+
+			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+				<item_stack name="0"/>
+			</grid>
+
+		</rect>
+
+		<rect name="content2" depth="0" pos="78, -49" width="147" height="223">
+			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
+			<grid rows="7" cols="1" pos="3,-3" cell_width="147" cell_height="32"  repeat_content="true">
+				<forge_material name="0"/>
+			</grid>
+		</rect>
+	</window>
+	
+	<!-- <window name="windowBigForgeInput" width="228" height="230" panel="Right"
+		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
+			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
+		</panel>
+
+		<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="228" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 		<rect name="content" depth="1" pos="0,-46" height="153">
 
 			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
@@ -2968,13 +3019,13 @@
 			</grid>
 		</rect>
 
-		<rect name="content2" depth="0" pos="78, -49" width="147" height="303">
+		<rect name="content2" depth="0" pos="78, -49" width="147" height="226">
 			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
 			<grid rows="7" cols="1" pos="3,-3" cell_width="147" cell_height="32"  repeat_content="true">
 				<forge_material name="0"/>
 			</grid>
 		</rect>
-	</window>
+	</window> -->
 	
 	<window name="windowBigForgeOutput" pos="0,-48" width="228" height="152" anchor="CenterTop" panel="Right" cursor_area="true" >
 		<panel style="header.panel" pos="0,-40" height="43" depth="1" disableautobackground="false" >
@@ -3184,13 +3235,13 @@
 	
 	<window name="DFalls">
 		<!-- <texture name="DFalls" depth="0" size="100,50" texture="@file:Mods\SDX\Textures\Misc\wwhudlogo.png" material="Materials/Transparent Colored" pos="-500,-6" /> -->
-		<label name="ServerInfo" depth="0" size="100,50" text="V1.8.4" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
+		<label name="ServerInfo" depth="0" size="100,50" text="V1.8.4B" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
 	</window>
 
 	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<texture name="DFalls" depth="0" size="888,666" texture="@file:Mods\SDX\Textures\Misc\DFLogo.png" material="Materials/Transparent Colored" pos="-299,255" />
 		<!-- <label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> -->
-		<label name="DFallsVersion" pos="0, -440" depth="0" size="250,33" text="V1.8.4" font_size="32" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="0, -440" depth="0" size="250,33" text="V1.8.4B" font_size="32" effect="outline" color="[white]" justify="center" />
 		<grid name="buttons" pos="0, -475" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
 			<simplebutton name="btnSave" depth="3" width="250" height="46" caption_key="xuiMenuSave" font_size="40" />
@@ -3209,6 +3260,261 @@
 	
 		<panel name="content" width="100%" height="40" depth="1" pos="0,-43" on_scroll="true" disableautobackground="false">
 			<label depth="2" name="dayTimeLabel" pos="40,-5" width="172" height="40" text="{mapdaytimetitle}: [DECEA3]{mapdaytime}[-]" font_size="40" effect="outline" />
+		</panel>
+	</window>
+	
+	<!-- New Vehicle Storage Tests -->
+	
+	<window name="VehicleRoadhog" width="380" height="733" panel="Left" controller="VehicleFrameWindow" cursor_area="true" >  
+	<!--#$-IGS END.-$#-->
+		<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">			
+			<texture name="windowIcon" depth="2" size="32,32" texture="@file:Mods/DarknessFalls/ItemIcons/manux_ui_game_symbol_roadhog.png" material="Materials/Transparent Colored" pos="5,-5" />
+			<label style="header.name" text="{vehiclenamequality}" />
+			<sprite depth="2" width="112" pos="260, -17" height="10" type="sliced" color="[black]" />
+			<sprite depth="2" width="110" pos="261, -18" height="8" type="sliced" color="[mediumGrey]" />
+			<sprite depth="2" name="sprVehicleQuality" width="110" pos="261, -18" height="8" type="filled" color="{vehiclequalitycolor}" />
+			
+		</panel>
+		
+		<panel name="content" depth="0" pos="0,-43" disableautobackground="true">
+			<sprite color="[darkGrey]" pos="3,-3" height="613" />
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="3,-3" width="380" height="733" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
+			<rect depth="1" pos="3,-3" width="380" height="739">
+				
+				<rect pos="3,-3" width="374" height="218">
+					<sprite color="[mediumGrey]" type="sliced" />
+					<texture depth="2" name="vehiclePreview" material="Materials/Transparent Colored" size="374,218" />
+					<label depth="3" pos="14,-20" font_size="26" text="{vehiclequalitytitle}: [DECEA3]{vehiclequality}[-]" width="200" height="30"/> 
+					<label depth="3" pos="14,-50" font_size="26" text="{vehicledurabilitytitle}: [DECEA3]{vehicledurability}[-]" width="200" height="30"/>
+				</rect>
+			
+				<grid name="parts" rows="8" cols="1" pos="3,-222" cell_width="374" cell_height="60" repeat_content="true" controller="VehiclePartStackGrid">
+					<vehicle_part_slot />
+				</grid>
+			
+				<rect name="btnRepair" depth="3" pos="0,-698" height="41">
+					<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+					<rect depth="3" name="background" pos="3,-3" width="375" height="35">
+						<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="126,-4" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="124,-4" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="124,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="126,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="125,-3" sprite="ui_game_symbol_wrench"/>
+						<label depth="2" name="windowName" pos="0,-2" justify="center" text="REPAIR" text_key="xuiRepair" font_size="28" />
+					</rect>
+				</rect>
+			</rect>
+		
+		</panel>
+	</window>
+	
+	<window name="VehicleRoadhogStats" width="335" height="133" panel="Right" controller="VehicleStats" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<texture name="windowIcon" depth="2" size="32,32" texture="@file:Mods/DarknessFalls/ItemIcons/manux_ui_game_symbol_roadhog.png" material="Materials/Transparent Colored" pos="5,-5" />
+			<label style="header.name" text="{vehiclename} {vehiclestatstitle}" />
+		</panel>
+		
+		
+		<rect name="content" depth="0" pos="0,-46" height="94">
+			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+			<sprite depth="1" color="[darkGrey]" type="sliced" width="335" height="90" pos="0,-3" />
+			<rect depth="2" pos="6,-3">
+				<grid name="stats" rows="2" cols="2" pos="3,-3" cell_width="150" cell_height="26" repeat_content="false" >
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_speed"/>
+						<label depth="1" width="140" pos="27,-3" name="lblSpeed" font_size="16" text="{speedtitle}: [DECEA3]{speed}m/s ({speedtext})[-]" />
+					</panel>
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_noise"/>
+						<label depth="1" width="140" pos="27,-3" name="lblNoise" font_size="16" text="{noisetitle}: [DECEA3]{noise}[-]" />
+					</panel>
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_defense"/>
+						<label depth="1" width="140" pos="27,-3" name="lblProtection" font_size="16" text="{protectiontitle}: [DECEA3]{protection}%[-]" />
+					</panel>
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_seats"/>
+						<label depth="1" width="140" pos="27,-3" name="lblPassengers" font_size="16" text="{passengerstitle}: [DECEA3]{passengers|once}[-]" />
+					</panel>
+				</grid>
+				<grid name="stats2" rows="1" cols="1" pos="73,-56" cell_width="150" cell_height="26" repeat_content="false" >
+					<panel height="26" width="200" disableautobackground="true">
+						<!-- <sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_gas"/> -->
+						<label depth="1" width="100" pos="40,-2" font_size="24" text="{fueltitle}: [DECEA3]{fuel}%[-]" />
+						
+						<sprite depth="2" width="100" pos="115, -6" height="18" type="sliced" color="[black]" />
+						<sprite depth="2" width="98" pos="116, -7" height="16" type="sliced" color="[mediumGrey]" />
+						<sprite depth="2" name="sprFillPotential" width="98" pos="116, -8" height="14" type="filled" color="[beige]" fill="{potentialfuelfill}" />
+						<sprite depth="2" name="sprFuelFill" width="98" pos="116, -7" height="16" type="filled" color="181,57,57" fill="{fuelfill}" />
+					</panel>
+				</grid>
+			</rect>
+			<rect name="btnRefuel" depth="3" pos="0, -59" width="110" height="34" >
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="103" height="30" color="[darkGrey]" type="sliced" />
+				<rect depth="3" pos="1,-3" width="107" height="30">
+					<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="6,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="4,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="4,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="6,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="5,-2" color="[iconColor]" sprite="ui_game_symbol_gas"/>
+					<label depth="2" name="windowName" pos="8,-2" justify="center" text="REFUEL" text_key="xuiRefuel" font_size="24" />
+				</rect>
+			</rect>
+		</rect>
+	</window>
+	
+	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
+	<window name="VehicleRoadhogStorage" width="335" height="644" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<button depth="1" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" atlas="itemiconatlas" sprite="manux_ui_game_symbol_roadhog" tooltip_key="lblSortInventory" sound="[paging_click]" />
+			<label style="header.name" text="ROADHOG STORAGE"  />
+			<button depth="4" name="btnTakeAll" style="icon30px, press" pos="275,-21" sprite="ui_game_symbol_hand" pivot="center" tooltip="TAKE ALL" tooltip_key="btnTakeAll" sound="[paging_click]" />
+			<button depth="4" name="btnDropAll" style="icon30px, press" pos="315,-21" atlas="ItemIconAtlas" sprite="manux_ui_game_symbol_thrash" pivot="center" tooltip="DROP ALL" sound="[paging_click]" />
+		</panel>
+		
+		<grid depth="2" name="inventory" rows="9" cols="5" pos="3,-43" cell_width="67" cell_height="67" repeat_content="true" controller="VehicleContainer">
+			<item_stack_inventory name="0"/>
+		</grid>
+		
+		<panel name="emptyPanel" height="600" depth="4" pos="0,-43" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">			
+			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD DUFFLE BAG TO ACCESS STORAGE."  justify="center" font_size="24"/>			
+		</panel>
+	</window>
+	
+	<window name="VehicleCar" width="380" height="733" panel="Left" controller="VehicleFrameWindow" cursor_area="true" >  
+	<!--#$-IGS END.-$#-->
+		<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">			
+			<texture name="windowIcon" depth="2" size="32,32" texture="@file:Mods/DarknessFalls/ItemIcons/ui_game_symbol_car.png" material="Materials/Transparent Colored" pos="5,-5" />
+			<label style="header.name" text="{vehiclenamequality}" />
+			<sprite depth="2" width="112" pos="260, -17" height="10" type="sliced" color="[black]" />
+			<sprite depth="2" width="110" pos="261, -18" height="8" type="sliced" color="[mediumGrey]" />
+			<sprite depth="2" name="sprVehicleQuality" width="110" pos="261, -18" height="8" type="filled" color="{vehiclequalitycolor}" />
+			
+		</panel>
+		
+		<panel name="content" depth="0" pos="0,-43" disableautobackground="true">
+			<sprite color="[darkGrey]" pos="3,-3" height="613" />
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="3,-3" width="380" height="733" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
+			<rect depth="1" pos="3,-3" width="380" height="739">
+				
+				<rect pos="3,-3" width="374" height="218">
+					<sprite color="[mediumGrey]" type="sliced" />
+					<texture depth="2" name="vehiclePreview" material="Materials/Transparent Colored" size="374,218" />
+					<label depth="3" pos="14,-20" font_size="26" text="{vehiclequalitytitle}: [DECEA3]{vehiclequality}[-]" width="200" height="30"/> 
+					<label depth="3" pos="14,-50" font_size="26" text="{vehicledurabilitytitle}: [DECEA3]{vehicledurability}[-]" width="200" height="30"/>
+				</rect>
+			
+				<grid name="parts" rows="8" cols="1" pos="3,-222" cell_width="374" cell_height="60" repeat_content="true" controller="VehiclePartStackGrid">
+					<vehicle_part_slot />
+				</grid>
+			
+				<rect name="btnRepair" depth="3" pos="0,-698" height="41">
+					<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+					<rect depth="3" name="background" pos="3,-3" width="375" height="35">
+						<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="126,-4" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="124,-4" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="124,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="126,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="125,-3" sprite="ui_game_symbol_wrench"/>
+						<label depth="2" name="windowName" pos="0,-2" justify="center" text="REPAIR" text_key="xuiRepair" font_size="28" />
+					</rect>
+				</rect>
+			</rect>
+		
+		</panel>
+	</window>
+	
+	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
+	<window name="VehicleCarStats" width="480" height="133" panel="Right" controller="VehicleStats" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<texture name="windowIcon" depth="2" size="32,32" texture="@file:Mods/DarknessFalls/ItemIcons/ui_game_symbol_car.png" material="Materials/Transparent Colored" pos="5,-5" />
+			<label style="header.name" text="{vehiclename} {vehiclestatstitle}" />
+		</panel>
+		
+		
+		<rect name="content" depth="0" pos="0,-46" height="94">
+			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+			<sprite depth="1" color="[darkGrey]" type="sliced" width="480" height="90" pos="0,-3" />
+			<rect depth="2" pos="6,-3">
+				<grid name="stats" rows="2" cols="2" pos="3,-3" cell_width="150" cell_height="26" repeat_content="false" >
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_speed"/>
+						<label depth="1" width="140" pos="27,-3" name="lblSpeed" font_size="16" text="{speedtitle}: [DECEA3]{speed}m/s ({speedtext})[-]" />
+					</panel>
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_noise"/>
+						<label depth="1" width="140" pos="27,-3" name="lblNoise" font_size="16" text="{noisetitle}: [DECEA3]{noise}[-]" />
+					</panel>
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_defense"/>
+						<label depth="1" width="140" pos="27,-3" name="lblProtection" font_size="16" text="{protectiontitle}: [DECEA3]{protection}%[-]" />
+					</panel>
+					<panel height="26" width="150" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_seats"/>
+						<label depth="1" width="140" pos="27,-3" name="lblPassengers" font_size="16" text="{passengerstitle}: [DECEA3]{passengers|once}[-]" />
+					</panel>
+				</grid>
+				<grid name="stats2" rows="1" cols="1" pos="73,-56" cell_width="150" cell_height="26" repeat_content="false" >
+					<panel height="26" width="200" disableautobackground="true">
+						<!-- <sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_gas"/> -->
+						<label depth="1" width="100" pos="40,-2" font_size="24" text="{fueltitle}: [DECEA3]{fuel}%[-]" />
+						
+						<sprite depth="2" width="100" pos="115, -6" height="18" type="sliced" color="[black]" />
+						<sprite depth="2" width="98" pos="116, -7" height="16" type="sliced" color="[mediumGrey]" />
+						<sprite depth="2" name="sprFillPotential" width="98" pos="116, -8" height="14" type="filled" color="[beige]" fill="{potentialfuelfill}" />
+						<sprite depth="2" name="sprFuelFill" width="98" pos="116, -7" height="16" type="filled" color="181,57,57" fill="{fuelfill}" />
+					</panel>
+				</grid>
+			</rect>
+			<rect name="btnRefuel" depth="3" pos="0, -59" width="110" height="34" >
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="103" height="30" color="[darkGrey]" type="sliced" />
+				<rect depth="3" pos="1,-3" width="107" height="30">
+					<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="6,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="4,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="4,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="6,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="5,-2" color="[iconColor]" sprite="ui_game_symbol_gas"/>
+					<label depth="2" name="windowName" pos="8,-2" justify="center" text="REFUEL" text_key="xuiRefuel" font_size="24" />
+				</rect>
+			</rect>
+		</rect>
+	</window>
+	
+	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
+	<window name="VehicleCarStorage" width="480" height="644" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header" >
+			<button depth="1" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" atlas="itemiconatlas" sprite="ui_game_symbol_car" tooltip_key="lblSortInventory" sound="[paging_click]" />
+			<label style="header.name" text="CAR STORAGE" />
+			<button depth="4" name="btnTakeAll" style="icon30px, press" pos="410,-21" sprite="ui_game_symbol_hand" pivot="center" tooltip="TAKE ALL" tooltip_key="btnTakeAll" sound="[paging_click]" />
+			<button depth="4" name="btnDropAll" style="icon30px, press" pos="450,-21" atlas="ItemIconAtlas" sprite="manux_ui_game_symbol_thrash" pivot="center" tooltip="DROP ALL" sound="[paging_click]" />
+		</panel>
+		
+		<grid depth="2" name="inventory" rows="10" cols="8" pos="3,-43" cell_width="60" cell_height="60" repeat_content="true" controller="VehicleContainer">
+			<vehicle_stack_inventory name="0"/>
+		</grid>
+		
+		<panel name="emptyPanel" height="600" depth="4" pos="0,-43" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">			
+			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD TRUNK LINING TO ACCESS STORAGE." justify="center" font_size="24"/>			
 		</panel>
 	</window>
 	

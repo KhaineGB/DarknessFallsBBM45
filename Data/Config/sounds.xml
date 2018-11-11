@@ -4920,7 +4920,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="1"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
 
 <SoundDataNode name="femalehatepain"> <AudioSource name="Sounds/AudioSource_VO"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="15" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#BanditFemale?female_hate_pain_01"/>
 	<AudioClip ClipName="#BanditFemale?female_hate_pain_02"/>
 	<AudioClip ClipName="#BanditFemale?female_hate_pain_03"/>
@@ -4930,7 +4930,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="1"/> <MaxRepeatRate name="1.111"/> </SoundDataNode>
 
 <SoundDataNode name="femalehateroam"> <AudioSource name="Sounds/AudioSource_VO"/>
-	<Noise ID="2" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="4" volume="15" time="5" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#BanditFemale?female_hate_roaming_01"/>
 	<AudioClip ClipName="#BanditFemale?female_hate_roaming_02"/>
 	<Channel name="Mouth" />
@@ -4947,7 +4947,7 @@
 <!-- Laser Rifle -->
 
 <SoundDataNode name="lasersniper_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="50" volume="10" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<Noise ID="5" range="25" volume="10" time="2" heat_map_strength="0.3" heat_map_time="120"/>
 	<AudioClip ClipName="#FutureTech?LaserSniperFire"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
@@ -4959,7 +4959,7 @@
 <!-- Laser Pistol -->
 
 <SoundDataNode name="laserpistol_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="50" volume="15" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<Noise ID="5" range="25" volume="15" time="2" heat_map_strength="0.3" heat_map_time="120"/>
 	<AudioClip ClipName="#FutureTech?LaserShoot"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 	
@@ -4984,7 +4984,7 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.01"/></SoundDataNode>
 	
 <SoundDataNode name="CAWS_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="5" range="50" volume="20" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<Noise ID="5" range="50" volume="11" time="2" heat_map_strength="0.3" heat_map_time="120"/>
 	<AudioClip ClipName="#CShotgun?auto_shotgun_fire"/>
 	<AudioClip ClipName="#CShotgun?auto_shotgun_fire" Loop="true"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
@@ -5091,5 +5091,49 @@
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_suspension_1" />
 	<AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_suspension_2" />
 	<LocalCrouchVolumeScale name="1.0" /><CrouchNoiseScale name="0.5" /><NoiseScale name="1" /><MaxVoices name="3" /><MaxRepeatRate name="1.0" /></SoundDataNode>
+	
+  <!-- A15 and earlier SMG Sound -->
+  
+  <SoundDataNode name="a14_mp5_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Sequence/>
+	<distantfadestart name="25"/>
+	<distantfadeend name="35"/>
+    <AudioClip ClipName="#A14GunSounds?a14_mp5_fire_start"/>
+    <AudioClip ClipName="#A14GunSounds?a14_mp5_fire_lp" Loop="true"/>
+    <AudioClip ClipName="#A14GunSounds?a14_mp5_fire_end"/>
+	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/></SoundDataNode>
+  
+  <SoundDataNode name="a14_mp5_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
+ 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#A14GunSounds?a14_mp5_reload"/>
+	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+  
+  <!-- A15 and earlier Pistol Sound -->
+  
+  <SoundDataNode name="a14_pistol_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+    <AudioClip ClipName="#A14GunSounds?a14_pistol_fire"/>
+	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="6"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+  
+  <SoundDataNode name="a14_pistol_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#A14GunSounds?a14_pistol_reload"/>
+	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+	
+  <!-- A15 and earlier AK Sound -->
+  
+  <SoundDataNode name="a14_ak47_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
+  	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#A14GunSounds?a14_ak47_reload"/>
+	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+  
+  <SoundDataNode name="a14_ak47_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="5" range="50" volume="20" time="2" heat_map_strength="0.3" heat_map_time="120"/>
+	<Sequence/>
+    <AudioClip ClipName="#A14GunSounds?a14_ak47_fire_start"/>
+    <AudioClip ClipName="#A14GunSounds?a14_ak47_fire_lp" Loop ="true"/>
+    <AudioClip ClipName="#A14GunSounds?a14_ak47_fire_end"/>
+	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="5"/> <MaxRepeatRate name="0.001"/></SoundDataNode>
 	
 </Sounds>

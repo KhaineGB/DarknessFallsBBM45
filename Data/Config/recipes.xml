@@ -5786,7 +5786,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="enrichedUranium" count="2"/>
 </recipe>
 
-<recipe name="energyCell" count="1" craft_area="ScifiBench" craft_tool="scifiAIOT">
+<recipe name="energyCell" count="10" craft_area="ScifiBench" craft_tool="scifiAIOT">
 	<ingredient name="electronicParts" count="10"/>
 	<ingredient name="forgedTitanium" count="3"/>
 	<ingredient name="enrichedUranium" count="1"/>
@@ -6032,6 +6032,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electronicParts" count="5"/>	
 </recipe>
 
+<recipe name="coilTurret" count="1" craft_area="workbench" craft_tool="wrench"> <!-- trap -->
+	<ingredient name="motionsensor" count="1"/>
+	<ingredient name="partsCoilcarbine_barrel" count="1"/>
+	<ingredient name="partsCoilcarbine_receiver" count="1"/>
+	<ingredient name="partsCoilcarbine_parts" count="1"/>
+	<ingredient name="mechanicalParts" count="6"/>
+</recipe>
+
 <recipe name="44MagCoilround" count="10" craft_area="workstationMetal" craft_tool="calipers">
 	<ingredient name="bulletTip" count="10"/>
 	<ingredient name="bulletCasing" count="10"/>
@@ -6071,6 +6079,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- Armoured Car -->
 
 <recipe name="CarArmourChassis" count="1" craft_area="advforge" material_based="true">
+	<ingredient name="unit_iron" count="1000"/>
+	<ingredient name="unit_clay" count="100"/>
+</recipe>
+
+<recipe name="CarArmourRedChassis" count="1" craft_area="advforge" material_based="true">
+	<ingredient name="unit_iron" count="1000"/>
+	<ingredient name="unit_clay" count="100"/>
+</recipe>
+
+<recipe name="CarArmourBlackChassis" count="1" craft_area="advforge" material_based="true">
+	<ingredient name="unit_iron" count="1000"/>
+	<ingredient name="unit_clay" count="100"/>
+</recipe>
+
+<recipe name="CarArmourBlueChassis" count="1" craft_area="advforge" material_based="true">
 	<ingredient name="unit_iron" count="1000"/>
 	<ingredient name="unit_clay" count="100"/>
 </recipe>

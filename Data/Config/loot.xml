@@ -165,10 +165,30 @@
 	<!-- Replace the lootYard with one of the following -->
 	<placeholder name="randomCarsHelper">
 		<block name="cntCar03SedanDamage1" prob="0.5"/>
-		<block name="cntCar03SedanDamage0" prob="0.1"/>
-		<block name="carMuscleBlack" prob="0.1"/>
-		<block name="carMuscleBlue" prob="0.1"/>
-		<block name="carAmbulance" prob="0.05"/>
+		<block name="cntCar03SedanDamage0" prob="0.3"/>
+		<block name="carTaxi" prob="0.5"/>
+		<block name="carTaxiDmg" prob="0.3"/>
+		<block name="carPolice" prob="0.15"/>
+		<block name="carPoliceDmg" prob="0.075"/>
+		<block name="carMuscleBlack" prob="0.15"/>
+		<block name="carMuscleBlue" prob="0.15"/>
+		<block name="carMuscleBlackDmg" prob="0.075"/>
+		<block name="carMuscleBlueDmg" prob="0.075"/>
+		<block name="carAmbulance" prob="0.075"/>
+		<block name="carAmbulanceDmg" prob="0.025"/>
+		<block name="carFireTruck" prob="0.075"/>
+		<block name="carFireTruckDmg" prob="0.025"/>
+		<block name="carSchoolbus" prob="0.075"/>
+		<block name="carSchoolbusDmg" prob="0.025"/>
+		<block name="carMailtruck" prob="0.075"/>
+		<block name="carMailtruckDmg" prob="0.025"/>
+		<block name="Motorbike" prob="0.3"/>
+		<block name="MotorbikeDmg" prob="0.15"/>
+		<block name="APCLocked" prob="0.025"/>
+		<block name="ScoutLocked" prob="0.025"/>
+		<block name="TruckLocked" prob="0.025"/>
+		<block name="carGarbageTruck" prob="0.3"/>
+		<block name="carGarbageTruckDmg" prob="0.15"/>
 	</placeholder>
 
 	<!-- Replace the lootYard with one of the following -->
@@ -1691,6 +1711,25 @@
 	<item name="paintMagazineWoodAndRoofing" prob="0.25"/>
 </lootgroup>
 
+<lootgroup name="fireTruck" count="1">
+	<item name="chainsaw" prob="0.15"/>
+	<item name="auger" prob="0.15"/>
+	<item name="sledgehammer" prob="0.25"/>
+	<item name="pickaxeSteel" prob="0.25"/>
+	<item name="fireaxeSteel" prob="0.25"/>
+	<item name="shovelSteel" prob="0.25"/>
+	<item name="pickaxeIron" prob="0.75"/>
+	<item name="shovelIron" prob="0.75"/>
+	<item name="fireaxeIron" prob="0.75"/>
+	<item name="padlock"/>
+	<item name="clawHammer"/>
+	<item name="weldingTorch" prob="0.35"/>
+	<item name="calipers" prob="0.35"/>
+	<item name="wrench" prob="0.9"/>
+	<item name="repairKit" count="1,4"/>
+	<item name="wireTool"/>
+</lootgroup>
+
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
 	<item group="junk"/>
@@ -1741,6 +1780,7 @@
 	<item name="flashlight02"/>
 	<item name="sewingKit" />
 	<item name="ink"  prob="0.5" />
+	<item name="BigBag"  prob="0.25" />
 </lootcontainer>
 
 <!-- medicine cabinets -->
@@ -2102,7 +2142,7 @@
 </lootcontainer>
 
 <!-- minibike storage -->
-<lootcontainer id="62" count="0" size="5,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+<lootcontainer id="62" count="0" size="4,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 </lootcontainer>
 
 <!-- mountain man loot -->
@@ -2802,7 +2842,8 @@
 
 <!-- ZombieSoldier Feral loot -->
 <lootcontainer id="126" count="2,4" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-	<item group="weaponsCoilcarbine+ammo" prob="0.5"/>
+	<item group="weaponsM4A1+ammo" prob="1"/>
+	<item group="weaponsCoilcarbine+ammo" prob="0.3"/>
 	<item group="militaryArmor" prob="1"/>
 	<item name="KeycardBlue" count="1" prob="0.3"/>
 	<item name="Grenade" count="2,4" prob="0.5"/>
@@ -2810,7 +2851,8 @@
 
 <!-- ZombieSoldier Feral Radiated loot -->
 <lootcontainer id="127" count="2,4" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-	<item group="weaponsCoilrifle+ammo" prob="0.75"/>
+	<item group="weaponsM4A1+ammo" prob="1"/>
+	<item group="weaponsCoilrifle+ammo" prob="0.5"/>
 	<item group="militaryArmor" prob="1"/>
 	<item name="KeycardBlue" count="1" prob="0.3"/>
 	<item name="pulseGrenade" count="2,4" prob="0.5"/>
@@ -2900,7 +2942,7 @@
 
 <!-- zombie cop radiated -->
 <lootcontainer id="137" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
-	<item group="weaponsP225+ammo" prob="0375"/>
+	<item group="weaponsP225+ammo" prob="0.375"/>
 	<item group="ammo"/>
 	<item name="flashlight02" prob="0.5"/>
 	<item name="militaryVest" prob="0.2"/>
@@ -3006,6 +3048,73 @@
 	<item group="weaponsLongShotgun+ammo" prob="0.25"/>
 	<item group="weaponsWinchesterRifle+ammo" prob="0.15"/>
 	<item group="weaponsM4A1" prob="0.05"/>
+</lootcontainer>
+
+<!-- military APC -->
+<lootcontainer id="149" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="treasureTemplate">
+	<item group="militaryArmor" prob="1"/>
+	<item group="ammo" count="1,4" prob="1"/>
+	<item group="weaponsM4A1+ammo" prob="0.75"/>
+	<item name="Grenade" count="2,4" prob="0.5"/>
+	<item group="weaponsMilitaryParts" prob="0.2"/>
+	<item name="gasCan" count="100,500" prob="0.075"/>
+</lootcontainer>
+
+<!-- military truck -->
+<lootcontainer id="150" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="treasureTemplate">
+	<item group="rareMedicine"/>
+	<item group="rareTools" prob="0.5"/>
+	<item group="cannedfood" count="1,2" prob="0.15"/>
+	<item name="bottledWater" count="1,3" prob="0.15"/>
+	<item name="gasCan" count="100,500" prob="0.075"/>
+</lootcontainer>
+
+<!-- military scout -->
+<lootcontainer id="151" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="treasureTemplate">
+	<item group="ammo" count="1,4" prob="1"/>
+	<item group="rareTools" prob="0.5"/>
+	<item name="gasCan" count="1000,5000" prob="0.25"/>
+	<item group="cannedfood" count="1,2" prob="0.05"/>
+	<item name="bottledWater" count="1,3" prob="0.05"/>
+</lootcontainer>
+
+<!-- roadhog storage -->
+<lootcontainer id="152" count="0" size="5,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- car storage -->
+<lootcontainer id="153" count="0" size="8,10" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!-- police car -->
+<lootcontainer id="154" count="1,2" size="7,4" destroy_on_close="false" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="weaponsP225+ammo" prob="0.5"/>
+	<item group="weaponsAnyShotguns+ammo" prob="0.25"/>
+	<item group="ammo"/>
+	<item name="flashlight02" prob="0.5"/>
+	<item name="militaryVest" prob="0.5"/>
+</lootcontainer>
+
+<!-- mail truck and school bus -->
+<lootcontainer id="155" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="commonBooks" prob="0.3"/>
+	<item group="rareBooks" prob="0.1"/>
+	<item name="paper" count="1,10"/>
+</lootcontainer>
+
+<!-- fire truck -->
+<lootcontainer id="156" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="fireTruck" prob="0.5"/>
+	<item group="cannedfood" count="1,2" prob="0.15"/>
+	<item name="bottledWater" count="1,3" />
+</lootcontainer>
+
+<!-- garbage truck -->
+<lootcontainer id="157" count="2,4" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="junk"/>
+	<item name="emptyJar" count="1,2"/>
+	<item name="canEmpty" count="1,2"/>
+	<item group="books" prob="0.1"/>
 </lootcontainer>
 
 </lootcontainers>

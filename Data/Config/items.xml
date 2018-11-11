@@ -8523,7 +8523,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/cloth"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="RepairAmount" value="50"/>
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
@@ -8699,7 +8699,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/featherPrefab"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<!-- <property name="CraftingIngredientExp" value="0"/> -->
 	<property name="EconomicValue" value="10"/>
@@ -10753,11 +10753,11 @@ Mesh files no longer used:
 	<!-- .85 -->
 	<property name="Reload_time" value="2"/>
 	<property name="Bullet_icon" value="pistol"/>
-	<property name="Sound_start" value="Pistol_Fire"/>
+	<property name="Sound_start" value="a14_pistol_fire"/>
 	<property name="Sound_repeat" value=""/>
 	<property name="Sound_end" value=""/>
 	<property name="Sound_empty" value="weapon_empty"/>
-	<property name="Sound_reload" value="pistol_reload"/>
+	<property name="Sound_reload" value="a14_pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
 		<property name="DamageBonus.head" value="8"/>
@@ -12076,11 +12076,11 @@ Mesh files no longer used:
 	<!-- .85 -->
 	<property name="Reload_time" value="2"/>
 	<property name="Bullet_icon" value="pistol"/>
-	<property name="Sound_start" value="Pistol_Fire"/>
+	<property name="Sound_start" value="a14_pistol_fire"/>
 	<property name="Sound_repeat" value=""/>
 	<property name="Sound_end" value=""/>
 	<property name="Sound_empty" value="weapon_empty"/>
-	<property name="Sound_reload" value="pistol_reload"/>
+	<property name="Sound_reload" value="a14_pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
 		<property name="DamageBonus.head" value="8"/>
@@ -14150,8 +14150,8 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="DegradationMax" value="7000,12000" />
 		<property name="VehicleNoise" value="1.2,0.8" />
-		<property name="VehicleMaxSpeed" value="8,16" />
-		<property name="VehicleAcceleration" value="11,16" />
+		<property name="VehicleMaxSpeed" value="12,20" />
+		<property name="VehicleAcceleration" value="14,20" />
 		<property name="VehicleMetersPerLiter" value="6,10" />
 		<property name="VehicleIdleSecondsPerLiter" value="5,11" />
 		<property name="VehicleStartDelayInSeconds" value="1,0.1" />
@@ -15897,9 +15897,9 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="3.9"/>
 		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value="ak47_fire_start"/>
-		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
-		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_start" value="a14_ak47_fire_start"/>
+		<property name="Sound_repeat" value="#A14GunSounds?a14_ak47_fire_lp"/>
+		<property name="Sound_end" value="#A14GunSounds?a14_ak47_fire_end"/>
 		<property name="Sound_empty" value="weapon_empty"/>
 		<property name="Sound_reload" value="ak47_reload"/>
 		<property name="Horde_meter_rate" value="2.5"/>
@@ -16887,9 +16887,9 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="3.9"/>
 		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value="ak47_fire_start"/>
-		<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
-		<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+		<property name="Sound_start" value="a14_mp5_fire_start"/>
+		<property name="Sound_repeat" value="#A14GunSounds?a14_mp5_fire_lp"/>
+		<property name="Sound_end" value="#A14GunSounds?a14_mp5_fire_end"/>
 		<property name="Sound_empty" value="weapon_empty"/>
 		<property name="Sound_reload" value="ak47_reload"/>
 		<property name="Horde_meter_rate" value="2.5"/>
@@ -17274,10 +17274,10 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="DegradationMax" value="10000,15000" />
 		<property name="VehicleNoise" value="1.6,1.2" />
-		<property name="VehicleMaxSpeed" value="12,20" />
+		<property name="VehicleMaxSpeed" value="8,16" />
 		<property name="VehicleAcceleration" value="11,16" />
-		<property name="VehicleMetersPerLiter" value="10,15" />
-		<property name="VehicleIdleSecondsPerLiter" value="5,11" />
+		<property name="VehicleMetersPerLiter" value="15,20" />
+		<property name="VehicleIdleSecondsPerLiter" value="10,22" />
 		<property name="VehicleStartDelayInSeconds" value="1,0.1" />
 		<property name="VehicleStartChance" value="0.65,0.99" />
 		<property name="VehicleTankSize" value="4000, 7000" />
@@ -17323,7 +17323,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="carsForDumbshitsDesc"/>
 	<property name="EconomicValue" value="1000"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="CarArmourChassis,carSeat,carSteering,V8Engine"/>
+		<property name="Recipes_to_learn" value="CarArmourChassis,CarArmourBlueChassis,CarArmourBlackChassis,CarArmourRedChassis,carSeat,carSteering,V8Engine"/>
 	</property>
 </item>
 
@@ -17345,6 +17345,77 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1200,6000"/>
 	</property>
 	<property name="Group" value="Decor/Miscellaneous"/>
+</item>
+
+<item id="2293" name="TrunkLining">
+	<property name="VehicleSlotType" value="basket"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="trunklining" />
+	<property name="DescriptionKey" value="TrunkLiningDesc"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="45"/>
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleStorageWidth" value="3,8"/>
+		<property name="VehicleStorageHeight" value="3,5"/>
+		<property name="DegradationMax" value="1200,6000"/>
+	</property>
+	<property name="Group" value="Decor/Miscellaneous"/>
+</item>
+
+<item id="2294" name="CarArmourBlueChassis">
+	<property name="Extends" value="minibikeChassis" />
+	<property name="CustomIcon" value="carbluechassis" />
+	<property name="DescriptionKey" value="CarArmourDesc"/>
+	<property name="Meshfile" value="#CarArmourBlue?CarBlueHand" />
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleDamagePassedToPlayer" value="0.3, 0.1" />
+		<property name="DegradationRate" value="10,10" />
+		<property name="DegradationMax" value="6600,12000" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="SpawnCustomVehicle, Mods" />
+		<property name="VehicleToSpawn" value="CarArmourBlue" />
+	</property>
+</item>
+
+<item id="2295" name="CarArmourBlackChassis">
+	<property name="Extends" value="minibikeChassis" />
+	<property name="CustomIcon" value="carblackchassis" />
+	<property name="DescriptionKey" value="CarArmourDesc"/>
+	<property name="Meshfile" value="#CarArmourBlack?CarBlackHand" />
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleDamagePassedToPlayer" value="0.3, 0.1" />
+		<property name="DegradationRate" value="10,10" />
+		<property name="DegradationMax" value="6600,12000" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="SpawnCustomVehicle, Mods" />
+		<property name="VehicleToSpawn" value="CarArmourBlack" />
+	</property>
+</item>
+
+<item id="2296" name="CarArmourRedChassis">
+	<property name="Extends" value="minibikeChassis" />
+	<property name="CustomIcon" value="carredchassis" />
+	<property name="DescriptionKey" value="CarArmourDesc"/>
+	<property name="Meshfile" value="#CarArmourRed?CarRedHand" />
+	<property name="IsVehicleCustomPart" value="true" />
+	<property class="Attributes">
+		<property name="VehicleDamagePassedToPlayer" value="0.3, 0.1" />
+		<property name="DegradationRate" value="10,10" />
+		<property name="DegradationMax" value="6600,12000" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="SpawnCustomVehicle, Mods" />
+		<property name="VehicleToSpawn" value="CarArmourRed" />
+	</property>
 </item>
 
 <item id="2992" name="laserSword">
@@ -17403,6 +17474,8 @@ Mesh files no longer used:
 	<property name="SellableToTrader" value="false" />
 	<property name="EconomicValue" value="450"/>
 	<property name="Group" value="Ammo/Weapons"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="1000"/>
 </item>
 
 <item id="2994" name="pulseGrenade">
