@@ -1784,6 +1784,7 @@
 		<recipe name="partsCoilcarbine_receiver" unlock_level="2"/>
 		<recipe name="partsCoilcarbine_parts" unlock_level="2"/>
 		<recipe name="partsCoilcarbine_barrel" unlock_level="2"/>	
+		<recipe name="coilTurret" unlock_level="2"/>
 
 		<recipe name="gunCoilRifle" unlock_level="3"/>
 		<recipe name="762mmCoilroundHP" unlock_level="3"/>

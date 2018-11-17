@@ -1811,13 +1811,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelArrow" count="1" craft_area="workstationMetal">
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="stick" count="1"/>
-	<ingredient name="cloth" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <recipe name="steelCrossbowBolt" count="1" craft_area="workstationMetal">
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="stick" count="1"/>
-	<ingredient name="cloth" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <!-- Random Leather Recipe -->
@@ -2528,7 +2528,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="aloePlant" count="4"/>
 </recipe>
 
-<recipe name="cornMeal" count="1" craft_area="PandM">
+<recipe name="cornMeal" count="2" craft_area="PandM">
 	<ingredient name="corn" count="1"/>
 </recipe>
 
@@ -4239,7 +4239,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="titaniumArrow" count="1" craft_area="workstationMetal">
 	<ingredient name="titaniumArrowHead" count="1"/>
 	<ingredient name="stick" count="1"/>
-	<ingredient name="cloth" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <recipe name="titaniumCrossbowBolt" count="1" craft_area="workstationMetal">
@@ -4251,7 +4251,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="titaniumCrossbowBolt" count="1" craft_area="workstationMetal">
 	<ingredient name="titaniumArrowHead" count="1"/>
 	<ingredient name="stick" count="1"/>
-	<ingredient name="cloth" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <!-- CNC Gun Recipes. Recipes need adjusting -->
@@ -6118,6 +6118,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" count="40"/>
 	<ingredient name="electricParts" count="40"/>
 	<ingredient name="silverNugget" count="10"/>
+</recipe>
+
+<recipe name="scrapPlastics" count="2" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="cornMeal" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
 </recipes>
